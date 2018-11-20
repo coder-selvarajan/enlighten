@@ -2,6 +2,7 @@ baseURL = "http://selvarajan.in/"
 languageCode = "en-us"
 title = "Enlightening KT"
 theme = "book"
+publishDir = "docs"
 
 # (Optional) Set this to true if you use captial letters in file names
 disablePathToLower = "true"

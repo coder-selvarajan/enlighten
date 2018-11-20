@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Localstorage | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+
+<link rel="stylesheet" href="/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu fixed">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="http://selvarajan.in/">Enlightening KT</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="/docs/">Home</a></li>
+<li><a href="/docs/javascript/basics">Learn Javascript</a>
+
+<ul>
+<li><a href="/docs/javascript/basics">Basics</a></li>
+<li><a href="/docs/javascript/functions">Functions</a></li>
+<li><a href="/docs/javascript/window-object">Window Object</a></li>
+<li><a href="/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+<li><a href="/docs/javascript/events">Events</a></li>
+<li><a href="/docs/javascript/localstorage">Localstorage</a></li>
+<li><a href="/docs/javascript/object-oriented">Object Oriented Features</a></li>
+<li><a href="/docs/javascript/async-programming">Async Programming</a></li>
+<li><a href="/docs/javascript/rest-api">REST Api</a></li>
+<li><a href="/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
+</ul></li>
+<li><a href="/docs/mean_stack/nodejs">MEAN Stack</a>
+
+<ul>
+<li><a href="/docs/mean_stack/nodejs">Node JS</a></li>
+</ul></li>
+<li><a href="/docs/linux/linux-intro">Linux</a>
+
+<ul>
+<li><a href="/docs/linux/linux-intro">Linux Intro</a></li>
+<li><a href="/docs/linux/linux-commands">Linux Commands</a></li>
+</ul></li>
+<li><a href="/docs/hadoop-intro">Hadoop</a></li>
+<li><a href="/docs/python">Python</a></li>
+<li><a href="/docs/hugo-markdown">Hugo &amp; Markdown</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <label for="menu-control">
+  <img src="http://selvarajan.in//svg/menu.svg" />
+</label>
+<strong>Localstorage</strong>
+      </header>
+      <article class="markdown">
+
+<h1 id="localstorage">LocalStorage</h1>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// set local storage item
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;John&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;age&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;30&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// set session storage item
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">sessionStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Beth&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// remove from storage
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">removeItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// get from storage
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">name</span> <span style="color:#f92672">=</span> <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">age</span> <span style="color:#f92672">=</span> <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;age&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// clear local storage
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">clear</span><span style="color:#111">();</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">name</span><span style="color:#111">,</span> <span style="color:#75af00">age</span><span style="color:#111">);</span>
+
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;form&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;submit&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">){</span>
+        <span style="color:#00a8c8">const</span> <span style="color:#75af00">task</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task&#39;</span><span style="color:#111">).</span><span style="color:#75af00">value</span><span style="color:#111">;</span>
+        <span style="color:#00a8c8">let</span> <span style="color:#75af00">tasks</span><span style="color:#111">;</span>
+        <span style="color:#00a8c8">if</span><span style="color:#111">(</span><span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">)</span> <span style="color:#f92672">===</span> <span style="color:#00a8c8">null</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+            <span style="color:#75af00">tasks</span> <span style="color:#f92672">=</span> <span style="color:#111">[];</span>
+        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+            <span style="color:#75af00">tasks</span> <span style="color:#f92672">=</span> <span style="color:#75af00">JSON</span><span style="color:#111">.</span><span style="color:#75af00">parse</span><span style="color:#111">(</span><span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">));</span>
+        <span style="color:#111">}</span>
+        <span style="color:#75af00">tasks</span><span style="color:#111">.</span><span style="color:#75af00">push</span><span style="color:#111">(</span><span style="color:#75af00">task</span><span style="color:#111">);</span>
+        
+        <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">JSON</span><span style="color:#111">.</span><span style="color:#75af00">stringify</span><span style="color:#111">(</span><span style="color:#75af00">tasks</span><span style="color:#111">));</span>
+        <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Task saved&#39;</span><span style="color:#111">);</span>
+        <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">preventDefault</span><span style="color:#111">();</span>
+    <span style="color:#111">});</span>
+
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">tasks</span> <span style="color:#f92672">=</span> <span style="color:#75af00">JSON</span><span style="color:#111">.</span><span style="color:#75af00">parse</span><span style="color:#111">(</span><span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">));</span>
+    <span style="color:#75af00">tasks</span><span style="color:#111">.</span><span style="color:#75af00">forEach</span><span style="color:#111">(</span><span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">task</span><span style="color:#111">){</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">task</span><span style="color:#111">);</span>
+    <span style="color:#111">});</span>
+</code></pre></div></article>
+    </div>
+
+    
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#localstorage">LocalStorage</a></li>
+</ul>
+</nav>
+    </aside>
+    
+
+  </main>
+  
+
+</body>
+
+</html>

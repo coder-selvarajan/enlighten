@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Window Object | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+
+<link rel="stylesheet" href="/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu fixed">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="http://selvarajan.in/">Enlightening KT</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="/docs/">Home</a></li>
+<li><a href="/docs/javascript/basics">Learn Javascript</a>
+
+<ul>
+<li><a href="/docs/javascript/basics">Basics</a></li>
+<li><a href="/docs/javascript/functions">Functions</a></li>
+<li><a href="/docs/javascript/window-object">Window Object</a></li>
+<li><a href="/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+<li><a href="/docs/javascript/events">Events</a></li>
+<li><a href="/docs/javascript/localstorage">Localstorage</a></li>
+<li><a href="/docs/javascript/object-oriented">Object Oriented Features</a></li>
+<li><a href="/docs/javascript/async-programming">Async Programming</a></li>
+<li><a href="/docs/javascript/rest-api">REST Api</a></li>
+<li><a href="/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
+</ul></li>
+<li><a href="/docs/mean_stack/nodejs">MEAN Stack</a>
+
+<ul>
+<li><a href="/docs/mean_stack/nodejs">Node JS</a></li>
+</ul></li>
+<li><a href="/docs/linux/linux-intro">Linux</a>
+
+<ul>
+<li><a href="/docs/linux/linux-intro">Linux Intro</a></li>
+<li><a href="/docs/linux/linux-commands">Linux Commands</a></li>
+</ul></li>
+<li><a href="/docs/hadoop-intro">Hadoop</a></li>
+<li><a href="/docs/python">Python</a></li>
+<li><a href="/docs/hugo-markdown">Hugo &amp; Markdown</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <label for="menu-control">
+  <img src="http://selvarajan.in//svg/menu.svg" />
+</label>
+<strong>Window Object</strong>
+      </header>
+      <article class="markdown">
+
+<h2 id="window-object">Window object</h2>
+
+<p>In console type window.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Hello&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Hello World&#34;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// prompt
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">input</span> <span style="color:#f92672">=</span> <span style="color:#75af00">prompt</span><span style="color:#111">();</span>
+    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#75af00">input</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">//confirm
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">If</span> <span style="color:#111">(</span><span style="color:#75af00">confirm</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Are you sure?&#34;</span><span style="color:#111">)){</span>
+        <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#d88200">&#34;proceed&#34;</span><span style="color:#111">);</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#75715e">//window height
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">outerHeight</span><span style="color:#111">);</span>
+    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">outerWidth</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">//visible content area.. If firebug is open then the value change here..  
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">innerHeight</span><span style="color:#111">);</span> 
+    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">innerWidth</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">//scroll point
+</span><span style="color:#75715e"></span>    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">scrollY</span><span style="color:#111">;</span>
+    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">scrollX</span><span style="color:#111">;</span>
+</code></pre></div>
+<h2 id="localtion-object">Localtion Object</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">location</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
+    <span style="color:#75715e">//prints info related to http host info, protocol, 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//query string, redirection etc.. 
+</span><span style="color:#75715e"></span>
+    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">location</span><span style="color:#111">.</span><span style="color:#75af00">href</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;http://google.com&#34;</span><span style="color:#111">;</span>
+</code></pre></div>
+<h2 id="history-object">History Object</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">history</span><span style="color:#111">.</span><span style="color:#75af00">go</span><span style="color:#111">(</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span> <span style="color:#75715e">//to navigate to previous page.. 
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">history</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span>
+</code></pre></div>
+<h2 id="navigator-object">Navigator Object</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">//display info about the browser..   
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//Appname, version, user agent, OS, language, vendor etc
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">navigator</span><span style="color:#111">;</span>
+</code></pre></div></article>
+    </div>
+
+    
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#window-object">Window object</a></li>
+<li><a href="#localtion-object">Localtion Object</a></li>
+<li><a href="#history-object">History Object</a></li>
+<li><a href="#navigator-object">Navigator Object</a></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
+    
+
+  </main>
+  
+
+</body>
+
+</html>

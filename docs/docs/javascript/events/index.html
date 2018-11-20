@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+
+<link rel="stylesheet" href="/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu fixed">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="http://selvarajan.in/">Enlightening KT</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="/docs/">Home</a></li>
+<li><a href="/docs/javascript/basics">Learn Javascript</a>
+
+<ul>
+<li><a href="/docs/javascript/basics">Basics</a></li>
+<li><a href="/docs/javascript/functions">Functions</a></li>
+<li><a href="/docs/javascript/window-object">Window Object</a></li>
+<li><a href="/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+<li><a href="/docs/javascript/events">Events</a></li>
+<li><a href="/docs/javascript/localstorage">Localstorage</a></li>
+<li><a href="/docs/javascript/object-oriented">Object Oriented Features</a></li>
+<li><a href="/docs/javascript/async-programming">Async Programming</a></li>
+<li><a href="/docs/javascript/rest-api">REST Api</a></li>
+<li><a href="/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
+</ul></li>
+<li><a href="/docs/mean_stack/nodejs">MEAN Stack</a>
+
+<ul>
+<li><a href="/docs/mean_stack/nodejs">Node JS</a></li>
+</ul></li>
+<li><a href="/docs/linux/linux-intro">Linux</a>
+
+<ul>
+<li><a href="/docs/linux/linux-intro">Linux Intro</a></li>
+<li><a href="/docs/linux/linux-commands">Linux Commands</a></li>
+</ul></li>
+<li><a href="/docs/hadoop-intro">Hadoop</a></li>
+<li><a href="/docs/python">Python</a></li>
+<li><a href="/docs/hugo-markdown">Hugo &amp; Markdown</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <label for="menu-control">
+  <img src="http://selvarajan.in//svg/menu.svg" />
+</label>
+<strong>Events</strong>
+      </header>
+      <article class="markdown">
+
+<h1 id="events">Events:</h1>
+
+<h2 id="event-listeners">Event Listeners:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.clear-tasks&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">onClick</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">function</span> <span style="color:#75af00">onClick</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">){</span>
+        <span style="color:#75715e">//console.log(&#39;Clicked&#39;);
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">let</span> <span style="color:#75af00">val</span><span style="color:#111">;</span>
+        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">;</span>
+
+        <span style="color:#75715e">// Event target element
+</span><span style="color:#75715e"></span>        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">;</span>
+        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">.</span><span style="color:#75af00">id</span><span style="color:#111">;</span>
+        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">.</span><span style="color:#75af00">className</span><span style="color:#111">;</span>
+        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">.</span><span style="color:#75af00">classList</span><span style="color:#111">;</span>
+        <span style="color:#75715e">// Event type
+</span><span style="color:#75715e"></span>        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">type</span><span style="color:#111">;</span>
+        <span style="color:#75715e">// Timestamp
+</span><span style="color:#75715e"></span>        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">timeStamp</span><span style="color:#111">;</span>
+
+        <span style="color:#75715e">// Coords event relative to the window
+</span><span style="color:#75715e"></span>        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">clientY</span><span style="color:#111">;</span>
+        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">clientX</span><span style="color:#111">;</span>
+        <span style="color:#75715e">// Coords event relative to the element
+</span><span style="color:#75715e"></span>        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">offsetY</span><span style="color:#111">;</span>
+        <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">offsetX</span><span style="color:#111">;</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
+    <span style="color:#111">}</span>
+</code></pre></div>
+<h2 id="mouse-events">Mouse Events:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">clearBtn</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.clear-tasks&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">card</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.card&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">heading</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;h5&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Click
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">clearBtn</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Doubleclick
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">clearBtn</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;dblclick&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Mousedown
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">clearBtn</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;mousedown&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Mouseup
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">clearBtn</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;mouseup&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Mouseenter
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">card</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;mouseenter&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Mouseleave
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">card</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;mouseleave&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Mouseover
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">card</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;mouseover&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Mouseout
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">card</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;mouseout&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Mousemove
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">card</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;mousemove&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Event Handler
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">function</span> <span style="color:#75af00">runEvent</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">`EVENT TYPE: </span><span style="color:#d88200">${</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">type</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">);</span>
+        <span style="color:#75af00">heading</span><span style="color:#111">.</span><span style="color:#75af00">textContent</span><span style="color:#f92672">=</span> <span style="color:#d88200">`MouseX: </span><span style="color:#d88200">${</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">offsetX</span><span style="color:#d88200">}</span><span style="color:#d88200"> MouseY: </span><span style="color:#d88200">${</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">offsetY</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">;</span>
+        <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">body</span><span style="color:#111">.</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">backgroundColor</span> <span style="color:#f92672">=</span> 
+                <span style="color:#d88200">`rgb(</span><span style="color:#d88200">${</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">offsetX</span><span style="color:#d88200">}</span><span style="color:#d88200">, </span><span style="color:#d88200">${</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">offsetY</span><span style="color:#d88200">}</span><span style="color:#d88200">, 40)`</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+</code></pre></div>
+<h2 id="key-events">Key Events:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">form</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;form&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">taskInput</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">heading</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;h5&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">select</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;select&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Clear input
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">value</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75af00">form</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;submit&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Keydown
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;keydown&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Keydown
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;keyup&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Keypress
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;keypress&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Focus
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;focus&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Blur
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;blur&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Cut
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;cut&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Paste
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;paste&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Input
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;input&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Change
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">select</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;change&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">runEvent</span><span style="color:#111">);</span>
+
+    <span style="color:#00a8c8">function</span> <span style="color:#75af00">runEvent</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">){</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">`EVENT TYPE: </span><span style="color:#d88200">${</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">type</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">);</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">.</span><span style="color:#75af00">value</span><span style="color:#111">);</span>
+        <span style="color:#75af00">heading</span><span style="color:#111">.</span><span style="color:#75af00">innerText</span> <span style="color:#f92672">=</span> <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">.</span><span style="color:#75af00">value</span><span style="color:#111">;</span>
+        <span style="color:#75af00">Get</span> <span style="color:#75af00">input</span> <span style="color:#75af00">value</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">taskInput</span><span style="color:#111">.</span><span style="color:#75af00">value</span><span style="color:#111">);</span>
+        <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">preventDefault</span><span style="color:#111">();</span>
+    <span style="color:#111">}</span>
+</code></pre></div>
+<h2 id="event-bubbling-delegation">Event Bubbling &amp; Delegation:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">    <span style="color:#75715e">// EVENT BUBBLING - parent events get called. 
+</span><span style="color:#75715e"></span>    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.card-title&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span><span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;card title&#39;</span><span style="color:#111">);</span>
+    <span style="color:#111">});</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.card-content&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span><span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;card content&#39;</span><span style="color:#111">);</span>
+    <span style="color:#111">});</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.card&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;card&#39;</span><span style="color:#111">);</span>
+    <span style="color:#111">});</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.col&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;col&#39;</span><span style="color:#111">);</span>
+    <span style="color:#111">});</span>
+
+    <span style="color:#75715e">// EVENT DELGATION - Delegating the parent event to child elements
+</span><span style="color:#75715e"></span>    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">body</span><span style="color:#111">.</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">deleteItem</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">function</span> <span style="color:#75af00">deleteItem</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">){</span>
+        <span style="color:#00a8c8">if</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">.</span><span style="color:#75af00">parentElement</span><span style="color:#111">.</span><span style="color:#75af00">classList</span><span style="color:#111">.</span><span style="color:#75af00">contains</span><span style="color:#111">(</span><span style="color:#d88200">&#39;delete-item&#39;</span><span style="color:#111">)){</span>
+            <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;delete item&#39;</span><span style="color:#111">);</span>
+            <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">target</span><span style="color:#111">.</span><span style="color:#75af00">parentElement</span><span style="color:#111">.</span><span style="color:#75af00">parentElement</span><span style="color:#111">.</span><span style="color:#75af00">remove</span><span style="color:#111">();</span>
+        <span style="color:#111">}</span>
+    <span style="color:#111">}</span>
+</code></pre></div>
+<h2 id="html-page-lifecycle">HTML Page - Lifecycle</h2>
+
+<p><strong>The lifecycle of an HTML page has three important events:</strong></p>
+
+<ul>
+<li>DOMContentLoaded – the browser fully loaded HTML, and the DOM tree is built, but external resources like pictures <img> and stylesheets may be not yet loaded.</li>
+<li>load – the browser loaded all resources (images, styles etc).</li>
+<li>beforeunload/unload – when the user is leaving the page.</li>
+</ul>
+
+<p>From <a href="https://javascript.info/onload-ondomcontentloaded">https://javascript.info/onload-ondomcontentloaded</a></p>
+
+<p><img src="../../../images/life-cycle-events.png" alt="Events Life Cyle" title="Events Life Cycle" /></p>
+</article>
+    </div>
+
+    
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#events">Events:</a>
+<ul>
+<li><a href="#event-listeners">Event Listeners:</a></li>
+<li><a href="#mouse-events">Mouse Events:</a></li>
+<li><a href="#key-events">Key Events:</a></li>
+<li><a href="#event-bubbling-delegation">Event Bubbling &amp; Delegation:</a></li>
+<li><a href="#html-page-lifecycle">HTML Page - Lifecycle</a></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
+    
+
+  </main>
+  
+
+</body>
+
+</html>

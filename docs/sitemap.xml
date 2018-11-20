@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://selvarajan.in/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/hadoop-intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/hugo-markdown/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/async-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/dom-object-selectors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/events/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/frameworks-converters/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/functions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/localstorage/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/object-oriented/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/rest-api/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/javascript/window-object/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/linux/linux-commands/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/linux/linux-intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/mean_stack/nodejs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/docs/python/</loc>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://selvarajan.in/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

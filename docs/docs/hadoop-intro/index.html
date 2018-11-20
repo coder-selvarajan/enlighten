@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadoop Intro | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+
+<link rel="stylesheet" href="/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu fixed">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="http://selvarajan.in/">Enlightening KT</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="/docs/">Home</a></li>
+<li><a href="/docs/javascript/basics">Learn Javascript</a>
+
+<ul>
+<li><a href="/docs/javascript/basics">Basics</a></li>
+<li><a href="/docs/javascript/functions">Functions</a></li>
+<li><a href="/docs/javascript/window-object">Window Object</a></li>
+<li><a href="/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+<li><a href="/docs/javascript/events">Events</a></li>
+<li><a href="/docs/javascript/localstorage">Localstorage</a></li>
+<li><a href="/docs/javascript/object-oriented">Object Oriented Features</a></li>
+<li><a href="/docs/javascript/async-programming">Async Programming</a></li>
+<li><a href="/docs/javascript/rest-api">REST Api</a></li>
+<li><a href="/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
+</ul></li>
+<li><a href="/docs/mean_stack/nodejs">MEAN Stack</a>
+
+<ul>
+<li><a href="/docs/mean_stack/nodejs">Node JS</a></li>
+</ul></li>
+<li><a href="/docs/linux/linux-intro">Linux</a>
+
+<ul>
+<li><a href="/docs/linux/linux-intro">Linux Intro</a></li>
+<li><a href="/docs/linux/linux-commands">Linux Commands</a></li>
+</ul></li>
+<li><a href="/docs/hadoop-intro">Hadoop</a></li>
+<li><a href="/docs/python">Python</a></li>
+<li><a href="/docs/hugo-markdown">Hugo &amp; Markdown</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <label for="menu-control">
+  <img src="http://selvarajan.in//svg/menu.svg" />
+</label>
+<strong>Hadoop Intro</strong>
+      </header>
+      <article class="markdown">
+
+<h1 id="understanding-hadoop">Understanding Hadoop</h1>
+
+<p>Hadoop - is a set of technologies.. used to store and process huge amounts of data..</p>
+
+<p>Hadoop is not a database.. its an alternative file system with a processing library..</p>
+
+<p>Libraries:
+MapReduce 1&amp;2, Hive, Pig</p>
+
+<p>RDBMS Limits:
+- Scalability
+- Speed
+- Queryability, sophisticated processing</p>
+
+<p>Database Choices:
+- File systems
+    -HDFS (Hadoop distributed file system)</p>
+
+<ul>
+<li><p>Databases
+-NoSQL(key/value, columnstore, doc db(mongo db), etc)</p>
+
+<ul>
+<li>RDBMS (MySql, Sql Server, Oracle)
+<br /></li>
+</ul></li>
+
+<li><p>When implementing Hadoop then Hadoop is an addition to your RDBMS..</p></li>
+</ul>
+
+<p>Hadoop &amp; HBase:</p>
+
+<ul>
+<li>Hadoop uses alternative file system(HDFS)</li>
+<li>HBase is a NoSQL database (wide columnstore)
+
+<ul>
+<li>wide columnstore = customerid having name. value attributes for customer related info.<br /></li>
+</ul></li>
+</ul>
+
+<p>CAP Theory:
+ - Consistency
+    - Transactions
+ - Availability
+    - Up-time
+ - Partioning
+    - Scalability</p>
+
+<ul>
+<li><p>Hadoop fits in Scalability</p>
+
+<ul>
+<li>commodity(old/bad) hardware for data storage
+<br /></li>
+</ul></li>
+
+<li><p>Flexibility (availability)</p>
+
+<ul>
+<li>Commodity hardware for distributed processing
+<br /></li>
+</ul></li>
+</ul>
+
+<p>What kind of data for Hadoop?</p>
+
+<ul>
+<li>LOB(line of business)
+    - usually transactional and not a good fit..</li>
+
+<li><p>Behavioral data</p></li>
+
+<li><p>Hadoop is a suplement to the existing relational database.. its not a replacement for RDBMS ..</p></li>
+</ul>
+
+<p>What is Hadoop?
+    - 2 Components plus projects
+        - Open source data storage: HDFS
+        - Processing API: MapReduce
+        - Other projects/libraries: HBase, Hive, Pig etc.</p>
+
+<p>Hadoop Distributions
+    - Apache Hadoop (Open Source)
+    - Cloudera, MapR, Hortonworks(Commercial)
+    - AWS, Windows Azure HDInsight (Cloud)
+        - here aws uses open source hadoop</p>
+
+<p>Why use Hadoop?
+ - Cheaper (scales to petabytes or more)
+ - Faster (parallel data processing)
+ - Better (suited for particular types of &lsquo;Big data&rsquo;)</p>
+
+<p>Hadoop Business Problems: (Use-cases)
+ - Risk modeling
+ - Customer churn analysis
+ - Recommendation engine
+ - Ad targeting
+ - Transactional analysis
+ - Threat analysis
+ - Search quality</p>
+
+<p>Hadoop users: FB, Yahoo, Amazon, eBay, American airlines, NYT, IBM</p>
+
+<p>Hadoop Vs HBase: (Core &amp; Core)
+ - file system has larger files..
+ - each information will be in 3 times
+ - HDFS by default is 64MB or 128MB (these r called chunks)
+ - MapReduce is developed in Java.</p>
+
+<p>HBase (Wide column):
+ID      Data
+1       Name=&ldquo;Tamilan&rdquo;, Location=&ldquo;Chennai&rdquo;
+2       Name=&ldquo;Maran&rdquo;, Car=&ldquo;Honda&rdquo;
+3       Location=&ldquo;Blore&rdquo;, Car=&ldquo;Toyota&rdquo;, Color=&ldquo;CherryRed&rdquo;</p>
+
+<p>HBase/Hive are not part of Hadoop core..</p>
+
+<p>Hadoop Developer
+Hadoop Administrator
+Hadoop Architect</p>
+
+<p>Understanding JVM:
+ - Hadoop processes run in separate JVMs
+ - JVMs dont share state
+ - JVM processes differ between Hadoop 1.0 and 2.0</p>
+
+<p>Hadoop File Systems
+ - HDFS (Hadoop distributed file system)
+ - 2 modes of implementation
+    - Distributed(3 copies) or pseudo-distributed(for testing - will be implemented in single node on single machine)
+ - Regular file system
+ - Regular file system (Hadoop can be run in rfs)
+    - Standalone mode</p>
+
+<p>Files and JVMS
+ - Single node (for all hadoop processes)
+    - Local file system
+    - Single JVM</p>
+
+<ul>
+<li>Pseudo-distributed
+
+<ul>
+<li>Uses HDFS</li>
+<li>JVM daemons run processes
+<br /></li>
+</ul></li>
+</ul>
+
+<p>Core Libraries:
+- Map Reduce v2 / YARN - Yet Another Resource Negociator
+- HBase for wide column store
+- Hive to query HBase
+- Pig scripting for ETL
+- Mahout library - for machine learning and predictive analytics
+- Oozie - for workflow or coordination of jobs.
+- Zookeeper - for coordination of groups of jobs
+- Sqoop - for data exchange in between other systems (RDBMS like Sql server)
+- Flume - is a log collector - coz hadoop jobs produce a large amount of log info abt job process
+- Ambari - provisioning, managing and maintaining hadoop clusters</p>
+
+<p>Commercial Distribution - Cloudera Hadoop:</p>
+
+<p>Different versions of Cloudera:
+ - Cloudera Enterprice
+ - Cloudera Express
+ - Cloudera Live (Live demo: <a href="http://demo.gethue.com/home">http://demo.gethue.com/home</a> )</p>
+
+<p>Another verdor: hortonworks.com
+    - have distributions for unix &amp; windows</p>
+
+<p>Another one: mapr.com</p>
+
+<hr />
+
+<p>Cloudera Demo:
+    - Hue is the interface for hadoop cluster in cloudera..
+    - Under query editor..
+        - Job Designer = MapReduce</p>
+
+<h2 id="toc_1">-</h2>
+
+<p>Cloud hosted Hadoop:
+- Hadoop with AWS (Amazon EMR - Elastic mapreduce) (setup and configurations are different)
+- Hadoop with Azure  (New &gt; Data services &gt; HDInight &gt; Hadoop</p>
+
+<ul>
+<li>Setting up hadoop is quite complecated..</li>
+</ul>
+
+<p>Setting up Hadoop:
+- Hadoop binaries(apache hadoop) or vendor distribution
+- Hadoop version
+- Location (preferably the hadoop cluster on cloud)
+    - Local install (free but takes a long time)
+    - Local VM (must install virtualization software)
+    - Cloud (costs money to test!)</p>
+
+<p>Setting Up Hadoop Data Storage
+- Local
+    - File system (single distribution)
+    - HDFS (pseudo or distributed)
+- Cloud
+    - Cloud files (S3, BLOG)
+    - HDFS</p>
+
+<p>Setting Up Hadoop Libraries
+- MapReduce
+    - version 1.0 or 2.0
+- Other libraries
+- Developer Tools</p>
+
+<p>Cloudera Hadoop Virtual Machine
+- OS + virtualization software
+- Hadoop virtual machine for that type of VM
+- Cloudera tools and samples
+- Cloudera Hadoop VM is an enterprice edition for development. if we need to deploy then we need to pay the fee.
+- Install developer tools</p>
+
+<p>Note: CDH5 and Cloudera Manager 5 - To enable Cloudera Manager we need 8GB ram and 2 virtual CPU cores</p>
+
+<p>Hadoop Local install:
+ - Download from apache.hadoop.com
+ - extract and run the downloads..
+ - cd conf/
+ - vi core-site.xml
+ - vi hdfs-site.xml
+ - vi mapred-site.xml
+ - vi hadoop-env.sh
+ - cat masters
+ - cat slaves
+ - bin/hadoop namenode -format
+ - bin/start-all.sh
+ - jps</p>
+
+<p>Hadoop architectural components:
+    - HDFS
+    - MapReduce</p>
+
+<p>Demons:
+-NameNode       - Storage
+- DataNode,         - Storage
+- SecondaryNameNode,    - Storage
+- Jps
+- JobTracker,       - Processing
+- TaskTracker,      - Processing</p>
+
+<ul>
+<li><p>JobTracker, TaskTracker are responsible for running MapReduce tasks and jobs.</p></li>
+
+<li><p>MapReduce programs are written in Java.</p></li>
+
+<li><p>Hadoop allows to use other languages via streaming..</p></li>
+
+<li><p>Hadoop sends the mapreduce jobs across the data nodes and the data analysis is done across the data nodes and the final results returned back to master node.</p></li>
+
+<li><p>Namenode communicates with Datanodes</p></li>
+
+<li><p>JobTracker communicates the job/process with TaskTracker</p></li>
+
+<li><p>Computation(program) is processor bound.</p></li>
+</ul>
+
+<p>Structured
+Unstructured (FB: vids, pics, texts, audio)
+Semi-structured (log files)</p>
+
+<p>Big Data - definition is given by IBM</p>
+
+<p>Adding Core Libraries:</p>
+
+<ul>
+<li><p>HBase</p>
+
+<ul>
+<li>Allows SQL like queries which generates MapReduce jobs</li>
+</ul></li>
+
+<li><p>Hive</p>
+
+<ul>
+<li>SQL-like query, create batch (MapReduce) jobs</li>
+</ul></li>
+
+<li><p>Pig</p>
+
+<ul>
+<li>ETL-like scripting language (for data manupulation like stripping, trimming, joining)</li>
+</ul></li>
+
+<li><p>Impala</p>
+
+<ul>
+<li>SQL-like query(in-memory querying), interactive process (no batch process)</li>
+</ul></li>
+</ul>
+
+<p>Adding Other Libraries:</p>
+
+<ul>
+<li><p>Mahout</p>
+
+<ul>
+<li>Machine learning algorithms, predictive analytics, data mining</li>
+</ul></li>
+
+<li><p>Spark</p>
+
+<ul>
+<li>Resilient distributed data sets (in-memory streaming)</li>
+</ul></li>
+
+<li><p>Storm</p>
+
+<ul>
+<li>complex event processing (in-memory streaming)</li>
+</ul></li>
+</ul>
+
+<p>MapReduce Programming Languages</p>
+
+<ul>
+<li><p>Hadoop IDEs</p>
+
+<ul>
+<li>Eclipse (Java)</li>
+<li>Sublime (python)</li>
+<li>RStudio (R Language)</li>
+</ul></li>
+
+<li><p>Hadoop 2.0</p>
+
+<ul>
+<li>JobTracker &amp; TaskTracker are replaced by Yarn ResourceManager and Yarn Nodemanager</li>
+</ul></li>
+</ul>
+
+<p>What is MapReduce?
+ - Programming paradigm
+ - Designed to solve one problem
+ - Created by Google (purpose: how to index or get meaning out of all the information that is available on the internet.
+ - Bringing computation to data location rather bringing data to compute.
+ - Two parts (Map, Reduce)</p>
+
+<p>The Map part of MapReduce:
+ - Execute the Map() function on data.
+ - Execute on each node.
+ - Output<key, value> pairs on each node</p>
+
+<p>The Reduce part of MapReduce:
+ - Execute the Reduce() function on data
+ - Execute on some node
+ - Aggregate sets of <key, value> pairs on some nodes
+ - Output a combined list</p>
+
+<p>MapReduce 1.0
+ - Distributed, scalable, cheap
+ - Storage
+    HDFS - triple replicated
+    Commodity hardware
+ - Processing
+    Parallel via Map(local) and Reduce(aggregated)</p>
+
+<p>Codng Steps
+ - Create a class
+ - Create a static Map class
+ - Create a static Reduce class
+ - Create a main function
+    - Create a job
+    - Job calls the Map and Reduce classes</p>
+
+<ul>
+<li>In MapReduce, its a single type of input in, run your mapper, get your key-value pairs out, run your reducer, get your combined list, and then go on to the next one.</li>
+</ul>
+
+<p>Hello World for MapReduce
+ - &ldquo;Word count&rdquo;
+ - Takes some text as input
+ - Produces a list of words and counts them</p>
+
+<p>Key aspects of MapReduce
+ - It&rsquo;s an API, or set of libraries</p>
+
+<pre><code>Job - unit of MapReduce work / instance
+Map task - runs on each node
+Reduce task - runs on some nodes
+Source data - HDFS or other location
+</code></pre>
+
+<p>MapReduce Deamons nad Service
+ - JVMs or services - isolated processes (no state share)
+    Job Tracker - one (controller and scheduler)
+    Task Tracker - one per cluster (monitors tasks)
+- Job configurations
+    Specify input/output locations for job instances
+    Job clients submit jobs for execution</p>
+
+<p>MapReduce Coding Patterns
+    - Standard - usually written in Java
+    - Hadoop Streaming - Java base
+        Other language for mapper/reducer logic
+    - Hadoop Pipes - uses C++</p>
+
+<p>Running First MapReduce Job
+    - Word count == &ldquo;Hello World!&rdquo;
+    - IDEs and runners
+    - Eclipse and Hadoop SDKs
+    - File system or HDFS</p>
+
+<p>MapReduce Job Output
+ - Success
+ - Series of text files
+ - Immutable if stored on HDFS
+ - Each run needs a new file name
+ - Usually appends run time to file name for uniqueness</p>
+
+<p>MapReduce Job Status and Logs
+ - Monitoring job run status
+ - Local websites to view logs
+ - Logs
+ - Troubleshooting failed job runs
+ - Error logs</p>
+
+<p>Exploring Cloudera distribution Hue user interface..</p>
+
+<p>Ways to Run MapReduce Jobs:
+    - Configure JobConf options
+    - From the development environment (IDE)
+    - From a GUI (Hue / HDInsight console)
+    - From the command line
+        hadoop jar filename.jar input output</p>
+
+<p>Job Execution optimizations</p>
+
+<p>Methods to write MapReduce Jobs
+    - Standard - usually writte in Java
+    - Streaming
+    - Pipes
+    - Abstraction libraries
+        Hive, Pig, etc. (higher-level language)</p>
+
+<p>Better MapReduce: Optimizations</p>
+
+<pre><code>- Optimize before the job runs
+- Optimize onload of the data
+- Optimize the map phase of the job
+- Optimize the shuffle phase of the job
+- Optimize the reduce phase of the job
+- Optimize after the job completes
+</code></pre>
+
+<hr />
+
+<h2 id="hive">Hive:</h2>
+
+<ul>
+<li>is useful for query like requirements.. like sum, average, coun etc..</li>
+<li>is not much suitable for data cleansing(like parsing, stripping, processing etc)..</li>
+</ul>
+
+<p><img src="../../images/hive.png" alt="Hive Sql" title="Hive Sql" /></p>
+</article>
+    </div>
+
+    
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#understanding-hadoop">Understanding Hadoop</a>
+<ul>
+<li><a href="#toc_1">-</a></li>
+<li><a href="#hive">Hive:</a></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
+    
+
+  </main>
+  
+
+</body>
+
+</html>

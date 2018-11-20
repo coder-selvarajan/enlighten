@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nodejs | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+
+<link rel="stylesheet" href="/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu fixed">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="http://selvarajan.in/">Enlightening KT</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="/docs/">Home</a></li>
+<li><a href="/docs/javascript/basics">Learn Javascript</a>
+
+<ul>
+<li><a href="/docs/javascript/basics">Basics</a></li>
+<li><a href="/docs/javascript/functions">Functions</a></li>
+<li><a href="/docs/javascript/window-object">Window Object</a></li>
+<li><a href="/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+<li><a href="/docs/javascript/events">Events</a></li>
+<li><a href="/docs/javascript/localstorage">Localstorage</a></li>
+<li><a href="/docs/javascript/object-oriented">Object Oriented Features</a></li>
+<li><a href="/docs/javascript/async-programming">Async Programming</a></li>
+<li><a href="/docs/javascript/rest-api">REST Api</a></li>
+<li><a href="/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
+</ul></li>
+<li><a href="/docs/mean_stack/nodejs">MEAN Stack</a>
+
+<ul>
+<li><a href="/docs/mean_stack/nodejs">Node JS</a></li>
+</ul></li>
+<li><a href="/docs/linux/linux-intro">Linux</a>
+
+<ul>
+<li><a href="/docs/linux/linux-intro">Linux Intro</a></li>
+<li><a href="/docs/linux/linux-commands">Linux Commands</a></li>
+</ul></li>
+<li><a href="/docs/hadoop-intro">Hadoop</a></li>
+<li><a href="/docs/python">Python</a></li>
+<li><a href="/docs/hugo-markdown">Hugo &amp; Markdown</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <label for="menu-control">
+  <img src="http://selvarajan.in//svg/menu.svg" />
+</label>
+<strong>Nodejs</strong>
+      </header>
+      <article class="markdown">
+
+<h1 id="node-js">Node JS</h1>
+
+<p><strong>Install NodeJS in CentOS</strong></p>
+
+<pre><code>curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+sudo yum -y install nodejs
+</code></pre>
+
+<p>From <a href="https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora">https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora</a></p>
+
+<p><strong>Install pm2 &amp; http-server:</strong></p>
+
+<pre><code>npm install -g -pm2 http-server
+OR
+npm install pm2@latest -g
+</code></pre>
+
+<p><strong>Install Yarn:</strong></p>
+
+<pre><code>curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+sudo yum install yarn
+</code></pre>
+
+<p>From <a href="https://yarnpkg.com/en/docs/install#centos-stable">https://yarnpkg.com/en/docs/install#centos-stable</a></p>
+
+<p>**NodeJs Setup on Centos - Tut Video: **</p>
+
+<pre><code>- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment
+- [Deploying Node.js App With PM2](https://www.youtube.com/watch?v=RF6Dzwwpduo)
+- https://www.youtube.com/watch?v=1nEJvN778j4
+</code></pre>
+
+<p><strong>NodeJs App deployment:</strong></p>
+
+<pre><code>- Zip and copy the app files except node_modules folder
+- Run  npm install
+- pm2 start --name msd server.js
+    ○ pm2 ls
+- pm2 startup systemd -u edureka --hp /home/edureka   [run as root]
+- pm2 save
+
+Disable startup system: 
+- pm2 unstartup
+</code></pre>
+
+<p><strong>Test:</strong></p>
+
+<pre><code>$ echo &quot;Hello World&quot; &gt; index.html
+$ http-server
+</code></pre>
+
+<p><strong>Pm2 Notes:</strong></p>
+
+<ul>
+<li><a href="http://pm2.keymetrics.io/docs/usage/quick-start/">http://pm2.keymetrics.io/docs/usage/quick-start/</a></li>
+<li><a href="http://pm2.keymetrics.io/docs/usage/startup/">http://pm2.keymetrics.io/docs/usage/startup/</a></li>
+<li><a href="http://pm2.keymetrics.io/">http://pm2.keymetrics.io/</a></li>
+</ul>
+
+<p><strong>Configure NGinX:</strong></p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SlBe9c54GzA">https://www.youtube.com/watch?v=SlBe9c54GzA</a></li>
+</ul>
+</article>
+    </div>
+
+    
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#node-js">Node JS</a></li>
+</ul>
+</nav>
+    </aside>
+    
+
+  </main>
+  
+
+</body>
+
+</html>

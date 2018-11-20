@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Object Oriented | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+
+<link rel="stylesheet" href="/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu fixed">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="http://selvarajan.in/">Enlightening KT</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="/docs/">Home</a></li>
+<li><a href="/docs/javascript/basics">Learn Javascript</a>
+
+<ul>
+<li><a href="/docs/javascript/basics">Basics</a></li>
+<li><a href="/docs/javascript/functions">Functions</a></li>
+<li><a href="/docs/javascript/window-object">Window Object</a></li>
+<li><a href="/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+<li><a href="/docs/javascript/events">Events</a></li>
+<li><a href="/docs/javascript/localstorage">Localstorage</a></li>
+<li><a href="/docs/javascript/object-oriented">Object Oriented Features</a></li>
+<li><a href="/docs/javascript/async-programming">Async Programming</a></li>
+<li><a href="/docs/javascript/rest-api">REST Api</a></li>
+<li><a href="/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
+</ul></li>
+<li><a href="/docs/mean_stack/nodejs">MEAN Stack</a>
+
+<ul>
+<li><a href="/docs/mean_stack/nodejs">Node JS</a></li>
+</ul></li>
+<li><a href="/docs/linux/linux-intro">Linux</a>
+
+<ul>
+<li><a href="/docs/linux/linux-intro">Linux Intro</a></li>
+<li><a href="/docs/linux/linux-commands">Linux Commands</a></li>
+</ul></li>
+<li><a href="/docs/hadoop-intro">Hadoop</a></li>
+<li><a href="/docs/python">Python</a></li>
+<li><a href="/docs/hugo-markdown">Hugo &amp; Markdown</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <label for="menu-control">
+  <img src="http://selvarajan.in//svg/menu.svg" />
+</label>
+<strong>Object Oriented</strong>
+      </header>
+      <article class="markdown">
+
+<h1 id="object-oriented-features">Object  oriented features</h1>
+
+<h2 id="constructors-this-keyword">Constructors.. &lsquo;this&rsquo; keyword</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// Person constructor
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">function</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#75af00">name</span><span style="color:#111">,</span> <span style="color:#75af00">dob</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">name</span> <span style="color:#f92672">=</span> <span style="color:#75af00">name</span><span style="color:#111">;</span>
+        <span style="color:#75715e">// this.age = age;
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">birthday</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Date</span><span style="color:#111">(</span><span style="color:#75af00">dob</span><span style="color:#111">);</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">calculateAge</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+            <span style="color:#00a8c8">const</span> <span style="color:#75af00">diff</span> <span style="color:#f92672">=</span> <span style="color:#111">Date</span><span style="color:#111">.</span><span style="color:#75af00">now</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">birthday</span><span style="color:#111">.</span><span style="color:#75af00">getTime</span><span style="color:#111">();</span>
+            <span style="color:#00a8c8">const</span> <span style="color:#75af00">ageDate</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Date</span><span style="color:#111">(</span><span style="color:#75af00">diff</span><span style="color:#111">);</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">abs</span><span style="color:#111">(</span><span style="color:#75af00">ageDate</span><span style="color:#111">.</span><span style="color:#75af00">getUTCFullYear</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1970</span><span style="color:#111">);</span>
+        <span style="color:#111">}</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#75715e">// const brad = new Person(&#39;Brad&#39;, 36);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// const john = new Person(&#39;John&#39;, 30);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// console.log(john.age);
+</span><span style="color:#75715e"></span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">brad</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Brad&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;9-10-1981&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">brad</span><span style="color:#111">.</span><span style="color:#75af00">calculateAge</span><span style="color:#111">());</span>
+</code></pre></div>
+<h2 id="builtin-constructors-new-keyword">Builtin constructors: (new keyword)</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">name1</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Jeff&#39;</span><span style="color:#111">;</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">name2</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">String</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Jeff&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#00a8c8">typeof</span> <span style="color:#75af00">name2</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Function
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">getSum1</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">x</span><span style="color:#111">,</span> <span style="color:#75af00">y</span><span style="color:#111">){</span>
+        <span style="color:#00a8c8">return</span> <span style="color:#75af00">x</span> <span style="color:#f92672">+</span> <span style="color:#75af00">y</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">getSum2</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Function</span><span style="color:#111">(</span><span style="color:#d88200">&#39;x&#39;</span><span style="color:#111">,</span><span style="color:#d88200">&#39;y&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;return 1 + 1&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">getSum2</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">));</span> <span style="color:#75715e">//result: 2
+</span><span style="color:#75715e"></span>
+    <span style="color:#75715e">// Object
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">john1</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span><span style="color:#75af00">name</span><span style="color:#f92672">:</span> <span style="color:#d88200">&#34;John&#34;</span><span style="color:#111">};</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">john2</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Object</span><span style="color:#111">({</span><span style="color:#75af00">name</span><span style="color:#f92672">:</span> <span style="color:#d88200">&#34;John&#34;</span><span style="color:#111">});</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">john2</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Arrays
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">arr1</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">];</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">arr2</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Array</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Regular Expressions
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">re1</span> <span style="color:#f92672">=</span> <span style="color:#d88200">/\w+/</span><span style="color:#111">;</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">re2</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">RegExp</span><span style="color:#111">(</span><span style="color:#d88200">&#39;\\w+&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">re2</span><span style="color:#111">);</span>
+</code></pre></div>
+<h2 id="prototypes">Prototypes:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">//Object.prototype
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//Person.prototype
+</span><span style="color:#75715e"></span>
+    <span style="color:#75715e">// Person constructor
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">function</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">,</span> <span style="color:#75af00">dob</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">firstName</span><span style="color:#111">;</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">lastName</span><span style="color:#111">;</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">birthday</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Date</span><span style="color:#111">(</span><span style="color:#75af00">dob</span><span style="color:#111">);</span>
+        <span style="color:#75715e">// this.calculateAge = function(){
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// const diff = Date.now() - this.birthday.getTime();
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// const ageDate = new Date(diff);
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// return Math.abs(ageDate.getUTCFullYear() - 1970);
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// }
+</span><span style="color:#75715e"></span>    <span style="color:#111">}</span>
+
+    <span style="color:#75715e">// Calculate age
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">Person</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span><span style="color:#111">.</span><span style="color:#75af00">calculateAge</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#00a8c8">const</span> <span style="color:#75af00">diff</span> <span style="color:#f92672">=</span> <span style="color:#111">Date</span><span style="color:#111">.</span><span style="color:#75af00">now</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">birthday</span><span style="color:#111">.</span><span style="color:#75af00">getTime</span><span style="color:#111">();</span>
+        <span style="color:#00a8c8">const</span> <span style="color:#75af00">ageDate</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Date</span><span style="color:#111">(</span><span style="color:#75af00">diff</span><span style="color:#111">);</span>
+        <span style="color:#00a8c8">return</span> <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">abs</span><span style="color:#111">(</span><span style="color:#75af00">ageDate</span><span style="color:#111">.</span><span style="color:#75af00">getUTCFullYear</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1970</span><span style="color:#111">);</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#75715e">// Get full name
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">Person</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span><span style="color:#111">.</span><span style="color:#75af00">getFullName</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#00a8c8">return</span> <span style="color:#d88200">`</span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span><span style="color:#d88200">}</span><span style="color:#d88200"> </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#75715e">// Gets Married
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">Person</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span><span style="color:#111">.</span><span style="color:#75af00">getsMaried</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">newLastName</span><span style="color:#111">){</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">newLastName</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">john</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#d88200">&#39;John&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Doe&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;8-12-90&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">mary</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Mary&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Johnson&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;March 20 1978&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">mary</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">john</span><span style="color:#111">.</span><span style="color:#75af00">calculateAge</span><span style="color:#111">());</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">getFullName</span><span style="color:#111">());</span>
+    <span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">getsMaried</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Smith&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">getFullName</span><span style="color:#111">());</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">hasOwnProperty</span><span style="color:#111">(</span><span style="color:#d88200">&#39;firstName&#39;</span><span style="color:#111">));</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">hasOwnProperty</span><span style="color:#111">(</span><span style="color:#d88200">&#39;getFullName&#39;</span><span style="color:#111">));</span>
+</code></pre></div>
+<h2 id="prototypepal-inheritance">Prototypepal Inheritance:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// Person constructor
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">function</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">firstName</span><span style="color:#111">;</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">lastName</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+    <span style="color:#75715e">// Greeting
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">Person</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span><span style="color:#111">.</span><span style="color:#75af00">greeting</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#00a8c8">return</span> <span style="color:#d88200">`Hello there </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span><span style="color:#d88200">}</span><span style="color:#d88200"> </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">person1</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#d88200">&#39;John&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Doe&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">person1</span><span style="color:#111">.</span><span style="color:#75af00">greeting</span><span style="color:#111">());</span>
+
+    <span style="color:#75715e">// Customer constructor
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">function</span> <span style="color:#75af00">Customer</span><span style="color:#111">(</span><span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">,</span> <span style="color:#75af00">phone</span><span style="color:#111">,</span> <span style="color:#75af00">membership</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+        <span style="color:#75af00">Person</span><span style="color:#111">.</span><span style="color:#75af00">call</span><span style="color:#111">(</span><span style="color:#00a8c8">this</span><span style="color:#111">,</span> <span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">);</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">phone</span> <span style="color:#f92672">=</span> <span style="color:#75af00">phone</span><span style="color:#111">;</span>
+        <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">membership</span> <span style="color:#f92672">=</span> <span style="color:#75af00">membership</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#75715e">// Inherit the Person prototype methods
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">Customer</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span> <span style="color:#f92672">=</span> <span style="color:#111">Object</span><span style="color:#111">.</span><span style="color:#75af00">create</span><span style="color:#111">(</span><span style="color:#75af00">Person</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// Make customer.prototype return Customer()
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">Customer</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span><span style="color:#111">.</span><span style="color:#75af00">constructor</span> <span style="color:#f92672">=</span> <span style="color:#75af00">Customer</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Create customer
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">customer1</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">Customer</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Tom&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Smith&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;555-555-5555&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Standard&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">customer1</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Customer greeting
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">Customer</span><span style="color:#111">.</span><span style="color:#75af00">prototype</span><span style="color:#111">.</span><span style="color:#75af00">greeting</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
+        <span style="color:#00a8c8">return</span> <span style="color:#d88200">`Hello there </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span><span style="color:#d88200">}</span><span style="color:#d88200"> </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span><span style="color:#d88200">}</span><span style="color:#d88200"> 
+</span><span style="color:#d88200">                welcome to our company`</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">customer1</span><span style="color:#111">.</span><span style="color:#75af00">greeting</span><span style="color:#111">());</span>
+</code></pre></div>
+<h2 id="using-object-create-alternative-way-to-create-objects">Using object.create(alternative way to create objects)</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">personPrototypes</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span>
+        <span style="color:#75af00">greeting</span><span style="color:#f92672">:</span> <span style="color:#00a8c8">function</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#d88200">`Hello there </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span><span style="color:#d88200">}</span><span style="color:#d88200"> </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">;</span>
+        <span style="color:#111">},</span>
+        <span style="color:#75af00">getsMarried</span><span style="color:#f92672">:</span> <span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">newLastName</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">newLastName</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">mary</span> <span style="color:#f92672">=</span> <span style="color:#111">Object</span><span style="color:#111">.</span><span style="color:#75af00">create</span><span style="color:#111">(</span><span style="color:#75af00">personPrototypes</span><span style="color:#111">);</span>
+    <span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Mary&#39;</span><span style="color:#111">;</span>
+    <span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Williams&#39;</span><span style="color:#111">;</span>
+    <span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span><span style="color:#111">;</span>
+    <span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">getsMarried</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Thompson&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">greeting</span><span style="color:#111">());</span>
+
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">brad</span> <span style="color:#f92672">=</span> <span style="color:#111">Object</span><span style="color:#111">.</span><span style="color:#75af00">create</span><span style="color:#111">(</span><span style="color:#75af00">personPrototypes</span><span style="color:#111">,</span> <span style="color:#111">{</span>
+        <span style="color:#75af00">firstName</span><span style="color:#f92672">:</span> <span style="color:#111">{</span><span style="color:#75af00">value</span><span style="color:#f92672">:</span> <span style="color:#d88200">&#39;Brad&#39;</span><span style="color:#111">},</span>
+        <span style="color:#75af00">lastName</span><span style="color:#f92672">:</span> <span style="color:#111">{</span><span style="color:#75af00">value</span><span style="color:#f92672">:</span> <span style="color:#d88200">&#39;Traversy&#39;</span><span style="color:#111">},</span>
+        <span style="color:#75af00">age</span><span style="color:#f92672">:</span> <span style="color:#111">{</span><span style="color:#75af00">value</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">36</span><span style="color:#111">}</span>
+    <span style="color:#111">});</span>
+
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">brad</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">brad</span><span style="color:#111">.</span><span style="color:#75af00">greeting</span><span style="color:#111">());</span>
+</code></pre></div>
+<h2 id="es6-classes">ES6 Classes:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Person</span> <span style="color:#111">{</span>
+        <span style="color:#75af00">constructor</span><span style="color:#111">(</span><span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">,</span> <span style="color:#75af00">dob</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">firstName</span><span style="color:#111">;</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">lastName</span><span style="color:#111">;</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">birthday</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Date</span><span style="color:#111">(</span><span style="color:#75af00">dob</span><span style="color:#111">);</span>
+        <span style="color:#111">}</span>
+        <span style="color:#75af00">greeting</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#d88200">`Hello there </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span><span style="color:#d88200">}</span><span style="color:#d88200"> </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+        <span style="color:#75af00">calculateAge</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">const</span> <span style="color:#75af00">diff</span> <span style="color:#f92672">=</span> <span style="color:#111">Date</span><span style="color:#111">.</span><span style="color:#75af00">now</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">birthday</span><span style="color:#111">.</span><span style="color:#75af00">getTime</span><span style="color:#111">();</span>
+            <span style="color:#00a8c8">const</span> <span style="color:#75af00">ageDate</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#111">Date</span><span style="color:#111">(</span><span style="color:#75af00">diff</span><span style="color:#111">);</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">abs</span><span style="color:#111">(</span><span style="color:#75af00">ageDate</span><span style="color:#111">.</span><span style="color:#75af00">getUTCFullYear</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1970</span><span style="color:#111">);</span>
+        <span style="color:#111">}</span>
+        <span style="color:#75af00">getsMarried</span><span style="color:#111">(</span><span style="color:#75af00">newLastName</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">newLastName</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+        <span style="color:#00a8c8">static</span> <span style="color:#75af00">addNumbers</span><span style="color:#111">(</span><span style="color:#75af00">x</span><span style="color:#111">,</span> <span style="color:#75af00">y</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#75af00">x</span> <span style="color:#f92672">+</span> <span style="color:#75af00">y</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">mary</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">Person</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Mary&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Williams&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;11-13-1980&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">mary</span><span style="color:#111">.</span><span style="color:#75af00">getsMarried</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Thompson&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">mary</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">Person</span><span style="color:#111">.</span><span style="color:#75af00">addNumbers</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">));</span>
+</code></pre></div>
+<h2 id="es6-sub-classes">ES6 - Sub classes:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Person</span> <span style="color:#111">{</span>
+        <span style="color:#75af00">constructor</span><span style="color:#111">(</span><span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">firstName</span><span style="color:#111">;</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span> <span style="color:#f92672">=</span> <span style="color:#75af00">lastName</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+        <span style="color:#75af00">greeting</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#d88200">`Hello there </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">firstName</span><span style="color:#d88200">}</span><span style="color:#d88200"> </span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">lastName</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Customer</span> <span style="color:#00a8c8">extends</span> <span style="color:#75af00">Person</span> <span style="color:#111">{</span>
+        <span style="color:#75af00">constructor</span><span style="color:#111">(</span><span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">,</span> <span style="color:#75af00">phone</span><span style="color:#111">,</span> <span style="color:#75af00">membership</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">super</span><span style="color:#111">(</span><span style="color:#75af00">firstName</span><span style="color:#111">,</span> <span style="color:#75af00">lastName</span><span style="color:#111">);</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">phone</span> <span style="color:#f92672">=</span> <span style="color:#75af00">phone</span><span style="color:#111">;</span>
+            <span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">membership</span> <span style="color:#f92672">=</span> <span style="color:#75af00">membership</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+        <span style="color:#00a8c8">static</span> <span style="color:#75af00">getMembershipCost</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">500</span><span style="color:#111">;</span>
+        <span style="color:#111">}</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">john</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">Customer</span><span style="color:#111">(</span><span style="color:#d88200">&#39;John&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Doe&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;555-555-5555&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Standard&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">john</span><span style="color:#111">.</span><span style="color:#75af00">greeting</span><span style="color:#111">());</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">Customer</span><span style="color:#111">.</span><span style="color:#75af00">getMembershipCost</span><span style="color:#111">());</span>
+</code></pre></div></article>
+    </div>
+
+    
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#object-oriented-features">Object  oriented features</a>
+<ul>
+<li><a href="#constructors-this-keyword">Constructors.. &lsquo;this&rsquo; keyword</a></li>
+<li><a href="#builtin-constructors-new-keyword">Builtin constructors: (new keyword)</a></li>
+<li><a href="#prototypes">Prototypes:</a></li>
+<li><a href="#prototypepal-inheritance">Prototypepal Inheritance:</a></li>
+<li><a href="#using-object-create-alternative-way-to-create-objects">Using object.create(alternative way to create objects)</a></li>
+<li><a href="#es6-classes">ES6 Classes:</a></li>
+<li><a href="#es6-sub-classes">ES6 - Sub classes:</a></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
+    
+
+  </main>
+  
+
+</body>
+
+</html>
