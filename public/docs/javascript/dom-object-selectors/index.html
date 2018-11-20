@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dom Object Selectors | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+
+<link rel="stylesheet" href="/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu fixed">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="http://example.org/">Enlightening KT</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="/docs/javascript/basics">Javascript Udemy</a>
+
+<ul>
+<li><a href="/docs/javascript/tools-converters">Tools/Converters</a></li>
+<li><a href="/docs/javascript/basics">Basics</a></li>
+<li><a href="/docs/javascript/functions">Functions</a></li>
+<li><a href="/docs/javascript/window-object">Window Object</a></li>
+<li><a href="/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+<li><a href="/docs/javascript/events">Events</a></li>
+<li><a href="/docs/javascript/localstorage">Localstorage</a></li>
+<li><a href="/docs/javascript/object-oriented">Object Oriented Features</a></li>
+<li><a href="/docs/javascript/async-programming">Async Programming</a></li>
+<li><a href="/docs/javascript/rest-api">REST Api</a></li>
+</ul></li>
+<li><a href="/docs/linux">Linux</a></li>
+<li><a href="/docs/python">Python</a></li>
+<li><a href="/docs/hugo-tips">Hugo Tips</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <label for="menu-control">
+  <img src="http://example.org//svg/menu.svg" />
+</label>
+<strong>Dom Object Selectors</strong>
+      </header>
+      <article class="markdown">
+
+<h1 id="dom-objects-selectors">DOM Objects &amp; Selectors</h1>
+
+<h2 id="document-object-basic-things">Document object - basic things:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">let</span> <span style="color:#75af00">val</span><span style="color:#111">;</span>
+      
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">all</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">];</span>      <span style="color:#75715e">//prints: &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">all</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span>  <span style="color:#75715e">//prints: 43
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">head</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">body</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">doctype</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">domain</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">URL</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">characterSet</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">contentType</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">forms</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">forms</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">forms</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">].</span><span style="color:#75af00">id</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">links</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">links</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">images</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">scripts</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">scripts</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">].</span><span style="color:#75af00">getAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;src&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// loop thru document elements - sample
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">let</span> <span style="color:#75af00">scripts</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">scripts</span><span style="color:#111">;</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#75af00">scriptsArr</span> <span style="color:#f92672">=</span> <span style="color:#111">Array</span><span style="color:#111">.</span><span style="color:#75af00">from</span><span style="color:#111">(</span><span style="color:#75af00">scripts</span><span style="color:#111">);</span> <span style="color:#75715e">//collection to array
+</span><span style="color:#75715e"></span>
+    <span style="color:#75af00">scriptsArr</span><span style="color:#111">.</span><span style="color:#75af00">forEach</span><span style="color:#111">(</span><span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">script</span><span style="color:#111">){</span>
+        <span style="color:#75715e">//prints all the script file paths. 
+</span><span style="color:#75715e"></span>        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">script</span><span style="color:#111">.</span><span style="color:#75af00">getAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;src&#39;</span><span style="color:#111">));</span> 
+    <span style="color:#111">});</span>
+
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
+</code></pre></div>
+<h2 id="dom-selectors-single-element">DOM - Selectors:  (Single Element)</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">let</span> <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">).</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">background</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;#333&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">).</span><span style="color:#75af00">textContent</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Task List&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">).</span><span style="color:#75af00">innerText</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;My Task List&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">).</span><span style="color:#75af00">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;&lt;b&gt;My Task List&lt;/b&gt;&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#00a8c8">var</span> <span style="color:#75af00">taskTitle</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">taskTitle</span><span style="color:#111">.</span><span style="color:#75af00">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;&lt;b&gt;My Task List&lt;/b&gt;&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
+</code></pre></div>
+<h2 id="dom-queryselector-single-element">DOM QuerySelector: (Single Element)</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">let</span> <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;#task-title&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.card-title&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;h5&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li&#39;</span><span style="color:#111">).</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;red&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li:last-child&#39;</span><span style="color:#111">).</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;blue&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li:nth-child(3)&#39;</span><span style="color:#111">).</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;green&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li:nth-child(odd)&#39;</span><span style="color:#111">).</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">background</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;#ccc&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li:nth-child(even)&#39;</span><span style="color:#111">).</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">background</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;#fff&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
+</code></pre></div>
+<h2 id="dom-selectors-multiple-elements">DOM - Selectors:  (Multiple Elements)</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">items</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;ul&#39;</span><span style="color:#111">)</span>
+                          <span style="color:#111">.</span><span style="color:#75af00">getElementsByClassName</span><span style="color:#111">(</span><span style="color:#d88200">&#39;collection-item&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// items will be the html collection here..
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">items</span><span style="color:#111">[</span><span style="color:#ae81ff">4</span><span style="color:#111">].</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;red&#39;</span><span style="color:#111">;</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">items</span><span style="color:#111">);</span>
+
+    <span style="color:#00a8c8">let</span> <span style="color:#75af00">lis</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;ul&#39;</span><span style="color:#111">).</span><span style="color:#75af00">getElementsByTagName</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">lis</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">].</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;red&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// convert collection to array
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">lis</span> <span style="color:#f92672">=</span> <span style="color:#111">Array</span><span style="color:#111">.</span><span style="color:#75af00">from</span><span style="color:#111">(</span><span style="color:#75af00">lis</span><span style="color:#111">);</span>
+    <span style="color:#75af00">lis</span><span style="color:#111">.</span><span style="color:#75af00">reverse</span><span style="color:#111">();</span>
+
+    <span style="color:#75af00">lis</span><span style="color:#111">.</span><span style="color:#75af00">forEach</span><span style="color:#111">(</span><span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">li</span><span style="color:#111">,</span> <span style="color:#75af00">index</span><span style="color:#111">){</span>
+        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">className</span><span style="color:#111">);</span>
+        <span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">textContent</span> <span style="color:#f92672">=</span> <span style="color:#d88200">`List-item </span><span style="color:#d88200">${</span><span style="color:#75af00">index</span><span style="color:#d88200">}</span><span style="color:#d88200">`</span><span style="color:#111">;</span>
+    <span style="color:#111">});</span>
+
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">lis</span><span style="color:#111">);</span>
+</code></pre></div>
+<h2 id="dom-queryselectorall-single-element">DOM QuerySelectorAll: (Single Element)</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">items</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelectorAll</span><span style="color:#111">(</span><span style="color:#d88200">&#39;ul.collection li.collection-item&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75715e">// items will be a Nodelist here.. It is not the html collection. 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// so we dont need to convert it to array to loop it thru.. 
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">items</span><span style="color:#111">.</span><span style="color:#75af00">forEach</span><span style="color:#111">(</span><span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">item</span><span style="color:#111">,</span> <span style="color:#75af00">index</span><span style="color:#111">){</span>
+        <span style="color:#75af00">item</span><span style="color:#111">.</span><span style="color:#75af00">textContent</span> <span style="color:#f92672">=</span> <span style="color:#d88200">`</span><span style="color:#d88200">${</span><span style="color:#75af00">index</span><span style="color:#d88200">}</span><span style="color:#d88200"> : hello`</span><span style="color:#111">;</span>
+    <span style="color:#111">});</span>
+
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">liOdd</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelectorAll</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li:nth-child(odd)&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">liEven</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelectorAll</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li:nth-child(even)&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">liOdd</span><span style="color:#111">.</span><span style="color:#75af00">forEach</span><span style="color:#111">(</span><span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">li</span><span style="color:#111">,</span> <span style="color:#75af00">index</span><span style="color:#111">){</span>
+        <span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">background</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;gainsboro&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">});</span>
+
+    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">let</span> <span style="color:#75af00">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#75af00">i</span><span style="color:#f92672">&lt;</span><span style="color:#75af00">liEven</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span> <span style="color:#75af00">i</span><span style="color:#f92672">++</span><span style="color:#111">){</span>
+        <span style="color:#75af00">liEven</span><span style="color:#111">[</span><span style="color:#75af00">i</span><span style="color:#111">].</span><span style="color:#75af00">style</span><span style="color:#111">.</span><span style="color:#75af00">background</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;whitesmoke&#39;</span><span style="color:#111">;</span>
+    <span style="color:#111">}</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">items</span><span style="color:#111">);</span>
+</code></pre></div>
+<hr />
+
+<h1 id="traversing-the-dom">Traversing the DOM:</h1>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">let</span> <span style="color:#75af00">val</span><span style="color:#111">;</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">list</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;ul.collection&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">listItem</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li.collection-item:first-child&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Get child nodes
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">childNodes</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">childNodes</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">childNodes</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">].</span><span style="color:#75af00">nodeName</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// ChildNodes contain element textnode link comment etc.. 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 1 - Element
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 2 - Attribute (deprecated)
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 3 - Text node
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 8 - Comment
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 9 - Document itself
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 10 - Doctype
+</span><span style="color:#75715e"></span>
+    <span style="color:#75715e">// Get children element nodes
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">children</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">children</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+    <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">children</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">].</span><span style="color:#75af00">textContent</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Hello&#39;</span><span style="color:#111">;</span>
+    <span style="color:#75715e">// Children of children
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">children</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">].</span><span style="color:#75af00">children</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">].</span><span style="color:#75af00">id</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;test-link&#39;</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">children</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">].</span><span style="color:#75af00">children</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+    <span style="color:#75715e">// First child
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">firstChild</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">firstElementChild</span><span style="color:#111">;</span>
+    <span style="color:#75715e">// Last child
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">lastChild</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">lastElementChild</span><span style="color:#111">;</span>
+    <span style="color:#75715e">// Count child elements
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">childElementCount</span><span style="color:#111">;</span>
+    <span style="color:#75715e">// Get parent node
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">.</span><span style="color:#75af00">parentNode</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">.</span><span style="color:#75af00">parentElement</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">.</span><span style="color:#75af00">parentElement</span><span style="color:#111">.</span><span style="color:#75af00">parentElement</span><span style="color:#111">;</span>
+    <span style="color:#75715e">// Get next sibling
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">.</span><span style="color:#75af00">nextSibling</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">.</span><span style="color:#75af00">nextElementSibling</span><span style="color:#111">.</span><span style="color:#75af00">nextElementSibling</span><span style="color:#111">.</span><span style="color:#75af00">previousElementSibling</span><span style="color:#111">;</span>
+    <span style="color:#75715e">// Get prev sibling
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">.</span><span style="color:#75af00">previousSibling</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">listItem</span><span style="color:#111">.</span><span style="color:#75af00">previousElementSibling</span><span style="color:#111">;</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
+</code></pre></div>
+<h2 id="create-element-with-id-class-attributes-children">Create Element: (with id, class, attributes, children)</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// Create element
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">li</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">createElement</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Add class
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">className</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;collection-item&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Add id
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">id</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;new-item&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Add attribute
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">setAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;title&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;New Item&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Create text node and append
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">appendChild</span><span style="color:#111">(</span><span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">createTextNode</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Hello World&#39;</span><span style="color:#111">));</span>
+
+    <span style="color:#75715e">// Create new link element
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">link</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">createElement</span><span style="color:#111">(</span><span style="color:#d88200">&#39;a&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Add classes
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">className</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;delete-item secondary-content&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Add icon html
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;&lt;i class=&#34;fa fa-remove&#34;&gt;&lt;/i&gt;&#39;</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Append link into li
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">li</span><span style="color:#111">.</span><span style="color:#75af00">appendChild</span><span style="color:#111">(</span><span style="color:#75af00">link</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Append li as child to ul
+</span><span style="color:#75715e"></span>    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;ul.collection&#39;</span><span style="color:#111">).</span><span style="color:#75af00">appendChild</span><span style="color:#111">(</span><span style="color:#75af00">li</span><span style="color:#111">);</span>
+
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">li</span><span style="color:#111">);</span>
+</code></pre></div>
+<h2 id="removing-replacing-elements">Removing &amp; Replacing Elements:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// REPLACE ELEMENT
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// Create Element
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">newHeading</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">createElement</span><span style="color:#111">(</span><span style="color:#d88200">&#39;h2&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Add id
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">newHeading</span><span style="color:#111">.</span><span style="color:#75af00">id</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">;</span>
+    <span style="color:#75715e">// New text node
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">newHeading</span><span style="color:#111">.</span><span style="color:#75af00">appendChild</span><span style="color:#111">(</span><span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">createTextNode</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Task List&#39;</span><span style="color:#111">));</span>
+    <span style="color:#75715e">// Get the old heading
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">oldHeading</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task-title&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">//Parent
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">cardAction</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;.card-action&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Replace
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">cardAction</span><span style="color:#111">.</span><span style="color:#75af00">replaceChild</span><span style="color:#111">(</span><span style="color:#75af00">newHeading</span><span style="color:#111">,</span> <span style="color:#75af00">oldHeading</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// REMOVE ELEMENT
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">lis</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelectorAll</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">list</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;ul&#39;</span><span style="color:#111">);</span>
+
+    <span style="color:#75715e">// Remove list item
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">lis</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">].</span><span style="color:#75af00">remove</span><span style="color:#111">();</span>
+
+    <span style="color:#75715e">// Remove child element
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">list</span><span style="color:#111">.</span><span style="color:#75af00">removeChild</span><span style="color:#111">(</span><span style="color:#75af00">lis</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">]);</span>
+
+    <span style="color:#75715e">// CLASSES &amp; ATTR
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">firstLi</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;li:first-child&#39;</span><span style="color:#111">);</span>
+    <span style="color:#00a8c8">const</span> <span style="color:#75af00">link</span> <span style="color:#f92672">=</span> <span style="color:#75af00">firstLi</span><span style="color:#111">.</span><span style="color:#75af00">children</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#75af00">val</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Classes
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">className</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">classList</span><span style="color:#111">;</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">classList</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">];</span>
+    <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">classList</span><span style="color:#111">.</span><span style="color:#75af00">add</span><span style="color:#111">(</span><span style="color:#d88200">&#39;test&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">classList</span><span style="color:#111">.</span><span style="color:#75af00">remove</span><span style="color:#111">(</span><span style="color:#d88200">&#39;test&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">// Attributes
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">getAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;href&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">setAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;href&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;http://google.com&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">setAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;title&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Google&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">hasAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;title&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">link</span><span style="color:#111">.</span><span style="color:#75af00">removeAttribute</span><span style="color:#111">(</span><span style="color:#d88200">&#39;title&#39;</span><span style="color:#111">);</span>
+    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#75af00">link</span><span style="color:#111">;</span>
+    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
+</code></pre></div></article>
+    </div>
+
+    
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#dom-objects-selectors">DOM Objects &amp; Selectors</a>
+<ul>
+<li><a href="#document-object-basic-things">Document object - basic things:</a></li>
+<li><a href="#dom-selectors-single-element">DOM - Selectors:  (Single Element)</a></li>
+<li><a href="#dom-queryselector-single-element">DOM QuerySelector: (Single Element)</a></li>
+<li><a href="#dom-selectors-multiple-elements">DOM - Selectors:  (Multiple Elements)</a></li>
+<li><a href="#dom-queryselectorall-single-element">DOM QuerySelectorAll: (Single Element)</a></li>
+</ul></li>
+<li><a href="#traversing-the-dom">Traversing the DOM:</a>
+<ul>
+<li><a href="#create-element-with-id-class-attributes-children">Create Element: (with id, class, attributes, children)</a></li>
+<li><a href="#removing-replacing-elements">Removing &amp; Replacing Elements:</a></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
+    
+
+  </main>
+  
+
+</body>
+
+</html>

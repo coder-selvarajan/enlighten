@@ -1,0 +1,26 @@
+baseURL = "http://selvarajan.in/"
+languageCode = "en-us"
+title = "Enlightening KT"
+theme = "book"
+
+# (Optional) Set this to true if you use captial letters in file names
+disablePathToLower = "true"
+
+enableEmoji = "true"
+
+pygmentsStyle = "monokailight"
+pygmentsCodeFences = "true"
+pygmentscodefences = "true"
+
+[params]
+  # (Optional, default true) Show or hide table of contents globally
+  # You can also specify this parameter per page in front matter
+  BookShowToC = "true"
+
+  # (Optional, default none) Set leaf bundle to render as side menu
+  # When not specified file structure and weights will be used
+  BookMenuBundle = "/docs/menu"
+
+  # (Optional, default docs) Specify section of content to render as menu
+  # You can also set value to "*" to render all sections to menu
+  BookSection = "docs"
