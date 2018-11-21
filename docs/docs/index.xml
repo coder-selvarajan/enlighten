@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enlightening KT</title>
-    <link>https://selvarajan2006.github.io/enlighten/docs/docs/</link>
+    <link>https://selvarajan2006.github.io/enlighten/docs/</link>
     <description>Recent content on Enlightening KT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://selvarajan2006.github.io/enlighten/docs/docs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://selvarajan2006.github.io/enlighten/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/hadoop-intro/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/hadoop-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/hadoop-intro/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/hadoop-intro/</guid>
       <description>Understanding Hadoop Hadoop - is a set of technologies.. used to store and process huge amounts of data..
 Hadoop is not a database.. its an alternative file system with a processing library..
 Libraries: MapReduce 1&amp;amp;2, Hive, Pig
@@ -27,10 +27,10 @@ Database Choices: - File systems -HDFS (Hadoop distributed file system)
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/hugo-markdown/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/hugo-markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/hugo-markdown/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/hugo-markdown/</guid>
       <description>Hugo &amp;amp; Markdown Markdown Syntax Basic Syntax Images SYNTAX:
 ![Hugo](../../images/hugo-small.png &amp;quot;Hugo&amp;quot;)  RESULT:
 Table SYNTAX:
@@ -40,10 +40,10 @@ Name | Age --------|--------- Bob | 27 | xyz Alice | 23 | abcd  RESULT:
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/async-programming/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/async-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/async-programming/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/async-programming/</guid>
       <description>Async Programming XHR - XmlHttpRequest
 Other api methods:
 - Fetch api - Axios - Superagent - Jquery - Node http   Ajax - Xhr
@@ -52,10 +52,10 @@ Other api methods:
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/basics/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/basics/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/basics/</guid>
       <description>Basics Install Visual Studio Code and add following extentions
  Brackets pair Live server ES6 Code snippets  To find the time it took to execute the scripts:
 console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted  const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
@@ -63,28 +63,28 @@ console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;)
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/dom-object-selectors/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/dom-object-selectors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/dom-object-selectors/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/dom-object-selectors/</guid>
       <description>DOM Objects &amp;amp; Selectors Document object - basic things: let val; val = document.all[2]; //prints: &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  val = document.all.length; //prints: 43  val = document.head; val = document.body; val = document.doctype; val = document.domain; val = document.URL; val = document.characterSet; val = document.contentType; val = document.forms; val = document.forms[0]; val = document.forms[0].id; val = document.links; val = document.links[0]; val = document.images; val = document.scripts; val = document.scripts[0].getAttribute(&amp;#39;src&amp;#39;); // loop thru document elements - sample  let scripts = document.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/events/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/events/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/events/</guid>
       <description>Events: Event Listeners: document.querySelector(&amp;#39;.clear-tasks&amp;#39;).addEventListener(&amp;#39;click&amp;#39;, onClick); function onClick(e){ //console.log(&amp;#39;Clicked&amp;#39;);  let val; val = e; // Event target element  val = e.target; val = e.target.id; val = e.target.className; val = e.target.classList; // Event type  val = e.type; // Timestamp  val = e.timeStamp; // Coords event relative to the window  val = e.clientY; val = e.clientX; // Coords event relative to the element  val = e.offsetY; val = e.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/frameworks-converters/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/frameworks-converters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/frameworks-converters/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/frameworks-converters/</guid>
       <description> Frameworks &amp;amp; Converters ES6 to ES5 converter:  Convert es6 into es5 using Babel: https://medium.com/@SunnyB/how-to-convert-es6-into-es5-using-babel-1b533d31a169 https://www.jonathan-petitcolas.com/2015/03/09/transpiling-es6-to-es5-using-babel.html  Babel JS Home Page: https://babeljs.io/  ES6Console: https://es6console.com/   Date related functionalities with moment.js: https://momentjs.com/ 
 Useful functionalities in javascript with underscorejs: https://underscorejs.org/ 
 JS framework Backbone.js http://backbonejs.org/  </description>
@@ -92,75 +92,75 @@ JS framework Backbone.js http://backbonejs.org/  </description>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/functions/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/functions/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/functions/</guid>
       <description>Functions Function expressions const square = function(x) { return x * x; }; const square = function(x = 4) { return x * x; }; console.log(square(11)); // Result: 121  Immediately invokable function expressions (function(name) { Console.log(&amp;#34;Hello &amp;#34; + name); })(&amp;#34;Brad&amp;#34;); // Result: Hello Brad  Property methods const todo = { add: function(){ console.log(&amp;#39;Adding todo…&amp;#39;); } edit: function(id){ console.log(&amp;#39;Editing - &amp;#39; + id); } } todo.delete = function(){ console.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/localstorage/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/localstorage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/localstorage/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/localstorage/</guid>
       <description>LocalStorage // set local storage item  localStorage.setItem(&amp;#39;name&amp;#39;, &amp;#39;John&amp;#39;); localStorage.setItem(&amp;#39;age&amp;#39;, &amp;#39;30&amp;#39;); // set session storage item  sessionStorage.setItem(&amp;#39;name&amp;#39;, &amp;#39;Beth&amp;#39;); // remove from storage  localStorage.removeItem(&amp;#39;name&amp;#39;); // get from storage  const name = localStorage.getItem(&amp;#39;name&amp;#39;); const age = localStorage.getItem(&amp;#39;age&amp;#39;); // clear local storage  localStorage.clear(); console.log(name, age); document.querySelector(&amp;#39;form&amp;#39;).addEventListener(&amp;#39;submit&amp;#39;, function(e){ const task = document.getElementById(&amp;#39;task&amp;#39;).value; let tasks; if(localStorage.getItem(&amp;#39;tasks&amp;#39;) === null) { tasks = []; } else { tasks = JSON.parse(localStorage.getItem(&amp;#39;tasks&amp;#39;)); } tasks.push(task); localStorage.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/object-oriented/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/object-oriented/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/object-oriented/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/object-oriented/</guid>
       <description>Object oriented features Constructors.. &amp;lsquo;this&amp;rsquo; keyword // Person constructor  function Person(name, dob) { this.name = name; // this.age = age;  this.birthday = new Date(dob); this.calculateAge = function(){ const diff = Date.now() - this.birthday.getTime(); const ageDate = new Date(diff); return Math.abs(ageDate.getUTCFullYear() - 1970); } } // const brad = new Person(&amp;#39;Brad&amp;#39;, 36);  // const john = new Person(&amp;#39;John&amp;#39;, 30);  // console.log(john.age);  const brad = new Person(&amp;#39;Brad&amp;#39;, &amp;#39;9-10-1981&amp;#39;); console.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/rest-api/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/rest-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/rest-api/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/rest-api/</guid>
       <description>REST Api API - Application Programming Interface - Contract provided by one piece of software to another - Structured request and response  REST API - Representational State Transfer - Architecture style for designing networked apps - Relies on stateless, client server protocol, always http - Treats server objects as resources that can be created and destroyed  HTTP Requests/Verbs GET - Get resources POST - Post resources PUT - Update resources DELETE - Delete resources HEAD - Same as GET but does not return body OPTIONS - Returns the supported HTTP methods PATCH - Update partial resources  API Endpoints GET - /api/users GET - /api/users/1 POST - /api/users PUT - /api/users/1 DELETE - /api/users/1  FAKE online Rest Api for developers: https://jsonplaceholder.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/window-object/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/window-object/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/javascript/window-object/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/window-object/</guid>
       <description>Window object In console type window.
 window.console.log(&amp;#34;Hello&amp;#34;) window.alert(&amp;#34;Hello World&amp;#34;); // prompt  const input = prompt(); alert(input); //confirm  If (confirm(&amp;#34;Are you sure?&amp;#34;)){ alert(&amp;#34;proceed&amp;#34;); } //window height  alert(window.outerHeight); alert(window.outerWidth); //visible content area.. If firebug is open then the value change here..  alert(window.innerHeight); alert(window.innerWidth); //scroll point  window.scrollY; window.scrollX;  Localtion Object val = window.location console.log(val); //prints info related to http host info, protocol,  //query string, redirection etc.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/linux/linux-commands/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/linux/linux-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/linux/linux-commands/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/linux/linux-commands/</guid>
       <description>Linux Commands 1 - SYSTEM INFORMATION          uname -a Display Linux system information   uname -r Display kernel release information   cat /etc/redhat-release Show which version of redhat installed   uptime Show how long the system has been running + load   hostname Show system host name   hostname -I Display the IP addresses of the host   last reboot Show system reboot history   date Show the current date and time   cal Show this month&amp;rsquo;s calendar   w Display who is online   whoami Who you are logged in as    2 - HARDWARE INFORMATION          dmesg Display messages in kernel ring buffer   cat /proc/cpuinfo Display CPU information   cat /proc/meminfo Display memory information   free -h Display free and used memory ( -h for human readable,    -m for MB, -g for GB.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/linux/linux-intro/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/linux/linux-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/linux/linux-intro/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/linux/linux-intro/</guid>
       <description>Linux Intro Linux Distributions Some of the key facts about the Fedora distribution family are:
  The Fedora family is upstream for CentOS, RHEL, and Oracle Linux. Kernel version 3.10 is used in RHEL/CentOS 7. It supports hardware platforms such as x86, x86-64, Itanium, PowerPC, and IBM System z. It uses the RPM-based yum package manager (we cover it in more detail later) to install, update, and remove packages in the system.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/mean_stack/nodejs/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/mean_stack/nodejs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/mean_stack/nodejs/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/mean_stack/nodejs/</guid>
       <description>Node JS Install NodeJS in CentOS
 curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash - sudo yum -y install nodejs  From https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora
 Install pm2 &amp;amp; http-server:
@@ -172,10 +172,10 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/docs/python/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/docs/python/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/python/</guid>
       <description> Learn Python </description>
     </item>
     
