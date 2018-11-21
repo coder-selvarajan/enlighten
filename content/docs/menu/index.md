@@ -1,7 +1,7 @@
 ---
 headless: true
 ---
-- [Home](/docs/)
+<!-- - [Home](/docs/) -->
 - [Learn Javascript](/docs/javascript/basics)
     - [Basics](/docs/javascript/basics)
     - [Functions](/docs/javascript/functions)
@@ -14,10 +14,10 @@ headless: true
     - [REST Api](/docs/javascript/rest-api)
     - [Frameworks & Converters](/docs/javascript/frameworks-converters)
 - [MEAN Stack](/docs/mean_stack/nodejs)
-    - [Node JS](/docs/mean_stack/nodejs)
+    <!-- - [Node JS](/docs/mean_stack/nodejs) -->
 - [Linux](/docs/linux/linux-intro)
     - [Linux Intro](/docs/linux/linux-intro)
     - [Linux Commands](/docs/linux/linux-commands)
 - [Hadoop](/docs/hadoop-intro)
-- [Python](/docs/python)
+<!-- - [Python](/docs/python) -->
 - [Hugo & Markdown](/docs/hugo-markdown)
