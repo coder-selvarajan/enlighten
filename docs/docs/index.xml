@@ -27,15 +27,18 @@ Database Choices: - File systems -HDFS (Hadoop distributed file system)
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/hugo-markdown/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/hugo-tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/hugo-markdown/</guid>
-      <description>Hugo &amp;amp; Markdown Markdown Syntax Basic Syntax Images SYNTAX:
-![Hugo](../../images/hugo-small.png &amp;quot;Hugo&amp;quot;)  RESULT:
-Table SYNTAX:
-Name | Age --------|--------- Bob | 27 | xyz Alice | 23 | abcd  RESULT:
-   Name Age     Bob 27    xyz   Alice 23    abcd    Hugo Syntax/Tips Emoji Emojis can be enabled in hugo by adding below property in configuration file.</description>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/hugo-tips/</guid>
+      <description>Hugo Syntax/Tips Emoji Emojis can be enabled in hugo by adding below property in configuration file.
+enableEmoji = &amp;quot;true&amp;quot;  Emoji Cheat-sheat: https://www.webpagefx.com/tools/emoji-cheat-sheet/
+SYNTAX: remove space after first :
+I : heart: Hugo!  RESULT:
+I ❤️ Hugo!
+Task List SYNTAX:
+1. [ ] a task list item 2. [x] list syntax required 3. [ ] incomplete 4. [x] completed  RESULT:
+a task list item list syntax required incomplete completed  Footnote SYNTAX:</description>
     </item>
     
     <item>
@@ -142,7 +145,7 @@ window.console.log(&amp;#34;Hello&amp;#34;) window.alert(&amp;#34;Hello World&am
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://selvarajan2006.github.io/enlighten/docs/linux/linux-commands/</guid>
-      <description>Linux Commands 1 - SYSTEM INFORMATION          uname -a Display Linux system information   uname -r Display kernel release information   cat /etc/redhat-release Show which version of redhat installed   uptime Show how long the system has been running + load   hostname Show system host name   hostname -I Display the IP addresses of the host   last reboot Show system reboot history   date Show the current date and time   cal Show this month&amp;rsquo;s calendar   w Display who is online   whoami Who you are logged in as    2 - HARDWARE INFORMATION          dmesg Display messages in kernel ring buffer   cat /proc/cpuinfo Display CPU information   cat /proc/meminfo Display memory information   free -h Display free and used memory ( -h for human readable,    -m for MB, -g for GB.</description>
+      <description>Linux Commands 1 - SYSTEM INFORMATION    Command Notes     uname -a Display Linux system information   uname -r Display kernel release information   cat /etc/redhat-release Show which version of redhat installed   uptime Show how long the system has been running + load   hostname Show system host name   hostname -I Display the IP addresses of the host   last reboot Show system reboot history   date Show the current date and time   cal Show this month&amp;rsquo;s calendar   w Display who is online   whoami Who you are logged in as    2 - HARDWARE INFORMATION    Command Notes     dmesg Display messages in kernel ring buffer   cat /proc/cpuinfo Display CPU information   cat /proc/meminfo Display memory information   free -h Display free and used memory ( -h for human readable, -m for MB, -g for GB.</description>
     </item>
     
     <item>
@@ -153,6 +156,20 @@ window.console.log(&amp;#34;Hello&amp;#34;) window.alert(&amp;#34;Hello World&am
       <guid>https://selvarajan2006.github.io/enlighten/docs/linux/linux-intro/</guid>
       <description>Linux Intro Linux Distributions Some of the key facts about the Fedora distribution family are:
  The Fedora family is upstream for CentOS, RHEL, and Oracle Linux. Kernel version 3.10 is used in RHEL/CentOS 7. It supports hardware platforms such as x86, x86-64, Itanium, PowerPC, and IBM System z. It uses the RPM-based yum package manager (we cover it in more detail later) to install, update, and remove packages in the system.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/markdown/</guid>
+      <description>Markdown: Syntax Images SYNTAX:
+![Hugo](../../images/hugo-small.png &amp;quot;Hugo&amp;quot;)  RESULT:
+Table SYNTAX:
+Name | Age --------|--------- Bob | 27 | xyz Alice | 23 | abcd  RESULT:
+   Name Age     Bob 27    xyz   Alice 23    abcd    
+Notes from John Gruber (creator of Markdown)  Overview  Philosophy Inline HTML Automatic Escaping for Special Characters  Block Elements  Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules  Span Elements  Links Emphasis Code Images  Miscellaneous  Backslash Escapes Automatic Links   Note: This document is itself written using Markdown; you can see the source for it by adding &amp;lsquo;.</description>
     </item>
     
     <item>

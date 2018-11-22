@@ -23,8 +23,7 @@ Command | Notes
 **dmesg** 	                | Display messages in kernel ring buffer
 **cat /proc/cpuinfo** 	    | Display CPU information
 **cat /proc/meminfo** 	    | Display memory information
-**free -h** 	            | Display free and used memory ( -h for human readable, 
-	                        | -m for MB, -g for GB.)
+**free -h** 	            | Display free and used memory ( -h for human readable, -m for MB, -g for GB.)
 **lspci -tv** 	            | Display PCI devices
 **lsusb -tv** 	            | Display USB devices
 **dmidecode** 	            | Display DMI/SMBIOS (hardware info) from the BIOS
@@ -41,8 +40,7 @@ Command | Notes
 **mpstat 1** 	                | Display processor related statistics
 **vmstat 1** 	                | Display virtual memory statistics
 **iostat 1** 	                | Display I/O statistics
-**tail 100 /var/log/messages** 	| Display the last 100 syslog messages 
-	                            | (Use /var/log/syslog for Debian based systems.)
+**tail 100 /var/log/messages** 	| Display the last 100 syslog messages  <br/> (Use /var/log/syslog for Debian based systems.)
 **tcpdump -i eth0** 	        | Capture and display all packets on interface eth0
 **tcpdump -i eth0 'port 80'** 	| Monitor all traffic on port 80 ( HTTP )
 **lsof** 	                    | List all open files on the system

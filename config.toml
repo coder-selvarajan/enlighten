@@ -1,7 +1,7 @@
 baseURL = "https://selvarajan2006.github.io/enlighten/"
 languageCode = "en-us"
 title = "Enlightening KT"
-theme = "book"
+theme = "book2"
 publishDir = "docs"
 
 # (Optional) Set this to true if you use captial letters in file names

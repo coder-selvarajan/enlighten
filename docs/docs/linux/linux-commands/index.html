@@ -8,10 +8,10 @@
 <title>Linux Commands | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
-<link rel="stylesheet" href="/normalize.min.css">
+<link rel="stylesheet" href="/enlighten/normalize.min.css">
 
 
-<link rel="stylesheet" href="/enlighten/book.min.50f271dd26ebebd6d8a9877137ff6aaf244378f21a325ced70fb19102403d4ef.css">
+<link rel="stylesheet" href="/enlighten/book.min.ddc6d7dee61e91398e4410b2b7db0629d9402823b5019c2c0bcbe26217cac8b3.css">
   
 </head>
 
@@ -22,15 +22,13 @@
     <aside class="menu fixed">
       <nav role="navigation">
         <h2 class="brand">
-  <a href="https://selvarajan2006.github.io/enlighten/">Enlightening KT</a>
+  <a href="https://selvarajan2006.github.io/enlighten//docs/">Enlightening KT</a>
 </h2>
         
 
         
-          <!-- - [Home](/docs/) -->
-
-<ul>
-<li><a href="/enlighten/docs/javascript/basics">Learn Javascript</a>
+          <ul>
+<li><a href="/enlighten/docs/javascript/basics" title="Learn Javascript">Javascript</a>
 
 <ul>
 <li><a href="/enlighten/docs/javascript/basics">Basics</a></li>
@@ -45,7 +43,7 @@
 <li><a href="/enlighten/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
 </ul></li>
 <li><a href="/enlighten/docs/mean_stack/nodejs">MEAN Stack</a>
-<!-- - [Node JS](/docs/mean_stack/nodejs) --></li>
+<!-- - [Node JS](/enlighten/docs/mean_stack/nodejs) --></li>
 <li><a href="/enlighten/docs/linux/linux-intro">Linux</a>
 
 <ul>
@@ -54,7 +52,8 @@
 </ul></li>
 <li><a href="/enlighten/docs/hadoop-intro">Hadoop</a>
 <!-- - [Python](/docs/python) --></li>
-<li><a href="/enlighten/docs/hugo-markdown">Hugo &amp; Markdown</a></li>
+<li><a href="/enlighten/docs/markdown">Markdown Syntax</a></li>
+<li><a href="/enlighten/docs/hugo-tips">Hugo Tips</a></li>
 </ul>
 
         
@@ -79,450 +78,428 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>uname -a</strong></td>
-<td>Display Linux system information</td>
+<td align="left"><strong>uname -a</strong></td>
+<td align="left">Display Linux system information</td>
 </tr>
 
 <tr>
-<td><strong>uname -r</strong></td>
-<td>Display kernel release information</td>
+<td align="left"><strong>uname -r</strong></td>
+<td align="left">Display kernel release information</td>
 </tr>
 
 <tr>
-<td><strong>cat /etc/redhat-release</strong></td>
-<td>Show which version of redhat installed</td>
+<td align="left"><strong>cat /etc/redhat-release</strong></td>
+<td align="left">Show which version of redhat installed</td>
 </tr>
 
 <tr>
-<td><strong>uptime</strong></td>
-<td>Show how long the system has been running + load</td>
+<td align="left"><strong>uptime</strong></td>
+<td align="left">Show how long the system has been running + load</td>
 </tr>
 
 <tr>
-<td><strong>hostname</strong></td>
-<td>Show system host name</td>
+<td align="left"><strong>hostname</strong></td>
+<td align="left">Show system host name</td>
 </tr>
 
 <tr>
-<td><strong>hostname -I</strong></td>
-<td>Display the IP addresses of the host</td>
+<td align="left"><strong>hostname -I</strong></td>
+<td align="left">Display the IP addresses of the host</td>
 </tr>
 
 <tr>
-<td><strong>last reboot</strong></td>
-<td>Show system reboot history</td>
+<td align="left"><strong>last reboot</strong></td>
+<td align="left">Show system reboot history</td>
 </tr>
 
 <tr>
-<td><strong>date</strong></td>
-<td>Show the current date and time</td>
+<td align="left"><strong>date</strong></td>
+<td align="left">Show the current date and time</td>
 </tr>
 
 <tr>
-<td><strong>cal</strong></td>
-<td>Show this month&rsquo;s calendar</td>
+<td align="left"><strong>cal</strong></td>
+<td align="left">Show this month&rsquo;s calendar</td>
 </tr>
 
 <tr>
-<td><strong>w</strong></td>
-<td>Display who is online</td>
+<td align="left"><strong>w</strong></td>
+<td align="left">Display who is online</td>
 </tr>
 
 <tr>
-<td><strong>whoami</strong></td>
-<td>Who you are logged in as</td>
+<td align="left"><strong>whoami</strong></td>
+<td align="left">Who you are logged in as</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="2-hardware-information">2 - HARDWARE INFORMATION</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>dmesg</strong></td>
-<td>Display messages in kernel ring buffer</td>
+<td align="left"><strong>dmesg</strong></td>
+<td align="left">Display messages in kernel ring buffer</td>
 </tr>
 
 <tr>
-<td><strong>cat /proc/cpuinfo</strong></td>
-<td>Display CPU information</td>
+<td align="left"><strong>cat /proc/cpuinfo</strong></td>
+<td align="left">Display CPU information</td>
 </tr>
 
 <tr>
-<td><strong>cat /proc/meminfo</strong></td>
-<td>Display memory information</td>
+<td align="left"><strong>cat /proc/meminfo</strong></td>
+<td align="left">Display memory information</td>
 </tr>
 
 <tr>
-<td><strong>free -h</strong></td>
-<td>Display free and used memory ( -h for human readable,</td>
+<td align="left"><strong>free -h</strong></td>
+<td align="left">Display free and used memory ( -h for human readable, -m for MB, -g for GB.)</td>
 </tr>
 
 <tr>
-<td></td>
-<td>-m for MB, -g for GB.)</td>
+<td align="left"><strong>lspci -tv</strong></td>
+<td align="left">Display PCI devices</td>
 </tr>
 
 <tr>
-<td><strong>lspci -tv</strong></td>
-<td>Display PCI devices</td>
+<td align="left"><strong>lsusb -tv</strong></td>
+<td align="left">Display USB devices</td>
 </tr>
 
 <tr>
-<td><strong>lsusb -tv</strong></td>
-<td>Display USB devices</td>
+<td align="left"><strong>dmidecode</strong></td>
+<td align="left">Display DMI/SMBIOS (hardware info) from the BIOS</td>
 </tr>
 
 <tr>
-<td><strong>dmidecode</strong></td>
-<td>Display DMI/SMBIOS (hardware info) from the BIOS</td>
+<td align="left"><strong>hdparm -i /dev/sda</strong></td>
+<td align="left">Show info about disk sda</td>
 </tr>
 
 <tr>
-<td><strong>hdparm -i /dev/sda</strong></td>
-<td>Show info about disk sda</td>
+<td align="left"><strong>hdparm -tT /dev/sda</strong></td>
+<td align="left">Perform a read speed test on disk sda</td>
 </tr>
 
 <tr>
-<td><strong>hdparm -tT /dev/sda</strong></td>
-<td>Perform a read speed test on disk sda</td>
-</tr>
-
-<tr>
-<td><strong>badblocks -s /dev/sda</strong></td>
-<td>Test for unreadable blocks on disk sda</td>
+<td align="left"><strong>badblocks -s /dev/sda</strong></td>
+<td align="left">Test for unreadable blocks on disk sda</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="3-performance-monitoring-and-statistics">3 - PERFORMANCE MONITORING AND STATISTICS</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>top</strong></td>
-<td>Display and manage the top processes</td>
+<td align="left"><strong>top</strong></td>
+<td align="left">Display and manage the top processes</td>
 </tr>
 
 <tr>
-<td><strong>htop</strong></td>
-<td>Interactive process viewer (top alternative)</td>
+<td align="left"><strong>htop</strong></td>
+<td align="left">Interactive process viewer (top alternative)</td>
 </tr>
 
 <tr>
-<td><strong>mpstat 1</strong></td>
-<td>Display processor related statistics</td>
+<td align="left"><strong>mpstat 1</strong></td>
+<td align="left">Display processor related statistics</td>
 </tr>
 
 <tr>
-<td><strong>vmstat 1</strong></td>
-<td>Display virtual memory statistics</td>
+<td align="left"><strong>vmstat 1</strong></td>
+<td align="left">Display virtual memory statistics</td>
 </tr>
 
 <tr>
-<td><strong>iostat 1</strong></td>
-<td>Display I/O statistics</td>
+<td align="left"><strong>iostat 1</strong></td>
+<td align="left">Display I/O statistics</td>
 </tr>
 
 <tr>
-<td><strong>tail 100 /var/log/messages</strong></td>
-<td>Display the last 100 syslog messages</td>
+<td align="left"><strong>tail 100 /var/log/messages</strong></td>
+<td align="left">Display the last 100 syslog messages  <br/> (Use /var/log/syslog for Debian based systems.)</td>
 </tr>
 
 <tr>
-<td></td>
-<td>(Use /var/log/syslog for Debian based systems.)</td>
+<td align="left"><strong>tcpdump -i eth0</strong></td>
+<td align="left">Capture and display all packets on interface eth0</td>
 </tr>
 
 <tr>
-<td><strong>tcpdump -i eth0</strong></td>
-<td>Capture and display all packets on interface eth0</td>
+<td align="left"><strong>tcpdump -i eth0 &lsquo;port 80&rsquo;</strong></td>
+<td align="left">Monitor all traffic on port 80 ( HTTP )</td>
 </tr>
 
 <tr>
-<td><strong>tcpdump -i eth0 &lsquo;port 80&rsquo;</strong></td>
-<td>Monitor all traffic on port 80 ( HTTP )</td>
+<td align="left"><strong>lsof</strong></td>
+<td align="left">List all open files on the system</td>
 </tr>
 
 <tr>
-<td><strong>lsof</strong></td>
-<td>List all open files on the system</td>
+<td align="left"><strong>lsof -u user</strong></td>
+<td align="left">List files opened by user</td>
 </tr>
 
 <tr>
-<td><strong>lsof -u user</strong></td>
-<td>List files opened by user</td>
+<td align="left"><strong>free -h</strong></td>
+<td align="left">Display free and used memory</td>
 </tr>
 
 <tr>
-<td><strong>free -h</strong></td>
-<td>Display free and used memory</td>
+<td align="left"></td>
+<td align="left">( -h for human readable, -m for MB, -g for GB.)</td>
 </tr>
 
 <tr>
-<td></td>
-<td>( -h for human readable, -m for MB, -g for GB.)</td>
-</tr>
-
-<tr>
-<td><strong>watch df -h</strong></td>
-<td>Execute &ldquo;df -h&rdquo;, showing periodic updates</td>
+<td align="left"><strong>watch df -h</strong></td>
+<td align="left">Execute &ldquo;df -h&rdquo;, showing periodic updates</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="4-user-information-and-management">4 - USER INFORMATION AND MANAGEMENT</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>id</strong></td>
-<td>Display the user and group ids of your current user.</td>
+<td align="left"><strong>id</strong></td>
+<td align="left">Display the user and group ids of your current user.</td>
 </tr>
 
 <tr>
-<td><strong>last</strong></td>
-<td>Display the last users who have logged onto the system.</td>
+<td align="left"><strong>last</strong></td>
+<td align="left">Display the last users who have logged onto the system.</td>
 </tr>
 
 <tr>
-<td><strong>who</strong></td>
-<td>Show who is logged into the system.</td>
+<td align="left"><strong>who</strong></td>
+<td align="left">Show who is logged into the system.</td>
 </tr>
 
 <tr>
-<td><strong>w</strong></td>
-<td>Show who is logged in and what they are doing.</td>
+<td align="left"><strong>w</strong></td>
+<td align="left">Show who is logged in and what they are doing.</td>
 </tr>
 
 <tr>
-<td><strong>groupadd test</strong></td>
-<td>Create a group named &ldquo;test&rdquo;.</td>
+<td align="left"><strong>groupadd test</strong></td>
+<td align="left">Create a group named &ldquo;test&rdquo;.</td>
 </tr>
 
 <tr>
-<td><strong>useradd -c &ldquo;John Smith&rdquo; -m john</strong></td>
-<td>Create an account named john, with a comment of &ldquo;John Smith&rdquo; and create the user&rsquo;s home directory.</td>
+<td align="left"><strong>useradd -c &ldquo;John Smith&rdquo; -m john</strong></td>
+<td align="left">Create an account named john, with a comment of &ldquo;John Smith&rdquo; and create the user&rsquo;s home directory.</td>
 </tr>
 
 <tr>
-<td><strong>userdel john</strong></td>
-<td>Delete the john account.</td>
+<td align="left"><strong>userdel john</strong></td>
+<td align="left">Delete the john account.</td>
 </tr>
 
 <tr>
-<td><strong>usermod -aG sales john</strong></td>
-<td>Add the john account to the sales group</td>
+<td align="left"><strong>usermod -aG sales john</strong></td>
+<td align="left">Add the john account to the sales group</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="5-file-and-directory-commands">5 - FILE AND DIRECTORY COMMANDS</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>ls -al</strong></td>
-<td>List all files in a long listing (detailed) format</td>
+<td align="left"><strong>ls -al</strong></td>
+<td align="left">List all files in a long listing (detailed) format</td>
 </tr>
 
 <tr>
-<td><strong>pwd</strong></td>
-<td>Display the present working directory</td>
+<td align="left"><strong>pwd</strong></td>
+<td align="left">Display the present working directory</td>
 </tr>
 
 <tr>
-<td><strong>mkdir directory</strong></td>
-<td>Create a directory</td>
+<td align="left"><strong>mkdir directory</strong></td>
+<td align="left">Create a directory</td>
 </tr>
 
 <tr>
-<td><strong>rm file</strong></td>
-<td>Remove (delete) file</td>
+<td align="left"><strong>rm file</strong></td>
+<td align="left">Remove (delete) file</td>
 </tr>
 
 <tr>
-<td><strong>rm -r directory</strong></td>
-<td>Remove the directory and its contents recursively</td>
+<td align="left"><strong>rm -r directory</strong></td>
+<td align="left">Remove the directory and its contents recursively</td>
 </tr>
 
 <tr>
-<td><strong>rm -f file</strong></td>
-<td>Force removal of file without prompting for confirmation</td>
+<td align="left"><strong>rm -f file</strong></td>
+<td align="left">Force removal of file without prompting for confirmation</td>
 </tr>
 
 <tr>
-<td><strong>rm -rf directory</strong></td>
-<td>Forcefully remove directory recursively</td>
+<td align="left"><strong>rm -rf directory</strong></td>
+<td align="left">Forcefully remove directory recursively</td>
 </tr>
 
 <tr>
-<td><strong>cp file1 file2</strong></td>
-<td>Copy file1 to file2</td>
+<td align="left"><strong>cp file1 file2</strong></td>
+<td align="left">Copy file1 to file2</td>
 </tr>
 
 <tr>
-<td><strong>cp -r source_directory destination</strong></td>
-<td>Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, otherwise create destination with the contents of source_directory.</td>
+<td align="left"><strong>cp -r source_directory destination</strong></td>
+<td align="left">Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, otherwise create destination with the contents of source_directory.</td>
 </tr>
 
 <tr>
-<td><strong>mv file1 file2</strong></td>
-<td>Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2</td>
+<td align="left"><strong>mv file1 file2</strong></td>
+<td align="left">Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2</td>
 </tr>
 
 <tr>
-<td><strong>ln -s /path/to/file linkname</strong></td>
-<td>Create symbolic link to linkname</td>
+<td align="left"><strong>ln -s /path/to/file linkname</strong></td>
+<td align="left">Create symbolic link to linkname</td>
 </tr>
 
 <tr>
-<td><strong>touch file</strong></td>
-<td>Create an empty file or update the access and modification times of file.</td>
+<td align="left"><strong>touch file</strong></td>
+<td align="left">Create an empty file or update the access and modification times of file.</td>
 </tr>
 
 <tr>
-<td><strong>cat file</strong></td>
-<td>View the contents of file</td>
+<td align="left"><strong>cat file</strong></td>
+<td align="left">View the contents of file</td>
 </tr>
 
 <tr>
-<td><strong>less file</strong></td>
-<td>Browse through a text file</td>
+<td align="left"><strong>less file</strong></td>
+<td align="left">Browse through a text file</td>
 </tr>
 
 <tr>
-<td><strong>head file</strong></td>
-<td>Display the first 10 lines of file</td>
+<td align="left"><strong>head file</strong></td>
+<td align="left">Display the first 10 lines of file</td>
 </tr>
 
 <tr>
-<td><strong>tail file</strong></td>
-<td>Display the last 10 lines of file</td>
+<td align="left"><strong>tail file</strong></td>
+<td align="left">Display the last 10 lines of file</td>
 </tr>
 
 <tr>
-<td><strong>tail -f file</strong></td>
-<td>Display the last 10 lines of file and &ldquo;follow&rdquo; the file as it grows.</td>
+<td align="left"><strong>tail -f file</strong></td>
+<td align="left">Display the last 10 lines of file and &ldquo;follow&rdquo; the file as it grows.</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="6-process-management">6 - PROCESS MANAGEMENT</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>ps</strong></td>
-<td>Display your currently running processes</td>
+<td align="left"><strong>ps</strong></td>
+<td align="left">Display your currently running processes</td>
 </tr>
 
 <tr>
-<td><strong>ps -ef</strong></td>
-<td>Display all the currently running processes on the system.</td>
+<td align="left"><strong>ps -ef</strong></td>
+<td align="left">Display all the currently running processes on the system.</td>
 </tr>
 
 <tr>
-<td><strong>ps -ef</strong></td>
-<td>grep processname</td>
+<td align="left"><strong>ps -ef</strong></td>
+<td align="left">grep processname</td>
 </tr>
 
 <tr>
-<td><strong>top</strong></td>
-<td>Display and manage the top processes</td>
+<td align="left"><strong>top</strong></td>
+<td align="left">Display and manage the top processes</td>
 </tr>
 
 <tr>
-<td><strong>htop</strong></td>
-<td>Interactive process viewer (top alternative)</td>
+<td align="left"><strong>htop</strong></td>
+<td align="left">Interactive process viewer (top alternative)</td>
 </tr>
 
 <tr>
-<td><strong>kill pid</strong></td>
-<td>Kill process with process ID of pid</td>
+<td align="left"><strong>kill pid</strong></td>
+<td align="left">Kill process with process ID of pid</td>
 </tr>
 
 <tr>
-<td><strong>killall processname</strong></td>
-<td>Kill all processes named processname</td>
+<td align="left"><strong>killall processname</strong></td>
+<td align="left">Kill all processes named processname</td>
 </tr>
 
 <tr>
-<td><strong>program &amp;</strong></td>
-<td>Start program in the background</td>
+<td align="left"><strong>program &amp;</strong></td>
+<td align="left">Start program in the background</td>
 </tr>
 
 <tr>
-<td><strong>bg</strong></td>
-<td>Display stopped or background jobs</td>
+<td align="left"><strong>bg</strong></td>
+<td align="left">Display stopped or background jobs</td>
 </tr>
 
 <tr>
-<td><strong>fg</strong></td>
-<td>Brings the most recent background job to foreground</td>
+<td align="left"><strong>fg</strong></td>
+<td align="left">Brings the most recent background job to foreground</td>
 </tr>
 
 <tr>
-<td><strong>fg n</strong></td>
-<td>Brings job n to the foreground</td>
+<td align="left"><strong>fg n</strong></td>
+<td align="left">Brings job n to the foreground</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="7-file-permissions">7 -FILE PERMISSIONS</h2>
 
@@ -575,352 +552,334 @@ W = World       x = execute
                 - = no access
 </code></pre>
 
-<hr />
-
 <h2 id="8-networking">8 - NETWORKING</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>ifconfig -a</strong></td>
-<td>Display all network interfaces and ip address</td>
+<td align="left"><strong>ifconfig -a</strong></td>
+<td align="left">Display all network interfaces and ip address</td>
 </tr>
 
 <tr>
-<td><strong>ifconfig eth0</strong></td>
-<td>Display eth0 address and details</td>
+<td align="left"><strong>ifconfig eth0</strong></td>
+<td align="left">Display eth0 address and details</td>
 </tr>
 
 <tr>
-<td><strong>ethtool eth0</strong></td>
-<td>Query or control network driver and hardware settings</td>
+<td align="left"><strong>ethtool eth0</strong></td>
+<td align="left">Query or control network driver and hardware settings</td>
 </tr>
 
 <tr>
-<td><strong>ping host</strong></td>
-<td>Send ICMP echo request to host</td>
+<td align="left"><strong>ping host</strong></td>
+<td align="left">Send ICMP echo request to host</td>
 </tr>
 
 <tr>
-<td><strong>whois domain</strong></td>
-<td>Display whois information for domain</td>
+<td align="left"><strong>whois domain</strong></td>
+<td align="left">Display whois information for domain</td>
 </tr>
 
 <tr>
-<td><strong>dig domain</strong></td>
-<td>Display DNS information for domain</td>
+<td align="left"><strong>dig domain</strong></td>
+<td align="left">Display DNS information for domain</td>
 </tr>
 
 <tr>
-<td><strong>dig -x IP_ADDRESS</strong></td>
-<td>Reverse lookup of IP_ADDRESS</td>
+<td align="left"><strong>dig -x IP_ADDRESS</strong></td>
+<td align="left">Reverse lookup of IP_ADDRESS</td>
 </tr>
 
 <tr>
-<td><strong>host domain</strong></td>
-<td>Display DNS ip address for domain</td>
+<td align="left"><strong>host domain</strong></td>
+<td align="left">Display DNS ip address for domain</td>
 </tr>
 
 <tr>
-<td><strong>hostname -i</strong></td>
-<td>Display the network address of the host name.</td>
+<td align="left"><strong>hostname -i</strong></td>
+<td align="left">Display the network address of the host name.</td>
 </tr>
 
 <tr>
-<td><strong>hostname -I</strong></td>
-<td>Display all local ip addresses</td>
+<td align="left"><strong>hostname -I</strong></td>
+<td align="left">Display all local ip addresses</td>
 </tr>
 
 <tr>
-<td><strong>wget <a href="http://domain.com/file">http://domain.com/file</a></strong></td>
-<td>Download <a href="http://domain.com/file">http://domain.com/file</a></td>
+<td align="left"><strong>wget <a href="http://domain.com/file">http://domain.com/file</a></strong></td>
+<td align="left">Download <a href="http://domain.com/file">http://domain.com/file</a></td>
 </tr>
 
 <tr>
-<td><strong>netstat -nutlp</strong></td>
-<td>Display listening tcp and udp ports and corresponding programs</td>
+<td align="left"><strong>netstat -nutlp</strong></td>
+<td align="left">Display listening tcp and udp ports and corresponding programs</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="9-archives-tar-files">9 - ARCHIVES (TAR FILES)</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>tar cf archive.tar directory</strong></td>
-<td>Create tar named archive.tar containing directory .</td>
+<td align="left"><strong>tar cf archive.tar directory</strong></td>
+<td align="left">Create tar named archive.tar containing directory .</td>
 </tr>
 
 <tr>
-<td><strong>tar xf archive.tar</strong></td>
-<td>Extract the contents from archive.tar .</td>
+<td align="left"><strong>tar xf archive.tar</strong></td>
+<td align="left">Extract the contents from archive.tar .</td>
 </tr>
 
 <tr>
-<td><strong>tar czf archive.tar.gz directory</strong></td>
-<td>Create a gzip compressed tar file name archive.tar.gz .</td>
+<td align="left"><strong>tar czf archive.tar.gz directory</strong></td>
+<td align="left">Create a gzip compressed tar file name archive.tar.gz .</td>
 </tr>
 
 <tr>
-<td><strong>tar xzf archive.tar.gz</strong></td>
-<td>Extract a gzip compressed tar file.</td>
+<td align="left"><strong>tar xzf archive.tar.gz</strong></td>
+<td align="left">Extract a gzip compressed tar file.</td>
 </tr>
 
 <tr>
-<td><strong>tar cjf archive.tar.bz2 directory</strong></td>
-<td>Create a tar file with bzip2 compression</td>
+<td align="left"><strong>tar cjf archive.tar.bz2 directory</strong></td>
+<td align="left">Create a tar file with bzip2 compression</td>
 </tr>
 
 <tr>
-<td><strong>tar xjf archive.tar.bz2</strong></td>
-<td>Extract a bzip2 compressed tar file.</td>
+<td align="left"><strong>tar xjf archive.tar.bz2</strong></td>
+<td align="left">Extract a bzip2 compressed tar file.</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="10-installing-packages">10 - INSTALLING PACKAGES</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>yum search keyword</strong></td>
-<td>Search for a package by keyword .</td>
+<td align="left"><strong>yum search keyword</strong></td>
+<td align="left">Search for a package by keyword .</td>
 </tr>
 
 <tr>
-<td><strong>yum install package</strong></td>
-<td>Install package .</td>
+<td align="left"><strong>yum install package</strong></td>
+<td align="left">Install package .</td>
 </tr>
 
 <tr>
-<td><strong>yum info package</strong></td>
-<td>Display description and summary information about package .</td>
+<td align="left"><strong>yum info package</strong></td>
+<td align="left">Display description and summary information about package .</td>
 </tr>
 
 <tr>
-<td><strong>rpm -i package.rpm</strong></td>
-<td>Install package from local file named package.rpm</td>
+<td align="left"><strong>rpm -i package.rpm</strong></td>
+<td align="left">Install package from local file named package.rpm</td>
 </tr>
 
 <tr>
-<td><strong>yum remove package</strong></td>
-<td>Remove/uninstall package .</td>
+<td align="left"><strong>yum remove package</strong></td>
+<td align="left">Remove/uninstall package .</td>
 </tr>
 
 <tr>
-<td><strong>tar zxvf sourcecode.tar.gz - cd sourcecode - ./configure - make - make install</strong></td>
-<td>Install software from source code.</td>
+<td align="left"><strong>tar zxvf sourcecode.tar.gz - cd sourcecode - ./configure - make - make install</strong></td>
+<td align="left">Install software from source code.</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="11-search">11 - SEARCH</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>grep pattern file</strong></td>
-<td>Search for pattern in file</td>
+<td align="left"><strong>grep pattern file</strong></td>
+<td align="left">Search for pattern in file</td>
 </tr>
 
 <tr>
-<td><strong>grep -r pattern directory</strong></td>
-<td>Search recursively for pattern in directory</td>
+<td align="left"><strong>grep -r pattern directory</strong></td>
+<td align="left">Search recursively for pattern in directory</td>
 </tr>
 
 <tr>
-<td><strong>locate name</strong></td>
-<td>Find files and directories by name</td>
+<td align="left"><strong>locate name</strong></td>
+<td align="left">Find files and directories by name</td>
 </tr>
 
 <tr>
-<td><strong>find /home/john -name &lsquo;prefix*&rsquo;</strong></td>
-<td>Find files in /home/john that start with &ldquo;prefix&rdquo;.</td>
+<td align="left"><strong>find /home/john -name &lsquo;prefix*&rsquo;</strong></td>
+<td align="left">Find files in /home/john that start with &ldquo;prefix&rdquo;.</td>
 </tr>
 
 <tr>
-<td><strong>find /home -size +100M</strong></td>
-<td>Find files larger than 100MB in /home</td>
+<td align="left"><strong>find /home -size +100M</strong></td>
+<td align="left">Find files larger than 100MB in /home</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="12-ssh-logins">12 - SSH LOGINS</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>ssh host</strong></td>
-<td>Connect to host as your local username.</td>
+<td align="left"><strong>ssh host</strong></td>
+<td align="left">Connect to host as your local username.</td>
 </tr>
 
 <tr>
-<td><strong>ssh user@host</strong></td>
-<td>Connect to host as user</td>
+<td align="left"><strong>ssh user@host</strong></td>
+<td align="left">Connect to host as user</td>
 </tr>
 
 <tr>
-<td><strong>ssh -p port user@host</strong></td>
-<td>Connect to host using port</td>
+<td align="left"><strong>ssh -p port user@host</strong></td>
+<td align="left">Connect to host using port</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="13-file-transfers">13 - FILE TRANSFERS</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>scp file.txt server:/tmp</strong></td>
-<td>Secure copy file.txt to the /tmp folder on server</td>
+<td align="left"><strong>scp file.txt server:/tmp</strong></td>
+<td align="left">Secure copy file.txt to the /tmp folder on server</td>
 </tr>
 
 <tr>
-<td><strong>scp server:/var/www/*.html /tmp</strong></td>
-<td>Copy *.html files from server to the local /tmp folder.</td>
+<td align="left"><strong>scp server:/var/www/*.html /tmp</strong></td>
+<td align="left">Copy *.html files from server to the local /tmp folder.</td>
 </tr>
 
 <tr>
-<td><strong>scp -r server:/var/www /tmp</strong></td>
-<td>Copy all files and directories recursively from server to the current system&rsquo;s /tmp folder.</td>
+<td align="left"><strong>scp -r server:/var/www /tmp</strong></td>
+<td align="left">Copy all files and directories recursively from server to the current system&rsquo;s /tmp folder.</td>
 </tr>
 
 <tr>
-<td><strong>rsync -a /home /backups/</strong></td>
-<td>Synchronize /home to /backups/home</td>
+<td align="left"><strong>rsync -a /home /backups/</strong></td>
+<td align="left">Synchronize /home to /backups/home</td>
 </tr>
 
 <tr>
-<td><strong>rsync -avz /home server:/backups/</strong></td>
-<td>Synchronize files/directories between the local and remote system with compression enabled</td>
+<td align="left"><strong>rsync -avz /home server:/backups/</strong></td>
+<td align="left">Synchronize files/directories between the local and remote system with compression enabled</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="14-disk-usage">14 - DISK USAGE</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>df -h</strong></td>
-<td>Show free and used space on mounted filesystems</td>
+<td align="left"><strong>df -h</strong></td>
+<td align="left">Show free and used space on mounted filesystems</td>
 </tr>
 
 <tr>
-<td><strong>df -i</strong></td>
-<td>Show free and used inodes on mounted filesystems</td>
+<td align="left"><strong>df -i</strong></td>
+<td align="left">Show free and used inodes on mounted filesystems</td>
 </tr>
 
 <tr>
-<td><strong>fdisk -l</strong></td>
-<td>Display disks partitions sizes and types</td>
+<td align="left"><strong>fdisk -l</strong></td>
+<td align="left">Display disks partitions sizes and types</td>
 </tr>
 
 <tr>
-<td><strong>du -ah</strong></td>
-<td>Display disk usage for all files and directories in human readable format</td>
+<td align="left"><strong>du -ah</strong></td>
+<td align="left">Display disk usage for all files and directories in human readable format</td>
 </tr>
 
 <tr>
-<td><strong>du -sh</strong></td>
-<td>Display total disk usage off the current directory</td>
+<td align="left"><strong>du -sh</strong></td>
+<td align="left">Display total disk usage off the current directory</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 
 <h2 id="15-directory-navigation">15 - DIRECTORY NAVIGATION</h2>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th align="left">Command</th>
+<th align="left">Notes</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td><strong>cd ..</strong></td>
-<td>To go up one level of the directory tree. (Change into the parent directory.)</td>
+<td align="left"><strong>cd ..</strong></td>
+<td align="left">To go up one level of the directory tree. (Change into the parent directory.)</td>
 </tr>
 
 <tr>
-<td><strong>cd</strong></td>
-<td>Go to the $HOME directory</td>
+<td align="left"><strong>cd</strong></td>
+<td align="left">Go to the $HOME directory</td>
 </tr>
 
 <tr>
-<td><strong>cd /etc</strong></td>
-<td>Change to the /etc directory</td>
+<td align="left"><strong>cd /etc</strong></td>
+<td align="left">Change to the /etc directory</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
 </article>
     </div>
 

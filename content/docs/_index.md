@@ -1,3 +1,7 @@
+---
+bookShowToc: false
+---
+
 # Welcome to Enlightening KT
 
 ## Topics covered:
