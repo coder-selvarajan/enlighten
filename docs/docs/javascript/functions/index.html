@@ -12,6 +12,38 @@
 
 
 <link rel="stylesheet" href="/enlighten/book.min.ddc6d7dee61e91398e4410b2b7db0629d9402823b5019c2c0bcbe26217cac8b3.css">
+
+<style>
+     
+    .collapsible {
+         
+         
+        cursor: pointer;
+         
+        width: 100%;
+         
+         
+         
+         
+    }
+    
+     
+    .active, .collapsible:hover {
+         
+    }
+    
+     
+     
+
+    .menu-content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+</style>
   
 </head>
 
@@ -27,7 +59,26 @@
         
 
         
-          <ul>
+          <!-- <ul>
+<li>
+<div class="collapsible">
+<a title="Learn Javascript">Javascript</a>
+</div>
+<ul class="menu-content">
+    <li><a href="/enlighten/docs/javascript/basics">Basics</a></li>
+    <li><a href="/enlighten/docs/javascript/functions">Functions</a></li>
+    <li><a href="/enlighten/docs/javascript/window-object">Window Object</a></li>
+    <li><a href="/enlighten/docs/javascript/dom-object-selectors">DOM Object &amp; Selectors</a></li>
+    <li><a href="/enlighten/docs/javascript/events">Events</a></li>
+    <li><a href="/enlighten/docs/javascript/localstorage">Localstorage</a></li>
+    <li><a href="/enlighten/docs/javascript/object-oriented">Object Oriented Features</a></li>
+    <li><a href="/enlighten/docs/javascript/async-programming">Async Programming</a></li>
+    <li><a href="/enlighten/docs/javascript/rest-api">REST Api</a></li>
+    <li><a href="/enlighten/docs/javascript/frameworks-converters">Frameworks &amp; Converters</a></li>
+</ul></li>
+</ul> -->
+
+<ul>
 <li><a href="/enlighten/docs/javascript/basics" title="Learn Javascript">Javascript</a>
 
 <ul>
@@ -50,11 +101,25 @@
 <li><a href="/enlighten/docs/linux/linux-intro">Linux Intro</a></li>
 <li><a href="/enlighten/docs/linux/linux-commands">Linux Commands</a></li>
 </ul></li>
-<li><a href="/enlighten/docs/hadoop-intro">Hadoop</a>
-<!-- - [Python](/docs/python) --></li>
+<li><a href="/enlighten/docs/hadoop-intro">Hadoop</a></li>
+<li><a href="/enlighten/docs/python2">Python</a></li>
 <li><a href="/enlighten/docs/markdown">Markdown Syntax</a></li>
 <li><a href="/enlighten/docs/hugo-tips">Hugo Tips</a></li>
 </ul>
+
+<!-- <p>Collapsible Set:</p>
+<a class="collapsible">Open Section 1</a>
+<div class="menu-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Open Section 2</button>
+<div class="menu-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Open Section 3</button>
+<div class="menu-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div> -->
 
         
 
@@ -205,7 +270,22 @@
     
 
   </main>
-  
+  <script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        } 
+    });
+    }
+</script>
 
 </body>
 

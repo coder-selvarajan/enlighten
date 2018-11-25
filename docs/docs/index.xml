@@ -196,5 +196,15 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
       <description> Learn Python </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/python2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/python2/</guid>
+      <description> Python basics Data types  string number bool  Control stmt  if case while   Python is a good language
+ </description>
+    </item>
+    
   </channel>
 </rss>
