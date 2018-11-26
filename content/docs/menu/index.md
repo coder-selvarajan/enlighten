@@ -49,6 +49,14 @@ headless: true
     <li>
         <a href="/enlighten/docs/hugo-tips/">Hugo Tips</a>
     </li>
+    <li>
+        <div class="collapsible">
+            <a title="Resources">Resources</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/resources/free-links/">Free Links</a></li>
+        </ul>
+    </li>
 </ul>
 
 

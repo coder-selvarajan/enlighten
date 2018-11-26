@@ -116,6 +116,7 @@ To find type of a variable use:
 	Math.random();
 	Math.floor(Math.random() * 20);
 ```
+---
 
 ## String methods 
 
@@ -136,7 +137,11 @@ To find type of a variable use:
 * replace()
 * includes('hello') //whether word exist or not
 
-**Template strings (ES5)**
+---
+
+## Template strings 
+
+### ES5:
 
 ```html
 	Html = '<ul> ' +
@@ -147,7 +152,7 @@ To find type of a variable use:
 	'</ul>';
 ```
 
-**Template strings (ES6)**
+### ES6:
 
 ```html
 	Html = `<ul> 

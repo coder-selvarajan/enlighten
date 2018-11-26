@@ -140,6 +140,14 @@
     <li>
         <a href="/enlighten/docs/hugo-tips/">Hugo Tips</a>
     </li>
+    <li>
+        <div class="collapsible">
+            <a title="Resources">Resources</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/resources/free-links/">Free Links</a></li>
+        </ul>
+    </li>
 </ul>
 
 <!-- - [Javascript](/enlighten/docs/javascript/basics "Learn Javascript")
@@ -291,6 +299,8 @@
 </span><span style="color:#75715e"></span>    <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">random</span><span style="color:#111">();</span>
     <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">floor</span><span style="color:#111">(</span><span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">random</span><span style="color:#111">()</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">20</span><span style="color:#111">);</span>
 </code></pre></div>
+<hr />
+
 <h2 id="string-methods">String methods</h2>
 
 <ul>
@@ -312,14 +322,18 @@
 <li>includes(&lsquo;hello&rsquo;) //whether word exist or not</li>
 </ul>
 
-<p><strong>Template strings (ES5)</strong></p>
+<hr />
+
+<h2 id="template-strings">Template strings</h2>
+
+<h3 id="es5">ES5:</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    Html = &#39;<span style="color:#111">&lt;</span><span style="color:#f92672">ul</span><span style="color:#111">&gt;</span> &#39; +
             &#39;<span style="color:#111">&lt;</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>Name: &#39; + name + &#39;<span style="color:#111">&lt;/</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>&#39; + 
             &#39;<span style="color:#111">&lt;</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>Age: &#39; + age + &#39;<span style="color:#111">&lt;/</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>&#39; + 
             &#39;<span style="color:#111">&lt;</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>Job: &#39; + job + &#39;<span style="color:#111">&lt;/</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>&#39; +
             &#39;<span style="color:#111">&lt;</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>City: &#39; + city + &#39;<span style="color:#111">&lt;/</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>&#39; +
     &#39;<span style="color:#111">&lt;/</span><span style="color:#f92672">ul</span><span style="color:#111">&gt;</span>&#39;;</code></pre></div>
-<p><strong>Template strings (ES6)</strong></p>
+<h3 id="es6">ES6:</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    Html = `<span style="color:#111">&lt;</span><span style="color:#f92672">ul</span><span style="color:#111">&gt;</span> 
             <span style="color:#111">&lt;</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>Name: ${name} <span style="color:#111">&lt;/</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span> 
             <span style="color:#111">&lt;</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>Age: ${age} <span style="color:#111">&lt;/</span><span style="color:#f92672">li</span><span style="color:#111">&gt;</span>
@@ -402,6 +416,11 @@
 <li><a href="#conversion">Conversion</a></li>
 <li><a href="#math-operations">Math Operations</a></li>
 <li><a href="#string-methods">String methods</a></li>
+<li><a href="#template-strings">Template strings</a>
+<ul>
+<li><a href="#es5">ES5:</a></li>
+<li><a href="#es6">ES6:</a></li>
+</ul></li>
 <li><a href="#arrays">Arrays</a></li>
 <li><a href="#functions">Functions</a></li>
 <li><a href="#objects">Objects</a></li>

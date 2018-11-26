@@ -1,5 +1,9 @@
 # Python basics
 
+**Online course** <br/> 
+https://courses.learncodeonline.in/learn/Machine-Learning-Bootcamp
+
+
 ### Data types
 
 - string
