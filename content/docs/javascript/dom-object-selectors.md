@@ -176,6 +176,28 @@
     console.log(val);
 ```
 
+**Difference between `.children` and `.childNodes`**
+
+.children is a property of an Element. Only Elements have children, and these children are all of type Element.
+
+However .childNodes is a property of Node. .childNodes can contain any node.
+
+So a concrete example would be
+
+```js
+    var el = document.createElement("div");
+    el.textContent = "foo"
+    el.childNodes.length === 1; // TextNode is a node child
+    el.children.length === 0; // no Element children
+```
+
+Of course .children is DOM4 so browser support is shaky, however if you use the DOM-shim, your cross browser problems will go away!
+
+Most of the time you want to use .children because generally you don't want to loop over TextNodes or Comments in your DOM manipulation.
+
+If you do want to manipulate TextNodes you probably want .textContent instead.
+
+
 ## Create Element: (with id, class, attributes, children)
 ```js
     // Create element
