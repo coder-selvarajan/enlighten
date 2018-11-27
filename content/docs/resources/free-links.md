@@ -6,13 +6,8 @@ bookShowToc: false
 
 ##### Got these links from [Hitesh Choudhary](https://www.youtube.com/channel/UCXgGY0wkgOzynnHvSEVmE3A) Youtube Channel
 
-
-For Swift start here: <br/>
-https://courses.learncodeonline.in/le...
-
-
 For Javascript, here is a free course: <br/>
-https://courses.learncodeonline.in/le...
+https://courses.learncodeonline.in/learn/Javascript-for-2018-developer
 
 
 Python can lead you with Django, web development here: <br/>

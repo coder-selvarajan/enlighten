@@ -269,7 +269,7 @@
 
     <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">lis</span><span style="color:#111">);</span>
 </code></pre></div>
-<h2 id="dom-queryselectorall-single-element">DOM QuerySelectorAll: (Single Element)</h2>
+<h2 id="dom-queryselectorall-multiple-elements">DOM QuerySelectorAll: (Multiple Elements)</h2>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">items</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelectorAll</span><span style="color:#111">(</span><span style="color:#d88200">&#39;ul.collection li.collection-item&#39;</span><span style="color:#111">);</span>
     <span style="color:#75715e">// items will be a Nodelist here.. It is not the html collection. 
 </span><span style="color:#75715e"></span>    <span style="color:#75715e">// so we dont need to convert it to array to loop it thru.. 
@@ -288,6 +288,30 @@
     <span style="color:#111">}</span>
     <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">items</span><span style="color:#111">);</span>
 </code></pre></div>
+<h3 id="gist">Gist :</h3>
+
+<h4 id="single-element">Single element</h4>
+
+<ul>
+<li>getElementById</li>
+<li>querySelector</li>
+</ul>
+
+<h4 id="multiple-element">Multiple element</h4>
+
+<ul>
+<li>getElementsByClassName, getElementsByTagName
+
+<ul>
+<li>Its a collection that needs to be converted as Array to loop thru</li>
+</ul></li>
+<li>querySelectorAll
+
+<ul>
+<li>Its a NodeList - No conversion is required to loop thru</li>
+</ul></li>
+</ul>
+
 <hr />
 
 <h1 id="traversing-the-dom">Traversing the DOM:</h1>
@@ -433,7 +457,14 @@
 <li><a href="#dom-selectors-single-element">DOM - Selectors:  (Single Element)</a></li>
 <li><a href="#dom-queryselector-single-element">DOM QuerySelector: (Single Element)</a></li>
 <li><a href="#dom-selectors-multiple-elements">DOM - Selectors:  (Multiple Elements)</a></li>
-<li><a href="#dom-queryselectorall-single-element">DOM QuerySelectorAll: (Single Element)</a></li>
+<li><a href="#dom-queryselectorall-multiple-elements">DOM QuerySelectorAll: (Multiple Elements)</a>
+<ul>
+<li><a href="#gist">Gist :</a>
+<ul>
+<li><a href="#single-element">Single element</a></li>
+<li><a href="#multiple-element">Multiple element</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 <li><a href="#traversing-the-dom">Traversing the DOM:</a>
 <ul>

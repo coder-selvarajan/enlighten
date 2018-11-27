@@ -90,7 +90,7 @@
     console.log(lis);
 ```
 
-## DOM QuerySelectorAll: (Single Element)
+## DOM QuerySelectorAll: (Multiple Elements)
 
 ```js
     const items = document.querySelectorAll('ul.collection li.collection-item');
@@ -111,6 +111,19 @@
     }
     console.log(items);
 ```
+
+### Gist :
+
+#### Single element
+- getElementById
+- querySelector
+
+#### Multiple element
+- getElementsByClassName, getElementsByTagName 
+    - Its a collection that needs to be converted as Array to loop thru
+- querySelectorAll 
+    - Its a NodeList - No conversion is required to loop thru
+
 ---
 
 # Traversing the DOM: 
@@ -249,3 +262,4 @@
     val = link;
     console.log(val);
 ```
+
