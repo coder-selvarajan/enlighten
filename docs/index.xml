@@ -209,15 +209,20 @@ Data types  string number bool  Control stmt  if case while   Python is a good l
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/resources/free-links/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/resources/useful-links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/resources/free-links/</guid>
-      <description>Learning Links - Free 😏 Got these links from Hitesh Choudhary Youtube Channel For Javascript, here is a free course:  https://courses.learncodeonline.in/learn/Javascript-for-2018-developer
-Python can lead you with Django, web development here:  https://courses.learncodeonline.in/le...
-Machine Learning guide here:  https://courses.learncodeonline.in/le...
-These are some online resource, that I have created over years. Here is the mentioned book in video:  https://amzn.to/2A1B0Ak
-Useful tools: Pick best UI color for your projects:  https://UIColorPicker.</description>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/resources/useful-links/</guid>
+      <description>Useful Links/Tools Free courses For Javascript, here is a free course:  https://courses.learncodeonline.in/learn/Javascript-for-2018-developer
+Introduction to Algorithms book: https://amzn.to/2A1B0Ak
+Free Tools/Apps Pick best UI color for your projects:  https://UIColorPicker.com
+Emoji Cheat sheet:  https://www.webpagefx.com/tools/emoji-cheat-sheet/
+Color Scale:  https://hihayk.github.io/scale/
+Color Wheel Generator:  https://hihayk.github.io/wheel/
+Lazyload Images:  https://github.com/Paul-Browne/lazyestload.js
+Extension to record browser interactions:  https://github.com/checkly/puppeteer-recorder
+Coder/Designer Websites Hayk (Designer cum Coder):  https://hihayk.com/#/
+References Documentation styles reference site:  https://checklyhq.com/docs/</description>
     </item>
     
   </channel>
