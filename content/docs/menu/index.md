@@ -55,6 +55,7 @@ headless: true
         </div>
         <ul class="menu-content">
             <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
+            <li><a href="/enlighten/docs/resources/my-projects/">My Projects</a></li>
         </ul>
     </li>
 </ul>
