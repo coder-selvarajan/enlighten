@@ -30,6 +30,14 @@ headless: true
     </li>
     <li>
         <div class="collapsible">
+            <a title="Learn Linux">Python</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/python/crash-course/">Crash Course</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
             <a title="Learn Linux">Linux</a>
         </div>
         <ul class="menu-content">
@@ -39,9 +47,6 @@ headless: true
     </li>
     <li>
         <a href="/enlighten/docs/hadoop-intro/">Hadoop</a>
-    </li>
-    <li>
-        <a href="/enlighten/docs/python2/">Python</a>
     </li>
     <li>
         <a href="/enlighten/docs/markdown/">Markdown Syntax</a>

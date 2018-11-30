@@ -189,22 +189,12 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/python/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/python/crash-course/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/python/</guid>
-      <description> Learn Python </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/python2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://selvarajan2006.github.io/enlighten/docs/python2/</guid>
-      <description> Python basics Online course  https://courses.learncodeonline.in/learn/Machine-Learning-Bootcamp
-Data types  string number bool  Control stmt  if case while   Python is a good language
- </description>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/python/crash-course/</guid>
+      <description>Python Crash Course Notes from &amp;lsquo;Programming with Mosh&amp;rsquo; youtube channel  Install Python 3.7 VS Code  Install Python extention from Microsoft Install PyLint extention for Syntax highlighting Install Formatter - Pep8Style to format python code according to PEP8 standards Install &amp;lsquo;Code Runner&amp;rsquo; extension    With VS Code we can setup to format the page while we save the file, with preference menu.
+ Online course</description>
     </item>
     
     <item>
