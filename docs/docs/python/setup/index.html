@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frameworks Converters | Enlightening KT</title>
+<title>Setup | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -191,42 +191,87 @@
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Frameworks Converters</strong>
+<strong>Setup</strong>
       </header>
       <article class="markdown">
 
-<h2 id="frameworks-converters">Frameworks &amp; Converters</h2>
+<p><em>Notes from &lsquo;Programming with Mosh&rsquo; &amp; &lsquo;Code Dojo&rsquo; youtube channel</em></p>
 
-<h3 id="es6-to-es5-converter">ES6 to ES5 converter:</h3>
+<h3 id="python-setup">Python Setup</h3>
 
-<dl>
-<dt>Convert es6 into es5 using Babel:</dt>
-<dd><a href="https://medium.com/@SunnyB/how-to-convert-es6-into-es5-using-babel-1b533d31a169">https://medium.com/@SunnyB/how-to-convert-es6-into-es5-using-babel-1b533d31a169</a></dd>
-<dd><a href="https://www.jonathan-petitcolas.com/2015/03/09/transpiling-es6-to-es5-using-babel.html">https://www.jonathan-petitcolas.com/2015/03/09/transpiling-es6-to-es5-using-babel.html</a></dd>
-<dt><br/>
-<strong>Babel JS Home Page:</strong></dt>
-<dd><a href="https://babeljs.io/">https://babeljs.io/</a></dd>
-<dt><br/>
-<strong>ES6Console:</strong></dt>
-<dd><a href="https://es6console.com/">https://es6console.com/</a></dd>
-</dl>
+<ul>
+<li>Install <strong>Python 3.7</strong> from <a href="https://www.python.org/">https://www.python.org/</a></li>
+<li><strong>VS-Code</strong> Setup
 
-<hr />
+<ul>
+<li>Install Python extention from Microsoft</li>
+<li>Install PyLint extention for Syntax highlighting</li>
+<li>Install Formatter - Pep8Style to format python code according to PEP8 standards</li>
+<li>Install &lsquo;Code Runner&rsquo; extension</li>
+</ul></li>
+</ul>
 
-<dl>
-<dt>Date related functionalities with <strong>moment.js</strong>:</dt>
-<dd><a href="https://momentjs.com/">https://momentjs.com/</a></dd>
-<dt><br>
-Useful functionalities in javascript with <strong>underscorejs</strong>:</dt>
-<dd><a href="https://underscorejs.org/">https://underscorejs.org/</a></dd>
-<dt><br>
-JS framework <strong>Backbone.js</strong></dt>
-<dd><a href="http://backbonejs.org/">http://backbonejs.org/</a></dd>
-</dl>
+<blockquote>
+<p>With VS Code we can setup to format the page while we save the file, with preference menu.</p>
+</blockquote>
+
+<h3 id="django-setup">Django Setup</h3>
+
+<ul>
+<li><strong>pip3</strong> - package manager for python. Its already available with python installation. <br/>
+
+<ul>
+<li><strong>Pipenv</strong> is used to create virtual environment. Install pipenv via <strong>pip3</strong> <br/>
+<code>pip3 install pipenv</code></li>
+</ul></li>
+<li>Create a folder &lsquo;test_django&rsquo; and run this command under the folder <br>
+    <code>pipenv install django==2.1</code></li>
+<li>Pipfile and Pipfile.lock files will be created in that folder</li>
+<li>Run  -  <code>pipenv shell</code></li>
+<li>Run this command to create the django project - <code>django-admin startproject django-project1 .</code></li>
+<li>Run <code>python manage.py runserver</code> to start the development server at  <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>
+You may see the common page in the url.</li>
+<li>Run this command to create <strong>hello</strong> app - <code>python manage.py startapp hello</code></li>
+<li>Open &lsquo;test_django&rsquo; folder in VS Code and edit <code>settings.py</code> file - add &ldquo;hello&rdquo; entry under &ldquo;INSTALLED_APPS&rdquo; array.</li>
+
+<li><p>Add the below code to create a view in <strong>hello</strong> app and configure the url. Then access <a href="http://127.0.0.1:8000/sayHello">http://127.0.0.1:8000/sayHello</a> and view the app.</p>
+
+<p><strong>/hello/views.py</strong></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#f92672">from</span> <span style="color:#111">django.http</span> <span style="color:#f92672">import</span> <span style="color:#111">HttpResponse</span>
+  <span style="color:#00a8c8">def</span> <span style="color:#75af00">myView</span><span style="color:#111">(</span><span style="color:#111">request</span><span style="color:#111">):</span>
+        <span style="color:#00a8c8">return</span> <span style="color:#111">HttpResponse</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Hello, World!&#39;</span><span style="color:#111">)</span></code></pre></div>
+<p><strong>/django_project1/urls.py</strong></p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#f92672">from</span> <span style="color:#111">hello.views</span> <span style="color:#f92672">import</span> <span style="color:#111">myView</span>
+
+  <span style="color:#111">urlpatterns</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span>
+        <span style="color:#111">path</span><span style="color:#111">(</span><span style="color:#d88200">&#39;admin/&#39;</span><span style="color:#111">,</span> <span style="color:#111">admin</span><span style="color:#f92672">.</span><span style="color:#111">site</span><span style="color:#f92672">.</span><span style="color:#111">urls</span><span style="color:#111">),</span>
+        <span style="color:#111">path</span><span style="color:#111">(</span><span style="color:#d88200">&#39;sayHello/&#39;</span><span style="color:#111">,</span> <span style="color:#111">myView</span><span style="color:#111">),</span>
+  <span style="color:#111">]</span></code></pre></div>
+<p><br></p></li>
+</ul>
+
+<p><strong>Online course</strong> <br/></p>
+
+<p><a href="https://courses.learncodeonline.in/learn/Machine-Learning-Bootcamp">https://courses.learncodeonline.in/learn/Machine-Learning-Bootcamp</a></p>
 </article>
     </div>
 
     
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#python-setup">Python Setup</a></li>
+<li><a href="#django-setup">Django Setup</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
     
 
   </main>

@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 $block-border-radius: 0.15rem;
 
@@ -10,15 +10,21 @@ $block-border-radius: 0.15rem;
     line-height: 1em;
   }
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-weight: 600;
     line-height: 1.5;
   }
 
-  b, optgroup, strong {
+  b,
+  optgroup,
+  strong {
     font-weight: 700;
   }
-  
+
   a {
     text-decoration: none;
 
@@ -28,12 +34,15 @@ $block-border-radius: 0.15rem;
   }
 
   code {
-    font-family: 'Oxygen Mono', monospace;
+    font-family: "Oxygen Mono", monospace;
+    background: $gray-100;
+    color: darkgreen;
   }
 
   p code {
     padding: 0 $padding-4;
     background: $gray-100;
+    color: navy;
     border-radius: $block-border-radius;
   }
 
@@ -46,12 +55,16 @@ $block-border-radius: 0.15rem;
   }
 
   blockquote {
-    border-left: $padding-1*2 solid $gray-300;
+    border-left: $padding-1 * 2 solid $gray-300;
     margin: 0;
     padding: $padding-1 $padding-16;
 
-    :first-child { margin-top: 0; }
-    :last-child { margin-bottom: 0; }
+    :first-child {
+      margin-top: 0;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
   }
 
   table {

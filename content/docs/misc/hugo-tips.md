@@ -80,7 +80,7 @@ Internet
 
 `RESULT:`
 
-{{< figure src="../../images/hugo.png" title="Hugo" >}}
+{{< figure src="../../../images/hugo.png" title="Hugo" >}}
 
 ---
 

@@ -1,37 +1,37 @@
 Markdown: Syntax
 ================
 
-![Basic Markdown Syntax](../../images/markdown-syntax.png "Basic Markdown Syntax")
+![Basic Markdown Syntax](../../../images/markdown-syntax.png "Basic Markdown Syntax")
 
 ## Images
 
 `SYNTAX:`
 
-    ![Hugo](../../images/hugo-small.png "Hugo")
+    ![Hugo](../../../images/hugo-small.png "Hugo")
 
 `RESULT:`
 
-![Hugo](../../images/hugo-small.png "Hugo")
+![Hugo](../../../images/hugo-small.png "Hugo")
 
 ## Table
 
 `SYNTAX:`
 
-    Name    | Age
-    --------|---------
-    Bob     | 27
-            | xyz
-    Alice   | 23
-            | abcd
+    | Name  | Age |
+    | ----- | --- |
+    | Bob   | 27  |
+    | xyz   |
+    | Alice | 23  |
+    | abcd  |
 
 `RESULT:`
 
-   Name | Age
---------|---------
-    Bob | 27
-        | xyz
-  Alice | 23
-        | abcd
+| Name  | Age |
+| ----- | --- |
+| Bob   | 27  |
+| xyz   |
+| Alice | 23  |
+| abcd  |
 
 <br/>
 

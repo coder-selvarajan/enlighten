@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
 
 
-<link rel="stylesheet" href="/enlighten/book.min.ddc6d7dee61e91398e4410b2b7db0629d9402823b5019c2c0bcbe26217cac8b3.css">
+<link rel="stylesheet" href="/enlighten/book.min.736c5c0cd08f218b7956369f2a88e75b4b782e9523905275c7922bf5365d3b1c.css">
 
 <style>
      
@@ -109,6 +109,7 @@
             <li><a href="/enlighten/docs/javascript/async-programming/">Async Programming</a></li>
             <li><a href="/enlighten/docs/javascript/rest-api/">REST Api</a></li>
             <li><a href="/enlighten/docs/javascript/frameworks-converters/">Frameworks &amp; Converters</a></li>
+            <li><a href="/enlighten/docs/javascript/chrome-extn/">Build Chrome Extn</a></li>
         </ul>
     </li>
     <li>
@@ -124,7 +125,7 @@
             <a title="Learn Linux">Python</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/python/crash-course/">Crash Course</a></li>
+            <li><a href="/enlighten/docs/python/setup/">Setup</a></li>
         </ul>
     </li>
     <li>
@@ -137,23 +138,25 @@
         </ul>
     </li>
     <li>
-        <a href="/enlighten/docs/hadoop-intro/">Hadoop</a>
-    </li>
-    <li>
-        <a href="/enlighten/docs/markdown/">Markdown Syntax</a>
-    </li>
-    <li>
-        <a href="/enlighten/docs/hugo-tips/">Hugo Tips</a>
+        <div class="collapsible">
+            <a title="Learn Bigdata">Bigdata</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/hadoop-intro/">Hadoop</a></li>
+        </ul>
     </li>
     <li>
         <div class="collapsible">
-            <a title="Resources">Resources</a>
+            <a title="Learn Linux">Misc</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
-            <li><a href="/enlighten/docs/resources/my-projects/">My Projects</a></li>
+            <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
+            <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
+            <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
         </ul>
     </li>
+    <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
+    <li><a href="/enlighten/docs/resources/my-projects/">Projects, Apps & Sites</a></li>
 </ul>
 
 <!-- - [Javascript](/enlighten/docs/javascript/basics "Learn Javascript")
@@ -369,9 +372,9 @@
 </code></pre></div>
 <p><strong>Difference between <code>.children</code> and <code>.childNodes</code></strong></p>
 
-<p>.children is a property of an Element. Only Elements have children, and these children are all of type Element.</p>
+<p><code>.children</code> is a property of an Element. Only Elements have children, and these children are all of type Element.</p>
 
-<p>However .childNodes is a property of Node. .childNodes can contain any node.</p>
+<p>However .childNodes is a property of Node. <code>.childNodes</code> can contain any node.</p>
 
 <p>So a concrete example would be</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">var</span> <span style="color:#75af00">el</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">createElement</span><span style="color:#111">(</span><span style="color:#d88200">&#34;div&#34;</span><span style="color:#111">);</span>
@@ -379,9 +382,9 @@
     <span style="color:#75af00">el</span><span style="color:#111">.</span><span style="color:#75af00">childNodes</span><span style="color:#111">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#75715e">// TextNode is a node child
 </span><span style="color:#75715e"></span>    <span style="color:#75af00">el</span><span style="color:#111">.</span><span style="color:#75af00">children</span><span style="color:#111">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#75715e">// no Element children
 </span><span style="color:#75715e"></span></code></pre></div>
-<p>Of course .children is DOM4 so browser support is shaky, however if you use the DOM-shim, your cross browser problems will go away!</p>
+<p>Of course <code>.children</code> is DOM4 so browser support is shaky, however if you use the DOM-shim, your cross browser problems will go away!</p>
 
-<p>Most of the time you want to use .children because generally you don&rsquo;t want to loop over TextNodes or Comments in your DOM manipulation.</p>
+<p>Most of the time you want to use <code>.children</code> because generally you don&rsquo;t want to loop over TextNodes or Comments in your DOM manipulation.</p>
 
 <p>If you do want to manipulate TextNodes you probably want .textContent instead.</p>
 

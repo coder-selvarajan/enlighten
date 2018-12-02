@@ -27,22 +27,6 @@ Database Choices: - File systems -HDFS (Hadoop distributed file system)
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/hugo-tips/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://selvarajan2006.github.io/enlighten/docs/hugo-tips/</guid>
-      <description>Hugo Syntax/Tips Emoji Emojis can be enabled in hugo by adding below property in configuration file.
-enableEmoji = &amp;quot;true&amp;quot;  Emoji Cheat-sheat: https://www.webpagefx.com/tools/emoji-cheat-sheet/
-SYNTAX: remove space after first :
-I : heart: Hugo!  RESULT:
-I ❤️ Hugo!
-Task List SYNTAX:
-1. [ ] a task list item 2. [x] list syntax required 3. [ ] incomplete 4. [x] completed  RESULT:
-a task list item list syntax required incomplete completed  Footnote SYNTAX:</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://selvarajan2006.github.io/enlighten/docs/javascript/async-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -62,6 +46,18 @@ Other api methods:
       <description>Basics Install Visual Studio Code and add following extentions
  Brackets pair Live server ES6 Code snippets  To find the time it took to execute the scripts:
 console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted  const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/javascript/chrome-extn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/javascript/chrome-extn/</guid>
+      <description>Built a Chrome Extension using Javascript Storage mechanism in chrome:
+ chrome.storage.local - uses localstorage chrome.storage.sync - uses localstorage as well as sync data in other chrome browser.  Create png images with below dimentions :
+ 19 X 19 128 X 128 150 X 150  Create a manifest.json file
+{ &amp;#34;manifest_version&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;Techie Tab&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;Dashboard tab for Techies&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, &amp;#34;icons&amp;#34;: { &amp;#34;128&amp;#34;: &amp;#34;icon_128.png&amp;#34; }, &amp;#34;browser_action&amp;#34;: { &amp;#34;default_icon&amp;#34;: &amp;#34;icon.</description>
     </item>
     
     <item>
@@ -160,20 +156,6 @@ window.console.log(&amp;#34;Hello&amp;#34;) window.alert(&amp;#34;Hello World&am
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/markdown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://selvarajan2006.github.io/enlighten/docs/markdown/</guid>
-      <description>Markdown: Syntax Images SYNTAX:
-![Hugo](../../images/hugo-small.png &amp;quot;Hugo&amp;quot;)  RESULT:
-Table SYNTAX:
-Name | Age --------|--------- Bob | 27 | xyz Alice | 23 | abcd  RESULT:
-   Name Age     Bob 27    xyz   Alice 23    abcd    
-Notes from John Gruber (creator of Markdown)  Overview  Philosophy Inline HTML Automatic Escaping for Special Characters  Block Elements  Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules  Span Elements  Links Emphasis Code Images  Miscellaneous  Backslash Escapes Automatic Links   Note: This document is itself written using Markdown; you can see the source for it by adding &amp;lsquo;.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://selvarajan2006.github.io/enlighten/docs/mean_stack/nodejs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -189,12 +171,54 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/python/crash-course/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/python/crash-course/</guid>
-      <description>Python Crash Course Notes from &amp;lsquo;Programming with Mosh&amp;rsquo; youtube channel  Install Python 3.7 VS Code  Install Python extention from Microsoft Install PyLint extention for Syntax highlighting Install Formatter - Pep8Style to format python code according to PEP8 standards Install &amp;lsquo;Code Runner&amp;rsquo; extension    With VS Code we can setup to format the page while we save the file, with preference menu.
- Online course</description>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</guid>
+      <description>AsciiDoc AsciiDoctor is a fast text processor and publishing tool for converting AsciiDoc to Html5
+This processor is built in Ruby.
+There is asciidoc processor available for Javascript as well. https://github.com/asciidoctor/asciidoctor.js
+The Big Picture Asciidoctor reads content written in plain text, as shown in the panel on the left in the image below, and converts it to HTML5, as shown rendered in the right panel. Asciidoctor applies a default stylesheet to the HTML5 document to provide a pleasant out-of-the-box experience.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/misc/hugo-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/misc/hugo-tips/</guid>
+      <description>Hugo Syntax/Tips Emoji Emojis can be enabled in hugo by adding below property in configuration file.
+enableEmoji = &amp;quot;true&amp;quot;  Emoji Cheat-sheat: https://www.webpagefx.com/tools/emoji-cheat-sheet/
+SYNTAX: remove space after first :
+I : heart: Hugo!  RESULT:
+I ❤️ Hugo!
+Task List SYNTAX:
+1. [ ] a task list item 2. [x] list syntax required 3. [ ] incomplete 4. [x] completed  RESULT:
+a task list item list syntax required incomplete completed  Footnote SYNTAX:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/misc/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/misc/markdown/</guid>
+      <description>Markdown: Syntax Images SYNTAX:
+![Hugo](../../../images/hugo-small.png &amp;quot;Hugo&amp;quot;)  RESULT:
+Table SYNTAX:
+| Name | Age | | ----- | --- | | Bob | 27 | | xyz | | Alice | 23 | | abcd |  RESULT:
+   Name Age     Bob 27   xyz    Alice 23   abcd     
+Notes from John Gruber (creator of Markdown)  Overview  Philosophy Inline HTML Automatic Escaping for Special Characters  Block Elements  Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules  Span Elements  Links Emphasis Code Images  Miscellaneous  Backslash Escapes Automatic Links   Note: This document is itself written using Markdown; you can see the source for it by adding &amp;lsquo;.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/python/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/python/setup/</guid>
+      <description>Notes from &amp;lsquo;Programming with Mosh&amp;rsquo; &amp;amp; &amp;lsquo;Code Dojo&amp;rsquo; youtube channel
+Python Setup  Install Python 3.7 from https://www.python.org/ VS-Code Setup  Install Python extention from Microsoft Install PyLint extention for Syntax highlighting Install Formatter - Pep8Style to format python code according to PEP8 standards Install &amp;lsquo;Code Runner&amp;rsquo; extension    With VS Code we can setup to format the page while we save the file, with preference menu.</description>
     </item>
     
     <item>

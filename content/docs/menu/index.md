@@ -18,6 +18,7 @@ headless: true
             <li><a href="/enlighten/docs/javascript/async-programming/">Async Programming</a></li>
             <li><a href="/enlighten/docs/javascript/rest-api/">REST Api</a></li>
             <li><a href="/enlighten/docs/javascript/frameworks-converters/">Frameworks &amp; Converters</a></li>
+            <li><a href="/enlighten/docs/javascript/chrome-extn/">Build Chrome Extn</a></li>
         </ul>
     </li>
     <li>
@@ -33,7 +34,7 @@ headless: true
             <a title="Learn Linux">Python</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/python/crash-course/">Crash Course</a></li>
+            <li><a href="/enlighten/docs/python/setup/">Setup</a></li>
         </ul>
     </li>
     <li>
@@ -46,23 +47,25 @@ headless: true
         </ul>
     </li>
     <li>
-        <a href="/enlighten/docs/hadoop-intro/">Hadoop</a>
-    </li>
-    <li>
-        <a href="/enlighten/docs/markdown/">Markdown Syntax</a>
-    </li>
-    <li>
-        <a href="/enlighten/docs/hugo-tips/">Hugo Tips</a>
+        <div class="collapsible">
+            <a title="Learn Bigdata">Bigdata</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/hadoop-intro/">Hadoop</a></li>
+        </ul>
     </li>
     <li>
         <div class="collapsible">
-            <a title="Resources">Resources</a>
+            <a title="Learn Linux">Misc</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
-            <li><a href="/enlighten/docs/resources/my-projects/">My Projects</a></li>
+            <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
+            <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
+            <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
         </ul>
     </li>
+    <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
+    <li><a href="/enlighten/docs/resources/my-projects/">Projects, Apps & Sites</a></li>
 </ul>
 
 

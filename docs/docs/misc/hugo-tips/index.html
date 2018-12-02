@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frameworks Converters | Enlightening KT</title>
+<title>Hugo Tips | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -191,42 +191,189 @@
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Frameworks Converters</strong>
+<strong>Hugo Tips</strong>
       </header>
       <article class="markdown">
 
-<h2 id="frameworks-converters">Frameworks &amp; Converters</h2>
+<h1 id="hugo-syntax-tips">Hugo Syntax/Tips</h1>
 
-<h3 id="es6-to-es5-converter">ES6 to ES5 converter:</h3>
+<h3 id="emoji"><strong>Emoji</strong></h3>
+
+<p>Emojis can be enabled in hugo by adding below property in configuration file.</p>
+
+<pre><code>enableEmoji = &quot;true&quot;
+</code></pre>
+
+<p>Emoji Cheat-sheat:
+<a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">https://www.webpagefx.com/tools/emoji-cheat-sheet/</a></p>
+
+<p><code>SYNTAX:</code> remove space after first <code>:</code></p>
+
+<pre><code>I : heart: Hugo!
+</code></pre>
+
+<p><code>RESULT:</code></p>
+
+<p>I ❤️ Hugo!</p>
+
+<hr />
+
+<h3 id="task-list"><strong>Task List</strong></h3>
+
+<p><code>SYNTAX:</code></p>
+
+<pre><code>1. [ ] a task list item
+2. [x] list syntax required
+3. [ ] incomplete
+4. [x] completed
+</code></pre>
+
+<p><code>RESULT:</code></p>
+
+<ol class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> a task list item</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> list syntax required</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> incomplete</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> completed</label></li>
+</ol>
+
+<hr />
+
+<h3 id="footnote"><strong>Footnote</strong></h3>
+
+<p><code>SYNTAX:</code></p>
+
+<pre><code>This is a footnote.[^1]
+[^1]: the footnote text.
+</code></pre>
+
+<p><code>RESULT:</code></p>
+
+<p>This is a footnote.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<hr />
+
+<h3 id="definition-list"><strong>Definition List</strong></h3>
+
+<p><code>SYNTAX:</code></p>
+
+<pre><code>Cat
+: Fluffy animal everyone likes
+
+Internet
+: Vector of transmission for pictures of cats
+</code></pre>
+
+<p><code>RESULT:</code></p>
 
 <dl>
-<dt>Convert es6 into es5 using Babel:</dt>
-<dd><a href="https://medium.com/@SunnyB/how-to-convert-es6-into-es5-using-babel-1b533d31a169">https://medium.com/@SunnyB/how-to-convert-es6-into-es5-using-babel-1b533d31a169</a></dd>
-<dd><a href="https://www.jonathan-petitcolas.com/2015/03/09/transpiling-es6-to-es5-using-babel.html">https://www.jonathan-petitcolas.com/2015/03/09/transpiling-es6-to-es5-using-babel.html</a></dd>
-<dt><br/>
-<strong>Babel JS Home Page:</strong></dt>
-<dd><a href="https://babeljs.io/">https://babeljs.io/</a></dd>
-<dt><br/>
-<strong>ES6Console:</strong></dt>
-<dd><a href="https://es6console.com/">https://es6console.com/</a></dd>
+<dt>Cat</dt>
+<dd>Fluffy animal everyone likes</dd>
+<dt>Internet</dt>
+<dd>Vector of transmission for pictures of cats</dd>
 </dl>
 
 <hr />
 
-<dl>
-<dt>Date related functionalities with <strong>moment.js</strong>:</dt>
-<dd><a href="https://momentjs.com/">https://momentjs.com/</a></dd>
-<dt><br>
-Useful functionalities in javascript with <strong>underscorejs</strong>:</dt>
-<dd><a href="https://underscorejs.org/">https://underscorejs.org/</a></dd>
-<dt><br>
-JS framework <strong>Backbone.js</strong></dt>
-<dd><a href="http://backbonejs.org/">http://backbonejs.org/</a></dd>
-</dl>
+<h3 id="figure"><strong>Figure</strong></h3>
+
+<p><code>SYNTAX:</code></p>
+
+<pre><code>{{ &lt; figure src=&quot;../../images/hugo.png&quot; title=&quot;Hugo&quot; &gt; }}
+</code></pre>
+
+<p><code>RESULT:</code></p>
+
+<figure>
+    <img src="../../../images/hugo.png"/> <figcaption>
+            <h4>Hugo</h4>
+        </figcaption>
+</figure>
+
+
+<hr />
+
+<h3 id="gist-github"><strong>Gist</strong> (Github)</h3>
+
+<p><code>SYNTAX:</code></p>
+
+<pre><code>{{ &lt; gist spf13 7896402 &gt;}}
+</code></pre>
+
+<p><code>RESULT:</code></p>
+
+<script type="application/javascript" src="//gist.github.com/spf13/7896402.js"></script>
+
+<hr />
+
+<h3 id="video-youtube-vimeo"><strong>Video (Youtube &amp; Vimeo)</strong></h3>
+
+<h4 id="youtube-video-sample"><strong>Youtube</strong> video sample:</h4>
+
+<p><code>SYNTAX:</code></p>
+
+<pre><code>{{ &lt; youtube w7Ft2ymGmfc &gt;}}
+</code></pre>
+
+<p><code>RESULT:</code></p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h4 id="vimeo-video-sample"><strong>Vimeo</strong> video sample:</h4>
+
+<p><code>SYNTAX:</code></p>
+
+<pre><code>{{ &lt; vimeo 146022717 &gt;}}
+</code></pre>
+
+<p><code>RESULT:</code></p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ </div>
+
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">the footnote text.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
 </article>
     </div>
 
     
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#hugo-syntax-tips">Hugo Syntax/Tips</a>
+<ul>
+<li>
+<ul>
+<li><a href="#emoji"><strong>Emoji</strong></a></li>
+<li><a href="#task-list"><strong>Task List</strong></a></li>
+<li><a href="#footnote"><strong>Footnote</strong></a></li>
+<li><a href="#definition-list"><strong>Definition List</strong></a></li>
+<li><a href="#figure"><strong>Figure</strong></a></li>
+<li><a href="#gist-github"><strong>Gist</strong> (Github)</a></li>
+<li><a href="#video-youtube-vimeo"><strong>Video (Youtube &amp; Vimeo)</strong></a>
+<ul>
+<li><a href="#youtube-video-sample"><strong>Youtube</strong> video sample:</a></li>
+<li><a href="#vimeo-video-sample"><strong>Vimeo</strong> video sample:</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
     
 
   </main>

@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frameworks Converters | Enlightening KT</title>
+<title>Chrome Extn | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -191,42 +191,73 @@
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Frameworks Converters</strong>
+<strong>Chrome Extn</strong>
       </header>
       <article class="markdown">
 
-<h2 id="frameworks-converters">Frameworks &amp; Converters</h2>
+<h2 id="built-a-chrome-extension-using-javascript">Built a Chrome Extension using Javascript</h2>
 
-<h3 id="es6-to-es5-converter">ES6 to ES5 converter:</h3>
+<p>Storage mechanism in chrome:</p>
 
-<dl>
-<dt>Convert es6 into es5 using Babel:</dt>
-<dd><a href="https://medium.com/@SunnyB/how-to-convert-es6-into-es5-using-babel-1b533d31a169">https://medium.com/@SunnyB/how-to-convert-es6-into-es5-using-babel-1b533d31a169</a></dd>
-<dd><a href="https://www.jonathan-petitcolas.com/2015/03/09/transpiling-es6-to-es5-using-babel.html">https://www.jonathan-petitcolas.com/2015/03/09/transpiling-es6-to-es5-using-babel.html</a></dd>
-<dt><br/>
-<strong>Babel JS Home Page:</strong></dt>
-<dd><a href="https://babeljs.io/">https://babeljs.io/</a></dd>
-<dt><br/>
-<strong>ES6Console:</strong></dt>
-<dd><a href="https://es6console.com/">https://es6console.com/</a></dd>
-</dl>
+<ul>
+<li>chrome.storage.local  - uses localstorage</li>
+<li>chrome.storage.sync  - uses localstorage as well as sync data in other chrome browser.</li>
+</ul>
 
+<p>Create png images with below dimentions :</p>
+
+<ul>
+<li>19 X 19</li>
+<li>128 X 128</li>
+<li>150 X 150</li>
+</ul>
+
+<p>Create a manifest.json file</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#111">{</span>
+    <span style="color:#f92672">&#34;manifest_version&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span>
+    <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Techie Tab&#34;</span><span style="color:#111">,</span>
+    <span style="color:#f92672">&#34;description&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Dashboard tab for Techies&#34;</span><span style="color:#111">,</span>
+    <span style="color:#f92672">&#34;version&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;1.0.0&#34;</span><span style="color:#111">,</span>
+    <span style="color:#f92672">&#34;icons&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+        <span style="color:#f92672">&#34;128&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;icon_128.png&#34;</span>
+    <span style="color:#111">},</span>
+    <span style="color:#f92672">&#34;browser_action&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+        <span style="color:#f92672">&#34;default_icon&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;icon.png&#34;</span><span style="color:#111">,</span>
+        <span style="color:#f92672">&#34;default_popup&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;popup.html&#34;</span>
+    <span style="color:#111">},</span>
+    <span style="color:#f92672">&#34;permissions&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+        <span style="color:#d88200">&#34;activeTab&#34;</span><span style="color:#111">,</span>
+        <span style="color:#d88200">&#34;storage&#34;</span>
+    <span style="color:#111">],</span>
+    <span style="color:#f92672">&#34;incognito&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;split&#34;</span><span style="color:#111">,</span>
+    <span style="color:#f92672">&#34;chrome_url_overrides&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+        <span style="color:#f92672">&#34;newtab&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;index.html&#34;</span>
+    <span style="color:#111">}</span>
+<span style="color:#111">}</span></code></pre></div>
 <hr />
 
-<dl>
-<dt>Date related functionalities with <strong>moment.js</strong>:</dt>
-<dd><a href="https://momentjs.com/">https://momentjs.com/</a></dd>
-<dt><br>
-Useful functionalities in javascript with <strong>underscorejs</strong>:</dt>
-<dd><a href="https://underscorejs.org/">https://underscorejs.org/</a></dd>
-<dt><br>
-JS framework <strong>Backbone.js</strong></dt>
-<dd><a href="http://backbonejs.org/">http://backbonejs.org/</a></dd>
-</dl>
+<h3 id="notes">Notes:</h3>
+
+<p>Chrome Storage:
+<a href="https://developer.chrome.com/extensions/storage">https://developer.chrome.com/extensions/storage</a></p>
 </article>
     </div>
 
     
+    
+    <aside class="toc fixed">
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#built-a-chrome-extension-using-javascript">Built a Chrome Extension using Javascript</a>
+<ul>
+<li><a href="#notes">Notes:</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
     
 
   </main>

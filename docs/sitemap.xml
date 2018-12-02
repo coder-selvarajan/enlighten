@@ -11,15 +11,15 @@
   </url>
   
   <url>
-    <loc>https://selvarajan2006.github.io/enlighten/docs/hugo-tips/</loc>
-  </url>
-  
-  <url>
     <loc>https://selvarajan2006.github.io/enlighten/docs/javascript/async-programming/</loc>
   </url>
   
   <url>
     <loc>https://selvarajan2006.github.io/enlighten/docs/javascript/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/javascript/chrome-extn/</loc>
   </url>
   
   <url>
@@ -63,15 +63,23 @@
   </url>
   
   <url>
-    <loc>https://selvarajan2006.github.io/enlighten/docs/markdown/</loc>
-  </url>
-  
-  <url>
     <loc>https://selvarajan2006.github.io/enlighten/docs/mean_stack/nodejs/</loc>
   </url>
   
   <url>
-    <loc>https://selvarajan2006.github.io/enlighten/docs/python/crash-course/</loc>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/misc/hugo-tips/</loc>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/misc/markdown/</loc>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/python/setup/</loc>
   </url>
   
   <url>
