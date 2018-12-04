@@ -51,6 +51,6 @@ https://hihayk.com/#/
 
 ### References
 
-Documentation styles reference site: <br/>
-https://checklyhq.com/docs/
-
+Reference sites for nice typography & elegant design: <br/>
+https://checklyhq.com/docs/    <br/>
+https://www.quackit.com/
