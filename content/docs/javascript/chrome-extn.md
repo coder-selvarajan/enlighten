@@ -38,6 +38,14 @@ Create a manifest.json file
 }
 ```
 
+### RSS Feed Reader
+
+Below jquery plugin is used for rss feed reader.. <br/> 
+https://github.com/sdepold/jquery-rss
+
+jQuery-rss uses https://feedrapp.info/ to read feeds. This is an alternative to google feed api. 
+
+
 ---
 
 ### Notes:
