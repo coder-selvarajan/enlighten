@@ -6,14 +6,14 @@ bookShowToc: false
 
 ## Topics covered:
 
-1. [`Javascript`](/enlighten/docs/javascript/basics) 
+* [`Javascript`](/enlighten/docs/javascript/basics) 
 
-2. [`MEAN Stack`](/enlighten/docs/mean_stack/nodejs)
+* [`MEAN Stack`](/enlighten/docs/mean_stack/nodejs)
 
-3. [`Python`](/enlighten/docs/python)
+* [`Python`](/enlighten/docs/python/setup)
 
-4. [`Hadoop`](/enlighten/docs/hadoop-intro)
+* [`Hadoop`](/enlighten/docs/hadoop-intro)
 
-5. [`Linux`](/enlighten/docs/linux/linux-intro)
+* [`Linux`](/enlighten/docs/linux/linux-intro)
 
-6. [`Hugo & Markdown`](/enlighten/docs/hugo-markdown)
+* [`Git Commands`](/enlighten/docs/misc/git)
