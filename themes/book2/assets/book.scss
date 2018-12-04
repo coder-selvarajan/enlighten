@@ -78,6 +78,10 @@ aside.fixed nav {
   overflow: hidden auto;
 }
 
+aside.toc nav {
+  top: -10px;
+}
+
 header {
   display: flex;
   align-items:center;

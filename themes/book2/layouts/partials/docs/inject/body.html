@@ -3,23 +3,40 @@
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
             } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
         });
 
         var path = window.location.pathname;
-        const activeLink = document.querySelectorAll('a[href="'+window.location.pathname+'"]');
-        activeLink.forEach(function(a, index){
+        const activeLink = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
+        activeLink.forEach(function (a, index) {
             // a.style.background = 'gainsboro';
             a.style.color = 'lightskyblue';
             const contentList = a.parentElement.parentElement;
             contentList.style.maxHeight = contentList.scrollHeight + "px";
         });
+    }
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 </script>

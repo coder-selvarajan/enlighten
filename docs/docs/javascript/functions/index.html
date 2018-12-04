@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
 
 
-<link rel="stylesheet" href="/enlighten/book.min.736c5c0cd08f218b7956369f2a88e75b4b782e9523905275c7922bf5365d3b1c.css">
+<link rel="stylesheet" href="/enlighten/book.min.3d07b5bdc9451f4a88ef4c1b63581398a0912ee20c26708bce3a80319e9f0474.css">
 
 <style>
      
@@ -27,10 +27,10 @@
          
          
     }
-    
+
      
      
-    
+
      
     .menu-content {
         padding: 0 18px;
@@ -49,8 +49,8 @@
         position: absolute;
         right: 10px;
         top: 8px;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         border-top: 6px solid #bbb;
@@ -64,28 +64,49 @@
 
      
     ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: #f1f1f1;
     }
-    
+
      
     ::-webkit-scrollbar-thumb {
-        background: #aaa; 
+        background: #aaa;
     }
 
      
     ::-webkit-scrollbar-thumb:hover {
-        background: #777; 
+        background: #777;
     }
 
+
+    #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 50px;
+        z-index: 99;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+        padding: 7px;
+        border-radius: 4px;
+    }
+
+    #topBtn:hover {
+        background-color: #555;
+    }
 </style>
   
 </head>
 
 <body>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   <input type="checkbox" style="display: none" id="menu-control" />
   <main>
 
-    <aside class="menu fixed">
+    <aside class="menu">
       <nav role="navigation">
         <h2 class="brand">
   <a href="https://selvarajan2006.github.io/enlighten//docs/">Enlightening KT</a>
@@ -93,7 +114,7 @@
         
 
         
-          <ul>
+        <ul>
     <li>
         <div class="collapsible">
             <a title="Learn Javascript">Javascript</a>
@@ -335,27 +356,43 @@
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
             } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
         });
 
         var path = window.location.pathname;
-        const activeLink = document.querySelectorAll('a[href="'+window.location.pathname+'"]');
-        activeLink.forEach(function(a, index){
+        const activeLink = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
+        activeLink.forEach(function (a, index) {
             
             a.style.color = 'lightskyblue';
             const contentList = a.parentElement.parentElement;
             contentList.style.maxHeight = contentList.scrollHeight + "px";
         });
     }
-</script>
 
+    
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 </body>
 
