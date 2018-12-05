@@ -97,6 +97,7 @@ main {
 
   display: flex;
   flex-flow: row;
+  min-height: 720px;
 
   aside nav, .content, .markdown {
     transition: .2s ease-in-out;
