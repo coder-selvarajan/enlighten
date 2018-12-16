@@ -1,0 +1,39 @@
++++
+title = "AsciiDoc Basics"
++++
+= INIT
+
+= AsciiDoc Basics
+
+We will talk about variables. 
+
+three types of variables
+
+* Static
+* dynamic
+- stanic
+
+[qanda]
+.Q&A
+Question 1::
+    Answer 1
+Question 2:: Answer 2
+
+== Tips
+
+----
+any block can be
+
+included in list
+----
+
+
+link:asciidoc[This document]
+
+link:asciidoc.html[]
+
+link:/index.html[This site root]
+
+[source,ruby]
+puts "Hello, World!"
+

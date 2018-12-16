@@ -259,5 +259,26 @@ Coder/Designer Websites Hayk (Designer cum Coder):  https://hihayk.com/#/
 Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</description>
     </item>
     
+    <item>
+      <title>AsciiDoc Basics</title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/python/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/python/basics/</guid>
+      <description>AsciiDoc Basics We will talk about variables.
+ three types of variables
+   Static
+  dynamic
+  stanic
+      Q&amp;amp;A   Question 1
+Answer 1
+  Question 2
+Answer 2
+   Tips any block can be included in list   This document
+ asciidoc.html
+ This site root
+ puts &#34;Hello, World!&#34;     </description>
+    </item>
+    
   </channel>
 </rss>

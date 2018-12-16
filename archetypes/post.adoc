@@ -1,0 +1,5 @@
+---
+title: "My post title"
+date: "publish date"
+draft: true
+---

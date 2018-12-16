@@ -5,13 +5,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crash Course | Enlightening KT</title>
+<title>AsciiDoc Basics | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
 
 
-<link rel="stylesheet" href="/enlighten/book.min.ddc6d7dee61e91398e4410b2b7db0629d9402823b5019c2c0bcbe26217cac8b3.css">
+<link rel="stylesheet" href="/enlighten/book.min.972f6b2be379b2c28fc690c8997a792e0cb3faf44af13734a6278c69cfc1a4c7.css">
 
 <style>
      
@@ -27,10 +27,10 @@
          
          
     }
-    
+
      
      
-    
+
      
     .menu-content {
         padding: 0 18px;
@@ -49,8 +49,8 @@
         position: absolute;
         right: 10px;
         top: 8px;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         border-top: 6px solid #bbb;
@@ -64,28 +64,49 @@
 
      
     ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: #f1f1f1;
     }
-    
+
      
     ::-webkit-scrollbar-thumb {
-        background: #aaa; 
+        background: #aaa;
     }
 
      
     ::-webkit-scrollbar-thumb:hover {
-        background: #777; 
+        background: #777;
     }
 
+
+    #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 50px;
+        z-index: 99;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+        padding: 7px;
+        border-radius: 4px;
+    }
+
+    #topBtn:hover {
+        background-color: #555;
+    }
 </style>
   
 </head>
 
 <body>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   <input type="checkbox" style="display: none" id="menu-control" />
   <main>
 
-    <aside class="menu fixed">
+    <aside class="menu">
       <nav role="navigation">
         <h2 class="brand">
   <a href="https://selvarajan2006.github.io/enlighten//docs/">Enlightening KT</a>
@@ -93,7 +114,7 @@
         
 
         
-          <ul>
+        <ul>
     <li>
         <div class="collapsible">
             <a title="Learn Javascript">Javascript</a>
@@ -109,6 +130,7 @@
             <li><a href="/enlighten/docs/javascript/async-programming/">Async Programming</a></li>
             <li><a href="/enlighten/docs/javascript/rest-api/">REST Api</a></li>
             <li><a href="/enlighten/docs/javascript/frameworks-converters/">Frameworks &amp; Converters</a></li>
+            <li><a href="/enlighten/docs/javascript/chrome-extn/">Build Chrome Extn</a></li>
         </ul>
     </li>
     <li>
@@ -124,7 +146,8 @@
             <a title="Learn Linux">Python</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/python/crash-course/">Crash Course</a></li>
+            <li><a href="/enlighten/docs/python/setup/">Setup</a></li>
+            <li><a href="/enlighten/docs/python/basics/">Basics</a></li>
         </ul>
     </li>
     <li>
@@ -137,23 +160,26 @@
         </ul>
     </li>
     <li>
-        <a href="/enlighten/docs/hadoop-intro/">Hadoop</a>
-    </li>
-    <li>
-        <a href="/enlighten/docs/markdown/">Markdown Syntax</a>
-    </li>
-    <li>
-        <a href="/enlighten/docs/hugo-tips/">Hugo Tips</a>
+        <div class="collapsible">
+            <a title="Learn Bigdata">Bigdata</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/hadoop-intro/">Hadoop</a></li>
+        </ul>
     </li>
     <li>
         <div class="collapsible">
-            <a title="Resources">Resources</a>
+            <a title="Learn Linux">Misc</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
-            <li><a href="/enlighten/docs/resources/my-projects/">My Projects</a></li>
+            <li><a href="/enlighten/docs/misc/git/">Git Commands</a></li>
+            <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
+            <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
+            <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
         </ul>
     </li>
+    <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
+    <li><a href="/enlighten/docs/resources/my-projects/">Projects, Apps & Sites</a></li>
 </ul>
 
 <!-- - [Javascript](/enlighten/docs/javascript/basics "Learn Javascript")
@@ -188,60 +214,75 @@
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Crash Course</strong>
+<strong>AsciiDoc Basics</strong>
       </header>
-      <article class="markdown">
-
-<h2 id="python-crash-course">Python Crash Course</h2>
-
-<h6 id="notes-from-programming-with-mosh-youtube-channel">Notes from &lsquo;Programming with Mosh&rsquo; youtube channel</h6>
-
+      <article class="markdown"><h1 id="_asciidoc_basics" class="sect0">AsciiDoc Basics</h1>
+<div class="paragraph">
+<p>We will talk about variables.</p>
+</div>
+<div class="paragraph">
+<p>three types of variables</p>
+</div>
+<div class="ulist">
 <ul>
-<li>Install Python 3.7</li>
-<li>VS Code
-
+<li>
+<p>Static</p>
+</li>
+<li>
+<p>dynamic</p>
+<div class="ulist">
 <ul>
-<li>Install Python extention from Microsoft</li>
-<li>Install PyLint extention for Syntax highlighting</li>
-<li>Install Formatter - Pep8Style to format python code according to PEP8 standards</li>
-<li>Install &lsquo;Code Runner&rsquo; extension</li>
-</ul></li>
+<li>
+<p>stanic</p>
+</li>
 </ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="qlist qanda">
+<div class="title">Q&amp;A</div>
+<ol>
+<li>
+<p><em>Question 1</em></p>
+<p>Answer 1</p>
+</li>
+<li>
+<p><em>Question 2</em></p>
+<p>Answer 2</p>
+</li>
+</ol>
+</div>
+<div class="sect1">
+<h2 id="_tips">Tips</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>any block can be
 
-<blockquote>
-<p>With VS Code we can setup to format the page while we save the file, with preference menu.</p>
-</blockquote>
-
-<p><strong>Online course</strong> <br/></p>
-
-<p><a href="https://courses.learncodeonline.in/learn/Machine-Learning-Bootcamp">https://courses.learncodeonline.in/learn/Machine-Learning-Bootcamp</a></p>
+included in list</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="asciidoc">This document</a></p>
+</div>
+<div class="paragraph">
+<p><a href="asciidoc.html" class="bare">asciidoc.html</a></p>
+</div>
+<div class="paragraph">
+<p><a href="/index.html">This site root</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">puts "Hello, World!"</code></pre>
+</div>
+</div>
+</div>
+</div>
 </article>
     </div>
 
     
-    
-    <aside class="toc fixed">
-      <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#python-crash-course">Python Crash Course</a>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#notes-from-programming-with-mosh-youtube-channel">Notes from &lsquo;Programming with Mosh&rsquo; youtube channel</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-    </aside>
     
 
   </main>
@@ -250,27 +291,43 @@
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
             } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
         });
 
         var path = window.location.pathname;
-        const activeLink = document.querySelectorAll('a[href="'+window.location.pathname+'"]');
-        activeLink.forEach(function(a, index){
+        const activeLink = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
+        activeLink.forEach(function (a, index) {
             
             a.style.color = 'lightskyblue';
             const contentList = a.parentElement.parentElement;
             contentList.style.maxHeight = contentList.scrollHeight + "px";
         });
     }
-</script>
 
+    
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 </body>
 
