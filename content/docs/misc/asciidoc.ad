@@ -1,9 +1,8 @@
 +++
 title = "AsciiDoc Overview"
-bookShowToc = "true"
 +++
+:toc:
 = INIT
-
 
 = AsciiDoc
 
@@ -13,6 +12,7 @@ This processor is built in Ruby.
 
 There is asciidoc processor available for `Javascript` as well.
 https://github.com/asciidoctor/asciidoctor.js
+
 
 
 ## Asciidoc Setup
