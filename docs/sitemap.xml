@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>https://selvarajan2006.github.io/enlighten/docs/hadoop-intro/</loc>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/bigdata/hadoop-intro/</loc>
   </url>
   
   <url>
@@ -67,10 +67,6 @@
   </url>
   
   <url>
-    <loc>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</loc>
-  </url>
-  
-  <url>
     <loc>https://selvarajan2006.github.io/enlighten/docs/misc/git/</loc>
   </url>
   
@@ -96,6 +92,10 @@
   
   <url>
     <loc>https://selvarajan2006.github.io/enlighten/docs/python/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</loc>
   </url>
   
   <url>

@@ -1,11 +1,25 @@
-# AsciiDoc
++++
+title = "AsciiDoc Overview"
+bookShowToc = "true"
++++
+= INIT
 
-[AsciiDoctor](https://asciidoctor.org/) is a fast text processor and publishing tool for converting AsciiDoc to Html5
+
+= AsciiDoc
+
+https://asciidoctor.org/[AsciiDoctor] is a fast text processor and publishing tool for converting AsciiDoc to Html5
 
 This processor is built in Ruby. 
 
 There is asciidoc processor available for `Javascript` as well.
 https://github.com/asciidoctor/asciidoctor.js
+
+
+## Asciidoc Setup
+
+* Install ruby from the below link. 
+    - https://rubyinstaller.org/downloads/
+* Install asciidoc via ruby-gem
 
 
 ## The Big Picture
@@ -16,8 +30,7 @@ Asciidoctor reads content written in plain text, as shown in the panel on the le
 
 ![AsciiDoc Html Output](../../../images/asciidoc_htmloutput.png)
 
-<br>
-## What is AsciiDoc?
+== What is AsciiDoc?
 
 AsciiDoc is two things:
 
@@ -30,4 +43,4 @@ AsciiDoc belongs to the family of lightweight markup languages, the most renowne
 Serving as testament of this fact, many O’Reilly authors including Matthew McCullough, Tim Berglund, Simon St.Laurent, Matt Neuburg and Ian Darwin have used AsciiDoc to write their books for that iconic technical library.
 
 From the very beginning, AsciiDoc was designed to be a shorthand replacement for DocBook, one of the formats AsciiDoc can generate. AsciiDoc can also produce beautiful HTML5, PDFs, eBooks, man pages and even slide decks. It has you covered from first draft to publishing.
-.0
+

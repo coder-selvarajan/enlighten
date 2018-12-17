@@ -12,10 +12,10 @@
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/hadoop-intro/</link>
+      <link>https://selvarajan2006.github.io/enlighten/docs/bigdata/hadoop-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://selvarajan2006.github.io/enlighten/docs/hadoop-intro/</guid>
+      <guid>https://selvarajan2006.github.io/enlighten/docs/bigdata/hadoop-intro/</guid>
       <description>Understanding Hadoop Hadoop - is a set of technologies.. used to store and process huge amounts of data..
 Hadoop is not a database.. its an alternative file system with a processing library..
 Libraries: MapReduce 1&amp;amp;2, Hive, Pig
@@ -171,18 +171,6 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
     
     <item>
       <title></title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</guid>
-      <description>AsciiDoc AsciiDoctor is a fast text processor and publishing tool for converting AsciiDoc to Html5
-This processor is built in Ruby.
-There is asciidoc processor available for Javascript as well. https://github.com/asciidoctor/asciidoctor.js
-The Big Picture Asciidoctor reads content written in plain text, as shown in the panel on the left in the image below, and converts it to HTML5, as shown rendered in the right panel. Asciidoctor applies a default stylesheet to the HTML5 document to provide a pleasant out-of-the-box experience.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://selvarajan2006.github.io/enlighten/docs/misc/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -278,6 +266,21 @@ Answer 2
  asciidoc.html
  This site root
  puts &#34;Hello, World!&#34;     </description>
+    </item>
+    
+    <item>
+      <title>AsciiDoc Overview</title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</guid>
+      <description>AsciiDoc AsciiDoctor is a fast text processor and publishing tool for converting AsciiDoc to Html5
+ This processor is built in Ruby.
+ There is asciidoc processor available for Javascript as well. https://github.com/asciidoctor/asciidoctor.js
+ Asciidoc Setup   Install ruby from the below link.
+  https://rubyinstaller.org/downloads/
+     Install asciidoc via ruby-gem
+     The Big Picture Asciidoctor reads content written in plain text, as shown in the panel on the left in the image below, and converts it to HTML5, as shown rendered in the right panel.</description>
     </item>
     
   </channel>

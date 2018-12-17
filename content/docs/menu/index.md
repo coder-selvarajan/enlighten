@@ -52,7 +52,7 @@ headless: true
             <a title="Learn Bigdata">Bigdata</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/hadoop-intro/">Hadoop</a></li>
+            <li><a href="/enlighten/docs/bigdata/hadoop-intro/">Hadoop</a></li>
         </ul>
     </li>
     <li>

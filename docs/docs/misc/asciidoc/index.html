@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Asciidoc | Enlightening KT</title>
+<title>AsciiDoc Overview | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -164,7 +164,7 @@
             <a title="Learn Bigdata">Bigdata</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/hadoop-intro/">Hadoop</a></li>
+            <li><a href="/enlighten/docs/bigdata/hadoop-intro/">Hadoop</a></li>
         </ul>
     </li>
     <li>
@@ -214,61 +214,87 @@
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Asciidoc</strong>
+<strong>AsciiDoc Overview</strong>
       </header>
       <article class="markdown">
-
-<h1 id="asciidoc">AsciiDoc</h1>
-
+        <h1 id="_asciidoc" class="sect0">AsciiDoc</h1>
+<div class="paragraph">
 <p><a href="https://asciidoctor.org/">AsciiDoctor</a> is a fast text processor and publishing tool for converting AsciiDoc to Html5</p>
-
+</div>
+<div class="paragraph">
 <p>This processor is built in Ruby.</p>
-
+</div>
+<div class="paragraph">
 <p>There is asciidoc processor available for <code>Javascript</code> as well.
-<a href="https://github.com/asciidoctor/asciidoctor.js">https://github.com/asciidoctor/asciidoctor.js</a></p>
-
-<h2 id="the-big-picture">The Big Picture</h2>
-
-<p>Asciidoctor reads content written in plain text, as shown in the panel on the left in the image below, and converts it to HTML5, as shown rendered in the right panel. Asciidoctor applies a default stylesheet to the HTML5 document to provide a pleasant out-of-the-box experience.</p>
-
-<p><img src="../../../images/asciidoc_source.png" alt="AsciiDoc Source" /></p>
-
-<p><img src="../../../images/asciidoc_htmloutput.png" alt="AsciiDoc Html Output" /></p>
-
-<p><br></p>
-
-<h2 id="what-is-asciidoc">What is AsciiDoc?</h2>
-
-<p>AsciiDoc is two things:</p>
-
+<a href="https://github.com/asciidoctor/asciidoctor.js" class="bare">https://github.com/asciidoctor/asciidoctor.js</a></p>
+</div>
+<div class="sect1">
+<h2 id="_asciidoc_setup">Asciidoc Setup</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
-<li><p>A mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.</p></li>
-
-<li><p>A text processor and toolchain for translating AsciiDoc documents into various formats (called backends), including HTML, DocBook, PDF and ePub.</p></li>
+<li>
+<p>Install ruby from the below link.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://rubyinstaller.org/downloads/" class="bare">https://rubyinstaller.org/downloads/</a></p>
+</li>
 </ul>
-
+</div>
+</li>
+<li>
+<p>Install asciidoc via ruby-gem</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_big_picture">The Big Picture</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Asciidoctor reads content written in plain text, as shown in the panel on the left in the image below, and converts it to HTML5, as shown rendered in the right panel. Asciidoctor applies a default stylesheet to the HTML5 document to provide a pleasant out-of-the-box experience.</p>
+</div>
+<div class="paragraph">
+<p>![AsciiDoc Source](../../../images/asciidoc_source.png)</p>
+</div>
+<div class="paragraph">
+<p>![AsciiDoc Html Output](../../../images/asciidoc_htmloutput.png)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_asciidoc">What is AsciiDoc?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AsciiDoc is two things:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A mature, plain-text writing format for authoring notes, articles, documentation, books, ebooks, web pages, slide decks, blog posts, man pages and more.</p>
+</li>
+<li>
+<p>A text processor and toolchain for translating AsciiDoc documents into various formats (called backends), including HTML, DocBook, PDF and ePub.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
 <p>AsciiDoc belongs to the family of lightweight markup languages, the most renowned of which is Markdown. AsciiDoc stands out from this group because it supports all the structural elements necessary for drafting articles, technical manuals, books, presentations and prose. In fact, it’s capable of meeting even the most advanced publishing requirements and technical semantics.</p>
-
+</div>
+<div class="paragraph">
 <p>Serving as testament of this fact, many O’Reilly authors including Matthew McCullough, Tim Berglund, Simon St.Laurent, Matt Neuburg and Ian Darwin have used AsciiDoc to write their books for that iconic technical library.</p>
-
-<p>From the very beginning, AsciiDoc was designed to be a shorthand replacement for DocBook, one of the formats AsciiDoc can generate. AsciiDoc can also produce beautiful HTML5, PDFs, eBooks, man pages and even slide decks. It has you covered from first draft to publishing.
-.0</p>
+</div>
+<div class="paragraph">
+<p>From the very beginning, AsciiDoc was designed to be a shorthand replacement for DocBook, one of the formats AsciiDoc can generate. AsciiDoc can also produce beautiful HTML5, PDFs, eBooks, man pages and even slide decks. It has you covered from first draft to publishing.</p>
+</div>
+</div>
+</div>
 </article>
     </div>
 
     
-    
-    <aside class="toc fixed">
-      <nav id="TableOfContents">
-<ul>
-<li><a href="#asciidoc">AsciiDoc</a>
-<ul>
-<li><a href="#the-big-picture">The Big Picture</a></li>
-<li><a href="#what-is-asciidoc">What is AsciiDoc?</a></li>
-</ul></li>
-</ul>
-</nav>
-    </aside>
     
 
   </main>
