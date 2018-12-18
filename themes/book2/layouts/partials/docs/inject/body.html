@@ -1,42 +1,107 @@
 <script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
 
-        var path = window.location.pathname;
-        const activeLink = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
-        activeLink.forEach(function (a, index) {
-            // a.style.background = 'gainsboro';
-            a.style.color = 'lightskyblue';
-            const contentList = a.parentElement.parentElement;
-            contentList.style.maxHeight = contentList.scrollHeight + "px";
-        });
+    var path = window.location.pathname;
+    const activeLink = document.querySelectorAll(
+      'a[href="' + window.location.pathname + '"]'
+    );
+    activeLink.forEach(function(a, index) {
+      // a.style.background = 'gainsboro';
+      a.style.color = "lightskyblue";
+      const contentList = a.parentElement.parentElement;
+      contentList.style.maxHeight = contentList.scrollHeight + "px";
+    });
+  }
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("topBtn").style.display = "block";
+    } else {
+      document.getElementById("topBtn").style.display = "none";
     }
+  }
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("topBtn").style.display = "block";
-        } else {
-            document.getElementById("topBtn").style.display = "none";
+  // To generate 'table of contents'
+  function TableOfContents(container, output) {
+    var txt = "toc-";
+    var toc = "";
+    var start = 0;
+    var output = output || "#toc";
+
+    var container =
+      document.querySelector(container) ||
+      document.querySelector("#contents article");
+    //var c = container.children;
+    var c = container.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+    for (var i = 0; i < c.length; i++) {
+      // alert(c[i].nodeName);
+      var isHeading = c[i].nodeName.match(/^H\d+$/);
+      if (c[i].nodeName.match(/^H\d+$/)) {
+        var level = c[i].nodeName.substr(1);
+        // get header content regardless of whether it contains a html or not that breaks the reg exp pattern
+        var headerText = c[i].textContent;
+        // generate unique ids as tag anchors
+        var anchor = txt + i;
+
+        var tag =
+          '<a href="#' +
+          anchor +
+          '" id="' +
+          anchor +
+          '">' +
+          headerText +
+          "</a>";
+
+        c[i].innerHTML = tag;
+
+        if (headerText) {
+          if (level > start) {
+            toc += new Array(level - start + 1).join("<ul>");
+          } else if (level < start) {
+            toc += new Array(start - level + 1).join("</li></ul>");
+          } else {
+            toc += new Array(start + 1).join("</li>");
+          }
+          start = parseInt(level);
+          toc += '<li><a href="#' + anchor + '">' + headerText + "</a>";
         }
+      }
     }
+    if (start) {
+      toc += new Array(start + 1).join("</ul>");
+    }
+    document.querySelector(output).innerHTML += toc;
+  }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+  document.addEventListener("DOMContentLoaded", function() {
+    TableOfContents();
+  });
+
 </script>

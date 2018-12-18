@@ -27,7 +27,7 @@
       </nav>
     </aside>
 
-    <div class="content">
+    <div id="contents" class="content">
       <header>
         {{ partial "docs/mobile-header" . }}
       </header>
@@ -37,12 +37,11 @@
     </div>
 
     {{ $showToC := default (default true .Site.Params.BookShowToC) .Params.bookshowtoc }}
-    {{ if and ($showToC) (.Page.TableOfContents) }}
-    <aside class="toc fixed">
-      {{ partial "docs/toc" . }}
-    </aside>
+    {{ if ($showToC) }}
+      <aside class="toc fixed">
+        {{ partial "docs/toc" . }}
+      </aside>
     {{ end }}
-
   </main>
   {{ partial "docs/inject/body" . }}
 
