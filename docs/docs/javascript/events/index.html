@@ -97,6 +97,15 @@
     #topBtn:hover {
         background-color: #555;
     }
+
+    #toc{
+        font-size: 0.75em;
+        line-height: 1.5em;
+        margin: 0px;
+        margin-top: 5px;
+         
+    }
+
 </style>
   
 </head>
@@ -209,7 +218,7 @@
       </nav>
     </aside>
 
-    <div class="content">
+    <div id="contents" class="content">
       <header>
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
@@ -217,18 +226,6 @@
 <strong>Events</strong>
       </header>
       <article class="markdown">
-        <nav id="TableOfContents">
-<ul>
-<li><a href="#events">Events:</a>
-<ul>
-<li><a href="#event-listeners">Event Listeners:</a></li>
-<li><a href="#mouse-events">Mouse Events:</a></li>
-<li><a href="#key-events">Key Events:</a></li>
-<li><a href="#event-bubbling-delegation">Event Bubbling &amp; Delegation:</a></li>
-<li><a href="#html-page-lifecycle">HTML Page - Lifecycle</a></li>
-</ul></li>
-</ul>
-</nav>
 
 <h1 id="events">Events:</h1>
 
@@ -372,66 +369,120 @@
 
     
     
-    <aside class="toc fixed">
-      <nav id="TableOfContents">
-<ul>
-<li><a href="#events">Events:</a>
-<ul>
-<li><a href="#event-listeners">Event Listeners:</a></li>
-<li><a href="#mouse-events">Mouse Events:</a></li>
-<li><a href="#key-events">Key Events:</a></li>
-<li><a href="#event-bubbling-delegation">Event Bubbling &amp; Delegation:</a></li>
-<li><a href="#html-page-lifecycle">HTML Page - Lifecycle</a></li>
-</ul></li>
-</ul>
-</nav>
-
-    </aside>
+      <aside class="toc fixed">
+        
+<nav id="toc"></nav>
+      </aside>
     
-
   </main>
   <script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
 
-        var path = window.location.pathname;
-        const activeLink = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
-        activeLink.forEach(function (a, index) {
-            
-            a.style.color = 'lightskyblue';
-            const contentList = a.parentElement.parentElement;
-            contentList.style.maxHeight = contentList.scrollHeight + "px";
-        });
+    var path = window.location.pathname;
+    const activeLink = document.querySelectorAll(
+      'a[href="' + window.location.pathname + '"]'
+    );
+    activeLink.forEach(function(a, index) {
+      
+      a.style.color = "lightskyblue";
+      const contentList = a.parentElement.parentElement;
+      contentList.style.maxHeight = contentList.scrollHeight + "px";
+    });
+  }
+
+  
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("topBtn").style.display = "block";
+    } else {
+      document.getElementById("topBtn").style.display = "none";
     }
+  }
 
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  function TableOfContents(container, output) {
+    var txt = "toc-";
+    var toc = "";
+    var start = 0;
+    var output = output || "#toc";
+
+    var container =
+      document.querySelector(container) ||
+      document.querySelector("#contents article");
     
-    window.onscroll = function () { scrollFunction() };
+    var c = container.querySelectorAll("h1, h2, h3, h4, h5, h6");
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("topBtn").style.display = "block";
-        } else {
-            document.getElementById("topBtn").style.display = "none";
+    for (var i = 0; i < c.length; i++) {
+      
+      var isHeading = c[i].nodeName.match(/^H\d+$/);
+      if (c[i].nodeName.match(/^H\d+$/)) {
+        var level = c[i].nodeName.substr(1);
+        
+        var headerText = c[i].textContent;
+        
+        var anchor = txt + i;
+
+        var tag =
+          '<a href="#' +
+          anchor +
+          '" id="' +
+          anchor +
+          '">' +
+          headerText +
+          "</a>";
+
+        c[i].innerHTML = tag;
+
+        if (headerText) {
+          if (level > start) {
+            toc += new Array(level - start + 1).join("<ul>");
+          } else if (level < start) {
+            toc += new Array(start - level + 1).join("</li></ul>");
+          } else {
+            toc += new Array(start + 1).join("</li>");
+          }
+          start = parseInt(level);
+          toc += '<li><a href="#' + anchor + '">' + headerText + "</a>";
         }
+      }
     }
+    if (start) {
+      toc += new Array(start + 1).join("</ul>");
+    }
+    document.querySelector(output).innerHTML += toc;
+  }
 
-    
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+  document.addEventListener("DOMContentLoaded", function() {
+    TableOfContents();
+  });
+
 </script>
+
 
 </body>
 
