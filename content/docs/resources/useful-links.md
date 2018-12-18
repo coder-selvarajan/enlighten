@@ -55,11 +55,19 @@ Alternative to Google Reader <br/>
 https://alternativeto.net/software/google-reader/
 
 Tech news aggregator <br/>
-https://www.tldrnewsletter.com/  (daily newsletter)
+https://www.tldrnewsletter.com/  (daily newsletter) <br/>
 https://www.techmeme.com/feed.xml
 
 Top 20 tech websites: <br/>
 https://www.grafdom.com/blog/top-20-best-tech-websites-and-blogs/
+
+---
+
+### Tech Trends(Web) 2019
+
+https://stenciljs.com/ <br/>
+https://graphql.org/ <br/>
+https://jamstack.org/
 
 ---
 
