@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AsciiDoc Basics | Enlightening KT</title>
+<title>Python Basics | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -185,6 +185,7 @@
             <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
             <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
             <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
+            <li><a href="/enlighten/docs/misc/learning/">Learning</a></li>
         </ul>
     </li>
     <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
@@ -223,68 +224,100 @@
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>AsciiDoc Basics</strong>
+<strong>Python Basics</strong>
       </header>
-      <article class="markdown"><h1 id="_asciidoc_basics" class="sect0">AsciiDoc Basics</h1>
+      <article class="markdown"><h1 id="_python_basics" class="sect0">Python Basics</h1>
+<div class="sect1">
+<h2 id="_variables">Variables</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>We will talk about variables.</p>
+<p>some list here
+one
+two
+three</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Quoted text.</p>
 </div>
 <div class="paragraph">
-<p>three types of variables</p>
+<p>Another paragraph in quote.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Static</p>
-</li>
-<li>
-<p>dynamic</p>
-<div class="ulist">
-<ul>
-<li>
-<p>stanic</p>
-</li>
-</ul>
+</blockquote>
 </div>
-</li>
-</ul>
+<div class="literalblock">
+<div class="content">
+<pre>$ gem install asciidoctor</pre>
 </div>
-<div class="qlist qanda">
-<div class="title">Q&amp;A</div>
-<ol>
-<li>
-<p><em>Question 1</em></p>
-<p>Answer 1</p>
-</li>
-<li>
-<p><em>Question 2</em></p>
-<p>Answer 2</p>
-</li>
-</ol>
+</div>
+<hr>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class Person {
+  private String name;
+  public Person(String name) {
+    this.name = name;
+  }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+You can add line numbers to source listings by adding the word <code>numbered</code> in the attribute list after the language name.
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 <div class="sect1">
-<h2 id="_tips">Tips</h2>
+<h2 id="_variables_2">Variables</h2>
 <div class="sectionbody">
-<div class="listingblock">
+<div class="paragraph">
+<p>Int</p>
+</div>
+<div class="literalblock">
 <div class="content">
-<pre>any block can be
-
-included in list</pre>
+<pre>one = 1
+two = 2</pre>
 </div>
 </div>
 <div class="paragraph">
-<p><a href="asciidoc">This document</a></p>
+<p>Decimal</p>
 </div>
-<div class="paragraph">
-<p><a href="asciidoc.html" class="bare">asciidoc.html</a></p>
-</div>
-<div class="paragraph">
-<p><a href="/index.html">This site root</a></p>
-</div>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
-<pre class="highlight"><code class="language-ruby" data-lang="ruby">puts "Hello, World!"</code></pre>
+<pre>dem = 1.1</pre>
 </div>
+</div>
+<div class="paragraph">
+<p>String</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>strval = "Hello"</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Variables declared in function are called Local Variable. All other variables are Global variables.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Global vars can be accessed within the function.</p>
 </div>
 </div>
 </div>

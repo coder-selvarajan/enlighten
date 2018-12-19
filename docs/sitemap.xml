@@ -91,10 +91,6 @@
   </url>
   
   <url>
-    <loc>https://selvarajan2006.github.io/enlighten/docs/python/basics/</loc>
-  </url>
-  
-  <url>
     <loc>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</loc>
   </url>
   
@@ -106,6 +102,14 @@
   <url>
     <loc>https://selvarajan2006.github.io/enlighten/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/misc/learning/</loc>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/python/basics/</loc>
   </url>
   
   <url>

@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Window Object | Enlightening KT</title>
+<title>Learning | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -224,54 +224,61 @@
         <label for="menu-control">
   <img src="https://selvarajan2006.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Window Object</strong>
+<strong>Learning</strong>
       </header>
-      <article class="markdown">
-
-<h2 id="window-object">Window object</h2>
-
-<p>In console type window.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Hello&#34;</span><span style="color:#111">)</span>
-    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Hello World&#34;</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">// prompt
-</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">input</span> <span style="color:#f92672">=</span> <span style="color:#75af00">prompt</span><span style="color:#111">();</span>
-    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#75af00">input</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">//confirm
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">If</span> <span style="color:#111">(</span><span style="color:#75af00">confirm</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Are you sure?&#34;</span><span style="color:#111">)){</span>
-        <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#d88200">&#34;proceed&#34;</span><span style="color:#111">);</span>
-    <span style="color:#111">}</span>
-
-    <span style="color:#75715e">//window height
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">outerHeight</span><span style="color:#111">);</span>
-    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">outerWidth</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">//visible content area.. If firebug is open then the value change here..  
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">innerHeight</span><span style="color:#111">);</span> 
-    <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">innerWidth</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">//scroll point
-</span><span style="color:#75715e"></span>    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">scrollY</span><span style="color:#111">;</span>
-    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">scrollX</span><span style="color:#111">;</span>
-</code></pre></div>
-<h2 id="localtion-object">Localtion Object</h2>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">location</span>
-    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">val</span><span style="color:#111">);</span>
-    <span style="color:#75715e">//prints info related to http host info, protocol, 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//query string, redirection etc.. 
-</span><span style="color:#75715e"></span>
-    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">location</span><span style="color:#111">.</span><span style="color:#75af00">href</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;http://google.com&#34;</span><span style="color:#111">;</span>
-</code></pre></div>
-<h2 id="history-object">History Object</h2>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">history</span><span style="color:#111">.</span><span style="color:#75af00">go</span><span style="color:#111">(</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span> <span style="color:#75715e">//to navigate to previous page.. 
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">history</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span>
-</code></pre></div>
-<h2 id="navigator-object">Navigator Object</h2>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">//display info about the browser..   
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//Appname, version, user agent, OS, language, vendor etc
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">val</span> <span style="color:#f92672">=</span> <span style="color:#111">window</span><span style="color:#111">.</span><span style="color:#75af00">navigator</span><span style="color:#111">;</span>
-</code></pre></div></article>
+      <article class="markdown"><h1 id="_learning" class="sect0">Learning</h1>
+<div class="sect2">
+<h3 id="_learning_techniques">Learning Techniques</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Read and understand the concept throughly</p>
+</li>
+<li>
+<p>Repetition</p>
+<div class="ulist">
+<ul>
+<li>
+<p>1st Repetition - Right after Learning</p>
+</li>
+<li>
+<p>2nd Repetition - After 15-20 minutes</p>
+</li>
+<li>
+<p>3rd Repetition - After 6-8 hours</p>
+</li>
+<li>
+<p>4th Repetition - After 24 hours</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>How to memorize something for a long time</p>
+<div class="ulist">
+<ul>
+<li>
+<p>1st Repetition - Right after learning</p>
+</li>
+<li>
+<p>2nd Repetition - After 20-30 minutes</p>
+</li>
+<li>
+<p>3rd Repetition - After 1 day</p>
+</li>
+<li>
+<p>4th Repetition - After 2-3 weeks</p>
+</li>
+<li>
+<p>5th Repetition - After 2-3 months</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</article>
     </div>
 
     

@@ -248,27 +248,6 @@ Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</descr
     </item>
     
     <item>
-      <title>AsciiDoc Basics</title>
-      <link>https://selvarajan2006.github.io/enlighten/docs/python/basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://selvarajan2006.github.io/enlighten/docs/python/basics/</guid>
-      <description>AsciiDoc Basics We will talk about variables.
- three types of variables
-   Static
-  dynamic
-  stanic
-      Q&amp;amp;A   Question 1
-Answer 1
-  Question 2
-Answer 2
-   Tips any block can be included in list   This document
- asciidoc.html
- This site root
- puts &#34;Hello, World!&#34;     </description>
-    </item>
-    
-    <item>
       <title>AsciiDoc Overview</title>
       <link>https://selvarajan2006.github.io/enlighten/docs/misc/asciidoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -281,6 +260,35 @@ Answer 2
   https://rubyinstaller.org/downloads/
      Install asciidoc via ruby-gem
      The Big Picture Asciidoctor reads content written in plain text, as shown in the panel on the left in the image below, and converts it to HTML5, as shown rendered in the right panel.</description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/misc/learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/misc/learning/</guid>
+      <description>Learning Learning Techniques   Read and understand the concept throughly
+  Repetition
+  1st Repetition - Right after Learning
+  2nd Repetition - After 15-20 minutes
+  3rd Repetition - After 6-8 hours
+  4th Repetition - After 24 hours
+     How to memorize something for a long time
+  1st Repetition - Right after learning
+  2nd Repetition - After 20-30 minutes</description>
+    </item>
+    
+    <item>
+      <title>Python Basics</title>
+      <link>https://selvarajan2006.github.io/enlighten/docs/python/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://selvarajan2006.github.io/enlighten/docs/python/basics/</guid>
+      <description>Python Basics Variables some list here one two three
+  Quoted text.
+ Another paragraph in quote.
+   $ gem install asciidoctor    public class Person { private String name; public Person(String name) { this.name = name; } }     Tip  You can add line numbers to source listings by adding the word numbered in the attribute list after the language name.</description>
     </item>
     
   </channel>
