@@ -1,39 +1,63 @@
 +++
-title = "AsciiDoc Basics"
+title = "Python Basics"
 +++
 = INIT
 
-= AsciiDoc Basics
+= Python Basics
 
-We will talk about variables. 
+== Variables
 
-three types of variables
 
-* Static
-* dynamic
-- stanic
+some list here
+one
+two
+three
 
-[qanda]
-.Q&A
-Question 1::
-    Answer 1
-Question 2:: Answer 2
+____
+Quoted text.
 
-== Tips
+Another paragraph in quote.
+____
 
+
+....
+$ gem install asciidoctor
+....
+
+'''
+
+[source,java]
 ----
-any block can be
-
-included in list
+public class Person {
+  private String name;
+  public Person(String name) {
+    this.name = name;
+  }
+}
 ----
 
 
-link:asciidoc[This document]
+TIP: You can add line numbers to source listings by adding the word `numbered` in the attribute list after the language name.
 
-link:asciidoc.html[]
+== Variables
 
-link:/index.html[This site root]
+Int
 
-[source,ruby]
-puts "Hello, World!"
+    one = 1
+    two = 2
+
+Decimal 
+
+    dem = 1.1
+
+String
+
+    strval = "Hello"
+
+
+TIP: Variables declared in function are called Local Variable. All other variables are Global variables. 
+
+
+Global vars can be accessed within the function. 
+
 
