@@ -64,6 +64,7 @@ headless: true
             <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
             <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
             <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
+            <li><a href="/enlighten/docs/misc/learning/">Learning</a></li>
         </ul>
     </li>
     <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>

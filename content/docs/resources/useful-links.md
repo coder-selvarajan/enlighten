@@ -67,7 +67,10 @@ https://www.grafdom.com/blog/top-20-best-tech-websites-and-blogs/
 
 https://stenciljs.com/ <br/>
 https://graphql.org/ <br/>
-https://jamstack.org/
+https://jamstack.org/ <br/>
+
+Static site generator: <br/>
+https://www.gatsbyjs.org/
 
 ---
 
