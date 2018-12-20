@@ -40,8 +40,14 @@ AsciiDoc belongs to the family of lightweight markup languages, the most renowne
 
 Serving as testament of this fact, many O’Reilly authors including Matthew McCullough, Tim Berglund, Simon St.Laurent, Matt Neuburg and Ian Darwin have used AsciiDoc to write their books for that iconic technical library.
 
+[%hardbreaks]
 From the very beginning, AsciiDoc was designed to be a shorthand replacement for DocBook, one of the formats AsciiDoc can generate. AsciiDoc can also produce beautiful HTML5, PDFs, eBooks, man pages and even slide decks. It has you covered from first draft to publishing.
 
 ==== Links
+[%hardbreaks]
+Asciidoc quick syntax reference:
+https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+
+[%hardbreaks]
 Asciidoc vs Markdown
 https://asciidoctor.org/docs/user-manual/
