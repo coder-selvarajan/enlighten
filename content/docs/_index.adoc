@@ -1,0 +1,76 @@
++++
+title = "Enlightening KT"
+BookShowToC = false
++++
+= INIT
+
+= Welcome to Enlightening KT
+
+[.home-page]
+[.noborder]
+[cols="<a,<a"]
+|===
+| 
+
+=== Javascript
+
+* link:/enlighten/docs/javascript/basics/[Basics]
+* link:/enlighten/docs/javascript/functions/[Functions]
+* link:/enlighten/docs/javascript/window-object/[Window Object]
+* link:/enlighten/docs/javascript/dom-object-selectors/[DOM Object &amp; Selectors]
+* link:/enlighten/docs/javascript/events/[Events]
+* link:/enlighten/docs/javascript/localstorage/[Localstorage]
+* link:/enlighten/docs/javascript/object-oriented/[Object Oriented Features]
+* link:/enlighten/docs/javascript/async-programming/[Async Programming]
+* link:/enlighten/docs/javascript/rest-api/[REST Api]
+* link:/enlighten/docs/javascript/frameworks-converters/[Frameworks &amp; Converters]
+* link:/enlighten/docs/javascript/chrome-extn/[Build Chrome Extn]
+
+'''
+
+[.home-title]
+=== Python
+
+* link:/enlighten/docs/python/setup/[Setup]
+* link:/enlighten/docs/python/basics/[Basics]
+
+'''
+
+=== Resources
+
+    * link:/enlighten/docs/resources/useful-links/[Useful Links/Tools]
+    * link:/enlighten/docs/resources/my-projects/[Projects, Apps & Sites]
+
+'''
+
+|
+=== MEAN Stack
+
+* link:/enlighten/docs/mean_stack/nodejs/[Node JS]
+
+'''
+
+=== Linux
+
+* link:/enlighten/docs/linux/linux-intro/[Linux Intro]
+* link:/enlighten/docs/linux/linux-commands/[Linux Commands]
+
+'''
+
+=== Big Data
+
+* link:/enlighten/docs/bigdata/hadoop-intro/[Hadoop]
+
+'''
+
+=== Misc
+
+* link:/enlighten/docs/misc/git/[Git Commands]
+* link:/enlighten/docs/misc/markdown/[Markdown Syntax]
+* link:/enlighten/docs/misc/hugo-tips/[Hugo Tips]
+* link:/enlighten/docs/misc/asciidoc/[AsciiDoc]
+* link:/enlighten/docs/misc/learning/[Learning]
+
+'''
+
+|===
