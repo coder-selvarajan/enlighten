@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://selvarajan2006.github.io/enlighten/docs/</loc>
-  </url>
-  
-  <url>
     <loc>https://selvarajan2006.github.io/enlighten/docs/bigdata/hadoop-intro/</loc>
   </url>
   
@@ -102,6 +98,10 @@
   <url>
     <loc>https://selvarajan2006.github.io/enlighten/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://selvarajan2006.github.io/enlighten/docs/</loc>
   </url>
   
   <url>
