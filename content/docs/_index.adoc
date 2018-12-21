@@ -28,7 +28,6 @@ BookShowToC = false
 
 '''
 
-[.home-title]
 === Python
 
 * link:/enlighten/docs/python/setup/[Setup]
