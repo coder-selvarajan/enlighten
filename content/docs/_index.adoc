@@ -26,41 +26,35 @@ BookShowToC = false
 * link:/enlighten/docs/javascript/frameworks-converters/[Frameworks &amp; Converters]
 * link:/enlighten/docs/javascript/chrome-extn/[Build Chrome Extn]
 
-'''
 
 === Python
 
 * link:/enlighten/docs/python/setup/[Setup]
 * link:/enlighten/docs/python/basics/[Basics]
 
-'''
 
 === Resources
 
     * link:/enlighten/docs/resources/useful-links/[Useful Links/Tools]
     * link:/enlighten/docs/resources/my-projects/[Projects, Apps & Sites]
 
-'''
 
 |
 === MEAN Stack
 
 * link:/enlighten/docs/mean_stack/nodejs/[Node JS]
 
-'''
 
 === Linux
 
 * link:/enlighten/docs/linux/linux-intro/[Linux Intro]
 * link:/enlighten/docs/linux/linux-commands/[Linux Commands]
 
-'''
 
 === Big Data
 
 * link:/enlighten/docs/bigdata/hadoop-intro/[Hadoop]
 
-'''
 
 === Misc
 
@@ -70,6 +64,5 @@ BookShowToC = false
 * link:/enlighten/docs/misc/asciidoc/[AsciiDoc]
 * link:/enlighten/docs/misc/learning/[Learning]
 
-'''
 
 |===
