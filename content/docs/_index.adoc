@@ -4,7 +4,7 @@ BookShowToC = false
 +++
 = INIT
 
-= Welcome to Enlightening KT
+= Welcome to Enlightening KT 
 
 [.home-page]
 [.noborder]
@@ -12,7 +12,7 @@ BookShowToC = false
 |===
 | 
 
-=== Javascript
+=== :blue_book: &nbsp;Javascript
 
 * link:/enlighten/docs/javascript/basics/[Basics]
 * link:/enlighten/docs/javascript/functions/[Functions]
@@ -26,37 +26,37 @@ BookShowToC = false
 * link:/enlighten/docs/javascript/frameworks-converters/[Frameworks &amp; Converters]
 * link:/enlighten/docs/javascript/chrome-extn/[Build Chrome Extn]
 
+=== :blue_book: &nbsp;Linux
 
-=== Python
-
-* link:/enlighten/docs/python/setup/[Setup]
-* link:/enlighten/docs/python/basics/[Basics]
+* link:/enlighten/docs/linux/linux-intro/[Linux Intro]
+* link:/enlighten/docs/linux/linux-commands/[Linux Commands]
 
 
-=== Resources
+=== :blue_book: &nbsp;Resources
 
     * link:/enlighten/docs/resources/useful-links/[Useful Links/Tools]
     * link:/enlighten/docs/resources/my-projects/[Projects, Apps & Sites]
 
 
 |
-=== MEAN Stack
+
+=== :blue_book: &nbsp;Python
+
+* link:/enlighten/docs/python/setup/[Setup]
+* link:/enlighten/docs/python/basics/[Basics]
+
+
+=== :blue_book: &nbsp;MEAN Stack
 
 * link:/enlighten/docs/mean_stack/nodejs/[Node JS]
 
 
-=== Linux
-
-* link:/enlighten/docs/linux/linux-intro/[Linux Intro]
-* link:/enlighten/docs/linux/linux-commands/[Linux Commands]
-
-
-=== Big Data
+=== :blue_book: &nbsp;Big Data
 
 * link:/enlighten/docs/bigdata/hadoop-intro/[Hadoop]
 
 
-=== Misc
+=== :blue_book: &nbsp;Misc
 
 * link:/enlighten/docs/misc/git/[Git Commands]
 * link:/enlighten/docs/misc/markdown/[Markdown Syntax]

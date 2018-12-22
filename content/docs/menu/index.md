@@ -23,14 +23,6 @@ headless: true
     </li>
     <li>
         <div class="collapsible">
-            <a title="MEAN Stack">MEAN Stack</a>
-        </div>
-        <ul class="menu-content">
-            <li><a href="/enlighten/docs/mean_stack/nodejs/">Node JS</a></li>
-        </ul>
-    </li>
-    <li>
-        <div class="collapsible">
             <a title="Learn Linux">Python</a>
         </div>
         <ul class="menu-content">
@@ -40,11 +32,10 @@ headless: true
     </li>
     <li>
         <div class="collapsible">
-            <a title="Learn Linux">Linux</a>
+            <a title="MEAN Stack">MEAN Stack</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/linux/linux-intro/">Linux Intro</a></li>
-            <li><a href="/enlighten/docs/linux/linux-commands/">Linux Commands</a></li>
+            <li><a href="/enlighten/docs/mean_stack/nodejs/">Node JS</a></li>
         </ul>
     </li>
     <li>
@@ -53,6 +44,15 @@ headless: true
         </div>
         <ul class="menu-content">
             <li><a href="/enlighten/docs/bigdata/hadoop-intro/">Hadoop</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Linux">Linux</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/linux/linux-intro/">Linux Intro</a></li>
+            <li><a href="/enlighten/docs/linux/linux-commands/">Linux Commands</a></li>
         </ul>
     </li>
     <li>

@@ -7,57 +7,94 @@ title = "Python Basics"
 
 == Variables
 
-
-some list here
-one
-two
-three
-
-____
-Quoted text.
-
-Another paragraph in quote.
-____
-
-
-....
-$ gem install asciidoctor
-....
-
-'''
-
-[source,java]
-----
-public class Person {
-  private String name;
-  public Person(String name) {
-    this.name = name;
-  }
-}
-----
-
-
-TIP: You can add line numbers to source listings by adding the word `numbered` in the attribute list after the language name.
-
-== Variables
-
-Int
+*Int*
 
     one = 1
     two = 2
 
-Decimal 
+*Decimal* 
 
     dem = 1.1
 
-String
+*String*
 
     strval = "Hello"
 
+{sp} 
 
 TIP: Variables declared in function are called Local Variable. All other variables are Global variables. 
 
-
 Global vars can be accessed within the function. 
 
+
+== Functions
+
+Funtion definition:
+
+    def addNum(one, two):
+        return one + two
+
+Function call:
+
+    addNum(4,5)
+
+`print("Hello" * 5)` this code prints `HelloHelloHelloHelloHello`
+
+
+== IF Statement
+
+Boolean values : `True, False`
+
+Sample if statement
+
+    if click == True and control == "Button":
+        print("Button Clicked")
+    elif control == "Radio":
+        print("Radio button selected")
+    else 
+        print("No interaction")
+
+
+== Lists
+
+General structure of list
+
+    Testlist = ["a", "b", "c"]
+    scores = [60, 75, 70, 80, 90]
+    
+The indexing of the list(for ex: scores) goes in two ways. + 
+one is `0,1,2,3,4` and another one is `-5,-4,-3,-2,-1` 
+
+    print(scores[4])  # prints 90
+    print(scores[-1]) # also prints 90 
+
+Some more notation
+
+    print(scores[0:2])  # prints: 60, 75
+    print(scores[1:3])  # prints: 75, 70
+    print(scores[2:])   # prints: 70, 80, 90
+    
+To change the value in a list:
+
+    scores[1] = 35
+    print(scores)  # prints: 60, 35, 70, 80, 90
+
+
+To remove/update items from list
+
+    scores[1:3] = []
+    print(scores)  # prints: 60, 80, 90
+
+    scores[2] = []
+    print(scores) # prints: 60, 75, [], 80, 90
+
+    scores[2] = ["A", "B"]
+    print(scores) # prints: 60, 75, ["A", "B"], 80, 90
+    print(scores[2][1])  # prints: "B"
+
+
+Append the list
+
+    scores.append(82)
+    print(scores) # prints: 60, 75, 70, 80, 90, 82
 
