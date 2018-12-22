@@ -98,7 +98,7 @@
         background-color: #555;
     }
 
-    #toc{
+    #toc {
         font-size: 0.75em;
         line-height: 1.5em;
         margin: 0px;
@@ -106,16 +106,17 @@
          
     }
 
-    table td{
+    table td {
         vertical-align: top;
     }
 
-    .noborder tr th, .noborder tr td{
+    .noborder tr th,
+    .noborder tr td {
         border: 0px solid grey !important;
     }
 
-    .noborder .content{
-        padding-top: 15px;
+    .noborder .content {
+        padding-top: 5px;
     }
 
     .home-page {
@@ -130,7 +131,8 @@
         color: blue;
     }
 
-    .home-page h3 a, .home-page h3 a:visited {
+    .home-page h3 a,
+    .home-page h3 a:visited {
         color: black;
     }
 
@@ -140,20 +142,31 @@
         border-bottom: 1px solid lightgray;
     }
 
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
         color: steelblue;
         font-weight: 300;
     }
-    
-    h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+
+    h1 a:visited,
+    h2 a:visited,
+    h3 a:visited,
+    h4 a:visited,
+    h5 a:visited,
+    h6 a:visited {
         color: steelblue;
     }
 
     a:hover {
         text-decoration: none !important;
-    } 
+    }
 
-    .toc a, .toc a:visited {
+    .toc a,
+    .toc a:visited {
         color: steelblue;
     }
 
@@ -161,7 +174,11 @@
         color: orangered;
     }
 
-
+    .content .content {
+        padding-top: 0px;
+        padding-bottom: 5px;
+        min-width: 30rem;
+    }
 </style>
   
 </head>
@@ -200,14 +217,6 @@
     </li>
     <li>
         <div class="collapsible">
-            <a title="MEAN Stack">MEAN Stack</a>
-        </div>
-        <ul class="menu-content">
-            <li><a href="/enlighten/docs/mean_stack/nodejs/">Node JS</a></li>
-        </ul>
-    </li>
-    <li>
-        <div class="collapsible">
             <a title="Learn Linux">Python</a>
         </div>
         <ul class="menu-content">
@@ -217,11 +226,10 @@
     </li>
     <li>
         <div class="collapsible">
-            <a title="Learn Linux">Linux</a>
+            <a title="MEAN Stack">MEAN Stack</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/linux/linux-intro/">Linux Intro</a></li>
-            <li><a href="/enlighten/docs/linux/linux-commands/">Linux Commands</a></li>
+            <li><a href="/enlighten/docs/mean_stack/nodejs/">Node JS</a></li>
         </ul>
     </li>
     <li>
@@ -230,6 +238,15 @@
         </div>
         <ul class="menu-content">
             <li><a href="/enlighten/docs/bigdata/hadoop-intro/">Hadoop</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Linux">Linux</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/linux/linux-intro/">Linux Intro</a></li>
+            <li><a href="/enlighten/docs/linux/linux-commands/">Linux Commands</a></li>
         </ul>
     </li>
     <li>

@@ -98,7 +98,7 @@
         background-color: #555;
     }
 
-    #toc{
+    #toc {
         font-size: 0.75em;
         line-height: 1.5em;
         margin: 0px;
@@ -106,16 +106,17 @@
          
     }
 
-    table td{
+    table td {
         vertical-align: top;
     }
 
-    .noborder tr th, .noborder tr td{
+    .noborder tr th,
+    .noborder tr td {
         border: 0px solid grey !important;
     }
 
-    .noborder .content{
-        padding-top: 15px;
+    .noborder .content {
+        padding-top: 5px;
     }
 
     .home-page {
@@ -130,7 +131,8 @@
         color: blue;
     }
 
-    .home-page h3 a, .home-page h3 a:visited {
+    .home-page h3 a,
+    .home-page h3 a:visited {
         color: black;
     }
 
@@ -140,20 +142,31 @@
         border-bottom: 1px solid lightgray;
     }
 
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
         color: steelblue;
         font-weight: 300;
     }
-    
-    h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+
+    h1 a:visited,
+    h2 a:visited,
+    h3 a:visited,
+    h4 a:visited,
+    h5 a:visited,
+    h6 a:visited {
         color: steelblue;
     }
 
     a:hover {
         text-decoration: none !important;
-    } 
+    }
 
-    .toc a, .toc a:visited {
+    .toc a,
+    .toc a:visited {
         color: steelblue;
     }
 
@@ -161,7 +174,11 @@
         color: orangered;
     }
 
-
+    .content .content {
+        padding-top: 0px;
+        padding-bottom: 5px;
+        min-width: 30rem;
+    }
 </style>
   
 </head>
@@ -200,14 +217,6 @@
     </li>
     <li>
         <div class="collapsible">
-            <a title="MEAN Stack">MEAN Stack</a>
-        </div>
-        <ul class="menu-content">
-            <li><a href="/enlighten/docs/mean_stack/nodejs/">Node JS</a></li>
-        </ul>
-    </li>
-    <li>
-        <div class="collapsible">
             <a title="Learn Linux">Python</a>
         </div>
         <ul class="menu-content">
@@ -217,11 +226,10 @@
     </li>
     <li>
         <div class="collapsible">
-            <a title="Learn Linux">Linux</a>
+            <a title="MEAN Stack">MEAN Stack</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/linux/linux-intro/">Linux Intro</a></li>
-            <li><a href="/enlighten/docs/linux/linux-commands/">Linux Commands</a></li>
+            <li><a href="/enlighten/docs/mean_stack/nodejs/">Node JS</a></li>
         </ul>
     </li>
     <li>
@@ -230,6 +238,15 @@
         </div>
         <ul class="menu-content">
             <li><a href="/enlighten/docs/bigdata/hadoop-intro/">Hadoop</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Linux">Linux</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/linux/linux-intro/">Linux Intro</a></li>
+            <li><a href="/enlighten/docs/linux/linux-commands/">Linux Commands</a></li>
         </ul>
     </li>
     <li>
@@ -287,56 +304,7 @@
 <h2 id="_variables">Variables</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>some list here
-one
-two
-three</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>Quoted text.</p>
-</div>
-<div class="paragraph">
-<p>Another paragraph in quote.</p>
-</div>
-</blockquote>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ gem install asciidoctor</pre>
-</div>
-</div>
-<hr>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class Person {
-  private String name;
-  public Person(String name) {
-    this.name = name;
-  }
-}</code></pre>
-</div>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
-You can add line numbers to source listings by adding the word <code>numbered</code> in the attribute list after the language name.
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_variables_2">Variables</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Int</p>
+<p><strong>Int</strong></p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -345,7 +313,7 @@ two = 2</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Decimal</p>
+<p><strong>Decimal</strong></p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -353,12 +321,15 @@ two = 2</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>String</p>
+<p><strong>String</strong></p>
 </div>
 <div class="literalblock">
 <div class="content">
 <pre>strval = "Hello"</pre>
 </div>
+</div>
+<div class="paragraph">
+<p> </p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -374,6 +345,126 @@ Variables declared in function are called Local Variable. All other variables ar
 </div>
 <div class="paragraph">
 <p>Global vars can be accessed within the function.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functions">Functions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Funtion definition:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>def addNum(one, two):
+    return one + two</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Function call:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>addNum(4,5)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>print("Hello" * 5)</code> this code prints <code>HelloHelloHelloHelloHello</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_if_statement">IF Statement</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Boolean values : <code>True, False</code></p>
+</div>
+<div class="paragraph">
+<p>Sample if statement</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>if click == True and control == "Button":
+    print("Button Clicked")
+elif control == "Radio":
+    print("Radio button selected")
+else
+    print("No interaction")</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lists">Lists</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>General structure of list</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Testlist = ["a", "b", "c"]
+scores = [60, 75, 70, 80, 90]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The indexing of the list(for ex: scores) goes in two ways.<br>
+one is <code>0,1,2,3,4</code> and another one is <code>-5,-4,-3,-2,-1</code></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>print(scores[4])  # prints 90
+print(scores[-1]) # also prints 90</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Some more notation</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>print(scores[0:2])  # prints: 60, 75
+print(scores[1:3])  # prints: 75, 70
+print(scores[2:])   # prints: 70, 80, 90</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To change the value in a list:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>scores[1] = 35
+print(scores)  # prints: 60, 35, 70, 80, 90</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To remove/update items from list</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>scores[1:3] = []
+print(scores)  # prints: 60, 80, 90</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>scores[2] = []
+print(scores) # prints: 60, 75, [], 80, 90</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>scores[2] = ["A", "B"]
+print(scores) # prints: 60, 75, ["A", "B"], 80, 90
+print(scores[2][1])  # prints: "B"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Append the list</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>scores.append(82)
+print(scores) # prints: 60, 75, 70, 80, 90, 82</pre>
+</div>
 </div>
 </div>
 </div>
