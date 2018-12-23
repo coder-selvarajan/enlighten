@@ -26,27 +26,28 @@ TIP: Variables declared in function are called Local Variable. All other variabl
 
 Global vars can be accessed within the function. 
 
-
+[.h2-border]
 == Functions
 
-Funtion definition:
-
+*Funtion definition:*
+[source,python]
     def addNum(one, two):
         return one + two
 
-Function call:
+*Function call:*
 
     addNum(4,5)
 
 `print("Hello" * 5)` this code prints `HelloHelloHelloHelloHello`
 
 
+[.h2-border]
 == IF Statement
 
 Boolean values : `True, False`
 
-Sample if statement
-
+*Sample if statement*
+[source,python]
     if click == True and control == "Button":
         print("Button Clicked")
     elif control == "Radio":
@@ -55,46 +56,117 @@ Sample if statement
         print("No interaction")
 
 
+[.h2-border]
 == Lists
 
-General structure of list
-
+*General structure of list*
+[source,python]
     Testlist = ["a", "b", "c"]
     scores = [60, 75, 70, 80, 90]
-    
+
+
 The indexing of the list(for ex: scores) goes in two ways. + 
 one is `0,1,2,3,4` and another one is `-5,-4,-3,-2,-1` 
-
+[source,python]
     print(scores[4])  # prints 90
     print(scores[-1]) # also prints 90 
 
-Some more notation
 
+*Some more notation*
+[source,python]
     print(scores[0:2])  # prints: 60, 75
     print(scores[1:3])  # prints: 75, 70
     print(scores[2:])   # prints: 70, 80, 90
-    
-To change the value in a list:
 
+
+*To change the value in a list:*
+[source,python]
     scores[1] = 35
     print(scores)  # prints: 60, 35, 70, 80, 90
 
 
-To remove/update items from list
-
+*To remove/update items from list*
+[source,python]
     scores[1:3] = []
     print(scores)  # prints: 60, 80, 90
-
+    # update: 
     scores[2] = []
     print(scores) # prints: 60, 75, [], 80, 90
-
+    # list with in list
     scores[2] = ["A", "B"]
     print(scores) # prints: 60, 75, ["A", "B"], 80, 90
     print(scores[2][1])  # prints: "B"
 
 
-Append the list
-
+*Append the list*
+[source,python]
     scores.append(82)
     print(scores) # prints: 60, 75, 70, 80, 90, 82
 
+
+[.h2-border]
+== Loops
+
+=== For Loop:
+
+*For Loop on string:* 
+[source,python]
+    word = "Hello"
+    for w in word:
+        print(w) # prints:  H  e  l  l  o
+
+
+*For loop on list:*
+[source,python]
+    numbers = [1,2,3,4,5]
+    for n in numbers
+        print(n) # prints: 1  2  3  4  5
+
+
+*For loop on range:*
+[source,python]
+    numlist = []
+    for n in range(10)    
+        print(n)          # prints 0...9 
+        numlist.append(n) # adds numbers to a list
+    # range(start, stop, step)
+    for k in range(-1, -6, -2)
+        print(k)    # prints: -1  -3  -5
+
+
+range(5) - outputs 0, 1, 2, 3, 4
+
+
+=== While loop:
+
+*While loop sample:*
+
+[source,python]
+    c = 1
+    while (c<=10)
+        print(c)  # prints: 1 ... 10
+        c = c + 1
+    letters = ["a", "b", "c"]
+    i = 0
+    while (i<len(letters))
+        print(letters[i])  # prints: a  b  c
+
+
+=== Breaking and Continuing in Loops
+
+*Break statement sample:*
+[source,python]
+    members = ["A", "B", "C", "D"]
+    for i in range(len(members)):
+        if members[i] == "C":
+            break
+    print(i+1) #prints: 3
+
+*Continue statement sample:*
+[source,python]
+    for k in range(10):
+        print(k)
+        if k%3 == 0:
+            print("Divided by 3")
+            continue
+        print("Not divided by 3")
