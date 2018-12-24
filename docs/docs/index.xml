@@ -285,12 +285,12 @@ Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</descr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/python/basics/</guid>
-      <description>Python Basics Variables Int one = 1two = 2
+      <description>Python Basics Python is an interpreted, object-oriented and high level language.
+ Variables Int one = 1two = 2
  Decimal dem = 1.1
  String strval = &amp;#34;Hello&amp;#34;
      Tip  Variables declared in function are called Local Variable. All other variables are Global variables.     Global vars can be accessed within the function.
-   Functions Funtion definition: def addNum(one, two):return one + two
- Function call: addNum(4,5)</description>
+   Functions Funtion definition: def addNum(one, two):return one + two</description>
     </item>
     
   </channel>
