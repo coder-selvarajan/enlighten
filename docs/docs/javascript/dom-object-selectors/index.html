@@ -87,7 +87,7 @@
         font-size: 14px;
         border: none;
         outline: none;
-        background-color: dodgerblue;
+        background-color: #888;
         color: white;
         cursor: pointer;
         padding: 7px;
@@ -95,7 +95,7 @@
     }
 
     #topBtn:hover {
-        background-color: #555;
+        background-color: #B83227;
     }
 
     #toc {
@@ -128,7 +128,7 @@
     }
 
     .home-page a:hover {
-        color: blue;
+        color: orangered;
     }
 
     .home-page h3 a,
@@ -146,19 +146,16 @@
     h3 a,
     h4 a,
     h5 a,
-    h6 a {
-        color: deepskyblue;
-        font-weight: 200;
-    }
-    
+    h6 a,
     h2 a:visited,
     h3 a:visited,
     h4 a:visited,
     h5 a:visited,
     h6 a:visited {
-        color: deepskyblue;
+        color: #AE1438;
+        font-weight: 200;
     }
-
+    
     h1 a, h1 a:visited, .brand a, .brand a:visited {
         color: black;
         font-weight: 200;
@@ -170,11 +167,11 @@
 
     .toc a,
     .toc a:visited {
-        color: steelblue;
+        color: gray;
     }
 
     .toc a:hover {
-        color: orangered;
+        color: red;
     }
 
     .content .content {
@@ -626,7 +623,7 @@
     );
     activeLink.forEach(function(a, index) {
       
-      a.style.color = "lightskyblue";
+      a.style.color = "indianred";
       const contentList = a.parentElement.parentElement;
       contentList.style.maxHeight = contentList.scrollHeight + "px";
     });
