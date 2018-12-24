@@ -44,7 +44,8 @@ Global vars can be accessed within the function.
     addNum(4,5)
 {{</highlight>}}
 
-`print("Hello" * 5)` this code prints `HelloHelloHelloHelloHello`
+
+> `print("Hello" * 5)` this code prints `HelloHelloHelloHelloHello`
 
 
 [.h2-border]
@@ -66,6 +67,8 @@ Boolean values : `True, False`
 [.h2-border]
 == Lists
 
+Lists are used to store the collection of elements of any type
+
 *General structure of list*
 {{<highlight python>}}
     Testlist = ["a", "b", "c"]
@@ -76,8 +79,10 @@ Boolean values : `True, False`
 The indexing of the list(for ex: scores) goes in two ways. + 
 one is `0,1,2,3,4` and another one is `-5,-4,-3,-2,-1` 
 {{<highlight python>}}
-    print(scores[4])  # prints 90
-    print(scores[-1]) # also prints 90 
+    print(scores[4])
+    print(scores[-1]) 
+    # both these statements print 90 
+    print(scores[-5]) # prints: 60
 {{</highlight>}}
 
 
@@ -160,12 +165,16 @@ range(5) - outputs 0, 1, 2, 3, 4
 {{<highlight python>}}
     c = 1
     while (c<=10)
-        print(c)  # prints: 1 ... 10
+        print(c)  
         c = c + 1
+    # Results: 1 ... 10
+
     letters = ["a", "b", "c"]
     i = 0
     while (i<len(letters))
-        print(letters[i])  # prints: a  b  c
+        print(letters[i])  
+        i += 1
+    # Results: a  b  c
 {{</highlight>}}
 
 
@@ -191,7 +200,8 @@ range(5) - outputs 0, 1, 2, 3, 4
         print("Not divided by 3")
 {{</highlight>}}
 
-*Tricky Question & Answer for reference*
+
+> Tricky Question & Answer for reference
 
 {{<highlight python>}}
     f = 1
@@ -203,7 +213,7 @@ range(5) - outputs 0, 1, 2, 3, 4
     print(A)
 {{</highlight>}}
 
-*Answer is:* [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+> Answer is: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 
 [.h2-border]
@@ -301,8 +311,8 @@ Dictionary keys can be in different types - sample code:
 
 List inside Set is not allowed:
 {{<highlight python>}}
-    l = [1,2,3,[4,5]] #it works
-    s = {1,2,3,[4,5]} #throws error
+    l = [1,2,3,[4,5]] #it is allowed
+    s = {1,2,3,[4,5]} #this throws an error
 {{</highlight>}}
 
 > Accessing an unspecified index in a ‘list’ will produce an error while doing so the same in ‘dictionary’ will produce a new key
