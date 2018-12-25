@@ -45,16 +45,14 @@ The preferred text editor is Visual Studio Code due to the popularity and flexib
 We need a package manager to install Hugo and Asciidoctor in Mac. So we are going with `HomeBrew`
 
 * Install *Homebrew* - package manager with the below commend 
-{{<highlight shell>}}
-/usr/bin/ruby -e "$(curl -fsSL 
-https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{{</highlight>}}
+
+    /usr/bin/ruby -e "$(curl -fsSL 
+    https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 * Install *Hugo* and *AsciiDoctor* with the below `brew` commands 
-{{<highlight shell>}}
-brew install hugo
-brew install asciidoctor
-{{</highlight>}}
+    
+    brew install hugo
+    brew install asciidoctor
 
 * Install *Git* on Mac with the below link 
 ** https://git-scm.com/download/mac
