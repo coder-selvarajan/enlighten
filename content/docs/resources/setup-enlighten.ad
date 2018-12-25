@@ -5,51 +5,78 @@ title = "Setting up Enlighten Site"
 
 = Setting-up Enlighten Site
 
-== Prerequisite
+[.h2-border]
+== Prerequisites
 
-* OS: any
-* Hugo
-* Asciidoctor
-* Text Editor (VS Code) and extensions (optional)
+*Hugo*::
+Statis site generator, written in Go language
 
+*Asciidoctor*::
+AsciiDoc is a human-readable document format, using plain-text mark-up conventions. AsciiDoc documents can be created using any text editor and read "as-is". Asciidoctor is a fast text processor for converting AsciiDoc content to HTML5/PDF. Hugo supports Markdown and Asciidoc formats. It uses AsciiDoctor to render `asciidoc, adoc, ad` files via external helper facility.  
+
+*Git*:: 
+Git is widely used repository in the world. Enlighten site is maintained in Git repo. 
+
+*Text Editor*:: 
+The preferred text editor is Visual Studio Code due to the popularity and flexibility. Extentions are supported for any special need. 
+
+
+[.h2-border]
 == Windows Setup
 
 * Install *Hugo*
-** Download appropriate Hugo version from this link 
-https://github.com/gohugoio/hugo/releases
-** Extract the zip content under C:\Hugo\Bin\
-** Add 'c:\Hugo\Bin\' to PATH variable 
-* Install *AsciiDoctor* : 
+** Download the latest Hugo version from this link https://github.com/gohugoio/hugo/releases
+** Extract the zip content into `C:\Hugo\Bin\` and add this path in PATH variable.
+
+* Install *AsciiDoctor*  
 ** In order to run asciidoctor we need ruby. So download and install ruby from this site
     https://rubyinstaller.org/
 
 ** Install asciidoctor with this command. Gem is a package manager for Ruby.
     gem install asciidoctor
 
-* Install Visual Studio Code - Text Editor with this https://code.visualstudio.com/[link]
+* Install *Git* on Windows with the below link
+** https://git-scm.com/download/win
+
+* Install *Visual Studio Code* with the below link
+** https://code.visualstudio.com/
 
 
+[.h2-border]
 == Mac Setup
 
 [%hardbreaks]
-We need a package manager to install Hugo and Asciidoctor in Mac. We will go with HomeBrew.
-* Install *Homebrew* - package manager with below commend 
+We need a package manager to install Hugo and Asciidoctor in Mac. So we are going with `HomeBrew`
+
+* Install *Homebrew* - package manager with the below commend 
 {{<highlight shell>}}
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL 
+https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {{</highlight>}}
 
-* Install *Hugo* with Homebrew 
+* Install *Hugo* and *AsciiDoctor* with the below `brew` commands 
 {{<highlight shell>}}
 brew install hugo
-{{</highlight>}}
-
-* Install *AsciiDoctor* with Homebrew
-{{<highlight shell>}}
 brew install asciidoctor
 {{</highlight>}}
 
+* Install *Git* on Mac with the below link 
+** https://git-scm.com/download/mac
 
-> You may verify the location of the installation by `which hugo` command
+* Install *Visual Studio Code* with the below link
+** https://code.visualstudio.com/
 
-Install Visual Studio Code - Text Editor with this https://code.visualstudio.com/[link]
 
+> You may verify the location of the installation by using `which hugo` command
+
+[.h2-border]
+== Running the Site
+
+Once the prerequisites are setup, we can pull the site from github and run it locally. 
+
+* Command to pull the site source from github is :
+** git pull https://github.com/Coder-Selvarajan/enlighten.git enlighten
+* Once we have the source code, enable write permission on the folder for the user.
+* Now we can locally run the site. Goto `enlighten` folder and run the below command
+** hugo server
+* Finally browse the site at http://localhost:1313/enlighten/docs/

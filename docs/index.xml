@@ -293,5 +293,15 @@ Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</descr
    Functions Funtion definition: def addNum(one, two):return one + two</description>
     </item>
     
+    <item>
+      <title>Setting up Enlighten Site</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/resources/setup-enlighten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/resources/setup-enlighten/</guid>
+      <description>Setting-up Enlighten Site Prerequisites  Hugo  Statis site generator, written in Go language
+ Asciidoctor  AsciiDoc is a human-readable document format, using plain-text mark-up conventions. AsciiDoc documents can be created using any text editor and read &#34;as-is&#34;. Asciidoctor is a fast text processor for converting AsciiDoc content to HTML5/PDF. Hugo supports Markdown and Asciidoc formats. It uses AsciiDoctor to render asciidoc, adoc, ad files via external helper facility.</description>
+    </item>
+    
   </channel>
 </rss>

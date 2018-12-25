@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rest Api | Enlightening KT</title>
+<title>Setting up Enlighten Site | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -316,50 +316,178 @@
         <label for="menu-control">
   <img src="https://coder-selvarajan.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Rest Api</strong>
+<strong>Setting up Enlighten Site</strong>
       </header>
-      <article class="markdown">
-
-<h1 id="rest-api">REST Api</h1>
-
-<h3 id="api">API</h3>
-
-<pre><code>- Application Programming Interface
-- Contract provided by one piece of software to another
-- Structured request and response
-</code></pre>
-
-<h3 id="rest-api-1">REST API</h3>
-
-<pre><code>- Representational State Transfer
-- Architecture style for designing networked apps
-- Relies on stateless, client server protocol, always http
-- Treats server objects as resources that can be created and destroyed
-</code></pre>
-
-<h3 id="http-requests-verbs">HTTP Requests/Verbs</h3>
-
-<pre><code>GET       - Get resources
-POST      - Post resources
-PUT       - Update resources
-DELETE    - Delete resources
-
-HEAD      - Same as GET but does not return body
-OPTIONS   - Returns the supported HTTP methods
-PATCH     - Update partial resources
-</code></pre>
-
-<h3 id="api-endpoints">API Endpoints</h3>
-
-<pre><code>GET     - /api/users
-GET     - /api/users/1
-POST    - /api/users
-PUT     - /api/users/1
-DELETE  - /api/users/1
-</code></pre>
-
-<p>FAKE online Rest Api for developers:
-<a href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a></p>
+      <article class="markdown"><h1 id="_setting_up_enlighten_site" class="sect0">Setting-up Enlighten Site</h1>
+<div class="sect1 h2-border">
+<h2 id="_prerequisites">Prerequisites</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>Hugo</strong></dt>
+<dd>
+<p>Statis site generator, written in Go language</p>
+</dd>
+<dt class="hdlist1"><strong>Asciidoctor</strong></dt>
+<dd>
+<p>AsciiDoc is a human-readable document format, using plain-text mark-up conventions. AsciiDoc documents can be created using any text editor and read "as-is". Asciidoctor is a fast text processor for converting AsciiDoc content to HTML5/PDF. Hugo supports Markdown and Asciidoc formats. It uses AsciiDoctor to render <code>asciidoc, adoc, ad</code> files via external helper facility.</p>
+</dd>
+<dt class="hdlist1"><strong>Git</strong></dt>
+<dd>
+<p>Git is widely used repository in the world. Enlighten site is maintained in Git repo.</p>
+</dd>
+<dt class="hdlist1"><strong>Text Editor</strong></dt>
+<dd>
+<p>The preferred text editor is Visual Studio Code due to the popularity and flexibility. Extentions are supported for any special need.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_windows_setup">Windows Setup</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Install <strong>Hugo</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Download the latest Hugo version from this link <a href="https://github.com/gohugoio/hugo/releases" class="bare">https://github.com/gohugoio/hugo/releases</a></p>
+</li>
+<li>
+<p>Extract the zip content into <code>C:\Hugo\Bin\</code> and add this path in PATH variable.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Install <strong>AsciiDoctor</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>In order to run asciidoctor we need ruby. So download and install ruby from this site
+<a href="https://rubyinstaller.org/" class="bare">https://rubyinstaller.org/</a></p>
+</li>
+<li>
+<p>Install asciidoctor with this command. Gem is a package manager for Ruby.
+gem install asciidoctor</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Install <strong>Git</strong> on Windows with the below link</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://git-scm.com/download/win" class="bare">https://git-scm.com/download/win</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Install <strong>Visual Studio Code</strong> with the below link</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://code.visualstudio.com/" class="bare">https://code.visualstudio.com/</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_mac_setup">Mac Setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We need a package manager to install Hugo and Asciidoctor in Mac. So we are going with <code>HomeBrew</code></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install <strong>Homebrew</strong> - package manager with the below commend
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/usr/bin/ruby -e <span style="color:#d88200">&#34;</span><span style="color:#00a8c8">$(</span>curl -fsSL 
+https://raw.githubusercontent.com/Homebrew/install/master/install<span style="color:#00a8c8">)</span><span style="color:#d88200">&#34;</span></code></pre></div></p>
+</li>
+<li>
+<p>Install <strong>Hugo</strong> and <strong>AsciiDoctor</strong> with the below <code>brew</code> commands
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install hugo
+brew install asciidoctor</code></pre></div></p>
+</li>
+<li>
+<p>Install <strong>Git</strong> on Mac with the below link</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://git-scm.com/download/mac" class="bare">https://git-scm.com/download/mac</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Install <strong>Visual Studio Code</strong> with the below link</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://code.visualstudio.com/" class="bare">https://code.visualstudio.com/</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>You may verify the location of the installation by using <code>which hugo</code> command</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_running_the_site">Running the Site</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once the prerequisites are setup, we can pull the site from github and run it locally.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Command to pull the site source from github is :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>git pull <a href="https://github.com/Coder-Selvarajan/enlighten.git" class="bare">https://github.com/Coder-Selvarajan/enlighten.git</a> enlighten</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Once we have the source code, enable write permission on the folder for the user.</p>
+</li>
+<li>
+<p>Now we can locally run the site. Goto <code>enlighten</code> folder and run the below command</p>
+<div class="ulist">
+<ul>
+<li>
+<p>hugo server</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Finally browse the site at <a href="http://localhost:1313/enlighten/docs/" class="bare">http://localhost:1313/enlighten/docs/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </article>
     </div>
 
