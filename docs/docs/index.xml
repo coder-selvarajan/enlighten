@@ -303,5 +303,19 @@ Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</descr
  Asciidoctor  AsciiDoc is a human-readable document format, using plain-text mark-up conventions. AsciiDoc documents can be created using any text editor and read &#34;as-is&#34;. Asciidoctor is a fast text processor for converting AsciiDoc content to HTML5/PDF. Hugo supports Markdown and Asciidoc formats. It uses AsciiDoctor to render asciidoc, adoc, ad files via external helper facility.</description>
     </item>
     
+    <item>
+      <title>Swift Basics</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/swift/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/swift/basics/</guid>
+      <description>Swift Basics Variables Variable declaration goes like this
+   Type definition There are below number of types available
+   Functions Function definition goes like this
+   Classes &amp;amp; Objects Class declaration and object usage goes like this..
+   Packages There are many package libraries available in Swift.
+   </description>
+    </item>
+    
   </channel>
 </rss>
