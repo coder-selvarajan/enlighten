@@ -69,6 +69,7 @@ headless: true
     </li>
     <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
     <li><a href="/enlighten/docs/resources/my-projects/">Projects, Apps & Sites</a></li>
+    <li><a href="/enlighten/docs/resources/setup-enlighten/">Setup Enlighten Site</a></li>
 </ul>
 
 

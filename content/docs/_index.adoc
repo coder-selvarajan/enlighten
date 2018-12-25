@@ -36,6 +36,7 @@ BookShowToC = false
 
     * link:/enlighten/docs/resources/useful-links/[Useful Links/Tools]
     * link:/enlighten/docs/resources/my-projects/[Projects, Apps & Sites]
+    * link:/enlighten/docs/resources/setup-enlighten/[Setting up Enlighten Site]
 
 
 |
