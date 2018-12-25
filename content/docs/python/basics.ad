@@ -166,14 +166,14 @@ range(5) - outputs 0, 1, 2, 3, 4
 
 {{<highlight python>}}
     c = 1
-    while (c<=10)
+    while (c<=10):
         print(c)  
         c = c + 1
     # Results: 1 ... 10
 
     letters = ["a", "b", "c"]
     i = 0
-    while (i<len(letters))
+    while (i<len(letters)):
         print(letters[i])  
         i += 1
     # Results: a  b  c
@@ -321,3 +321,32 @@ List inside Set is not allowed:
 
 [.h2-border]
 == Input and Output
+
+*Input*
+{{<highlight python>}}
+    age = int(input("Enter age: "))
+    print(age)
+
+    # another sample 
+    Scores = []
+    for i in range(5):
+        curscore = float(input("Enter the score" + str(i) + " : "))
+        Scores.append(curscore)
+    print(Scores) 
+    # Result: Printing 5 decimal scores entered by the user
+{{</highlight>}}
+
+*Output*
+
+Both the statements below output the same text
+{{<highlight python>}}
+    print("The score you entered: "+str(curscore)+" good") 
+    print("The score you entered:",curscore,"good") 
+{{</highlight>}}
+
+> Note the usage of `,` in print statement. It also adds an extra space
+
+`\n` in print statement adds new line
+{{<highlight python>}}
+    print("The score is:\n" + str(curscore))
+{{</highlight>}}

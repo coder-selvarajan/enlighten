@@ -32,6 +32,14 @@ headless: true
     </li>
     <li>
         <div class="collapsible">
+            <a title="Learn Linux">Swift</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/swift/basics/">Basics</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
             <a title="MEAN Stack">MEAN Stack</a>
         </div>
         <ul class="menu-content">

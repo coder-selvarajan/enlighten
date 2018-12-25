@@ -38,13 +38,17 @@ BookShowToC = false
     * link:/enlighten/docs/resources/my-projects/[Projects, Apps & Sites]
     * link:/enlighten/docs/resources/setup-enlighten/[Setting up Enlighten Site]
 
-
 |
 
 === :blue_book: &nbsp;Python
 
 * link:/enlighten/docs/python/setup/[Setup]
 * link:/enlighten/docs/python/basics/[Basics]
+
+
+=== :blue_book: &nbsp;Swift
+
+* link:/enlighten/docs/swift/basics/[Basics]
 
 
 === :blue_book: &nbsp;MEAN Stack
