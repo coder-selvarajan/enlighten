@@ -77,6 +77,7 @@ Once the prerequisites are setup, we can pull the site from github and run it lo
 * Command to pull the site source from github is :
 ** git pull https://github.com/Coder-Selvarajan/enlighten.git enlighten
 * Once we have the source code, enable write permission on the folder for the user.
+* You may open `enlighten` folder in Visual Studio Code and update the content under `/content/docs/` folder.
 * Now we can locally run the site. Goto `enlighten` folder and run the below command
 ** hugo server
 * Finally browse the site at http://localhost:1313/enlighten/docs/

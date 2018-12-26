@@ -5,22 +5,454 @@ title = "Swift Basics"
 
 = Swift Basics 
 
-== Variables
+Swift 4 is a new programming language developed by Apple Inc for iOS and OS X development. Swift 4 adopts the best of C and Objective-C, without the constraints of C compatibility.
 
-Variable declaration goes like this
+* Swift 4 provides Objective-C like syntax.
+* Swift 4 provides seamless access to existing Cocoa frameworks.
+* Swift 4 unifies the procedural and object-oriented portions of the language.
+* Swift 4 does not need a separate library import to support functionalities like input/output or string handling.
+* Swift 4 uses the same runtime as the existing Obj-C system on Mac OS and iOS
+* Swift 4 comes with playground feature where Swift 4 programmers can write their code and execute it to see the results immediately.
+* You can use the import statement to import any Objective-C framework (or C library) directly into your Swift 4 program
 
-== Type definition
+*Tokens*
 
-There are below number of types available
+A Swift 4 program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Swift 4 statement consists of three tokens −
+{{<highlight swift>}}
+    print("test!")
+{{</highlight>}}
 
-== Functions
+Semicolons are not needed in Swift, however if you are combining more than one statement then you can use semicolon to separate them.
+{{<highlight swift>}}
+    var myString = "Hello, World!"; print(myString)
+{{</highlight>}}
 
-Function definition goes like this
+Swift 4 does not allow special characters such as @, $, and % within identifiers. Swift 4 is a case sensitive programming language. Thus, Manpower and manpower are two different identifiers in Swift 4. Here are some examples of acceptable identifiers −
+[source,swift]
+    Azad        zara   abc   move_name   a_123
+    myname50    _temp  j     a23b9       retVal
 
-== Classes & Objects
+*Literals*
 
-Class declaration and object usage goes like this.. 
+A literal is the source code representation of a value of an integer, floating-point number, or string type. The following are examples of literals: 
+{{<highlight swift>}}
+    92               // Integer literal
+    4.24159          // Floating-point literal
+    "Hello, World!"  // String literal
+{{</highlight>}}
 
-== Packages
+[.h2-border]
+== Built-in Data Types
 
-There are many package libraries available in Swift.
+Swift 4 offers the programmer a rich assortment of built-in as well as user-defined data types. The following types of basic data types are most frequently when declaring variables −
+
+* *Int or UInt* − This is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23.
+
+* *Float* − This is used to represent a 32-bit floating-point number and numbers with smaller decimal points. For example, 3.14159, 0.1, and -273.158.
+
+* *Double* − This is used to represent a 64-bit floating-point number and used when floating-point values must be very large. For example, 3.14159, 0.1, and -273.158.
+
+* *Bool* − This represents a Boolean value which is either true or false.
+
+* *String* − This is an ordered collection of characters. For example, "Hello, World!"
+
+* *Character* − This is a single-character string literal. For example, "C"
+
+* *Optional* − This represents a variable that can hold either a value or no value.
+
+* *Tuples* − This is used to group multiple values in single Compound Value.
+
+{sp} +
+
+*Type : Bit Width | Range*
+
+*Int8* : 1byte	| -127 to 127
+
+*UInt8* : 1byte	| 0 to 255
+
+*Int32* : 4bytes | -2147483648 to 2147483647
+    
+*UInt32* : 4bytes | 0 to 4294967295
+
+*Int64* : 8bytes | -9223372036854775808 to 9223372036854775807
+
+*UInt64* : 8bytes | 0 to 18446744073709551615
+
+*Float* : 4bytes | 1.2E-38 to 3.4E+38 (~6 digits)
+
+*Double* : 8bytes | 2.3E-308 to 1.7E+308 (~15 digits)
+
+
+=== Type Aliases
+
+You can create a new name for an existing type using typealias. Here is the simple syntax to define a new type using typealias −
+
+    typealias newname = type
+
+For example, the following line instructs the compiler that Feet is another name for Int −
+
+    typealias Feet = Int
+
+the whole code goes like this
+{{<highlight swift>}}
+    typealias Feet = Int
+    var distance: Feet = 100
+    print(distance)
+{{</highlight>}}
+
+=== Type Safety
+
+Swift 4 is a type-safe language which means if a part of your code expects a String, you can't pass it an Int by mistake.
+
+As Swift 4 is type-safe, it performs type-checks when compiling your code and flags any mismatched types as errors.
+{{<highlight swift>}}
+    var varA = 42
+    varA = "This is hello"
+    print(varA)
+{{</highlight>}}
+
+When we compile the above program, it produces the following compile time error.
+
+=== Type Inference
+
+Type inference enables a compiler to deduce the type of a particular expression automatically when it compiles your code
+{{<highlight swift>}}
+    // varA is inferred to be of type Int
+    var varA = 42
+    print(varA)
+
+    // varB is inferred to be of type Double
+    var varB = 3.14159
+    print(varB)
+
+    // varC is also inferred to be of type Double
+    var varC = 3 + 0.14159
+    print(varC)
+{{</highlight>}}
+
+[.h2-border]
+== Variable declaration
+
+Swift has two ways of declaring variables, One by assigning value in the variable and another one by using type annotation. Example: 
+
+{{<highlight swift>}}
+    var varA = 42
+    print(varA)
+
+    var varB:Float
+    varB = 3.14159
+    print(varB)
+{{</highlight>}}
+
+The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because Swift 4 is a case-sensitive programming language. We can even use `unicode characters` as well
+[source,swift]
+    var _var = "Hello, Swift 4!"
+    print(_var)
+    var பெயர் = "பிரேம்"
+    print(பெயர்)
+
+*Printing Variables*
+
+You can interpolate a variable value by wrapping the name in parentheses and escape it with a backslash before the opening parenthesis: 
+{{<highlight swift>}}
+    var varA = "Godzilla"
+    var varB = 1000.00
+
+    print("Value of \(varA) is more than \(varB) millions")
+{{</highlight>}}
+
+[.h2-border]
+== Optionals
+
+Swift 4 also introduces Optionals type, which handles the absence of a value. Optionals say either "there is a value, and it equals x" or "there isn't a value at all".
+
+Here’s an optional Integer & String declarations 
+{{<highlight swift>}}
+    var perhapsInt: Int?
+    var perhapsStr: String?
+{{</highlight>}}
+
+Above statements are equivalent to 
+    
+    var perhapsInt: Int? = nil
+    var perhapsStr: String? = nil
+
+
+=== Forced Unwrapping
+
+If you defined a variable as optional, then to get the value from this variable, you will have to unwrap it. This just means putting an exclamation mark at the end of the variable.
+
+Let's take a simple example −
+{{<highlight swift>}}
+    var myString:String?
+    myString = "Hello, Swift 4!"
+
+    if myString != nil {
+        print(myString)
+        print(myString!) //unwrapping applied here
+    } else {
+        print("myString has nil value")
+    }
+{{</highlight>}}
+
+When we run the above program using playground, we get the following result −
+[source,swift]
+    Optional("Hello, Swift 4!")
+    Hello, Swift 4!
+
+
+=== Automatic Unwrapping
+
+You can declare optional variables using exclamation mark instead of a question mark. Such optional variables will unwrap automatically and you do not need to use any further exclamation mark at the end of the variable to get the assigned value. Let's take a simple example −
+{{<highlight swift>}}
+    var myString:String!
+    myString = "Hello, Swift 4!"
+
+    if myString != nil {
+    print(myString)
+    } else {
+    print("myString has nil value")
+    }
+{{</highlight>}}
+
+When we run the above program using playground, we get the following result −
+[source,swift]
+    Hello, Swift 4!
+
+=== Optional Binding
+
+Use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable.
+
+An optional binding for the if statement is as follows −
+{{<highlight swift>}}
+    if let constantName = someOptional {
+    statements
+    }
+{{</highlight>}}
+
+Let's take a simple example to understand the usage of optional binding −
+{{<highlight swift>}}
+    var myString:String?
+    myString = "Hello, Swift 4!"
+
+    if let yourString = myString {
+    print("Your string has - \(yourString)")
+    } else {
+    print("Your string does not have a value")
+    }
+{{</highlight>}}
+
+When we run the above program using playground, we get the following result −
+
+    Your string has - Hello, Swift 4!
+
+[.h2-border]
+== Tuples
+
+Swift 4 also introduces Tuples type, which are used to group multiple values in a single compound Value. The values in a tuple can be of any type, and do not need to be of same type.
+
+For example, `("Tutorials Point", 123)` is a tuple with two values, one of string Type, and other is integer type. It is a legal command.
+
+You can create tuples from as many values as you want and from any number of different data types.
+[source,swift]
+    var TupleName = (Value1, value2,… any number of values)
+
+Here’s a Tuple declaration −
+[source,swift]
+    var error501 = (501, “Not implemented”)
+
+You can access the values of tuple using the index numbers that start from 0.
+{{<highlight swift>}}
+    print("The code is\(error501.0)")
+    print("The definition of error is\(error501.1)")
+{{</highlight>}}
+
+You can name the variables of a tuple while declaring , and you can call them using their names
+{{<highlight swift>}}
+    var error501 = (errorCode: 501, description: "Not Implemented")
+    print(error501.errorCode)   // prints 501.
+{{</highlight>}}
+
+Tuples are helpful in returning multiple values from a function. By returning different values in a tuple we can make decisions depending on different tuple types.
+
+Note: Tuples are useful for temporary values and are not suited for complex data.
+
+[.h2-border]
+== Literals
+
+*Constants Declaration*
+
+Before you use constants, you must declare them using let keyword as follows 
+{{<highlight swift>}}
+    let constA = 42
+    print(constA)
+
+    let constB:Float = 3.14159
+    print(constB)
+{{</highlight>}}
+
+*Integer Literals*
+
+An integer literal can be a decimal, binary, octal, or hexadecimal constant. Binary literals begin with 0b, octal literals begin with 0o, and hexadecimal literals begin with 0x and nothing for decimal.
+{{<highlight swift>}}
+    let decimalInteger = 17         // 17 in decimal notation
+    let binaryInteger = 0b10001     // 17 in binary notation
+    let octalInteger = 0o21         // 17 in octal notation
+    let hexadecimalInteger = 0x11   // 17 in hexadecimal notation
+{{</highlight>}}
+
+*Floating-point Literals*
+
+A floating-point literal has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literals either in decimal form or hexadecimal form.
+{{<highlight swift>}}
+    let decimalDouble = 12.1875
+    let exponentDouble = 1.21875e1
+    let hexadecimalDouble = 0xC.3p0
+{{</highlight>}}
+
+*String Literals*
+
+String literals cannot contain an unescaped double quote ("), an unescaped backslash (\), a carriage return, or a line feed. Special characters can be included in string literals using the following escape sequences −
+
+* `\0` = Null Character
+* `\\` = \character
+* `\b` = Backspace
+* `\f` = Form feed
+* `\n` = Newline
+* `\r` = Carriage return
+* `\t` = Horizontal tab
+* `\v` = Vertical tab
+* `\'` = Single Quote
+* `\"` = Double Quote
+* `\000` = Octal number of one to three digits
+* `\xhh...` =  Hexadecimal number of one or more digits
+
+Sample string literal usage : 
+{{<highlight swift>}}
+    let stringL = "Hello\tWorld\n\nHello\'Swift 4\'"
+    print(stringL)
+{{</highlight>}}
+
+The Result would be
+[source,swift]
+----
+    Hello World
+
+    Hello'Swift 4'
+----
+
+[.h2-border]
+== Operators
+
+=== Basic Operators
+
+*Comparison Operators* : {nbsp} `== {nbsp} != {nbsp} > {nbsp} < {nbsp} >= {nbsp} <=`
+
+*Logical Operators*: {nbsp} `&& {nbsp} || {nbsp} !`
+
+*Bitwise Operators* : {nbsp} `& {nbsp} | {nbsp} ^ {nbsp} ~ {nbsp} << {nbsp} >>`
+
+`&`::	
+Binary AND Operator copies a bit to the result, if it exists in both operands. +
+(A & B) will give 12, which is 0000 1100
+
+`|`::	
+Binary OR Operator copies a bit, if it exists in either operand. +
+(A | B) will give 61, which is 0011 1101
+
+`^`::	
+Binary XOR Operator copies the bit, if it is set in one operand but not both. +
+(A ^ B) will give 49, which is 0011 0001
+
+`~`::	
+Binary Ones Complement Operator is unary and has the effect of 'flipping' bits. +
+(~A ) will give -61, which is 1100 0011 in 2's complement form.
+
+`<<`::	
+Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand. +
+(A << 2 will give 240, which is 1111 0000
+
+`>>`::	
+Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. +
+A >> 2 will give 15, which is 0000 1111
+
+{sp} +
+Assume A = 60; and B = 13; +
+In binary format, they will be as follows:
+
+    A = 0011 1100
+    B = 0000 1101
+    -----------------
+    A&B = 0000 1100
+    A|B = 0011 1101
+    A^B = 0011 0001
+    ~A = 1100 0011
+
+*Assignment Operators* : {nbsp} `= {nbsp} += {nbsp} -= {nbsp} *= {nbsp} /= {nbsp} %= {nbsp} >>= {nbsp} <<= {nbsp} &= {nbsp} ^= {nbsp} |=`
+
+_Note: `C << = 2` is same as `C = C << 2`_
+
+
+=== Range Operators 
+
+Swift 4 includes two range operators, which are shortcuts for expressing a range of values. The following table explains these two operators.
+
+_Closed Range_::
+    (a...b) defines a range that runs from a to b, and includes the values a and b. +
+    1...5 gives 1, 2, 3, 4 and 5
+
+_Half-Open Range_::
+    (a..< b) defines a range that runs from a to b, but does not include b. +
+    1..< 5 gives 1, 2, 3, and 4
+
+_One-sided Range_::
+    a… , defines a range that runs from a to end of elements +
+    1… gives 1 , 2,3… end of elements +
+    {sp} +
+    …a , defines a range starting from start to a +
+    …2 gives beginning… to 1,2
+
+
+=== Misc Operators
+
+Swift 4 supports a few other important operators including range and ? : which are explained in the following table.
+
+_Unary Minus_::
+    The sign of a numeric value can be toggled using a prefixed +
+    -3 or -4
+_Unary Plus_::
+    Returns the value it operates on, without any change +
+    +6 gives 6
+_Ternary Conditional_::
+    Condition ? X : Y +
+    If Condition is true ? Then value X : Otherwise value Y
+
+=== Operators Precedence
+
+Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.
+
+Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.
+
+_Primary Expression Operators (left-to-right)_::
+	`() [] . expr++ expr--` +
+
+_Unary Operators (right-to-left)_::
+    `* & + - ! ~ ++expr --expr` +
+    `* / %` +
+    `+ -` +
+    `>> <<` +
+    `< > <= >=` +
+    `== !=` +
+
+_Binary Operators (left-to-right)_::
+    `& ^ | && ||`
+
+_Ternary Operator (right-to-left)_::
+    `?:` +
+    
+_Assignment Operators (right-to-left)_::
+    `= += -= *= /= %= >>= <<= &=^= |=`
+
+_Comma (left-to-right)_::
+    `,`
+
