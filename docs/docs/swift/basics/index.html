@@ -184,7 +184,7 @@
     }
 
     .listingblock .content {
-        min-width: 45rem;
+        min-width: 47rem;
     }
 
     main .menu nav {
@@ -327,43 +327,629 @@
 <strong>Swift Basics</strong>
       </header>
       <article class="markdown"><h1 id="_swift_basics" class="sect0">Swift Basics</h1>
-<div class="sect1">
-<h2 id="_variables">Variables</h2>
+<div class="paragraph">
+<p>Swift 4 is a new programming language developed by Apple Inc for iOS and OS X development. Swift 4 adopts the best of C and Objective-C, without the constraints of C compatibility.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Swift 4 provides Objective-C like syntax.</p>
+</li>
+<li>
+<p>Swift 4 provides seamless access to existing Cocoa frameworks.</p>
+</li>
+<li>
+<p>Swift 4 unifies the procedural and object-oriented portions of the language.</p>
+</li>
+<li>
+<p>Swift 4 does not need a separate library import to support functionalities like input/output or string handling.</p>
+</li>
+<li>
+<p>Swift 4 uses the same runtime as the existing Obj-C system on Mac OS and iOS</p>
+</li>
+<li>
+<p>Swift 4 comes with playground feature where Swift 4 programmers can write their code and execute it to see the results immediately.</p>
+</li>
+<li>
+<p>You can use the import statement to import any Objective-C framework (or C library) directly into your Swift 4 program</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Tokens</strong></p>
+</div>
+<div class="paragraph">
+<p>A Swift 4 program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Swift 4 statement consists of three tokens −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;test!&#34;</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Semicolons are not needed in Swift, however if you are combining more than one statement then you can use semicolon to separate them.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">myString</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Hello, World!&#34;</span><span style="color:#111">;</span> <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">myString</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Swift 4 does not allow special characters such as @, $, and % within identifiers. Swift 4 is a case sensitive programming language. Thus, Manpower and manpower are two different identifiers in Swift 4. Here are some examples of acceptable identifiers −</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    Azad        zara   abc   move_name   a_123
+    myname50    _temp  j     a23b9       retVal</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Literals</strong></p>
+</div>
+<div class="paragraph">
+<p>A literal is the source code representation of a value of an integer, floating-point number, or string type. The following are examples of literals:
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#ae81ff">92</span>               <span style="color:#75715e">// Integer literal</span>
+    <span style="color:#ae81ff">4.24159</span>          <span style="color:#75715e">// Floating-point literal</span>
+    <span style="color:#d88200">&#34;Hello, World!&#34;</span>  <span style="color:#75715e">// String literal</span></code></pre></div></p>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_built_in_data_types">Built-in Data Types</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Variable declaration goes like this</p>
+<p>Swift 4 offers the programmer a rich assortment of built-in as well as user-defined data types. The following types of basic data types are most frequently when declaring variables −</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Int or UInt</strong> − This is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23.</p>
+</li>
+<li>
+<p><strong>Float</strong> − This is used to represent a 32-bit floating-point number and numbers with smaller decimal points. For example, 3.14159, 0.1, and -273.158.</p>
+</li>
+<li>
+<p><strong>Double</strong> − This is used to represent a 64-bit floating-point number and used when floating-point values must be very large. For example, 3.14159, 0.1, and -273.158.</p>
+</li>
+<li>
+<p><strong>Bool</strong> − This represents a Boolean value which is either true or false.</p>
+</li>
+<li>
+<p><strong>String</strong> − This is an ordered collection of characters. For example, "Hello, World!"</p>
+</li>
+<li>
+<p><strong>Character</strong> − This is a single-character string literal. For example, "C"</p>
+</li>
+<li>
+<p><strong>Optional</strong> − This represents a variable that can hold either a value or no value.</p>
+</li>
+<li>
+<p><strong>Tuples</strong> − This is used to group multiple values in single Compound Value.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p> <br></p>
+</div>
+<div class="paragraph">
+<p><strong>Type : Bit Width | Range</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Int8</strong> : 1byte	| -127 to 127</p>
+</div>
+<div class="paragraph">
+<p><strong>UInt8</strong> : 1byte	| 0 to 255</p>
+</div>
+<div class="paragraph">
+<p><strong>Int32</strong> : 4bytes | -2147483648 to 2147483647</p>
+</div>
+<div class="paragraph">
+<p><strong>UInt32</strong> : 4bytes | 0 to 4294967295</p>
+</div>
+<div class="paragraph">
+<p><strong>Int64</strong> : 8bytes | -9223372036854775808 to 9223372036854775807</p>
+</div>
+<div class="paragraph">
+<p><strong>UInt64</strong> : 8bytes | 0 to 18446744073709551615</p>
+</div>
+<div class="paragraph">
+<p><strong>Float</strong> : 4bytes | 1.2E-38 to 3.4E+38 (~6 digits)</p>
+</div>
+<div class="paragraph">
+<p><strong>Double</strong> : 8bytes | 2.3E-308 to 1.7E+308 (~15 digits)</p>
+</div>
+<div class="sect2">
+<h3 id="_type_aliases">Type Aliases</h3>
+<div class="paragraph">
+<p>You can create a new name for an existing type using typealias. Here is the simple syntax to define a new type using typealias −</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typealias newname = type</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example, the following line instructs the compiler that Feet is another name for Int −</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typealias Feet = Int</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>the whole code goes like this
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">typealias</span> <span style="color:#111">Feet</span> <span style="color:#111">=</span> <span style="color:#111">Int</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">distance</span><span style="color:#111">:</span> <span style="color:#111">Feet</span> <span style="color:#111">=</span> <span style="color:#ae81ff">100</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">distance</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_type_safety">Type Safety</h3>
+<div class="paragraph">
+<p>Swift 4 is a type-safe language which means if a part of your code expects a String, you can&#8217;t pass it an Int by mistake.</p>
+</div>
+<div class="paragraph">
+<p>As Swift 4 is type-safe, it performs type-checks when compiling your code and flags any mismatched types as errors.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">varA</span> <span style="color:#111">=</span> <span style="color:#ae81ff">42</span>
+    <span style="color:#111">varA</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;This is hello&#34;</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">varA</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>When we compile the above program, it produces the following compile time error.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_type_inference">Type Inference</h3>
+<div class="paragraph">
+<p>Type inference enables a compiler to deduce the type of a particular expression automatically when it compiles your code
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#75715e">// varA is inferred to be of type Int</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">varA</span> <span style="color:#111">=</span> <span style="color:#ae81ff">42</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">varA</span><span style="color:#111">)</span>
+
+    <span style="color:#75715e">// varB is inferred to be of type Double</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">varB</span> <span style="color:#111">=</span> <span style="color:#ae81ff">3.14159</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">varB</span><span style="color:#111">)</span>
+
+    <span style="color:#75715e">// varC is also inferred to be of type Double</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">varC</span> <span style="color:#111">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.14159</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">varC</span><span style="color:#111">)</span></code></pre></div></p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_type_definition">Type definition</h2>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_variable_declaration">Variable declaration</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>There are below number of types available</p>
+<p>Swift has two ways of declaring variables, One by assigning value in the variable and another one by using type annotation. Example:</p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">varA</span> <span style="color:#111">=</span> <span style="color:#ae81ff">42</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">varA</span><span style="color:#111">)</span>
+
+    <span style="color:#00a8c8">var</span> <span style="color:#111">varB</span><span style="color:#111">:</span><span style="color:#111">Float</span>
+    <span style="color:#111">varB</span> <span style="color:#111">=</span> <span style="color:#ae81ff">3.14159</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">varB</span><span style="color:#111">)</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p>The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because Swift 4 is a case-sensitive programming language. We can even use <code>unicode characters</code> as well</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    var _var = "Hello, Swift 4!"
+    print(_var)
+    var பெயர் = "பிரேம்"
+    print(பெயர்)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Printing Variables</strong></p>
+</div>
+<div class="paragraph">
+<p>You can interpolate a variable value by wrapping the name in parentheses and escape it with a backslash before the opening parenthesis:
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">varA</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Godzilla&#34;</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">varB</span> <span style="color:#111">=</span> <span style="color:#ae81ff">1000.00</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Value of </span><span style="color:#d88200">\(</span><span style="color:#111">varA</span><span style="color:#d88200">)</span><span style="color:#d88200"> is more than </span><span style="color:#d88200">\(</span><span style="color:#111">varB</span><span style="color:#d88200">)</span><span style="color:#d88200"> millions&#34;</span><span style="color:#111">)</span></code></pre></div></p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_functions">Functions</h2>
+<div class="sect1 h2-border">
+<h2 id="_optionals">Optionals</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Function definition goes like this</p>
+<p>Swift 4 also introduces Optionals type, which handles the absence of a value. Optionals say either "there is a value, and it equals x" or "there isn&#8217;t a value at all".</p>
+</div>
+<div class="paragraph">
+<p>Here’s an optional Integer &amp; String declarations
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">perhapsInt</span><span style="color:#111">:</span> <span style="color:#111">Int</span><span style="color:#111">?</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">perhapsStr</span><span style="color:#111">:</span> <span style="color:#111">String</span><span style="color:#111">?</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Above statements are equivalent to</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>var perhapsInt: Int? = nil
+var perhapsStr: String? = nil</pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_forced_unwrapping">Forced Unwrapping</h3>
+<div class="paragraph">
+<p>If you defined a variable as optional, then to get the value from this variable, you will have to unwrap it. This just means putting an exclamation mark at the end of the variable.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s take a simple example −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">myString</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">?</span>
+    <span style="color:#111">myString</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Hello, Swift 4!&#34;</span>
+
+    <span style="color:#00a8c8">if</span> <span style="color:#111">myString</span> <span style="color:#f92672">!=</span> <span style="color:#00a8c8">nil</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">myString</span><span style="color:#111">)</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">myString</span><span style="color:#f92672">!</span><span style="color:#111">)</span> <span style="color:#75715e">//unwrapping applied here</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;myString has nil value&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>When we run the above program using playground, we get the following result −</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    Optional("Hello, Swift 4!")
+    Hello, Swift 4!</code></pre>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_classes_objects">Classes &amp; Objects</h2>
+<div class="sect2">
+<h3 id="_automatic_unwrapping">Automatic Unwrapping</h3>
+<div class="paragraph">
+<p>You can declare optional variables using exclamation mark instead of a question mark. Such optional variables will unwrap automatically and you do not need to use any further exclamation mark at the end of the variable to get the assigned value. Let&#8217;s take a simple example −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">myString</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#f92672">!</span>
+    <span style="color:#111">myString</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Hello, Swift 4!&#34;</span>
+
+    <span style="color:#00a8c8">if</span> <span style="color:#111">myString</span> <span style="color:#f92672">!=</span> <span style="color:#00a8c8">nil</span> <span style="color:#111">{</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">myString</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;myString has nil value&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>When we run the above program using playground, we get the following result −</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    Hello, Swift 4!</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_optional_binding">Optional Binding</h3>
+<div class="paragraph">
+<p>Use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable.</p>
+</div>
+<div class="paragraph">
+<p>An optional binding for the if statement is as follows −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">if</span> <span style="color:#00a8c8">let</span> <span style="color:#111">constantName</span> <span style="color:#111">=</span> <span style="color:#111">someOptional</span> <span style="color:#111">{</span>
+    <span style="color:#111">statements</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s take a simple example to understand the usage of optional binding −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">myString</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">?</span>
+    <span style="color:#111">myString</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Hello, Swift 4!&#34;</span>
+
+    <span style="color:#00a8c8">if</span> <span style="color:#00a8c8">let</span> <span style="color:#111">yourString</span> <span style="color:#111">=</span> <span style="color:#111">myString</span> <span style="color:#111">{</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Your string has - </span><span style="color:#d88200">\(</span><span style="color:#111">yourString</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Your string does not have a value&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>When we run the above program using playground, we get the following result −</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Your string has - Hello, Swift 4!</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_tuples">Tuples</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Class declaration and object usage goes like this..</p>
+<p>Swift 4 also introduces Tuples type, which are used to group multiple values in a single compound Value. The values in a tuple can be of any type, and do not need to be of same type.</p>
+</div>
+<div class="paragraph">
+<p>For example, <code>("Tutorials Point", 123)</code> is a tuple with two values, one of string Type, and other is integer type. It is a legal command.</p>
+</div>
+<div class="paragraph">
+<p>You can create tuples from as many values as you want and from any number of different data types.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    var TupleName = (Value1, value2,… any number of values)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here’s a Tuple declaration −</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    var error501 = (501, “Not implemented”)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can access the values of tuple using the index numbers that start from 0.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;The code is</span><span style="color:#d88200">\(</span><span style="color:#111">error501</span><span style="color:#111">.</span><span style="color:#ae81ff">0</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;The definition of error is</span><span style="color:#d88200">\(</span><span style="color:#111">error501</span><span style="color:#111">.</span><span style="color:#ae81ff">1</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>You can name the variables of a tuple while declaring , and you can call them using their names
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">error501</span> <span style="color:#111">=</span> <span style="color:#111">(</span><span style="color:#111">errorCode</span><span style="color:#111">:</span> <span style="color:#ae81ff">501</span><span style="color:#111">,</span> <span style="color:#111">description</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Not Implemented&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">error501</span><span style="color:#111">.</span><span style="color:#111">errorCode</span><span style="color:#111">)</span>   <span style="color:#75715e">// prints 501.</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Tuples are helpful in returning multiple values from a function. By returning different values in a tuple we can make decisions depending on different tuple types.</p>
+</div>
+<div class="paragraph">
+<p>Note: Tuples are useful for temporary values and are not suited for complex data.</p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_packages">Packages</h2>
+<div class="sect1 h2-border">
+<h2 id="_literals">Literals</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>There are many package libraries available in Swift.</p>
+<p><strong>Constants Declaration</strong></p>
+</div>
+<div class="paragraph">
+<p>Before you use constants, you must declare them using let keyword as follows
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">let</span> <span style="color:#111">constA</span> <span style="color:#111">=</span> <span style="color:#ae81ff">42</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">constA</span><span style="color:#111">)</span>
+
+    <span style="color:#00a8c8">let</span> <span style="color:#111">constB</span><span style="color:#111">:</span><span style="color:#111">Float</span> <span style="color:#111">=</span> <span style="color:#ae81ff">3.14159</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">constB</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Integer Literals</strong></p>
+</div>
+<div class="paragraph">
+<p>An integer literal can be a decimal, binary, octal, or hexadecimal constant. Binary literals begin with 0b, octal literals begin with 0o, and hexadecimal literals begin with 0x and nothing for decimal.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">let</span> <span style="color:#111">decimalInteger</span> <span style="color:#111">=</span> <span style="color:#ae81ff">17</span>         <span style="color:#75715e">// 17 in decimal notation</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">binaryInteger</span> <span style="color:#111">=</span> <span style="color:#ae81ff">0b10001</span>     <span style="color:#75715e">// 17 in binary notation</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">octalInteger</span> <span style="color:#111">=</span> <span style="color:#ae81ff">0o21</span>         <span style="color:#75715e">// 17 in octal notation</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">hexadecimalInteger</span> <span style="color:#111">=</span> <span style="color:#ae81ff">0x11</span>   <span style="color:#75715e">// 17 in hexadecimal notation</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Floating-point Literals</strong></p>
+</div>
+<div class="paragraph">
+<p>A floating-point literal has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literals either in decimal form or hexadecimal form.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">let</span> <span style="color:#111">decimalDouble</span> <span style="color:#111">=</span> <span style="color:#ae81ff">12.1875</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">exponentDouble</span> <span style="color:#111">=</span> <span style="color:#ae81ff">1.21875e1</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">hexadecimalDouble</span> <span style="color:#111">=</span> <span style="color:#ae81ff">0xC</span><span style="color:#111">.</span><span style="color:#ae81ff">3</span><span style="color:#111">p0</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>String Literals</strong></p>
+</div>
+<div class="paragraph">
+<p>String literals cannot contain an unescaped double quote ("), an unescaped backslash (\), a carriage return, or a line feed. Special characters can be included in string literals using the following escape sequences −</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>\0</code> = Null Character</p>
+</li>
+<li>
+<p><code>\\</code> = \character</p>
+</li>
+<li>
+<p><code>\b</code> = Backspace</p>
+</li>
+<li>
+<p><code>\f</code> = Form feed</p>
+</li>
+<li>
+<p><code>\n</code> = Newline</p>
+</li>
+<li>
+<p><code>\r</code> = Carriage return</p>
+</li>
+<li>
+<p><code>\t</code> = Horizontal tab</p>
+</li>
+<li>
+<p><code>\v</code> = Vertical tab</p>
+</li>
+<li>
+<p><code>\'</code> = Single Quote</p>
+</li>
+<li>
+<p><code>\"</code> = Double Quote</p>
+</li>
+<li>
+<p><code>\000</code> = Octal number of one to three digits</p>
+</li>
+<li>
+<p><code>\xhh&#8230;&#8203;</code> =  Hexadecimal number of one or more digits</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sample string literal usage :
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">let</span> <span style="color:#111">stringL</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Hello</span><span style="color:#8045ff">\t</span><span style="color:#d88200">World</span><span style="color:#8045ff">\n\n</span><span style="color:#d88200">Hello</span><span style="color:#8045ff">\&#39;</span><span style="color:#d88200">Swift 4</span><span style="color:#8045ff">\&#39;</span><span style="color:#d88200">&#34;</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">stringL</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>The Result would be</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    Hello World
+
+    Hello'Swift 4'</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_operators">Operators</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_basic_operators">Basic Operators</h3>
+<div class="paragraph">
+<p><strong>Comparison Operators</strong> : &#160; <code>== &#160; != &#160; &gt; &#160; &lt; &#160; &gt;= &#160; &#8656;</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Logical Operators</strong>: &#160; <code>&amp;&amp; &#160; || &#160; !</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Bitwise Operators</strong> : &#160; <code>&amp; &#160; | &#160; ^ &#160; ~ &#160; &lt;&lt; &#160; &gt;&gt;</code></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>&amp;</code></dt>
+<dd>
+<p>Binary AND Operator copies a bit to the result, if it exists in both operands.<br>
+(A &amp; B) will give 12, which is 0000 1100</p>
+</dd>
+<dt class="hdlist1"><code>|</code></dt>
+<dd>
+<p>Binary OR Operator copies a bit, if it exists in either operand.<br>
+(A | B) will give 61, which is 0011 1101</p>
+</dd>
+<dt class="hdlist1"><code>^</code></dt>
+<dd>
+<p>Binary XOR Operator copies the bit, if it is set in one operand but not both.<br>
+(A ^ B) will give 49, which is 0011 0001</p>
+</dd>
+<dt class="hdlist1"><code>~</code></dt>
+<dd>
+<p>Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.<br>
+(~A ) will give -61, which is 1100 0011 in 2&#8217;s complement form.</p>
+</dd>
+<dt class="hdlist1"><code>&lt;&lt;</code></dt>
+<dd>
+<p>Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.<br>
+(A &lt;&lt; 2 will give 240, which is 1111 0000</p>
+</dd>
+<dt class="hdlist1"><code>&gt;&gt;</code></dt>
+<dd>
+<p>Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.<br>
+A &gt;&gt; 2 will give 15, which is 0000 1111</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p> <br>
+Assume A = 60; and B = 13;<br>
+In binary format, they will be as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>A = 0011 1100
+B = 0000 1101
+-----------------
+A&amp;B = 0000 1100
+A|B = 0011 1101
+A^B = 0011 0001
+~A = 1100 0011</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Assignment Operators</strong> : &#160; <code>= &#160; += &#160; -= &#160; *= &#160; /= &#160; %= &#160; &gt;&gt;= &#160; &lt;&#8656; &#160; &amp;= &#160; ^= &#160; |=</code></p>
+</div>
+<div class="paragraph">
+<p><em>Note: <code>C &lt;&lt; = 2</code> is same as `C = C &lt;&lt; 2`</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_range_operators">Range Operators</h3>
+<div class="paragraph">
+<p>Swift 4 includes two range operators, which are shortcuts for expressing a range of values. The following table explains these two operators.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>Closed Range</em></dt>
+<dd>
+<p>(a&#8230;&#8203;b) defines a range that runs from a to b, and includes the values a and b.<br>
+1&#8230;&#8203;5 gives 1, 2, 3, 4 and 5</p>
+</dd>
+<dt class="hdlist1"><em>Half-Open Range</em></dt>
+<dd>
+<p>(a..&lt; b) defines a range that runs from a to b, but does not include b.<br>
+1..&lt; 5 gives 1, 2, 3, and 4</p>
+</dd>
+<dt class="hdlist1"><em>One-sided Range</em></dt>
+<dd>
+<p>a… , defines a range that runs from a to end of elements<br>
+1… gives 1 , 2,3… end of elements<br>
+ <br>
+…a , defines a range starting from start to a<br>
+…2 gives beginning… to 1,2</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_misc_operators">Misc Operators</h3>
+<div class="paragraph">
+<p>Swift 4 supports a few other important operators including range and ? : which are explained in the following table.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>Unary Minus</em></dt>
+<dd>
+<p>The sign of a numeric value can be toggled using a prefixed<br>
+-3 or -4</p>
+</dd>
+<dt class="hdlist1"><em>Unary Plus</em></dt>
+<dd>
+<p>Returns the value it operates on, without any change<br>
++6 gives 6</p>
+</dd>
+<dt class="hdlist1"><em>Ternary Conditional</em></dt>
+<dd>
+<p>Condition ? X : Y<br>
+If Condition is true ? Then value X : Otherwise value Y</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_operators_precedence">Operators Precedence</h3>
+<div class="paragraph">
+<p>Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.</p>
+</div>
+<div class="paragraph">
+<p>Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>Primary Expression Operators (left-to-right)</em></dt>
+<dd>
+<p><code>() [] . expr++ expr--</code><br></p>
+</dd>
+<dt class="hdlist1"><em>Unary Operators (right-to-left)</em></dt>
+<dd>
+<p><code>* &amp; + - ! ~ ++expr --expr</code><br>
+<code>* / %</code><br>
+<code>+ -</code><br>
+<code>&gt;&gt; &lt;&lt;</code><br>
+<code>&lt; &gt; &#8656; &gt;=</code><br>
+<code>== !=</code><br></p>
+</dd>
+<dt class="hdlist1"><em>Binary Operators (left-to-right)</em></dt>
+<dd>
+<p><code>&amp; ^ | &amp;&amp; ||</code></p>
+</dd>
+<dt class="hdlist1"><em>Ternary Operator (right-to-left)</em></dt>
+<dd>
+<p><code>?:</code><br></p>
+</dd>
+<dt class="hdlist1"><em>Assignment Operators (right-to-left)</em></dt>
+<dd>
+<p><code>= += -= *= /= %= &gt;&gt;= &lt;&#8656; &amp;=^= |=</code></p>
+</dd>
+<dt class="hdlist1"><em>Comma (left-to-right)</em></dt>
+<dd>
+<p><code>,</code></p>
+</dd>
+</dl>
+</div>
 </div>
 </div>
 </div>
