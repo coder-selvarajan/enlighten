@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datastructures - Swift | Enlightening KT</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/enlighten/normalize.min.css">
+
+
+<link rel="stylesheet" href="/enlighten/book.min.972f6b2be379b2c28fc690c8997a792e0cb3faf44af13734a6278c69cfc1a4c7.css">
+
+<style>
+     
+    .collapsible {
+         
+         
+        cursor: pointer;
+         
+        width: 100%;
+        font-weight: 600;
+         
+         
+         
+         
+    }
+
+     
+     
+
+     
+    .menu-content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .collapsible {
+        position: relative;
+    }
+
+    .collapsible:before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #bbb;
+         
+    }
+
+     
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+     
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+     
+    ::-webkit-scrollbar-thumb {
+        background: #aaa;
+    }
+
+     
+    ::-webkit-scrollbar-thumb:hover {
+        background: #777;
+    }
+
+
+    #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 50px;
+        z-index: 99;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        background-color: #888;
+        color: white;
+        cursor: pointer;
+        padding: 7px;
+        border-radius: 4px;
+    }
+
+    #topBtn:hover {
+        background-color: #B83227;
+    }
+
+    table td {
+        vertical-align: top;
+    }
+
+    .noborder tr th,
+    .noborder tr td {
+        border: 0px solid grey !important;
+    }
+
+    .noborder .content {
+        padding-top: 5px;
+    }
+
+    .home-page {
+        color: white;
+    }
+
+    .home-page a {
+        color: steelblue;
+    }
+
+    .home-page a:hover {
+        color: orangered;
+    }
+
+    .home-page h3 a,
+    .home-page h3 a:visited {
+        color: black;
+    }
+
+    .home-page h3 {
+        margin-top: 30px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a,
+    h2 a:visited,
+    h3 a:visited,
+    h4 a:visited,
+    h5 a:visited,
+    h6 a:visited {
+        color: #AE1438;
+        font-weight: 600;
+    }
+
+    h1 a,
+    h1 a:visited,
+    .brand a,
+    .brand a:visited {
+        color: black;
+        font-weight: 200;
+    }
+
+    a:hover {
+        text-decoration: none !important;
+    }
+
+    #toc {
+        font-size: 0.75em;
+        line-height: 1.5em;
+        margin: 0px;
+        margin-top: 5px;
+         
+    }
+
+    .toc li, .toc li li {
+        line-height: 17px;
+    }
+
+    .toc li a,
+    .toc li a:visited {
+        color: black;
+    }
+
+    .toc li li a,
+    .toc li li a:visited {
+        color: darkcyan;
+    }
+
+    .toc li li li a,
+    .toc li li li a:visited {
+        color: gray;
+    }
+
+    .toc a:hover {
+        color: red;
+    }
+
+    .content .content {
+        padding-top: 0px;
+        padding-bottom: 5px;
+         
+    }
+
+    .listingblock .content {
+        min-width: 47rem;
+    }
+
+    main .menu nav {
+        padding-left: 10px !important;
+    }
+
+    .h2-border h2 {
+        padding-top: 15px;
+         
+        border-bottom: 1px solid #eaecef;
+        padding-bottom: .3em;
+    }
+
+    dt {
+        color: chocolate;
+    }
+</style>
+  
+</head>
+
+<body>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main>
+
+    <aside class="menu">
+      <nav role="navigation">
+        <h2 class="brand">
+  <a href="https://coder-selvarajan.github.io/enlighten//docs/">Enlightening KT</a>
+</h2>
+        
+
+        
+        <ul>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Javascript">Javascript</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/javascript/basics/">Basics</a></li>
+            <li><a href="/enlighten/docs/javascript/functions/">Functions</a></li>
+            <li><a href="/enlighten/docs/javascript/window-object/">Window Object</a></li>
+            <li><a href="/enlighten/docs/javascript/dom-object-selectors/">DOM Object &amp; Selectors</a></li>
+            <li><a href="/enlighten/docs/javascript/events/">Events</a></li>
+            <li><a href="/enlighten/docs/javascript/localstorage/">Localstorage</a></li>
+            <li><a href="/enlighten/docs/javascript/object-oriented/">Object Oriented Features</a></li>
+            <li><a href="/enlighten/docs/javascript/async-programming/">Async Programming</a></li>
+            <li><a href="/enlighten/docs/javascript/rest-api/">REST Api</a></li>
+            <li><a href="/enlighten/docs/javascript/frameworks-converters/">Frameworks &amp; Converters</a></li>
+            <li><a href="/enlighten/docs/javascript/chrome-extn/">Build Chrome Extn</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Linux">Python</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/python/setup/">Setup</a></li>
+            <li><a href="/enlighten/docs/python/basics/">Basics</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Linux">Swift</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/swift/basics/">Basics</a></li>
+            <li><a href="/enlighten/docs/swift/data-structures/">Data Structures</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="MEAN Stack">MEAN Stack</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/mean_stack/nodejs/">Node JS</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Bigdata">Bigdata</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/bigdata/hadoop-intro/">Hadoop</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Linux">Linux</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/linux/linux-intro/">Linux Intro</a></li>
+            <li><a href="/enlighten/docs/linux/linux-commands/">Linux Commands</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
+            <a title="Learn Linux">Misc</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/misc/git/">Git Commands</a></li>
+            <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
+            <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
+            <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
+            <li><a href="/enlighten/docs/misc/learning/">Learning</a></li>
+        </ul>
+    </li>
+    <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
+    <li><a href="/enlighten/docs/resources/my-projects/">Projects, Apps & Sites</a></li>
+    <li><a href="/enlighten/docs/resources/setup-enlighten/">Setup Enlighten Site</a></li>
+</ul>
+
+<!-- - [Javascript](/enlighten/docs/javascript/basics "Learn Javascript")
+  - [Basics](/enlighten/docs/javascript/basics)
+  - [Functions](/enlighten/docs/javascript/functions)
+  - [Window Object](/enlighten/docs/javascript/window-object)
+  - [DOM Object & Selectors](/enlighten/docs/javascript/dom-object-selectors)
+  - [Events](/enlighten/docs/javascript/events)
+  - [Localstorage](/enlighten/docs/javascript/localstorage)
+  - [Object Oriented Features](/enlighten/docs/javascript/object-oriented)
+  - [Async Programming](/enlighten/docs/javascript/async-programming)
+  - [REST Api](/enlighten/docs/javascript/rest-api)
+  - [Frameworks & Converters](/enlighten/docs/javascript/frameworks-converters)
+- [MEAN Stack](/enlighten/docs/mean_stack/nodejs)
+    - [Node JS](/enlighten/docs/mean_stack/nodejs)
+- [Linux](/enlighten/docs/linux/linux-intro)
+  - [Linux Intro](/enlighten/docs/linux/linux-intro)
+  - [Linux Commands](/enlighten/docs/linux/linux-commands)
+- [Hadoop](/enlighten/docs/hadoop-intro)
+- [Python](/enlighten/docs/python2)
+- [Markdown Syntax](/enlighten/docs/markdown)
+- [Hugo Tips](/enlighten/docs/hugo-tips) -->
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div id="contents" class="content">
+      <header>
+        <label for="menu-control">
+  <img src="https://coder-selvarajan.github.io/enlighten//svg/menu.svg" />
+</label>
+<strong>Datastructures - Swift</strong>
+      </header>
+      <article class="markdown"><h1 id="_data_structures" class="sect0">Data Structures</h1>
+<div class="sect1">
+<h2 id="_arrays">Arrays</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The syntax of array looks like this</p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someArray</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">SomeType</span><span style="color:#111">](</span><span style="color:#111">count</span><span style="color:#111">:</span> <span style="color:#111">nElements</span><span style="color:#111">,</span> <span style="color:#111">repeatedValue</span><span style="color:#111">:</span> <span style="color:#111">InitValue</span><span style="color:#111">)</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p>You can use the following statement to create an empty array of Int type having 3 elements and the initial value as zero
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someInts</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">Int</span><span style="color:#111">](</span><span style="color:#111">count</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span> <span style="color:#111">repeatedValue</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Following is one more example to create an array of three elements and assign three values to that array
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someInts</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#ae81ff">20</span><span style="color:#111">,</span> <span style="color:#ae81ff">30</span><span style="color:#111">]</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>The following example shows how to create, initialize, and access arrays −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someInts</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">Int</span><span style="color:#111">](</span><span style="color:#111">count</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span> <span style="color:#111">repeatedValue</span><span style="color:#111">:</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span>
+
+    <span style="color:#00a8c8">var</span> <span style="color:#111">someVar</span> <span style="color:#111">=</span> <span style="color:#111">someInts</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of first element is </span><span style="color:#d88200">\(</span><span style="color:#111">someVar</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of second element is </span><span style="color:#d88200">\(</span><span style="color:#111">someInts</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of third element is </span><span style="color:#d88200">\(</span><span style="color:#111">someInts</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Value of first element is 10
+Value of second element is 10
+Value of third element is 10</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Modifying Arrays</strong></p>
+</div>
+<div class="paragraph">
+<p>You can use append() method or addition assignment operator (+=) to add a new item at the end of an array. Take a look at the following example. Here, initially, we create an empty array and then add new elements into the same array −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someInts</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">Int</span><span style="color:#111">]()</span>
+
+    <span style="color:#111">someInts</span><span style="color:#111">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#ae81ff">20</span><span style="color:#111">)</span>
+    <span style="color:#111">someInts</span><span style="color:#111">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#ae81ff">30</span><span style="color:#111">)</span>
+    <span style="color:#111">someInts</span> <span style="color:#f92672">+=</span> <span style="color:#111">[</span><span style="color:#ae81ff">40</span><span style="color:#111">]</span>
+
+    <span style="color:#75715e">// Modify last element</span>
+    <span style="color:#111">someInts</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#ae81ff">50</span>
+
+    <span style="color:#00a8c8">var</span> <span style="color:#111">someVar</span> <span style="color:#111">=</span> <span style="color:#111">someInts</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of first element is </span><span style="color:#d88200">\(</span><span style="color:#111">someVar</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of second element is </span><span style="color:#d88200">\(</span><span style="color:#111">someInts</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of third element is </span><span style="color:#d88200">\(</span><span style="color:#111">someInts</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Value of first element is 20
+Value of second element is 30
+Value of third element is 50</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Iterating over an array :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someStrs</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">String</span><span style="color:#111">]()</span>
+
+    <span style="color:#111">someStrs</span><span style="color:#111">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Apple&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">someStrs</span><span style="color:#111">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Amazon&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">someStrs</span> <span style="color:#f92672">+=</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;Google&#34;</span><span style="color:#111">]</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">item</span> <span style="color:#00a8c8">in</span> <span style="color:#111">someStrs</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">item</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>You can use enumerate() function which returns the index of an item along with its value as shown below
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someStrs</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">String</span><span style="color:#111">]()</span>
+
+    <span style="color:#111">someStrs</span><span style="color:#111">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Apple&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">someStrs</span><span style="color:#111">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Amazon&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">someStrs</span> <span style="color:#f92672">+=</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;Google&#34;</span><span style="color:#111">]</span>
+
+    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#111">index</span><span style="color:#111">,</span> <span style="color:#111">item</span><span style="color:#111">)</span> <span style="color:#00a8c8">in</span> <span style="color:#111">someStrs</span><span style="color:#111">.</span><span style="color:#111">enumerated</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Value at index = </span><span style="color:#d88200">\(</span><span style="color:#111">index</span><span style="color:#d88200">)</span><span style="color:#d88200"> is </span><span style="color:#d88200">\(</span><span style="color:#111">item</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="sect2">
+<h3 id="_adding_two_arrays">Adding Two Arrays</h3>
+<div class="paragraph">
+<p>You can use the addition operator (+) to add two arrays of the same type which will yield a new array with a combination of values from the two arrays as follows
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">intsA</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">Int</span><span style="color:#111">](</span><span style="color:#111">count</span><span style="color:#111">:</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#111">repeatedValue</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">intsB</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">Int</span><span style="color:#111">](</span><span style="color:#111">count</span><span style="color:#111">:</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span> <span style="color:#111">repeatedValue</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span>
+
+    <span style="color:#00a8c8">var</span> <span style="color:#111">intsC</span> <span style="color:#111">=</span> <span style="color:#111">intsA</span> <span style="color:#f92672">+</span> <span style="color:#111">intsB</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">item</span> <span style="color:#00a8c8">in</span> <span style="color:#111">intsC</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">item</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>2
+2
+1
+1
+1</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_sets">Sets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Swift 4 sets are used to store distinct values of same types but they don’t have definite ordering as arrays have.</p>
+</div>
+<div class="paragraph">
+<p>A type must be hashable to be stored in a set. A hash value is a Int value that is equal for equal objects. For example, if x == y, then x.hashvalue == y.hashvalue.</p>
+</div>
+<div class="paragraph">
+<p>All the basic swift values are of hashable type by default and may be used as set values.</p>
+</div>
+<div class="paragraph">
+<p><strong>Creating Sets</strong></p>
+</div>
+<div class="paragraph">
+<p>You can create an empty set of a certain type using the following initializer syntax
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someSet</span> <span style="color:#111">=</span> <span style="color:#111">Set</span><span style="color:#111">&lt;</span><span style="color:#111">Character</span><span style="color:#f92672">&gt;</span><span style="color:#111">()</span>     
+    <span style="color:#75715e">//Character can be replaced by data type of set.</span>
+
+    <span style="color:#75715e">//OR you can create it with below way too</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">letters</span><span style="color:#111">:</span> <span style="color:#111">Set</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">a</span><span style="color:#111">,</span><span style="color:#111">b</span><span style="color:#111">,</span><span style="color:#111">c</span><span style="color:#111">,</span><span style="color:#111">d</span><span style="color:#111">]</span></code></pre></div></p>
+</div>
+<div class="sect2">
+<h3 id="_accessing_and_modifying_sets">Accessing and modifying Sets</h3>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#111">someSet</span><span style="color:#111">.</span><span style="color:#111">count</span>  <span style="color:#75715e">// prints the number of elements</span>
+    <span style="color:#111">someSet</span><span style="color:#111">.</span><span style="color:#111">insert</span><span style="color:#111">(</span><span style="color:#d88200">&#34;c&#34;</span><span style="color:#111">)</span>  <span style="color:#75715e">// adds the element to Set.</span>
+    <span style="color:#111">someSet</span><span style="color:#111">.</span><span style="color:#111">isEmpty</span>  <span style="color:#75715e">// returns true or false depending on the set Elements.</span>
+    <span style="color:#111">someSet</span><span style="color:#111">.</span><span style="color:#111">remove</span><span style="color:#111">(</span><span style="color:#d88200">&#34;c&#34;</span><span style="color:#111">)</span>  <span style="color:#75715e">// removes a element </span>
+    <span style="color:#75715e">//removeAll() can be used to remove all elements</span>
+
+    <span style="color:#111">someSet</span><span style="color:#111">.</span><span style="color:#111">contains</span><span style="color:#111">(</span><span style="color:#d88200">&#34;c&#34;</span><span style="color:#111">)</span>  <span style="color:#75715e">// to check if set contains this value.</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p>Iterating over a Set
+You can iterate over a set using for-in loop −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">for</span> <span style="color:#111">items</span> <span style="color:#00a8c8">in</span> <span style="color:#111">someSet</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">someSet</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#75715e">//Swift sets are not in an ordered way, </span>
+    <span style="color:#75715e">//to iterate over a set in ordered way use</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">items</span> <span style="color:#00a8c8">in</span> <span style="color:#111">someSet</span><span style="color:#111">.</span><span style="color:#111">sorted</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">someSet</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span>  </code></pre></div></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_performing_set_operations">Performing Set Operations</h3>
+<div class="paragraph">
+<p>Following are the methods for performing set operations −</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Intersection</p>
+</li>
+<li>
+<p>Union</p>
+</li>
+<li>
+<p>subtracting</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">let</span> <span style="color:#111">evens</span><span style="color:#111">:</span> <span style="color:#111">Set</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">12</span><span style="color:#111">,</span><span style="color:#ae81ff">14</span><span style="color:#111">,</span><span style="color:#ae81ff">16</span><span style="color:#111">,</span><span style="color:#ae81ff">18</span><span style="color:#111">]</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">odds</span><span style="color:#111">:</span> <span style="color:#111">Set</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">,</span><span style="color:#ae81ff">9</span><span style="color:#111">,</span><span style="color:#ae81ff">11</span><span style="color:#111">,</span><span style="color:#ae81ff">13</span><span style="color:#111">]</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">primes</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">7</span><span style="color:#111">]</span>
+    <span style="color:#111">odds</span><span style="color:#111">.</span><span style="color:#111">union</span><span style="color:#111">(</span><span style="color:#111">evens</span><span style="color:#111">).</span><span style="color:#111">sorted</span><span style="color:#111">()</span>
+    <span style="color:#75715e">// [5,7,9,10,11,12,13,14,16,18]</span>
+    <span style="color:#111">odds</span><span style="color:#111">.</span><span style="color:#111">intersection</span><span style="color:#111">(</span><span style="color:#111">evens</span><span style="color:#111">).</span><span style="color:#111">sorted</span><span style="color:#111">()</span>
+    <span style="color:#75715e">//[]</span>
+    <span style="color:#111">odds</span><span style="color:#111">.</span><span style="color:#111">subtracting</span><span style="color:#111">(</span><span style="color:#111">primes</span><span style="color:#111">).</span><span style="color:#111">sorted</span><span style="color:#111">()</span>
+    <span style="color:#75715e">//[9, 11, 13]</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_dictionaries">Dictionaries</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Swift 4 dictionaries are used to store unordered lists of values of the same type.</p>
+</div>
+<div class="paragraph">
+<p>A dictionary key can be either an integer or a string without a restriction, but it should be unique within a dictionary.</p>
+</div>
+<div class="paragraph">
+<p>If you assign a created dictionary to a variable, then it is always mutable which means you can change it by adding, removing, or changing its items. But if you assign a dictionary to a constant, then that dictionary is immutable, and its size and contents cannot be changed.</p>
+</div>
+<div class="paragraph">
+<p><em>SYNTAX:</em>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someDict</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">Int</span><span style="color:#111">:</span> <span style="color:#111">String</span><span style="color:#111">]()</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>EXAMPLE:</em>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someDict</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#d88200">&#34;One&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Two&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Three&#34;</span><span style="color:#111">]</span></code></pre></div></p>
+</div>
+<div class="sect2">
+<h3 id="_sequence_based_initialization">Sequence Based Initialization</h3>
+<div class="paragraph">
+<p>Swift 4 allows you to create Dictionary from arrays (Key-Value Pairs.)
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">cities</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;Delhi&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Bangalore&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Hyderabad&#34;</span><span style="color:#111">]</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>You can use the following simple syntax to create an empty dictionary whose key will be of Int type and the associated values will be strings −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">Distance</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">2000</span><span style="color:#111">,</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#ae81ff">620</span><span style="color:#111">]</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Here is an example to create a dictionary from a set of given values −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#00a8c8">let</span> <span style="color:#111">cityDistanceDict</span> <span style="color:#111">=</span> <span style="color:#111">Dictionary</span><span style="color:#111">(</span><span style="color:#111">uniqueKeysWithValues</span><span style="color:#111">:</span> <span style="color:#111">zip</span><span style="color:#111">(</span><span style="color:#111">cities</span><span style="color:#111">,</span> <span style="color:#111">Distance</span><span style="color:#111">))</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>The above lines of code will create a dictionary with Cities as key and Distance as Value</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_filtering">Filtering</h3>
+<div class="paragraph">
+<p>Swift 4 allows you to filter values from a dictionary.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">closeCities</span> <span style="color:#111">=</span> <span style="color:#111">cityDistanceDict</span><span style="color:#111">.</span><span style="color:#111">filter</span> <span style="color:#111">{</span> <span style="color:#111">$0</span><span style="color:#111">.</span><span style="color:#111">value</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1000</span> <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>If we run the above code our closeCities Dictionary will be.</p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>["Bangalore" : 10 , "Hyderabad" : 620]</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dictionary_grouping">Dictionary Grouping</h3>
+<div class="paragraph">
+<p>Swift 4 allows you to create grouping of Dictionary values.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">cities</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;Delhi&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Bangalore&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Hyderabad&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Dehradun&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Bihar&#34;</span><span style="color:#111">]</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>You can use the following simple syntax to group the values of dictionary according to first alphabet.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">GroupedCities</span> <span style="color:#111">=</span> <span style="color:#111">Dictionary</span><span style="color:#111">(</span><span style="color:#111">grouping</span><span style="color:#111">:</span> <span style="color:#111">cities</span> <span style="color:#111">)</span> <span style="color:#111">{</span> <span style="color:#111">$0</span><span style="color:#111">.</span><span style="color:#111">first</span><span style="color:#f92672">!</span> <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>The result of above code will be</p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#111">[</span><span style="color:#d88200">&#34;D&#34;</span> <span style="color:#111">:[</span><span style="color:#d88200">&#34;Delhi&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Dehradun&#34;</span><span style="color:#111">],</span> <span style="color:#d88200">&#34;B&#34;</span> <span style="color:#111">:</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;Bengaluru&#34;</span><span style="color:#111">,</span><span style="color:#d88200">&#34;Bihar&#34;</span><span style="color:#111">],</span> <span style="color:#d88200">&#34;H&#34;</span> <span style="color:#111">:</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;Hyderabad&#34;</span><span style="color:#111">]]</span></code></pre></div></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_accessing_modifying_dictionaries">Accessing &amp; Modifying Dictionaries</h3>
+<div class="paragraph">
+<p>You can use <code>updateValue(forKey:)</code> method to add an existing value to a given key of the dictionary. This method returns an optional value of the dictionary&#8217;s value type. Here is a simple example −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someDict</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#d88200">&#34;One&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Two&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Three&#34;</span><span style="color:#111">]</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">oldVal</span> <span style="color:#111">=</span> <span style="color:#111">someDict</span><span style="color:#111">.</span><span style="color:#111">updateValue</span><span style="color:#111">(</span><span style="color:#d88200">&#34;New value of one&#34;</span><span style="color:#111">,</span> <span style="color:#111">forKey</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">someVar</span> <span style="color:#111">=</span> <span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Old value of key = 1 is </span><span style="color:#d88200">\(</span><span style="color:#111">oldVal</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 1 is </span><span style="color:#d88200">\(</span><span style="color:#111">someVar</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 2 is </span><span style="color:#d88200">\(</span><span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 3 is </span><span style="color:#d88200">\(</span><span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Or you may do like this as well.. both produces the same output
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someDict</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#d88200">&#34;One&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Two&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Three&#34;</span><span style="color:#111">]</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">oldVal</span> <span style="color:#111">=</span> <span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span>
+    <span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;New value of one&#34;</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">someVar</span> <span style="color:#111">=</span> <span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Old value of key = 1 is </span><span style="color:#d88200">\(</span><span style="color:#111">oldVal</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 1 is </span><span style="color:#d88200">\(</span><span style="color:#111">someVar</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 2 is </span><span style="color:#d88200">\(</span><span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 3 is </span><span style="color:#d88200">\(</span><span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    Old value of key = 1 is Optional("One")
+    Value of key = 1 is Optional("New value of one")
+    Value of key = 2 is Optional("Two")
+    Value of key = 3 is Optional("Three")</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_remove_key_value_pairs">Remove Key-Value Pairs</h3>
+<div class="paragraph">
+<p>You can use removeValueForKey() method to remove a key-value pair from a dictionary. This method removes the key-value pair if it exists and returns the removed value, or returns nil if no value existed. Here is a simple example −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someDict</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#d88200">&#34;One&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Two&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Three&#34;</span><span style="color:#111">]</span>
+    
+    <span style="color:#00a8c8">var</span> <span style="color:#111">removedValue</span> <span style="color:#111">=</span> <span style="color:#111">someDict</span><span style="color:#111">.</span><span style="color:#111">removeValue</span><span style="color:#111">(</span><span style="color:#111">forKey</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span><span style="color:#111">)</span>
+    <span style="color:#75715e">// or you may just set the value to nil.. both works..  </span>
+    <span style="color:#75715e">// someDict[2] = nil</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 1 is </span><span style="color:#d88200">\(</span><span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 2 is </span><span style="color:#d88200">\(</span><span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of key = 3 is </span><span style="color:#d88200">\(</span><span style="color:#111">someDict</span><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span> <span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    Value of key = 1 is Optional("One")
+    Value of key = 2 is nil
+    Value of key = 3 is Optional("Three")</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iterating_over_a_dictionary">Iterating Over a Dictionary</h3>
+<div class="paragraph">
+<p>You can use <code>enumerate()</code> function which returns the index of the item along with its (key, value) pair as shown below in the example −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someDict</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#d88200">&#34;One&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Two&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Three&#34;</span><span style="color:#111">]</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#111">key</span><span style="color:#111">,</span> <span style="color:#111">value</span><span style="color:#111">)</span> <span style="color:#00a8c8">in</span> <span style="color:#111">someDict</span><span style="color:#111">.</span><span style="color:#111">enumerated</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Dictionary key </span><span style="color:#d88200">\(</span><span style="color:#111">key</span><span style="color:#d88200">)</span><span style="color:#d88200"> - Dictionary value </span><span style="color:#d88200">\(</span><span style="color:#111">value</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-swift" data-lang="swift">    Dictionary key 0 - Dictionary value (key: 2, value: "Two")
+    Dictionary key 1 - Dictionary value (key: 3, value: "Three")
+    Dictionary key 2 - Dictionary value (key: 1, value: "One")</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_convert_to_arrays">Convert to Arrays</h3>
+<div class="paragraph">
+<p>You can extract a list of key-value pairs from a given dictionary to build separate arrays for both keys and values. Here is an example
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someDict</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#d88200">&#34;One&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">2</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Two&#34;</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">:</span><span style="color:#d88200">&#34;Three&#34;</span><span style="color:#111">]</span>
+
+    <span style="color:#00a8c8">let</span> <span style="color:#111">dictKeys</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">Int</span><span style="color:#111">](</span><span style="color:#111">someDict</span><span style="color:#111">.</span><span style="color:#111">keys</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">dictValues</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#111">String</span><span style="color:#111">](</span><span style="color:#111">someDict</span><span style="color:#111">.</span><span style="color:#111">values</span><span style="color:#111">)</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Print Dictionary Keys&#34;</span><span style="color:#111">)</span>
+
+    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#00a8c8">in</span> <span style="color:#111">dictKeys</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#d88200">\(</span><span style="color:#111">key</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Print Dictionary Values&#34;</span><span style="color:#111">)</span>
+
+    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#111">value</span><span style="color:#111">)</span> <span style="color:#00a8c8">in</span> <span style="color:#111">dictValues</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#d88200">\(</span><span style="color:#111">value</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Print Dictionary Keys
+2
+3
+1
+Print Dictionary Values
+Two
+Three
+One</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><code>count</code> property of a dictionary to find out the number of items in a dictionary<br>
+<code>empty</code> property of a dictionary to find out whether a dictionary is empty or not</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</article>
+    </div>
+
+    
+    
+      <aside class="toc fixed">
+        
+<nav id="toc"></nav>
+      </aside>
+    
+  </main>
+  <script type="text/javascript">
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+
+    var path = window.location.pathname;
+    const activeLink = document.querySelectorAll(
+      'a[href="' + window.location.pathname + '"]'
+    );
+    activeLink.forEach(function(a, index) {
+      
+      a.style.color = "indianred";
+      const contentList = a.parentElement.parentElement;
+      contentList.style.maxHeight = contentList.scrollHeight + "px";
+    });
+  }
+
+  
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("topBtn").style.display = "block";
+    } else {
+      document.getElementById("topBtn").style.display = "none";
+    }
+  }
+
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  function TableOfContents(container, output) {
+    var txt = "toc-";
+    var toc = "";
+    var start = 0;
+    var output = output || "#toc";
+
+    var container =
+      document.querySelector(container) ||
+      document.querySelector("#contents article");
+    
+    var c = container.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+    for (var i = 0; i < c.length; i++) {
+      
+      var isHeading = c[i].nodeName.match(/^H\d+$/);
+      if (c[i].nodeName.match(/^H\d+$/)) {
+        var level = c[i].nodeName.substr(1);
+        
+        var headerText = c[i].textContent;
+        
+        var anchor = txt + i;
+
+        var tag =
+          '<a href="#' +
+          anchor +
+          '" id="' +
+          anchor +
+          '">' +
+          headerText +
+          "</a>";
+
+        c[i].innerHTML = tag;
+
+        if (headerText) {
+          if (level > start) {
+            toc += new Array(level - start + 1).join("<ul>");
+          } else if (level < start) {
+            toc += new Array(start - level + 1).join("</li></ul>");
+          } else {
+            toc += new Array(start + 1).join("</li>");
+          }
+          start = parseInt(level);
+          toc += '<li><a href="#' + anchor + '">' + headerText + "</a>";
+        }
+      }
+    }
+    if (start) {
+      toc += new Array(start + 1).join("</ul>");
+    }
+    document.querySelector(output).innerHTML += toc;
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    TableOfContents();
+  });
+
+</script>
+
+
+</body>
+
+</html>

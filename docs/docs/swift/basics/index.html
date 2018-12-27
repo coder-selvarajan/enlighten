@@ -98,14 +98,6 @@
         background-color: #B83227;
     }
 
-    #toc {
-        font-size: 0.75em;
-        line-height: 1.5em;
-        margin: 0px;
-        margin-top: 5px;
-         
-    }
-
     table td {
         vertical-align: top;
     }
@@ -153,7 +145,7 @@
     h5 a:visited,
     h6 a:visited {
         color: #AE1438;
-        font-weight: 200;
+        font-weight: 600;
     }
 
     h1 a,
@@ -168,9 +160,31 @@
         text-decoration: none !important;
     }
 
-    .toc a,
-    .toc a:visited {
-        color: slateblue;
+    #toc {
+        font-size: 0.75em;
+        line-height: 1.5em;
+        margin: 0px;
+        margin-top: 5px;
+         
+    }
+
+    .toc li, .toc li li {
+        line-height: 17px;
+    }
+
+    .toc li a,
+    .toc li a:visited {
+        color: black;
+    }
+
+    .toc li li a,
+    .toc li li a:visited {
+        color: darkcyan;
+    }
+
+    .toc li li li a,
+    .toc li li li a:visited {
+        color: gray;
     }
 
     .toc a:hover {
@@ -196,6 +210,10 @@
          
         border-bottom: 1px solid #eaecef;
         padding-bottom: .3em;
+    }
+
+    dt {
+        color: chocolate;
     }
 </style>
   
@@ -248,6 +266,7 @@
         </div>
         <ul class="menu-content">
             <li><a href="/enlighten/docs/swift/basics/">Basics</a></li>
+            <li><a href="/enlighten/docs/swift/data-structures/">Data Structures</a></li>
         </ul>
     </li>
     <li>
@@ -564,8 +583,9 @@
 var perhapsStr: String? = nil</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_forced_unwrapping">Forced Unwrapping</h3>
+<div class="paragraph">
+<p><strong>Forced Unwrapping :</strong></p>
+</div>
 <div class="paragraph">
 <p>If you defined a variable as optional, then to get the value from this variable, you will have to unwrap it. This just means putting an exclamation mark at the end of the variable.</p>
 </div>
@@ -590,9 +610,9 @@ var perhapsStr: String? = nil</pre>
     Hello, Swift 4!</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p><strong>Automatic Unwrapping :</strong></p>
 </div>
-<div class="sect2">
-<h3 id="_automatic_unwrapping">Automatic Unwrapping</h3>
 <div class="paragraph">
 <p>You can declare optional variables using exclamation mark instead of a question mark. Such optional variables will unwrap automatically and you do not need to use any further exclamation mark at the end of the variable to get the assigned value. Let&#8217;s take a simple example −
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">myString</span><span style="color:#111">:</span><span style="color:#111">String</span><span style="color:#f92672">!</span>
@@ -612,9 +632,9 @@ var perhapsStr: String? = nil</pre>
 <pre class="highlight"><code class="language-swift" data-lang="swift">    Hello, Swift 4!</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p><strong>Optional Binding :</strong></p>
 </div>
-<div class="sect2">
-<h3 id="_optional_binding">Optional Binding</h3>
 <div class="paragraph">
 <p>Use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable.</p>
 </div>
@@ -641,7 +661,6 @@ var perhapsStr: String? = nil</pre>
 <div class="literalblock">
 <div class="content">
 <pre>Your string has - Hello, Swift 4!</pre>
-</div>
 </div>
 </div>
 </div>
@@ -788,8 +807,6 @@ var perhapsStr: String? = nil</pre>
 <div class="sect1 h2-border">
 <h2 id="_operators">Operators</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_basic_operators">Basic Operators</h3>
 <div class="paragraph">
 <p><strong>Comparison Operators</strong> : &#160; <code>== &#160; != &#160; &gt; &#160; &lt; &#160; &gt;= &#160; &#8656;</code></p>
 </div>
@@ -855,7 +872,6 @@ A^B = 0011 0001
 <div class="paragraph">
 <p><em>Note: <code>C &lt;&lt; = 2</code> is same as `C = C &lt;&lt; 2`</em></p>
 </div>
-</div>
 <div class="sect2">
 <h3 id="_range_operators">Range Operators</h3>
 <div class="paragraph">
@@ -863,17 +879,17 @@ A^B = 0011 0001
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><em>Closed Range</em></dt>
+<dt class="hdlist1">Closed Range</dt>
 <dd>
 <p>(a&#8230;&#8203;b) defines a range that runs from a to b, and includes the values a and b.<br>
 1&#8230;&#8203;5 gives 1, 2, 3, 4 and 5</p>
 </dd>
-<dt class="hdlist1"><em>Half-Open Range</em></dt>
+<dt class="hdlist1">Half-Open Range</dt>
 <dd>
 <p>(a..&lt; b) defines a range that runs from a to b, but does not include b.<br>
 1..&lt; 5 gives 1, 2, 3, and 4</p>
 </dd>
-<dt class="hdlist1"><em>One-sided Range</em></dt>
+<dt class="hdlist1">One-sided Range</dt>
 <dd>
 <p>a… , defines a range that runs from a to end of elements<br>
 1… gives 1 , 2,3… end of elements<br>
@@ -891,17 +907,17 @@ A^B = 0011 0001
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><em>Unary Minus</em></dt>
+<dt class="hdlist1">Unary Minus</dt>
 <dd>
 <p>The sign of a numeric value can be toggled using a prefixed<br>
 -3 or -4</p>
 </dd>
-<dt class="hdlist1"><em>Unary Plus</em></dt>
+<dt class="hdlist1">Unary Plus</dt>
 <dd>
 <p>Returns the value it operates on, without any change<br>
 +6 gives 6</p>
 </dd>
-<dt class="hdlist1"><em>Ternary Conditional</em></dt>
+<dt class="hdlist1">Ternary Conditional</dt>
 <dd>
 <p>Condition ? X : Y<br>
 If Condition is true ? Then value X : Otherwise value Y</p>
@@ -919,11 +935,11 @@ If Condition is true ? Then value X : Otherwise value Y</p>
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><em>Primary Expression Operators (left-to-right)</em></dt>
+<dt class="hdlist1">Primary Expression Operators (left-to-right)</dt>
 <dd>
 <p><code>() [] . expr++ expr--</code><br></p>
 </dd>
-<dt class="hdlist1"><em>Unary Operators (right-to-left)</em></dt>
+<dt class="hdlist1">Unary Operators (right-to-left)</dt>
 <dd>
 <p><code>* &amp; + - ! ~ ++expr --expr</code><br>
 <code>* / %</code><br>
@@ -932,23 +948,423 @@ If Condition is true ? Then value X : Otherwise value Y</p>
 <code>&lt; &gt; &#8656; &gt;=</code><br>
 <code>== !=</code><br></p>
 </dd>
-<dt class="hdlist1"><em>Binary Operators (left-to-right)</em></dt>
+<dt class="hdlist1">Binary Operators (left-to-right)</dt>
 <dd>
 <p><code>&amp; ^ | &amp;&amp; ||</code></p>
 </dd>
-<dt class="hdlist1"><em>Ternary Operator (right-to-left)</em></dt>
+<dt class="hdlist1">Ternary Operator (right-to-left)</dt>
 <dd>
 <p><code>?:</code><br></p>
 </dd>
-<dt class="hdlist1"><em>Assignment Operators (right-to-left)</em></dt>
+<dt class="hdlist1">Assignment Operators (right-to-left)</dt>
 <dd>
 <p><code>= += -= *= /= %= &gt;&gt;= &lt;&#8656; &amp;=^= |=</code></p>
 </dd>
-<dt class="hdlist1"><em>Comma (left-to-right)</em></dt>
+<dt class="hdlist1">Comma (left-to-right)</dt>
 <dd>
 <p><code>,</code></p>
 </dd>
 </dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_decision_making">Decision Making</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>If Statement:</strong></p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">varA</span><span style="color:#111">:</span><span style="color:#111">Int</span> <span style="color:#111">=</span> <span style="color:#ae81ff">100</span><span style="color:#111">;</span>
+
+    <span style="color:#75715e">/* Check the boolean condition using if statement */</span>
+    <span style="color:#00a8c8">if</span> <span style="color:#111">varA</span> <span style="color:#111">==</span> <span style="color:#ae81ff">20</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;varA is equal to than 20&#34;</span><span style="color:#111">);</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">varA</span> <span style="color:#111">==</span> <span style="color:#ae81ff">50</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;varA is equal to than 50&#34;</span><span style="color:#111">);</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;None of the values is matching&#34;</span><span style="color:#111">);</span>
+    <span style="color:#111">}</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Value of variable varA is </span><span style="color:#d88200">\(</span><span style="color:#111">varA</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">);</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p><strong>Switch statement:</strong></p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#ae81ff">10</span>
+
+    <span style="color:#00a8c8">switch</span> <span style="color:#111">index</span> <span style="color:#111">{</span>
+    <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">100</span> <span style="color:#111">:</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is 100&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">15</span> <span style="color:#111">:</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is either 10 or 15&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">default</span> <span style="color:#111">:</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;default case&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p><strong>The <code>? :</code> Operator</strong></p>
+</div>
+<div class="paragraph">
+<p>Conditional operator <code>? :</code> can be used to replace if&#8230;&#8203;else statements. It has the following general form</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Exp1 ? Exp2 : Exp3;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_loops">Loops</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>For in :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">someInts</span><span style="color:#111">:[</span><span style="color:#111">Int</span><span style="color:#111">]</span> <span style="color:#111">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#ae81ff">20</span><span style="color:#111">,</span> <span style="color:#ae81ff">30</span><span style="color:#111">]</span>
+
+    <span style="color:#00a8c8">for</span> <span style="color:#111">index</span> <span style="color:#00a8c8">in</span> <span style="color:#111">someInts</span> <span style="color:#111">{</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is </span><span style="color:#d88200">\(</span><span style="color:#111">index</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>While loop :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#ae81ff">10</span>
+
+    <span style="color:#00a8c8">while</span> <span style="color:#111">index</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span> <span style="color:#111">{</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is </span><span style="color:#d88200">\(</span><span style="color:#111">index</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#111">index</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Repeat while :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#ae81ff">10</span>
+
+    <span style="color:#00a8c8">repeat</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is </span><span style="color:#d88200">\(</span><span style="color:#111">index</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+        <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#111">index</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#111">}</span>
+    <span style="color:#00a8c8">while</span> <span style="color:#111">index</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Continue statement :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#ae81ff">10</span>
+
+    <span style="color:#00a8c8">repeat</span> <span style="color:#111">{</span>
+        <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#111">index</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#00a8c8">if</span><span style="color:#111">(</span> <span style="color:#111">index</span> <span style="color:#111">==</span> <span style="color:#ae81ff">15</span> <span style="color:#111">){</span>
+            <span style="color:#00a8c8">continue</span>
+        <span style="color:#111">}</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is </span><span style="color:#d88200">\(</span><span style="color:#111">index</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">while</span> <span style="color:#111">index</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Here number 15 will be skipped printing</p>
+</div>
+<div class="paragraph">
+<p><strong>Break Statement :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#ae81ff">10</span>
+
+    <span style="color:#00a8c8">repeat</span> <span style="color:#111">{</span>
+        <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#111">index</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#00a8c8">if</span><span style="color:#111">(</span> <span style="color:#111">index</span> <span style="color:#111">==</span> <span style="color:#ae81ff">15</span> <span style="color:#111">){</span>
+            <span style="color:#00a8c8">break</span>
+        <span style="color:#111">}</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is </span><span style="color:#d88200">\(</span><span style="color:#111">index</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">while</span> <span style="color:#111">index</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>Here numbers after 15 will be skipped printing</p>
+</div>
+<div class="paragraph">
+<p><strong>Switch fallthrough :</strong></p>
+</div>
+<div class="paragraph">
+<p>If we do not use fallthrough statement, then the program will come out of the switch statement after executing the matching case statement.</p>
+</div>
+<div class="paragraph">
+<p><em>EXAMPLE1:</em>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#ae81ff">10</span>
+
+    <span style="color:#00a8c8">switch</span> <span style="color:#111">index</span> <span style="color:#111">{</span>
+    <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">100</span> <span style="color:#111">:</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is 100&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">15</span> <span style="color:#111">:</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is either 10 or 15&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">5</span> <span style="color:#111">:</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is 5&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">default</span> <span style="color:#111">:</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;default case&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Value of index is either 10 or 15</pre>
+</div>
+</div>
+<div class="paragraph">
+<p> <br>
+<em>EXAMPLE2:</em>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">index</span> <span style="color:#111">=</span> <span style="color:#ae81ff">10</span>
+
+    <span style="color:#00a8c8">switch</span> <span style="color:#111">index</span> <span style="color:#111">{</span>
+        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">100</span> <span style="color:#111">:</span>
+            <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is 100&#34;</span><span style="color:#111">)</span>
+            <span style="color:#00a8c8">fallthrough</span>
+        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span><span style="color:#ae81ff">15</span> <span style="color:#111">:</span>
+            <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is either 10 or 15&#34;</span><span style="color:#111">)</span>
+            <span style="color:#00a8c8">fallthrough</span>
+        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">5</span> <span style="color:#111">:</span>
+            <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;Value of index is 5&#34;</span><span style="color:#111">)</span>
+        <span style="color:#00a8c8">default</span> <span style="color:#111">:</span>
+            <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;default case&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Value of index is either 10 or 15 +
+Value of index is 5</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_strings">Strings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>EXAMPLE:</em>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#75715e">// String creation using String literal</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">stringA</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Hello, Swift 4!&#34;</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#111">stringA</span> <span style="color:#111">)</span>
+
+    <span style="color:#75715e">// String creation using String instance</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">stringB</span> <span style="color:#111">=</span> <span style="color:#111">String</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Hello, Swift 4!&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#111">stringB</span> <span style="color:#111">)</span>
+
+    <span style="color:#75715e">//Multiple line string</span>
+
+    <span style="color:#00a8c8">let</span> <span style="color:#111">stringC</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;&#34;&#34;
+</span><span style="color:#d88200">    Hey this is a
+</span><span style="color:#d88200">    example of multiple Line
+</span><span style="color:#d88200">    string by tutorialsPoint 
+</span><span style="color:#d88200">
+</span><span style="color:#d88200">    &#34;&#34;&#34;</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">stringC</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Hello, Swift 4!
+Hello, Swift 4!
+Hey this is a
+example of multiple Line
+string by tutorialsPoint</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Empty String:</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#75715e">// Empty string creation using String instance</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">stringB</span> <span style="color:#111">=</span> <span style="color:#111">String</span><span style="color:#111">()</span>
+
+    <span style="color:#00a8c8">if</span> <span style="color:#111">stringB</span><span style="color:#111">.</span><span style="color:#111">isEmpty</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;stringB is empty&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#d88200">&#34;stringB is not empty&#34;</span> <span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>String Constants:</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#75715e">// stringB can not be modified</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">stringB</span> <span style="color:#111">=</span> <span style="color:#111">String</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Hello, Swift 4!&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">stringB</span> <span style="color:#f92672">+</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;--Readers--&#34;</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#111">stringB</span> <span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Swift throws an error!</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>String Interpolation:</strong></p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">varA</span> <span style="color:#111">=</span> <span style="color:#ae81ff">20</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">constA</span> <span style="color:#111">=</span> <span style="color:#ae81ff">100</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">varC</span><span style="color:#111">:</span><span style="color:#111">Float</span> <span style="color:#111">=</span> <span style="color:#ae81ff">20.0</span>
+
+    <span style="color:#00a8c8">var</span> <span style="color:#111">stringA</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;</span><span style="color:#d88200">\(</span><span style="color:#111">varA</span><span style="color:#d88200">)</span><span style="color:#d88200"> times </span><span style="color:#d88200">\(</span><span style="color:#111">constA</span><span style="color:#d88200">)</span><span style="color:#d88200"> is equal to </span><span style="color:#d88200">\(</span><span style="color:#111">varC</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span> <span style="color:#111">stringA</span> <span style="color:#111">)</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>20 times 100 is equal to 2000.0</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>String iteration:</strong></p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">for</span> <span style="color:#111">chars</span> <span style="color:#00a8c8">in</span> <span style="color:#d88200">&#34;ThisString&#34;</span> <span style="color:#111">{</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">chars</span><span style="color:#111">,</span> <span style="color:#111">terminator</span><span style="color:#111">:</span> <span style="color:#d88200">&#34; &#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p><strong>Unicode strings:</strong></p>
+</div>
+<div class="paragraph">
+<p>You can access a UTF-8 and UTF-16 representation of a String by iterating over its utf8 and utf16 properties</p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">unicodeString</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Dog???&#34;</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;UTF-8 Codes: &#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">code</span> <span style="color:#00a8c8">in</span> <span style="color:#111">unicodeString</span><span style="color:#111">.</span><span style="color:#111">utf8</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#d88200">\(</span><span style="color:#111">code</span><span style="color:#d88200">)</span><span style="color:#d88200"> &#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;UTF-16 Codes: &#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">code</span> <span style="color:#00a8c8">in</span> <span style="color:#111">unicodeString</span><span style="color:#111">.</span><span style="color:#111">utf16</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#d88200">\(</span><span style="color:#111">code</span><span style="color:#d88200">)</span><span style="color:#d88200"> &#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div>
+</div>
+<div class="sect2">
+<h3 id="_string_functions_operators">String Functions &amp; Operators</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">isEmpty</dt>
+<dd>
+<p>A Boolean value that determines whether a string is empty or not.</p>
+</dd>
+<dt class="hdlist1">hasPrefix(prefix: String)</dt>
+<dd>
+<p>Function to check whether a given parameter string exists as a prefix of the string or not.</p>
+</dd>
+<dt class="hdlist1">hasSuffix(suffix: String)</dt>
+<dd>
+<p>Function to check whether a given parameter string exists as a suffix of the string or not.</p>
+</dd>
+<dt class="hdlist1">toInt()</dt>
+<dd>
+<p>Function to convert numeric String value into Integer.</p>
+</dd>
+<dt class="hdlist1">count()</dt>
+<dd>
+<p>Global function to count the number of Characters in a string.</p>
+</dd>
+<dt class="hdlist1">utf8</dt>
+<dd>
+<p>Property to return a UTF-8 representation of a string.</p>
+</dd>
+<dt class="hdlist1">utf16</dt>
+<dd>
+<p>Property to return a UTF-16 representation of a string.</p>
+</dd>
+<dt class="hdlist1">unicodeScalars</dt>
+<dd>
+<p>Property to return a Unicode Scalar representation of a string.</p>
+</dd>
+<dt class="hdlist1">+</dt>
+<dd>
+<p>Operator to concatenate two strings, or a string and a character, or two characters.</p>
+</dd>
+<dt class="hdlist1">+=</dt>
+<dd>
+<p>Operator to append a string or character to an existing string.</p>
+</dd>
+<dt class="hdlist1">==</dt>
+<dd>
+<p>Operator to determine the equality of two strings.</p>
+</dd>
+<dt class="hdlist1">&lt;</dt>
+<dd>
+<p>Operator to perform a lexicographical comparison to determine whether one string evaluates as less than another.</p>
+</dd>
+<dt class="hdlist1">startIndex</dt>
+<dd>
+<p>To get the value at starting index of string.</p>
+</dd>
+<dt class="hdlist1">endIndex</dt>
+<dd>
+<p>To get the value at ending index of string.</p>
+</dd>
+<dt class="hdlist1">Indices</dt>
+<dd>
+<p>To access the indeces one by one. i.e all the characters of string one by one.</p>
+</dd>
+<dt class="hdlist1">insert("Value", at: position)</dt>
+<dd>
+<p>To insert a value at a position.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>remove(at: position)</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">removeSubrange(range)</dt>
+<dd>
+<p>to remove a value at a position, or to remove a range of values from string.</p>
+</dd>
+<dt class="hdlist1">reversed()</dt>
+<dd>
+<p>returns the reverse of a string</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_characters">Characters</h3>
+<div class="paragraph">
+<p>A character in Swift is a single character String literal, addressed by the data type Character. If you try to store more than one character in a Character type variable or constant, then Swift will not allow that.</p>
+</div>
+<div class="paragraph">
+<p>It is not possible to create an empty Character variable or constant which will have an empty value. The following syntax is not possible −
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#75715e">// Following is wrong in Swift 4</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">char1</span><span style="color:#111">:</span> <span style="color:#111">Character</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;&#34;</span>
+    <span style="color:#00a8c8">var</span> <span style="color:#111">char2</span><span style="color:#111">:</span> <span style="color:#111">Character</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;&#34;</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Value of char1 </span><span style="color:#d88200">\(</span><span style="color:#111">char1</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Value of char2 </span><span style="color:#d88200">\(</span><span style="color:#111">char2</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Asscessing characters from string :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">for</span> <span style="color:#111">ch</span> <span style="color:#00a8c8">in</span> <span style="color:#d88200">&#34;Hello&#34;</span> <span style="color:#111">{</span>
+        <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">ch</span><span style="color:#111">)</span>
+    <span style="color:#111">}</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Concatenating Strings with Characters :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">    <span style="color:#00a8c8">var</span> <span style="color:#111">varA</span><span style="color:#111">:</span><span style="color:#111">String</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Hello &#34;</span>
+    <span style="color:#00a8c8">let</span> <span style="color:#111">varB</span><span style="color:#111">:</span><span style="color:#111">Character</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;G&#34;</span>
+
+    <span style="color:#111">varA</span><span style="color:#111">.</span><span style="color:#111">append</span><span style="color:#111">(</span> <span style="color:#111">varB</span> <span style="color:#111">)</span>
+
+    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Value of varC = </span><span style="color:#d88200">\(</span><span style="color:#111">varA</span><span style="color:#d88200">)</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Value of varC = Hello G</pre>
+</div>
 </div>
 </div>
 </div>

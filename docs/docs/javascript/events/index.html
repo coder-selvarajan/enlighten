@@ -98,14 +98,6 @@
         background-color: #B83227;
     }
 
-    #toc {
-        font-size: 0.75em;
-        line-height: 1.5em;
-        margin: 0px;
-        margin-top: 5px;
-         
-    }
-
     table td {
         vertical-align: top;
     }
@@ -153,7 +145,7 @@
     h5 a:visited,
     h6 a:visited {
         color: #AE1438;
-        font-weight: 200;
+        font-weight: 600;
     }
 
     h1 a,
@@ -168,9 +160,31 @@
         text-decoration: none !important;
     }
 
-    .toc a,
-    .toc a:visited {
-        color: slateblue;
+    #toc {
+        font-size: 0.75em;
+        line-height: 1.5em;
+        margin: 0px;
+        margin-top: 5px;
+         
+    }
+
+    .toc li, .toc li li {
+        line-height: 17px;
+    }
+
+    .toc li a,
+    .toc li a:visited {
+        color: black;
+    }
+
+    .toc li li a,
+    .toc li li a:visited {
+        color: darkcyan;
+    }
+
+    .toc li li li a,
+    .toc li li li a:visited {
+        color: gray;
     }
 
     .toc a:hover {
@@ -196,6 +210,10 @@
          
         border-bottom: 1px solid #eaecef;
         padding-bottom: .3em;
+    }
+
+    dt {
+        color: chocolate;
     }
 </style>
   
@@ -248,6 +266,7 @@
         </div>
         <ul class="menu-content">
             <li><a href="/enlighten/docs/swift/basics/">Basics</a></li>
+            <li><a href="/enlighten/docs/swift/data-structures/">Data Structures</a></li>
         </ul>
     </li>
     <li>

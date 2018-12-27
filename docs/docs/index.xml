@@ -263,6 +263,17 @@ Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</descr
     </item>
     
     <item>
+      <title>Datastructures - Swift</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/swift/data-structures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/swift/data-structures/</guid>
+      <description>Data Structures Arrays The syntax of array looks like this
+ var someArray = [SomeType](count: nElements, repeatedValue: InitValue)  You can use the following statement to create an empty array of Int type having 3 elements and the initial value as zero var someInts = [Int](count: 3, repeatedValue: 0)
+ Following is one more example to create an array of three elements and assign three values to that array var someInts:[Int] = [10, 20, 30]</description>
+    </item>
+    
+    <item>
       <title>Learning</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/misc/learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
