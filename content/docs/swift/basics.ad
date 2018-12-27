@@ -178,7 +178,7 @@ Above statements are equivalent to
     var perhapsStr: String? = nil
 
 
-=== Forced Unwrapping
+*Forced Unwrapping :*
 
 If you defined a variable as optional, then to get the value from this variable, you will have to unwrap it. This just means putting an exclamation mark at the end of the variable.
 
@@ -201,7 +201,7 @@ When we run the above program using playground, we get the following result −
     Hello, Swift 4!
 
 
-=== Automatic Unwrapping
+*Automatic Unwrapping :*
 
 You can declare optional variables using exclamation mark instead of a question mark. Such optional variables will unwrap automatically and you do not need to use any further exclamation mark at the end of the variable to get the assigned value. Let's take a simple example −
 {{<highlight swift>}}
@@ -219,7 +219,7 @@ When we run the above program using playground, we get the following result −
 [source,swift]
     Hello, Swift 4!
 
-=== Optional Binding
+*Optional Binding :*
 
 Use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable.
 
@@ -344,8 +344,6 @@ The Result would be
 [.h2-border]
 == Operators
 
-=== Basic Operators
-
 *Comparison Operators* : {nbsp} `== {nbsp} != {nbsp} > {nbsp} < {nbsp} >= {nbsp} <=`
 
 *Logical Operators*: {nbsp} `&& {nbsp} || {nbsp} !`
@@ -397,15 +395,15 @@ _Note: `C << = 2` is same as `C = C << 2`_
 
 Swift 4 includes two range operators, which are shortcuts for expressing a range of values. The following table explains these two operators.
 
-_Closed Range_::
+Closed Range::
     (a...b) defines a range that runs from a to b, and includes the values a and b. +
     1...5 gives 1, 2, 3, 4 and 5
 
-_Half-Open Range_::
+Half-Open Range::
     (a..< b) defines a range that runs from a to b, but does not include b. +
     1..< 5 gives 1, 2, 3, and 4
 
-_One-sided Range_::
+One-sided Range::
     a… , defines a range that runs from a to end of elements +
     1… gives 1 , 2,3… end of elements +
     {sp} +
@@ -417,13 +415,13 @@ _One-sided Range_::
 
 Swift 4 supports a few other important operators including range and ? : which are explained in the following table.
 
-_Unary Minus_::
+Unary Minus::
     The sign of a numeric value can be toggled using a prefixed +
     -3 or -4
-_Unary Plus_::
+Unary Plus::
     Returns the value it operates on, without any change +
     +6 gives 6
-_Ternary Conditional_::
+Ternary Conditional::
     Condition ? X : Y +
     If Condition is true ? Then value X : Otherwise value Y
 
@@ -433,10 +431,10 @@ Operator precedence determines the grouping of terms in an expression. This affe
 
 Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.
 
-_Primary Expression Operators (left-to-right)_::
+Primary Expression Operators (left-to-right)::
 	`() [] . expr++ expr--` +
 
-_Unary Operators (right-to-left)_::
+Unary Operators (right-to-left)::
     `* & + - ! ~ ++expr --expr` +
     `* / %` +
     `+ -` +
@@ -444,15 +442,357 @@ _Unary Operators (right-to-left)_::
     `< > <= >=` +
     `== !=` +
 
-_Binary Operators (left-to-right)_::
+Binary Operators (left-to-right)::
     `& ^ | && ||`
 
-_Ternary Operator (right-to-left)_::
+Ternary Operator (right-to-left)::
     `?:` +
     
-_Assignment Operators (right-to-left)_::
+Assignment Operators (right-to-left)::
     `= += -= *= /= %= >>= <<= &=^= |=`
 
-_Comma (left-to-right)_::
+Comma (left-to-right)::
     `,`
 
+== Decision Making
+
+*If Statement:*
+
+{{<highlight swift>}}
+    var varA:Int = 100;
+
+    /* Check the boolean condition using if statement */
+    if varA == 20 {
+        print("varA is equal to than 20");
+    } else if varA == 50 {
+        print("varA is equal to than 50");
+    } else {
+        print("None of the values is matching");
+    }
+    print("Value of variable varA is \(varA)");
+{{</highlight>}}
+
+*Switch statement:*
+
+{{<highlight swift>}}
+    var index = 10
+
+    switch index {
+    case 100 :
+        print( "Value of index is 100")
+    case 10,15 :
+        print( "Value of index is either 10 or 15")
+    default :
+        print( "default case")
+    }
+{{</highlight>}}
+
+*The `? :` Operator*
+
+Conditional operator `? :` can be used to replace if...else statements. It has the following general form
+
+    Exp1 ? Exp2 : Exp3;
+
+[.h2-border]
+== Loops
+
+*For in :*
+{{<highlight swift>}}
+    var someInts:[Int] = [10, 20, 30]
+
+    for index in someInts {
+    print( "Value of index is \(index)")
+    }
+{{</highlight>}}
+
+*While loop :*
+{{<highlight swift>}}
+    var index = 10
+
+    while index < 20 {
+    print( "Value of index is \(index)")
+    index = index + 1
+    }
+{{</highlight>}}
+
+*Repeat while :*
+{{<highlight swift>}}
+    var index = 10
+
+    repeat {
+        print( "Value of index is \(index)")
+        index = index + 1
+    }
+    while index < 20
+{{</highlight>}}
+
+*Continue statement :*
+{{<highlight swift>}}
+    var index = 10
+
+    repeat {
+        index = index + 1
+        if( index == 15 ){
+            continue
+        }
+        print( "Value of index is \(index)")
+    } while index < 20
+{{</highlight>}}
+
+Here number 15 will be skipped printing
+
+*Break Statement :*
+{{<highlight swift>}}
+    var index = 10
+
+    repeat {
+        index = index + 1
+        if( index == 15 ){
+            break
+        }
+        print( "Value of index is \(index)")
+    } while index < 20
+{{</highlight>}}
+
+Here numbers after 15 will be skipped printing
+
+*Switch fallthrough :*
+
+If we do not use fallthrough statement, then the program will come out of the switch statement after executing the matching case statement. 
+
+_EXAMPLE1:_
+{{<highlight swift>}}
+    var index = 10
+
+    switch index {
+    case 100 :
+        print( "Value of index is 100")
+    case 10,15 :
+        print( "Value of index is either 10 or 15")
+    case 5 :
+        print( "Value of index is 5")
+    default :
+        print( "default case")
+    }
+{{</highlight>}}
+
+_OUTPUT:_
+    
+    Value of index is either 10 or 15
+
+{sp} +
+_EXAMPLE2:_
+{{<highlight swift>}}
+    var index = 10
+
+    switch index {
+        case 100 :
+            print( "Value of index is 100")
+            fallthrough
+        case 10,15 :
+            print( "Value of index is either 10 or 15")
+            fallthrough
+        case 5 :
+            print( "Value of index is 5")
+        default :
+            print( "default case")
+    }
+{{</highlight>}}
+
+_OUTPUT:_
+
+    Value of index is either 10 or 15 +
+    Value of index is 5
+
+
+[.h2-border]
+== Strings
+
+_EXAMPLE:_
+{{<highlight swift>}}
+    // String creation using String literal
+    var stringA = "Hello, Swift 4!"
+    print( stringA )
+
+    // String creation using String instance
+    var stringB = String("Hello, Swift 4!")
+    print( stringB )
+
+    //Multiple line string
+
+    let stringC = """
+    Hey this is a
+    example of multiple Line
+    string by tutorialsPoint 
+
+    """
+    print(stringC)
+{{</highlight>}}
+
+_OUTPUT:_ 
+
+    Hello, Swift 4!
+    Hello, Swift 4!
+    Hey this is a
+    example of multiple Line
+    string by tutorialsPoint
+
+*Empty String:*
+{{<highlight swift>}}
+    // Empty string creation using String instance
+    let stringB = String()
+
+    if stringB.isEmpty {
+        print( "stringB is empty" )
+    } else {
+        print( "stringB is not empty" )
+    }
+{{</highlight>}}
+
+*String Constants:*
+{{<highlight swift>}}
+    // stringB can not be modified
+    let stringB = String("Hello, Swift 4!")
+    stringB + = "--Readers--"
+    print( stringB )
+{{</highlight>}}
+
+_OUTPUT:_ 
+
+    Swift throws an error!
+
+*String Interpolation:* 
+
+{{<highlight swift>}}
+    var varA = 20
+    let constA = 100
+    var varC:Float = 20.0
+
+    var stringA = "\(varA) times \(constA) is equal to \(varC * 100)"
+    print( stringA )
+{{</highlight>}}
+
+_OUTPUT:_
+
+    20 times 100 is equal to 2000.0
+
+*String iteration:*
+
+{{<highlight swift>}}
+    for chars in "ThisString" {
+    print(chars, terminator: " ")
+    }
+{{</highlight>}}
+
+*Unicode strings:*
+
+You can access a UTF-8 and UTF-16 representation of a String by iterating over its utf8 and utf16 properties
+
+{{<highlight swift>}}
+    var unicodeString = "Dog???"
+
+    print("UTF-8 Codes: ")
+    for code in unicodeString.utf8 {
+        print("\(code) ")
+    }
+
+    print("\n")
+
+    print("UTF-16 Codes: ")
+    for code in unicodeString.utf16 {
+        print("\(code) ")
+    }
+{{</highlight>}}
+
+=== String Functions & Operators
+
+isEmpty::
+    A Boolean value that determines whether a string is empty or not.
+
+hasPrefix(prefix: String)::
+    Function to check whether a given parameter string exists as a prefix of the string or not.
+
+hasSuffix(suffix: String)::
+    Function to check whether a given parameter string exists as a suffix of the string or not.
+
+toInt()::
+    Function to convert numeric String value into Integer.
+
+count()::
+    Global function to count the number of Characters in a string.
+
+utf8::
+    Property to return a UTF-8 representation of a string.
+
+utf16::
+    Property to return a UTF-16 representation of a string.
+
+unicodeScalars::
+    Property to return a Unicode Scalar representation of a string.
+
++::
+    Operator to concatenate two strings, or a string and a character, or two characters.
+
++=::
+    Operator to append a string or character to an existing string.
+
+==::
+    Operator to determine the equality of two strings.
+
+<::
+    Operator to perform a lexicographical comparison to determine whether one string evaluates as less than another.
+
+startIndex::
+    To get the value at starting index of string.
+
+endIndex::
+    To get the value at ending index of string.
+
+Indices::
+    To access the indeces one by one. i.e all the characters of string one by one.
+
+insert("Value", at: position)::
+    To insert a value at a position.
+
+remove(at: position)
+
+removeSubrange(range)::
+    to remove a value at a position, or to remove a range of values from string.
+
+reversed()::
+    returns the reverse of a string
+
+=== Characters
+
+A character in Swift is a single character String literal, addressed by the data type Character. If you try to store more than one character in a Character type variable or constant, then Swift will not allow that.
+
+It is not possible to create an empty Character variable or constant which will have an empty value. The following syntax is not possible −
+{{<highlight swift>}}
+    // Following is wrong in Swift 4
+    let char1: Character = ""
+    var char2: Character = ""
+
+    print("Value of char1 \(char1)")
+    print("Value of char2 \(char2)")
+{{</highlight>}}
+
+*Asscessing characters from string :*
+{{<highlight swift>}}
+    for ch in "Hello" {
+        print(ch)
+    }
+{{</highlight>}}
+
+*Concatenating Strings with Characters :*
+{{<highlight swift>}}
+    var varA:String = "Hello "
+    let varB:Character = "G"
+
+    varA.append( varB )
+
+    print("Value of varC = \(varA)")
+{{</highlight>}}
+
+_OUTPUT:_
+
+    Value of varC = Hello G

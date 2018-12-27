@@ -49,6 +49,7 @@ BookShowToC = false
 === :blue_book: &nbsp;Swift
 
 * link:/enlighten/docs/swift/basics/[Basics]
+* link:/enlighten/docs/swift/data-structures/[Data Structures]
 
 
 === :blue_book: &nbsp;MEAN Stack
