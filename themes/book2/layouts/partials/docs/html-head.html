@@ -145,6 +145,7 @@
         font-weight: 600;
     }
 
+
     h1 a,
     h1 a:visited,
     .brand a,
@@ -165,23 +166,39 @@
         /* position: fixed; */
     }
 
+    .toc div {
+        color: black;
+        font-size: 1.1em;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 4px;
+    }
+
+    .toc hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid gainsboro;
+        margin: 1em 0;
+        padding: 0; 
+    }
+
     .toc li, .toc li li {
         line-height: 17px;
     }
 
     .toc li a,
     .toc li a:visited {
-        color: black;
+        color: darkcyan;
     }
 
     .toc li li a,
     .toc li li a:visited {
-        color: darkcyan;
+        color: gray;
     }
 
     .toc li li li a,
     .toc li li li a:visited {
-        color: gray;
+        color: darkgray
     }
 
     .toc a:hover {

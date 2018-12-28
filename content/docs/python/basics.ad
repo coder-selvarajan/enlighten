@@ -5,7 +5,14 @@ title = "Python Basics"
 
 = Python Basics
 
-Python is an interpreted, object-oriented and high level language.
+Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language.
+
+It is used for:
+
+- Web development (server-side),
+- Software development,
+- Machine Learning & Mathematics, 
+- System scripting.
 
 == Variables
 

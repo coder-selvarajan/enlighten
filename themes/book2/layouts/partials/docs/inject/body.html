@@ -51,14 +51,14 @@
   function TableOfContents(container, output) {
     var txt = "toc-";
     var toc = "";
-    var start = 0;
+    var start = 1;
     var output = output || "#toc";
 
     var container =
       document.querySelector(container) ||
       document.querySelector("#contents article");
     //var c = container.children;
-    var c = container.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    var c = container.querySelectorAll("h2, h3, h4, h5, h6");
 
     for (var i = 0; i < c.length; i++) {
       // alert(c[i].nodeName);

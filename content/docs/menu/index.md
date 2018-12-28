@@ -66,6 +66,14 @@ headless: true
     </li>
     <li>
         <div class="collapsible">
+            <a title="Learn Linux">Concepts</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/concepts/programming/">Programming</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
             <a title="Learn Linux">Misc</a>
         </div>
         <ul class="menu-content">
