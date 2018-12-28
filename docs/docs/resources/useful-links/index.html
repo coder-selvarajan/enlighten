@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
 
 
-<link rel="stylesheet" href="/enlighten/book.min.972f6b2be379b2c28fc690c8997a792e0cb3faf44af13734a6278c69cfc1a4c7.css">
+<link rel="stylesheet" href="/enlighten/book.min.09304d0d948790529ed2d627cfb21f3da4f048c4ed5fbe9f8780dca480e91911.css">
 
 <style>
      
@@ -148,6 +148,7 @@
         font-weight: 600;
     }
 
+
     h1 a,
     h1 a:visited,
     .brand a,
@@ -168,23 +169,39 @@
          
     }
 
+    .toc div {
+        color: black;
+        font-size: 1.1em;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 4px;
+    }
+
+    .toc hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid gainsboro;
+        margin: 1em 0;
+        padding: 0; 
+    }
+
     .toc li, .toc li li {
         line-height: 17px;
     }
 
     .toc li a,
     .toc li a:visited {
-        color: black;
+        color: darkcyan;
     }
 
     .toc li li a,
     .toc li li a:visited {
-        color: darkcyan;
+        color: gray;
     }
 
     .toc li li li a,
     .toc li li li a:visited {
-        color: gray;
+        color: darkgray
     }
 
     .toc a:hover {
@@ -296,6 +313,14 @@
     </li>
     <li>
         <div class="collapsible">
+            <a title="Learn Linux">Concepts</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/concepts/programming/">Programming</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
             <a title="Learn Linux">Misc</a>
         </div>
         <ul class="menu-content">
@@ -345,79 +370,100 @@
 </label>
 <strong>Useful Links</strong>
       </header>
-      <article class="markdown">
-
-<h2 id="useful-links-tools">Useful Links/Tools</h2>
-
-<h3 id="free-courses">Free courses</h3>
-
-<p>For Javascript, here is a free course: <br/>
-<a href="https://courses.learncodeonline.in/learn/Javascript-for-2018-developer">https://courses.learncodeonline.in/learn/Javascript-for-2018-developer</a></p>
-
-<p>Introduction to Algorithms book:
-<a href="https://amzn.to/2A1B0Ak">https://amzn.to/2A1B0Ak</a></p>
-
-<hr />
-
-<h3 id="free-tools-apps">Free Tools/Apps</h3>
-
-<p>Pick best UI color for your projects: <br/>
-<a href="https://UIColorPicker.com">https://UIColorPicker.com</a></p>
-
-<p>Emoji Cheat sheet: <br/>
-<a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">https://www.webpagefx.com/tools/emoji-cheat-sheet/</a></p>
-
-<p>Color Scale: <br/>
-<a href="https://hihayk.github.io/scale/">https://hihayk.github.io/scale/</a></p>
-
-<p>Color Wheel Generator: <br/>
-<a href="https://hihayk.github.io/wheel/">https://hihayk.github.io/wheel/</a></p>
-
-<p>Lazyload Images: <br/>
-<a href="https://github.com/Paul-Browne/lazyestload.js">https://github.com/Paul-Browne/lazyestload.js</a></p>
-
-<p>Extension to record browser interactions: <br/>
-<a href="https://github.com/checkly/puppeteer-recorder">https://github.com/checkly/puppeteer-recorder</a></p>
-
-<hr />
-
-<h3 id="coder-designer-websites">Coder/Designer Websites</h3>
-
-<p>Hayk (Designer cum Coder): <br/>
-<a href="https://hihayk.com/#/">https://hihayk.com/#/</a></p>
-
-<hr />
-
-<h3 id="tech-news-rss-feed">Tech news / RSS Feed</h3>
-
-<p>Alternative to Google Reader <br/>
-<a href="https://alternativeto.net/software/google-reader/">https://alternativeto.net/software/google-reader/</a></p>
-
-<p>Tech news aggregator <br/>
-<a href="https://www.tldrnewsletter.com/">https://www.tldrnewsletter.com/</a>  (daily newsletter) <br/>
-<a href="https://www.techmeme.com/feed.xml">https://www.techmeme.com/feed.xml</a></p>
-
-<p>Top 20 tech websites: <br/>
-<a href="https://www.grafdom.com/blog/top-20-best-tech-websites-and-blogs/">https://www.grafdom.com/blog/top-20-best-tech-websites-and-blogs/</a></p>
-
-<hr />
-
-<h3 id="tech-trends-web-2019">Tech Trends(Web) 2019</h3>
-
-<p><a href="https://stenciljs.com/">https://stenciljs.com/</a> <br/>
-<a href="https://graphql.org/">https://graphql.org/</a> <br/>
-<a href="https://jamstack.org/">https://jamstack.org/</a> <br/></p>
-
-<p>Static site generator: <br/>
-<a href="https://www.gatsbyjs.org/">https://www.gatsbyjs.org/</a></p>
-
-<hr />
-
-<h3 id="references">References</h3>
-
-<p>Reference sites for nice typography &amp; elegant design: <br/>
-<a href="https://checklyhq.com/docs/">https://checklyhq.com/docs/</a>    <br/>
-<a href="https://www.quackit.com/">https://www.quackit.com/</a></p>
+      <article class="markdown"><h1 id="_useful_linkstools" class="sect0">Useful Links/Tools</h1>
+<div class="sect1">
+<h2 id="_free_courses">Free courses</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For Javascript, here is a free course:<br>
+<a href="https://courses.learncodeonline.in/learn/Javascript-for-2018-developer" class="bare">https://courses.learncodeonline.in/learn/Javascript-for-2018-developer</a></p>
+</div>
+<div class="paragraph">
+<p>Introduction to Algorithms book:<br>
+<a href="https://amzn.to/2A1B0Ak" class="bare">https://amzn.to/2A1B0Ak</a></p>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_free_toolsapps">Free Tools/Apps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pick best UI color for your projects:<br>
+<a href="https://UIColorPicker.com" class="bare">https://UIColorPicker.com</a></p>
+</div>
+<div class="paragraph">
+<p>Emoji Cheat sheet:<br>
+<a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" class="bare">https://www.webpagefx.com/tools/emoji-cheat-sheet/</a></p>
+</div>
+<div class="paragraph">
+<p>Color Scale:<br>
+<a href="https://hihayk.github.io/scale/" class="bare">https://hihayk.github.io/scale/</a></p>
+</div>
+<div class="paragraph">
+<p>Color Wheel Generator:<br>
+<a href="https://hihayk.github.io/wheel/" class="bare">https://hihayk.github.io/wheel/</a></p>
+</div>
+<div class="paragraph">
+<p>Lazyload Images:<br>
+<a href="https://github.com/Paul-Browne/lazyestload.js" class="bare">https://github.com/Paul-Browne/lazyestload.js</a></p>
+</div>
+<div class="paragraph">
+<p>Extension to record browser interactions:<br>
+<a href="https://github.com/checkly/puppeteer-recorder" class="bare">https://github.com/checkly/puppeteer-recorder</a></p>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_coderdesigner_websites">Coder/Designer Websites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hayk (Designer cum Coder):<br>
+<a href="https://hihayk.com/#/" class="bare">https://hihayk.com/#/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_tech_news_rss_feed">Tech news / RSS Feed</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Alternative to Google Reader<br>
+<a href="https://alternativeto.net/software/google-reader/" class="bare">https://alternativeto.net/software/google-reader/</a></p>
+</div>
+<div class="paragraph">
+<p>Tech news aggregator<br>
+<a href="https://www.tldrnewsletter.com/" class="bare">https://www.tldrnewsletter.com/</a>  (daily newsletter) &lt;br/&gt;
+<a href="https://www.techmeme.com/feed.xml" class="bare">https://www.techmeme.com/feed.xml</a></p>
+</div>
+<div class="paragraph">
+<p>Top 20 tech websites:<br>
+<a href="https://www.grafdom.com/blog/top-20-best-tech-websites-and-blogs/" class="bare">https://www.grafdom.com/blog/top-20-best-tech-websites-and-blogs/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_tech_trendsweb_2019">Tech Trends(Web) 2019</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://stenciljs.com/" class="bare">https://stenciljs.com/</a><br>
+<a href="https://graphql.org/" class="bare">https://graphql.org/</a><br>
+<a href="https://jamstack.org/" class="bare">https://jamstack.org/</a><br></p>
+</div>
+<div class="paragraph">
+<p>Static site generator:<br>
+<a href="https://www.gatsbyjs.org/" class="bare">https://www.gatsbyjs.org/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Reference sites for nice typography &amp; elegant design:<br>
+<a href="https://checklyhq.com/docs/" class="bare">https://checklyhq.com/docs/</a><br>
+<a href="https://www.quackit.com/" class="bare">https://www.quackit.com/</a></p>
+</div>
+</div>
+</div>
 </article>
     </div>
 
@@ -425,7 +471,10 @@
     
       <aside class="toc fixed">
         
-<nav id="toc"></nav>
+<nav id="toc">
+    <div onclick="topFunction()">Table of Contents:</div>
+</nav>
+
       </aside>
     
   </main>
@@ -482,14 +531,14 @@
   function TableOfContents(container, output) {
     var txt = "toc-";
     var toc = "";
-    var start = 0;
+    var start = 1;
     var output = output || "#toc";
 
     var container =
       document.querySelector(container) ||
       document.querySelector("#contents article");
     
-    var c = container.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    var c = container.querySelectorAll("h2, h3, h4, h5, h6");
 
     for (var i = 0; i < c.length; i++) {
       

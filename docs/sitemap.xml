@@ -83,10 +83,6 @@
   </url>
   
   <url>
-    <loc>https://coder-selvarajan.github.io/enlighten/docs/resources/useful-links/</loc>
-  </url>
-  
-  <url>
     <loc>https://coder-selvarajan.github.io/enlighten/docs/misc/asciidoc/</loc>
   </url>
   
@@ -113,6 +109,10 @@
   </url>
   
   <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/concepts/programming/</loc>
+  </url>
+  
+  <url>
     <loc>https://coder-selvarajan.github.io/enlighten/docs/python/basics/</loc>
   </url>
   
@@ -127,6 +127,10 @@
   <url>
     <loc>https://coder-selvarajan.github.io/enlighten/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/resources/useful-links/</loc>
   </url>
   
 </urlset>

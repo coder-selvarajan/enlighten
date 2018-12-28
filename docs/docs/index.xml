@@ -45,7 +45,7 @@ Other api methods:
       <guid>https://coder-selvarajan.github.io/enlighten/docs/javascript/basics/</guid>
       <description>Basics Install Visual Studio Code and add following extentions
  Brackets pair Live server ES6 Code snippets  To find the time it took to execute the scripts:
-console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted 	const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
+console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted  const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
     </item>
     
     <item>
@@ -230,24 +230,6 @@ Python Setup  Install Python 3.7 from https://www.python.org/ VS-Code Setup  Ins
     </item>
     
     <item>
-      <title></title>
-      <link>https://coder-selvarajan.github.io/enlighten/docs/resources/useful-links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://coder-selvarajan.github.io/enlighten/docs/resources/useful-links/</guid>
-      <description>Useful Links/Tools Free courses For Javascript, here is a free course:  https://courses.learncodeonline.in/learn/Javascript-for-2018-developer
-Introduction to Algorithms book: https://amzn.to/2A1B0Ak
-Free Tools/Apps Pick best UI color for your projects:  https://UIColorPicker.com
-Emoji Cheat sheet:  https://www.webpagefx.com/tools/emoji-cheat-sheet/
-Color Scale:  https://hihayk.github.io/scale/
-Color Wheel Generator:  https://hihayk.github.io/wheel/
-Lazyload Images:  https://github.com/Paul-Browne/lazyestload.js
-Extension to record browser interactions:  https://github.com/checkly/puppeteer-recorder
-Coder/Designer Websites Hayk (Designer cum Coder):  https://hihayk.com/#/
-Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</description>
-    </item>
-    
-    <item>
       <title>AsciiDoc Overview</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/misc/asciidoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -291,17 +273,43 @@ Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</descr
     </item>
     
     <item>
+      <title>Programming</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/concepts/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/concepts/programming/</guid>
+      <description>Programming Common concepts in any programming language are :
+   Declarations
+  Data types
+  Operators
+  Decision Making
+  Loops
+  Data Structures: Lists, Arrays
+  Data Structures: Dictionaries, Sets
+  Functions, Procedures
+  Objects &amp;amp; Classes
+  IO Operation
+  Error handling
+  Packages
+   </description>
+    </item>
+    
+    <item>
       <title>Python Basics</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/python/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/python/basics/</guid>
-      <description>Python Basics Python is an interpreted, object-oriented and high level language.
- Variables Int one = 1 two = 2
+      <description>Python Basics Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language.
+ It is used for:
+   Web development (server-side),
+  Software development,
+  Machine Learning &amp;amp; Mathematics,
+  System scripting.
+   Variables Int one = 1two = 2
  Decimal dem = 1.1
  String strval = &amp;#34;Hello&amp;#34;
-     Tip  Variables declared in function are called Local Variable. All other variables are Global variables.     Global vars can be accessed within the function.
-   Functions Funtion definition: def addNum(one, two): return one + two</description>
+     Tip  Variables declared in function are called Local Variable.</description>
     </item>
     
     <item>
@@ -325,6 +333,33 @@ Tech news / RSS Feed Alternative to Google Reader  https://alternativeto.</descr
   Swift 4 provides seamless access to existing Cocoa frameworks.
   Swift 4 unifies the procedural and object-oriented portions of the language.
   Swift 4 does not need a separate library import to support functionalities like input/output or string handling.</description>
+    </item>
+    
+    <item>
+      <title>Useful Links</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/resources/useful-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/resources/useful-links/</guid>
+      <description>Useful Links/Tools Free courses For Javascript, here is a free course:
+https://courses.learncodeonline.in/learn/Javascript-for-2018-developer
+ Introduction to Algorithms book:
+https://amzn.to/2A1B0Ak
+   Free Tools/Apps Pick best UI color for your projects:
+https://UIColorPicker.com
+ Emoji Cheat sheet:
+https://www.webpagefx.com/tools/emoji-cheat-sheet/
+ Color Scale:
+https://hihayk.github.io/scale/
+ Color Wheel Generator:
+https://hihayk.github.io/wheel/
+ Lazyload Images:
+https://github.com/Paul-Browne/lazyestload.js
+ Extension to record browser interactions:
+https://github.com/checkly/puppeteer-recorder
+   Coder/Designer Websites Hayk (Designer cum Coder):
+https://hihayk.com/#/
+   Tech news / RSS Feed Alternative to Google Reader</description>
     </item>
     
   </channel>
