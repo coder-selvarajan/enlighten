@@ -44,15 +44,16 @@ Serving as testament of this fact, many O’Reilly authors including Matthew McC
 From the very beginning, AsciiDoc was designed to be a shorthand replacement for DocBook, one of the formats AsciiDoc can generate. AsciiDoc can also produce beautiful HTML5, PDFs, eBooks, man pages and even slide decks. It has you covered from first draft to publishing.
 
 ==== Links
-[%hardbreaks]
-Asciidoc Cheatsheet
+
+AsciiDoctor User manual: +
+https://asciidoctor.org/docs/user-manual/
+
+Asciidoc Cheatsheet: +
 https://powerman.name/doc/asciidoc
 
-[%hardbreaks]
-Asciidoc quick syntax reference:
+Asciidoc quick syntax reference: +
 https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 
-[%hardbreaks]
-Asciidoc vs Markdown
+Asciidoc vs Markdown: +
 https://asciidoctor.org/docs/user-manual/
 
