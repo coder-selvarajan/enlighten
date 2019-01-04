@@ -28,6 +28,7 @@ headless: true
         <ul class="menu-content">
             <li><a href="/enlighten/docs/python/setup/">Setup</a></li>
             <li><a href="/enlighten/docs/python/basics/">Basics</a></li>
+            <li><a href="/enlighten/docs/python/resources/">Resources</a></li>
         </ul>
     </li>
     <li>

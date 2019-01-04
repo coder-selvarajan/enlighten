@@ -44,6 +44,7 @@ BookShowToC = false
 
 * link:/enlighten/docs/python/setup/[Setup]
 * link:/enlighten/docs/python/basics/[Basics]
+* link:/enlighten/docs/python/resources/[Resources]
 
 
 === :blue_book: &nbsp;Swift
