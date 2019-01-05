@@ -25,6 +25,7 @@ BookShowToC = false
 * link:/enlighten/docs/javascript/rest-api/[REST Api]
 * link:/enlighten/docs/javascript/frameworks-converters/[Frameworks &amp; Converters]
 * link:/enlighten/docs/javascript/chrome-extn/[Build Chrome Extn]
+* link:/enlighten/docs/javascript/resources/[Resources/Links]
 
 === :blue_book: &nbsp;Linux
 

@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Async Programming | Enlightening KT</title>
+<title>Python Resources | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -371,90 +371,19 @@
         <label for="menu-control">
   <img src="https://coder-selvarajan.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Async Programming</strong>
+<strong>Python Resources</strong>
       </header>
-      <article class="markdown">
-
-<h1 id="async-programming">Async Programming</h1>
-
-<p>XHR - XmlHttpRequest</p>
-
-<p>Other api methods:</p>
-
-<pre><code>- Fetch api
-- Axios
-- Superagent
-- Jquery
-- Node http
-</code></pre>
-
-<blockquote>
-<p>Ajax - Xhr</p>
-</blockquote>
-
-<h2 id="xhr-code">XHR Code:</h2>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;button&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">loadData</span><span style="color:#111">);</span>
-    <span style="color:#00a8c8">function</span> <span style="color:#75af00">loadData</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-
-    <span style="color:#75715e">// Create an XHR Object
-</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">xhr</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">XMLHttpRequest</span><span style="color:#111">();</span>
-
-    <span style="color:#75715e">// OPEN
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">open</span><span style="color:#111">(</span><span style="color:#d88200">&#39;GET&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;data.txt&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">true</span><span style="color:#111">);</span>
-    <span style="color:#75715e">// console.log(&#39;READYSTATE&#39;, xhr.readyState);
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// Optional - Used for spinners/loaders
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onprogress</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
-        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;READYSTATE&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">readyState</span><span style="color:#111">);</span>
-    <span style="color:#111">}</span>
-
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onload</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
-        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;READYSTATE&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">readyState</span><span style="color:#111">);</span>
-        <span style="color:#00a8c8">if</span><span style="color:#111">(</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">status</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">200</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-            <span style="color:#75715e">// console.log(this.responseText);
-</span><span style="color:#75715e"></span>            <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;output&#39;</span><span style="color:#111">).</span><span style="color:#75af00">innerHTML</span> <span style="color:#f92672">=</span> 
-                                <span style="color:#d88200">`&lt;h1&gt;</span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">responseText</span><span style="color:#d88200">}</span><span style="color:#d88200">&lt;/h1&gt;`</span><span style="color:#111">;</span>
-        <span style="color:#111">}</span>
-    <span style="color:#111">}</span>
-
-    <span style="color:#75715e">// xhr.onreadystatechange = function() {
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// console.log(&#39;READYSTATE&#39;, xhr.readyState);
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// if(this.status === 200 &amp;&amp; this.readyState === 4){
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// console.log(this.responseText);
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// }
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// }
-</span><span style="color:#75715e"></span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onerror</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Request error...&#39;</span><span style="color:#111">);</span>
-    <span style="color:#111">}</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">send</span><span style="color:#111">();</span>
-
-
-    <span style="color:#75715e">// readyState Values
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 0: request not initialized 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 1: server connection established
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 2: request received 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 3: processing request 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 4: request finished and response is ready
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// HTTP Statuses
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 200: &#34;OK&#34;
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 403: &#34;Forbidden&#34;
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 404: &#34;Not Found&#34;
-</span><span style="color:#75715e"></span>    <span style="color:#111">}</span>
-</code></pre></div>
-<p><strong>Public api to get json..</strong></p>
-
-<p>This url get some random jokes:
-<a href="http://api.icndb.com/jokes/random">http://api.icndb.com/jokes/random</a></p>
-
-<h3 id="xhr-code-mini">XHR code - Mini:</h3>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">xhr</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">XMLHttpRequest</span><span style="color:#111">();</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">open</span><span style="color:#111">(</span><span style="color:#d88200">&#39;GET&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;data.txt&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">true</span><span style="color:#111">);</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onload</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span> <span style="color:#111">...</span> <span style="color:#111">}</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onerror</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">()</span> <span style="color:#111">{</span> <span style="color:#111">...</span> <span style="color:#111">}</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">send</span><span style="color:#111">();</span>
-</code></pre></div></article>
+      <article class="markdown"><h1 id="_resources" class="sect0">Resources</h1>
+<div class="paragraph">
+<p><strong>Python official documentation:</strong><br>
+<a href="https://docs.python.org/3/tutorial/" class="bare">https://docs.python.org/3/tutorial/</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Python mind map :</strong><br>
+<a href="http://coodict.github.io/python3-in-one-pic/" class="bare">http://coodict.github.io/python3-in-one-pic/</a><br>
+<a href="https://www.mindmeister.com/752422209/python" class="bare">https://www.mindmeister.com/752422209/python</a><br></p>
+</div>
+</article>
     </div>
 
     

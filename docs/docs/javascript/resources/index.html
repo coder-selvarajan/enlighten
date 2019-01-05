@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Async Programming | Enlightening KT</title>
+<title>Javascript Resources | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -371,90 +371,69 @@
         <label for="menu-control">
   <img src="https://coder-selvarajan.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Async Programming</strong>
+<strong>Javascript Resources</strong>
       </header>
-      <article class="markdown">
-
-<h1 id="async-programming">Async Programming</h1>
-
-<p>XHR - XmlHttpRequest</p>
-
-<p>Other api methods:</p>
-
-<pre><code>- Fetch api
-- Axios
-- Superagent
-- Jquery
-- Node http
-</code></pre>
-
-<blockquote>
-<p>Ajax - Xhr</p>
-</blockquote>
-
-<h2 id="xhr-code">XHR Code:</h2>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;button&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;click&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">loadData</span><span style="color:#111">);</span>
-    <span style="color:#00a8c8">function</span> <span style="color:#75af00">loadData</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-
-    <span style="color:#75715e">// Create an XHR Object
-</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">xhr</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">XMLHttpRequest</span><span style="color:#111">();</span>
-
-    <span style="color:#75715e">// OPEN
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">open</span><span style="color:#111">(</span><span style="color:#d88200">&#39;GET&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;data.txt&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">true</span><span style="color:#111">);</span>
-    <span style="color:#75715e">// console.log(&#39;READYSTATE&#39;, xhr.readyState);
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// Optional - Used for spinners/loaders
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onprogress</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
-        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;READYSTATE&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">readyState</span><span style="color:#111">);</span>
-    <span style="color:#111">}</span>
-
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onload</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span>
-        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;READYSTATE&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">readyState</span><span style="color:#111">);</span>
-        <span style="color:#00a8c8">if</span><span style="color:#111">(</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">status</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">200</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-            <span style="color:#75715e">// console.log(this.responseText);
-</span><span style="color:#75715e"></span>            <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;output&#39;</span><span style="color:#111">).</span><span style="color:#75af00">innerHTML</span> <span style="color:#f92672">=</span> 
-                                <span style="color:#d88200">`&lt;h1&gt;</span><span style="color:#d88200">${</span><span style="color:#00a8c8">this</span><span style="color:#111">.</span><span style="color:#75af00">responseText</span><span style="color:#d88200">}</span><span style="color:#d88200">&lt;/h1&gt;`</span><span style="color:#111">;</span>
-        <span style="color:#111">}</span>
-    <span style="color:#111">}</span>
-
-    <span style="color:#75715e">// xhr.onreadystatechange = function() {
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// console.log(&#39;READYSTATE&#39;, xhr.readyState);
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// if(this.status === 200 &amp;&amp; this.readyState === 4){
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// console.log(this.responseText);
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// }
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// }
-</span><span style="color:#75715e"></span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onerror</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Request error...&#39;</span><span style="color:#111">);</span>
-    <span style="color:#111">}</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">send</span><span style="color:#111">();</span>
-
-
-    <span style="color:#75715e">// readyState Values
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 0: request not initialized 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 1: server connection established
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 2: request received 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 3: processing request 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 4: request finished and response is ready
-</span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// HTTP Statuses
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 200: &#34;OK&#34;
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 403: &#34;Forbidden&#34;
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 404: &#34;Not Found&#34;
-</span><span style="color:#75715e"></span>    <span style="color:#111">}</span>
-</code></pre></div>
-<p><strong>Public api to get json..</strong></p>
-
-<p>This url get some random jokes:
-<a href="http://api.icndb.com/jokes/random">http://api.icndb.com/jokes/random</a></p>
-
-<h3 id="xhr-code-mini">XHR code - Mini:</h3>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#00a8c8">const</span> <span style="color:#75af00">xhr</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">new</span> <span style="color:#75af00">XMLHttpRequest</span><span style="color:#111">();</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">open</span><span style="color:#111">(</span><span style="color:#d88200">&#39;GET&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;data.txt&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">true</span><span style="color:#111">);</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onload</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">(){</span> <span style="color:#111">...</span> <span style="color:#111">}</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">onerror</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">function</span><span style="color:#111">()</span> <span style="color:#111">{</span> <span style="color:#111">...</span> <span style="color:#111">}</span>
-    <span style="color:#75af00">xhr</span><span style="color:#111">.</span><span style="color:#75af00">send</span><span style="color:#111">();</span>
-</code></pre></div></article>
+      <article class="markdown"><h1 id="_javascript_resources" class="sect0">Javascript Resources</h1>
+<div class="sect1">
+<h2 id="_graphicsshapes">Graphics/Shapes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web<br>
+<a href="https://dmitrybaranovskiy.github.io/raphael/" class="bare">https://dmitrybaranovskiy.github.io/raphael/</a></p>
+</div>
+<div class="paragraph">
+<p>GoJS is a JavaScript and TypeScript library for building interactive diagrams and graphs.<br>
+<a href="https://gojs.net/beta/index.html" class="bare">https://gojs.net/beta/index.html</a></p>
+</div>
+<div class="paragraph">
+<p>oCanvas is a JavaScript library intended to make development with HTML5 Canvas easier.<br>
+<a href="http://ocanvas.org/" class="bare">http://ocanvas.org/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_best_mind_map_apps">Best mind map apps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Free tools:</strong><br>
+<a href="https://app.wisemapping.com/c/login" class="bare">https://app.wisemapping.com/c/login</a><br>
+<a href="http://freemind.sourceforge.net/wiki/index.php/Main_Page" class="bare">http://freemind.sourceforge.net/wiki/index.php/Main_Page</a><br></p>
+</div>
+<div class="paragraph">
+<p><strong>Paid tools:</strong><br>
+<a href="https://bubbl.us/" class="bare">https://bubbl.us/</a><br>
+<a href="https://www.xmind.net/zen/" class="bare">https://www.xmind.net/zen/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mind_map_building_toolslibraries_in_javascript">Mind map building tools/libraries in javascript</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create mindmap with GoJS:<br>
+<a href="https://gojs.net/latest/samples/mindMap.html" class="bare">https://gojs.net/latest/samples/mindMap.html</a></p>
+</div>
+<div class="paragraph">
+<p>Dracula.js is a set of tools to display and layout interactive connected graphs and networks<br>
+<a href="https://www.graphdracula.net/" class="bare">https://www.graphdracula.net/</a></p>
+</div>
+<div class="paragraph">
+<p>The JavaScript InfoVis Toolkit provides tools for creating Interactive Data Visualizations for the Web.<br>
+<a href="http://philogb.github.io/jit/" class="bare">http://philogb.github.io/jit/</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://live.yworks.com/demos/complete/mindmap/" class="bare">https://live.yworks.com/demos/complete/mindmap/</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://jsplumbtoolkit.com/" class="bare">https://jsplumbtoolkit.com/</a></p>
+</div>
+<div class="paragraph">
+<p>Mind map canvas:<br>
+<a href="https://github.com/mindmup/mapjs/" class="bare">https://github.com/mindmup/mapjs/</a></p>
+</div>
+</div>
+</div>
+</article>
     </div>
 
     

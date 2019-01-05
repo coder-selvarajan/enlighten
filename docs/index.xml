@@ -256,6 +256,27 @@ Python Setup  Install Python 3.7 from https://www.python.org/ VS-Code Setup  Ins
     </item>
     
     <item>
+      <title>Javascript Resources</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/javascript/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/javascript/resources/</guid>
+      <description>Javascript Resources Graphics/Shapes Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web
+https://dmitrybaranovskiy.github.io/raphael/
+ GoJS is a JavaScript and TypeScript library for building interactive diagrams and graphs.
+https://gojs.net/beta/index.html
+ oCanvas is a JavaScript library intended to make development with HTML5 Canvas easier.
+http://ocanvas.org/
+   Best mind map apps Free tools:
+https://app.wisemapping.com/c/login
+http://freemind.sourceforge.net/wiki/index.php/Main_Page
+ Paid tools:
+https://bubbl.us/
+https://www.xmind.net/zen/
+   Mind map building tools/libraries in javascript Create mindmap with GoJS:</description>
+    </item>
+    
+    <item>
       <title>Learning</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/misc/learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -310,6 +331,20 @@ Python Setup  Install Python 3.7 from https://www.python.org/ VS-Code Setup  Ins
  Decimal dem = 1.1
  String strval = &amp;#34;Hello&amp;#34;
      Tip  Variables declared in function are called Local Variable.</description>
+    </item>
+    
+    <item>
+      <title>Python Resources</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/python/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/python/resources/</guid>
+      <description>Resources Python official documentation:
+https://docs.python.org/3/tutorial/
+ Python mind map :
+http://coodict.github.io/python3-in-one-pic/
+https://www.mindmeister.com/752422209/python
+ </description>
     </item>
     
     <item>

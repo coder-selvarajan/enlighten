@@ -19,6 +19,7 @@ headless: true
             <li><a href="/enlighten/docs/javascript/rest-api/">REST Api</a></li>
             <li><a href="/enlighten/docs/javascript/frameworks-converters/">Frameworks &amp; Converters</a></li>
             <li><a href="/enlighten/docs/javascript/chrome-extn/">Build Chrome Extn</a></li>
+            <li><a href="/enlighten/docs/javascript/resources/">Resources</a></li>
         </ul>
     </li>
     <li>
