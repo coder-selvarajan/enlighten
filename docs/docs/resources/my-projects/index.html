@@ -401,7 +401,7 @@ Visit site repo: <a href="https://github.com/Coder-Selvarajan/enlighten">https:/
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {
@@ -415,7 +415,7 @@ Visit site repo: <a href="https://github.com/Coder-Selvarajan/enlighten">https:/
     const activeLink = document.querySelectorAll(
       'a[href="' + window.location.pathname + '"]'
     );
-    activeLink.forEach(function(a, index) {
+    activeLink.forEach(function (a, index) {
       
       a.style.color = "indianred";
       const contentList = a.parentElement.parentElement;
@@ -424,7 +424,7 @@ Visit site repo: <a href="https://github.com/Coder-Selvarajan/enlighten">https:/
   }
 
   
-  window.onscroll = function() {
+  window.onscroll = function () {
     scrollFunction();
   };
 
@@ -498,12 +498,11 @@ Visit site repo: <a href="https://github.com/Coder-Selvarajan/enlighten">https:/
     document.querySelector(output).innerHTML += toc;
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     TableOfContents();
   });
 
 </script>
-
 
 </body>
 

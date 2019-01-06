@@ -778,6 +778,301 @@ Please Enter your Country: "US"
 </div>
 </div>
 </div>
+<div class="sect1 h2-border">
+<h2 id="_file_io">File I/O</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Syntax:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">    file = open("filename", "r") # "r", "w", "a", "r+" -&gt; Read and Write
+    # file operations
+    file.close()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Read / Write</strong></p>
+</div>
+<div class="paragraph">
+<p>Example code for file read/write:
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">vacationspots</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;Singapore&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;Bali&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;Europe&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;USA&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;Srilanka&#34;</span><span style="color:#111">]</span>
+
+    <span style="color:#111">vfile</span> <span style="color:#f92672">=</span> <span style="color:#111">open</span><span style="color:#111">(</span><span style="color:#d88200">&#34;VacationPlaces&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;w&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">spot</span> <span style="color:#f92672">in</span> <span style="color:#111">vacationspots</span><span style="color:#111">:</span>
+        <span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">write</span><span style="color:#111">(</span><span style="color:#111">spot</span> <span style="color:#f92672">+</span> <span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">close</span>
+
+    <span style="color:#111">vfile</span> <span style="color:#f92672">=</span> <span style="color:#111">open</span><span style="color:#111">(</span><span style="color:#d88200">&#34;VacationPlaces&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;r&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">read</span><span style="color:#111">())</span> <span style="color:#75715e"># to print whole file content</span>
+    <span style="color:#75715e"># To print file content line by line</span>
+    <span style="color:#00a8c8">for</span> <span style="color:#111">line</span> <span style="color:#f92672">in</span> <span style="color:#111">vfile</span><span style="color:#111">:</span>
+        <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">line</span><span style="color:#111">,</span> <span style="color:#111">end</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;&#34;</span><span style="color:#111">)</span>
+
+    <span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">close</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>To read single line from file, use this code
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">firstline</span> <span style="color:#f92672">=</span> <span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">readline</span><span style="color:#111">()</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">firstline</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p>This will change the position of the pointer.
+For ex: if you execute read() code after this line, then it will print from the last position only.
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">readline</span><span style="color:#111">())</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">read</span><span style="color:#111">())</span>
+
+    <span style="color:#75715e"># Output</span>
+    <span style="color:#111">Singapore</span>
+
+    <span style="color:#111">Bali</span>
+    <span style="color:#111">Europe</span>
+    <span style="color:#111">USA</span>
+    <span style="color:#111">Srilanka</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Append</strong></p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">finalspot</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;Tailand&#34;</span>
+    <span style="color:#111">vfile</span> <span style="color:#f92672">=</span> <span style="color:#111">open</span><span style="color:#111">(</span><span style="color:#d88200">&#34;VacationPlaces&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;a&#34;</span><span style="color:#111">)</span>
+    <span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">write</span><span style="color:#111">(</span><span style="color:#111">finalspot</span><span style="color:#111">)</span>
+    <span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">close</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p><strong>With keyword :</strong></p>
+</div>
+<div class="paragraph">
+<p>With block would automatically close the file once the end of block is reached.</p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">with</span> <span style="color:#111">open</span><span style="color:#111">(</span><span style="color:#d88200">&#34;VacationPlaces&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;r&#34;</span><span style="color:#111">)</span> <span style="color:#00a8c8">as</span> <span style="color:#111">vfile</span><span style="color:#111">:</span>
+        <span style="color:#00a8c8">for</span> <span style="color:#111">line</span> <span style="color:#f92672">in</span> <span style="color:#111">vfile</span><span style="color:#111">:</span>
+            <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">line</span><span style="color:#111">)</span></code></pre></div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>to color terminal texts use <code>termcolor</code> package - <a href="https://pypi.org/project/termcolor/" class="bare">https://pypi.org/project/termcolor/</a></p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_classes">Classes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Introductions to classes</p>
+</div>
+<div class="paragraph">
+<p>Syntax:
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">className</span><span style="color:#111">:</span>
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">attribute1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        
+        <span style="color:#00a8c8">def</span> <span style="color:#75af00">anotherfunc</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+            <span style="color:#111">actions</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">)</span></code></pre></div></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>self</code> has to be added in each function of the class. that refers the class itself</p>
+</li>
+<li>
+<p><code><em>init</em></code> function refers the constructor of the class</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sample class code:
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Team</span><span style="color:#111">:</span>
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;NaN&#34;</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamOrigin</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;NaN&#34;</span>
+
+        <span style="color:#00a8c8">def</span> <span style="color:#75af00">DefineTeamName</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">name</span><span style="color:#111">):</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span> <span style="color:#f92672">=</span> <span style="color:#111">name</span>
+
+    <span style="color:#111">TeamA</span> <span style="color:#f92672">=</span> <span style="color:#111">Team</span><span style="color:#111">()</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;NaN&#34;</span>
+    <span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">DefineTeamName</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Tiger&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;Tiger&#34;</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Default value:</strong><br>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Team</span><span style="color:#111">:</span>
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">Name</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;Name&#34;</span><span style="color:#111">,</span> <span style="color:#111">Origin</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;Origin&#34;</span><span style="color:#111">):</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span> <span style="color:#f92672">=</span> <span style="color:#111">Name</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamOrigin</span> <span style="color:#f92672">=</span> <span style="color:#111">Origin</span>
+
+
+    <span style="color:#111">TeamA</span> <span style="color:#f92672">=</span> <span style="color:#111">Team</span><span style="color:#111">()</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;Name&#34;</span>
+
+    <span style="color:#111">TeamB</span> <span style="color:#f92672">=</span> <span style="color:#111">Team</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Cheetah&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamB</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;Cheetah&#34;</span></code></pre></div></p>
+</div>
+<div class="sect2">
+<h3 id="_class_inheritance_concrete_class">Class Inheritance / Concrete class</h3>
+<div class="paragraph">
+<p><strong>Syntax :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">InheritanceClass</span><span style="color:#111">(</span><span style="color:#111">ParentClass</span><span style="color:#111">):</span>
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">input1</span><span style="color:#111">,</span> <span style="color:#111">input2</span><span style="color:#111">):</span>
+            <span style="color:#111">ParentClass</span><span style="color:#f92672">.</span><span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">)</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">attribute1</span> <span style="color:#f92672">=</span> <span style="color:#111">input1</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">attribute2</span> <span style="color:#f92672">=</span> <span style="color:#111">input2</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><strong>Sample code :</strong>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Team</span><span style="color:#111">:</span>
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">Name</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;CSK&#34;</span><span style="color:#111">,</span> <span style="color:#111">Origin</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;TN&#34;</span><span style="color:#111">):</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span> <span style="color:#f92672">=</span> <span style="color:#111">Name</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamOrigin</span> <span style="color:#f92672">=</span> <span style="color:#111">Origin</span>
+
+    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Player</span><span style="color:#111">(</span><span style="color:#111">Team</span><span style="color:#111">):</span>
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+            <span style="color:#111">Team</span><span style="color:#f92672">.</span><span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">)</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">PlayerName</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;NaN&#34;</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">Score</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#00a8c8">def</span> <span style="color:#75af00">setName</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">name</span><span style="color:#111">):</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">PlayerName</span> <span style="color:#f92672">=</span> <span style="color:#111">name</span>
+
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__str__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+            <span style="color:#00a8c8">return</span> <span style="color:#d88200">&#34;Team - &#34;</span> <span style="color:#f92672">+</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span> <span style="color:#f92672">+</span> \
+                <span style="color:#d88200">&#34; has player &#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">PlayerName</span> <span style="color:#f92672">+</span> <span style="color:#d88200">&#34;&#39;&#34;</span>
+
+    <span style="color:#111">PlayerA</span> <span style="color:#f92672">=</span> <span style="color:#111">Player</span><span style="color:#111">()</span>
+    <span style="color:#111">PlayerA</span><span style="color:#f92672">.</span><span style="color:#111">setName</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Dhoni&#34;</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">PlayerA</span><span style="color:#f92672">.</span><span style="color:#111">PlayerName</span><span style="color:#111">)</span> 
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">PlayerA</span><span style="color:#f92672">.</span><span style="color:#111">Score</span><span style="color:#111">)</span>     
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">PlayerA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>  
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">PlayerA</span><span style="color:#f92672">.</span><span style="color:#111">TeamOrigin</span><span style="color:#111">)</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">PlayerA</span><span style="color:#111">)</span>  <span style="color:#75715e"># Prints the string from &#39;__str__&#39; function</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">    Dhoni
+    0
+    CSK
+    TN
+    Team - CSK has player 'Dhoni'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">    __str__ function returns something when the object is printed</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Practical scenario of using classes</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pets    = Base class</p>
+<div class="ulist">
+<ul>
+<li>
+<p>name, age, hunger</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dog     = Concrete class inherits Pets</p>
+<div class="ulist">
+<ul>
+<li>
+<p>base attributes + breed, favoriteToy</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Cat     = Concrete class inherits Pets</p>
+<div class="ulist">
+<ul>
+<li>
+<p>base attributes + place</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Humans   = Base class</p>
+<div class="ulist">
+<ul>
+<li>
+<p>name, pets</p>
+</li>
+<li>
+<p>dog and cat objects are created and passed to human class as list.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">class</span> <span style="color:#75af00">Human</span><span style="color:#111">:</span>
+        <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span> <span style="color:#111">name</span><span style="color:#111">,</span> <span style="color:#111">pets</span><span style="color:#111">):</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">name</span> <span style="color:#f92672">=</span> <span style="color:#111">name</span>
+            <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">pets</span> <span style="color:#f92672">=</span> <span style="color:#111">pets</span>
+
+    <span style="color:#111">PetLover</span> <span style="color:#f92672">=</span> <span style="color:#111">Human</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Alice&#34;</span><span style="color:#111">,</span> <span style="color:#111">[</span><span style="color:#111">husky_dog</span><span style="color:#111">,</span> <span style="color:#111">typical_cat</span><span style="color:#111">])</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">PetLover</span><span style="color:#f92672">.</span><span style="color:#111">pets</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span><span style="color:#f92672">.</span><span style="color:#111">name</span> <span style="color:#f92672">+</span> <span style="color:#d88200">&#34; - &#34;</span> <span style="color:#f92672">+</span> <span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">PetLover</span><span style="color:#f92672">.</span><span style="color:#111">pets</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span><span style="color:#f92672">.</span><span style="color:#111">age</span><span style="color:#111">))</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_importing">Importing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>SYNTAX:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>import package_name</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>SAMPLE:</em>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#f92672">import</span> <span style="color:#111">random</span>
+
+    <span style="color:#111">randInt</span> <span style="color:#f92672">=</span> <span style="color:#111">random</span><span style="color:#f92672">.</span><span style="color:#111">randint</span><span style="color:#111">(</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span> 
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randInt</span><span style="color:#111">)</span>      <span style="color:#75715e"># Integer : 0 &gt;= N &lt;= 10</span>
+    <span style="color:#111">randFloat</span> <span style="color:#f92672">=</span> <span style="color:#111">random</span><span style="color:#f92672">.</span><span style="color:#111">random</span><span style="color:#111">()</span> 
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randFloat</span><span style="color:#111">)</span>    <span style="color:#75715e"># Float : 0.0 &gt;= N &lt; 1.0</span>
+    <span style="color:#111">randUniform</span> <span style="color:#f92672">=</span> <span style="color:#111">random</span><span style="color:#f92672">.</span><span style="color:#111">uniform</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">50</span><span style="color:#111">)</span> 
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randUniform</span><span style="color:#111">)</span>  <span style="color:#75715e"># Float : 1.0 &gt;= N &lt; 50.0</span></code></pre></div></p>
+</div>
+<div class="paragraph">
+<p><em>OUTPUT:</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>2
+0.1554929844739973
+5.860057875357238</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>User of Nick-name:</strong></p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#f92672">import</span> <span style="color:#111">random</span> <span style="color:#f92672">as</span> <span style="color:#111">r</span>
+
+    <span style="color:#111">randInt</span> <span style="color:#f92672">=</span> <span style="color:#111">r</span><span style="color:#f92672">.</span><span style="color:#111">randint</span><span style="color:#111">(</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span> 
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randInt</span><span style="color:#111">)</span></code></pre></div>
+</div>
+</div>
+</div>
 </article>
     </div>
 
@@ -797,7 +1092,7 @@ Please Enter your Country: "US"
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {
@@ -811,7 +1106,7 @@ Please Enter your Country: "US"
     const activeLink = document.querySelectorAll(
       'a[href="' + window.location.pathname + '"]'
     );
-    activeLink.forEach(function(a, index) {
+    activeLink.forEach(function (a, index) {
       
       a.style.color = "indianred";
       const contentList = a.parentElement.parentElement;
@@ -820,7 +1115,7 @@ Please Enter your Country: "US"
   }
 
   
-  window.onscroll = function() {
+  window.onscroll = function () {
     scrollFunction();
   };
 
@@ -894,12 +1189,11 @@ Please Enter your Country: "US"
     document.querySelector(output).innerHTML += toc;
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     TableOfContents();
   });
 
 </script>
-
 
 </body>
 

@@ -856,7 +856,7 @@ Source data - HDFS or other location
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {
@@ -870,7 +870,7 @@ Source data - HDFS or other location
     const activeLink = document.querySelectorAll(
       'a[href="' + window.location.pathname + '"]'
     );
-    activeLink.forEach(function(a, index) {
+    activeLink.forEach(function (a, index) {
       
       a.style.color = "indianred";
       const contentList = a.parentElement.parentElement;
@@ -879,7 +879,7 @@ Source data - HDFS or other location
   }
 
   
-  window.onscroll = function() {
+  window.onscroll = function () {
     scrollFunction();
   };
 
@@ -953,12 +953,11 @@ Source data - HDFS or other location
     document.querySelector(output).innerHTML += toc;
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     TableOfContents();
   });
 
 </script>
-
 
 </body>
 

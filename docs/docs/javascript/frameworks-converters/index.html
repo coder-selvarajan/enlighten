@@ -414,7 +414,7 @@ JS framework <strong>Backbone.js</strong></dt>
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {
@@ -428,7 +428,7 @@ JS framework <strong>Backbone.js</strong></dt>
     const activeLink = document.querySelectorAll(
       'a[href="' + window.location.pathname + '"]'
     );
-    activeLink.forEach(function(a, index) {
+    activeLink.forEach(function (a, index) {
       
       a.style.color = "indianred";
       const contentList = a.parentElement.parentElement;
@@ -437,7 +437,7 @@ JS framework <strong>Backbone.js</strong></dt>
   }
 
   
-  window.onscroll = function() {
+  window.onscroll = function () {
     scrollFunction();
   };
 
@@ -511,12 +511,11 @@ JS framework <strong>Backbone.js</strong></dt>
     document.querySelector(output).innerHTML += toc;
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     TableOfContents();
   });
 
 </script>
-
 
 </body>
 
