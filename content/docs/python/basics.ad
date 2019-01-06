@@ -364,3 +364,239 @@ Both the statements below output the same text
 {{<highlight python>}}
     print("The score is:\n" + str(curscore))
 {{</highlight>}}
+
+
+[.h2-border]
+== File I/O
+
+Syntax: 
+[source,python]
+    file = open("filename", "r") # "r", "w", "a", "r+" -> Read and Write
+    # file operations
+    file.close()
+
+**Read / Write**
+
+Example code for file read/write: 
+{{<highlight python>}}
+    vacationspots = ["Singapore", "Bali", "Europe", "USA", "Srilanka"]
+
+    vfile = open("VacationPlaces", "w")
+    for spot in vacationspots:
+        vfile.write(spot + "\n")
+    vfile.close
+
+    vfile = open("VacationPlaces", "r")
+    print(vfile.read()) # to print whole file content
+    # To print file content line by line
+    for line in vfile:
+        print(line, end="")
+
+    vfile.close
+{{</highlight>}}
+
+To read single line from file, use this code
+{{<highlight python>}}
+    firstline = vfile.readline()
+    print(firstline)
+{{</highlight>}}
+
+This will change the position of the pointer. 
+For ex: if you execute read() code after this line, then it will print from the last position only. 
+{{<highlight python>}}
+    print(vfile.readline())
+    print(vfile.read())
+
+    # Output
+    Singapore
+
+    Bali
+    Europe
+    USA
+    Srilanka
+{{</highlight>}}
+
+
+*Append*
+
+{{<highlight python>}}
+    finalspot = "Tailand"
+    vfile = open("VacationPlaces", "a")
+    vfile.write(finalspot)
+    vfile.close
+{{</highlight>}}
+
+*With keyword :*
+
+With block would automatically close the file once the end of block is reached. 
+
+{{<highlight python>}}
+    with open("VacationPlaces", "r") as vfile:
+        for line in vfile:
+            print(line)
+{{</highlight>}}
+
+> to color terminal texts use `termcolor` package - https://pypi.org/project/termcolor/
+
+
+[.h2-border]
+== Classes
+
+Introductions to classes
+
+Syntax: 
+{{<highlight python>}}
+    class className:
+        def __init__(self):
+            self.attribute1 = 0
+        
+        def anotherfunc(self):
+            actions(a)
+
+{{</highlight>}}
+
+* `self` has to be added in each function of the class. that refers the class itself
+* `__init__` function refers the constructor of the class
+
+Sample class code: 
+{{<highlight python>}}
+    class Team:
+        def __init__(self):
+            self.TeamName = "NaN"
+            self.TeamOrigin = "NaN"
+
+        def DefineTeamName(self, name):
+            self.TeamName = name
+
+    TeamA = Team()
+    print(TeamA.TeamName)   # prints "NaN"
+    TeamA.DefineTeamName("Tiger")
+    print(TeamA.TeamName)   # prints "Tiger"
+{{</highlight>}}
+
+*Default value:* +
+{{<highlight python>}}
+    class Team:
+        def __init__(self, Name="Name", Origin="Origin"):
+            self.TeamName = Name
+            self.TeamOrigin = Origin
+
+
+    TeamA = Team()
+    print(TeamA.TeamName)   # prints "Name"
+
+    TeamB = Team("Cheetah")
+    print(TeamB.TeamName)   # prints "Cheetah"
+{{</highlight>}}
+
+=== Class Inheritance / Concrete class
+
+*Syntax :* 
+{{<highlight python>}}
+    class InheritanceClass(ParentClass):
+        def __init__(self, input1, input2):
+            ParentClass.__init__(self)
+            self.attribute1 = input1
+            self.attribute2 = input2
+{{</highlight>}}
+
+*Sample code :* 
+{{<highlight python>}}
+    class Team:
+        def __init__(self, Name="CSK", Origin="TN"):
+            self.TeamName = Name
+            self.TeamOrigin = Origin
+
+    class Player(Team):
+        def __init__(self):
+            Team.__init__(self)
+            self.PlayerName = "NaN"
+            self.Score = 0
+
+        def setName(self, name):
+            self.PlayerName = name
+
+        def __str__(self):
+            return "Team - " + self.TeamName + \
+                " has player '" + self.PlayerName + "'"
+
+    PlayerA = Player()
+    PlayerA.setName("Dhoni")
+    print(PlayerA.PlayerName) 
+    print(PlayerA.Score)     
+    print(PlayerA.TeamName)  
+    print(PlayerA.TeamOrigin)
+    print(PlayerA)  # Prints the string from '__str__' function
+
+{{</highlight>}}
+
+_OUTPUT:_
+[source,python]
+    Dhoni
+    0
+    CSK
+    TN
+    Team - CSK has player 'Dhoni'
+
+[source,python]
+    __str__ function returns something when the object is printed
+
+
+*Practical scenario of using classes*
+
+* Pets    = Base class
+** name, age, hunger
+* Dog     = Concrete class inherits Pets 
+** base attributes + breed, favoriteToy
+* Cat     = Concrete class inherits Pets
+** base attributes + place 
+* Humans   = Base class
+** name, pets
+** dog and cat objects are created and passed to human class as list.
+
+{{<highlight python>}}
+    class Human:
+        def __init__(self, name, pets):
+            self.name = name
+            self.pets = pets
+
+    PetLover = Human("Alice", [husky_dog, typical_cat])
+    print(PetLover.pets[1].name + " - " + str(PetLover.pets[1].age))
+{{</highlight>}}
+
+
+[.h2-border]
+== Importing
+
+_SYNTAX:_
+
+    import package_name
+
+_SAMPLE:_ 
+{{<highlight python>}}
+    import random
+
+    randInt = random.randint(0, 10) 
+    print(randInt)      # Integer : 0 >= N <= 10
+    randFloat = random.random() 
+    print(randFloat)    # Float : 0.0 >= N < 1.0
+    randUniform = random.uniform(1, 50) 
+    print(randUniform)  # Float : 1.0 >= N < 50.0
+{{</highlight>}}
+
+
+_OUTPUT:_
+
+    2
+    0.1554929844739973
+    5.860057875357238
+
+*User of Nick-name:* 
+
+{{<highlight python>}}
+    import random as r
+
+    randInt = r.randint(0, 10) 
+    print(randInt)
+{{</highlight>}}
+
