@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Localstorage | Enlightening KT</title>
+<title>Docker Overview | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -372,54 +372,221 @@
         <label for="menu-control">
   <img src="https://coder-selvarajan.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Localstorage</strong>
+<strong>Docker Overview</strong>
       </header>
-      <article class="markdown">
-
-<h1 id="localstorage">LocalStorage</h1>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// set local storage item
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;John&#39;</span><span style="color:#111">);</span>
-    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;age&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;30&#39;</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">// set session storage item
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">sessionStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;Beth&#39;</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">// remove from storage
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">removeItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">// get from storage
-</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">name</span> <span style="color:#f92672">=</span> <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;name&#39;</span><span style="color:#111">);</span>
-    <span style="color:#00a8c8">const</span> <span style="color:#75af00">age</span> <span style="color:#f92672">=</span> <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;age&#39;</span><span style="color:#111">);</span>
-
-    <span style="color:#75715e">// clear local storage
-</span><span style="color:#75715e"></span>    <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">clear</span><span style="color:#111">();</span>
-    <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">name</span><span style="color:#111">,</span> <span style="color:#75af00">age</span><span style="color:#111">);</span>
-
-    <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">querySelector</span><span style="color:#111">(</span><span style="color:#d88200">&#39;form&#39;</span><span style="color:#111">).</span><span style="color:#75af00">addEventListener</span><span style="color:#111">(</span><span style="color:#d88200">&#39;submit&#39;</span><span style="color:#111">,</span> <span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">e</span><span style="color:#111">){</span>
-        <span style="color:#00a8c8">const</span> <span style="color:#75af00">task</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#111">.</span><span style="color:#75af00">getElementById</span><span style="color:#111">(</span><span style="color:#d88200">&#39;task&#39;</span><span style="color:#111">).</span><span style="color:#75af00">value</span><span style="color:#111">;</span>
-        <span style="color:#00a8c8">let</span> <span style="color:#75af00">tasks</span><span style="color:#111">;</span>
-        <span style="color:#00a8c8">if</span><span style="color:#111">(</span><span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">)</span> <span style="color:#f92672">===</span> <span style="color:#00a8c8">null</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-            <span style="color:#75af00">tasks</span> <span style="color:#f92672">=</span> <span style="color:#111">[];</span>
-        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
-            <span style="color:#75af00">tasks</span> <span style="color:#f92672">=</span> <span style="color:#75af00">JSON</span><span style="color:#111">.</span><span style="color:#75af00">parse</span><span style="color:#111">(</span><span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">));</span>
-        <span style="color:#111">}</span>
-        <span style="color:#75af00">tasks</span><span style="color:#111">.</span><span style="color:#75af00">push</span><span style="color:#111">(</span><span style="color:#75af00">task</span><span style="color:#111">);</span>
-        
-        <span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">setItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">,</span> <span style="color:#75af00">JSON</span><span style="color:#111">.</span><span style="color:#75af00">stringify</span><span style="color:#111">(</span><span style="color:#75af00">tasks</span><span style="color:#111">));</span>
-        <span style="color:#75af00">alert</span><span style="color:#111">(</span><span style="color:#d88200">&#39;Task saved&#39;</span><span style="color:#111">);</span>
-        <span style="color:#75af00">e</span><span style="color:#111">.</span><span style="color:#75af00">preventDefault</span><span style="color:#111">();</span>
-    <span style="color:#111">});</span>
-
-    <span style="color:#00a8c8">const</span> <span style="color:#75af00">tasks</span> <span style="color:#f92672">=</span> <span style="color:#75af00">JSON</span><span style="color:#111">.</span><span style="color:#75af00">parse</span><span style="color:#111">(</span><span style="color:#75af00">localStorage</span><span style="color:#111">.</span><span style="color:#75af00">getItem</span><span style="color:#111">(</span><span style="color:#d88200">&#39;tasks&#39;</span><span style="color:#111">));</span>
-    <span style="color:#75af00">tasks</span><span style="color:#111">.</span><span style="color:#75af00">forEach</span><span style="color:#111">(</span><span style="color:#00a8c8">function</span><span style="color:#111">(</span><span style="color:#75af00">task</span><span style="color:#111">){</span>
-        <span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#75af00">task</span><span style="color:#111">);</span>
-    <span style="color:#111">});</span>
-</code></pre></div>
-<p><br/></p>
-
-<blockquote>
-<p>My To-do list app is built with localstorage. Visit the app page <a href="https://github.com/Coder-Selvarajan/tasky"><strong>HERE</strong></a></p>
-</blockquote>
+      <article class="markdown"><h1 id="_docker_overview" class="sect0">Docker Overview</h1>
+<div class="paragraph">
+<p>Docker is a platform to develop, deploy, and run applications inside containers. Docker is essentially synonymous with containerization. If you’re a current or aspiring software developer or data scientist, Docker is in your future.</p>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_container">Container</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Like a physical plastic container, a Docker container:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Holds things</strong> — Something is either inside the container or outside the container.</p>
+</li>
+<li>
+<p><strong>Is portable</strong> — It can be used on your local machine, your coworker’s machine, or a cloud provider’s servers (e.g. AWS). Sort of like that box of childhood knickknacks you keep moving with you from home to home.</p>
+</li>
+<li>
+<p><strong>Has clear interfaces for access</strong> — Our physical container has a lid for opening and putting things in and taking things out. Similarly, a Docker container has several mechanisms for interfacing with the outside world. It has ports that can be opened for interacting through the browser. You can configure it to interact with data through the command line.</p>
+</li>
+<li>
+<p><strong>Can be obtained from a remote location</strong> — You can get another empty plastic container from Amazon.com when you need it. Amazon gets its plastic containers from manufacturers who stamp them out by the thousands from a single mold. In the case of a Docker container, an offsite registry keeps an image, which is like a mold, for your container. Then when you need a container you can make one from the image.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_concepts">Concepts</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_virtual_machines">Virtual Machines</h3>
+<div class="paragraph">
+<p>Virtual machines are the precursors to Docker containers. Virtual machines also isolate an application and its dependencies. However, Docker containers are superior to virtual machines because they take fewer resources, are very portable, and are faster to spin up. Check out this article for a great discussion of the similarities and differences.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_docker_image">Docker Image</h3>
+<div class="paragraph">
+<p>I mentioned images above. What’s an image? I’m glad you asked! The meaning of the term image in the context of Docker doesn’t map all that well to a physical image.</p>
+</div>
+<div class="paragraph">
+<p>Docker images are more like blueprints, cookie cutters, or molds. Images are the immutable master template that is used to pump out containers that are all exactly alike.</p>
+</div>
+<div class="paragraph">
+<p>An image contains the Dockerfile, libraries, and code your application needs to run, all bundled together.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dockerfile">Dockerfile</h3>
+<div class="paragraph">
+<p>A Dockerfile is a file with instructions for how Docker should build your image.</p>
+</div>
+<div class="paragraph">
+<p>The Dockerfile refers to a base image that is used to build the initial image layer. Popular official base images include python, ubuntu, and alpine.</p>
+</div>
+<div class="paragraph">
+<p>Additional layers can then be stacked on top of the base image layers, according to the instructions in the Dockerfile. For example, a Dockerfile for a machine learning application could tell Docker to add NumPy, Pandas, and Scikit-learn in an intermediate layer.</p>
+</div>
+<div class="paragraph">
+<p>Finally, a thin, writable layer is stacked on top of the other layers according to the Dockerfile code. (You understand that a thin layer is small in size because you intuitively understand the thin metaphor, right 😃?)</p>
+</div>
+<div class="paragraph">
+<p>I’ll explore Dockerfiles in more depth in future articles in this series.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_docker_container">Docker Container</h3>
+<div class="paragraph">
+<p>A Docker image plus the command docker run image_name creates and starts a container from an image.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_container_registry">Container Registry</h3>
+<div class="paragraph">
+<p>If you want other people to be able to make containers from your image, you send the image to a container registry. Docker Hub is the largest registry and the default.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_cooking_with_docker">Cooking with Docker</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Phew! That’s a lot of pieces. Let’s put this all together in terms of making a pizza.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The recipe is like the Dockerfile. It tells you what to do to get to your end goal.</p>
+</li>
+<li>
+<p>The ingredients are the layers. You’ve got crust, sauce, and cheese for this pizza.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Think of the recipe and the ingredients combined as an all-in-one pizza-making-kit. It’s the Docker image.</p>
+</div>
+<div class="paragraph">
+<p>The recipe (Dockerfile) tells us what we’re going to do. Here’s the plan:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The crust is preformed and immutable, it’s like a basic ubuntu parent image. It’s the bottom layer and gets built first.</p>
+</li>
+<li>
+<p>Then you’ll add some cheese. Adding this second layer to the pizza is like installing an external library — for example NumPy.</p>
+</li>
+<li>
+<p>Then you’ll sprinkle on some basil. The basil is like the code in a file that you wrote to run your app.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Alright, let’s get cooking.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The oven that bakes the pizza is like the Docker platform. You installed the oven into your house when you moved in so you could make things with it. Similarly, you installed Docker onto your computer so you could cook up containers.</p>
+</li>
+<li>
+<p>You start your oven by turning a knob. The docker run image_name command is like your knob — it creates and starts your container.</p>
+</li>
+<li>
+<p>The cooked pizza is like a Docker container.</p>
+</li>
+<li>
+<p>Eating the pizza is like using your app.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Like making a pizza, making an app in a Docker container takes some work, but at the end you have something great. Enjoy 🍕!</p>
+</div>
+</div>
+</div>
+<div class="sect1 h2-border">
+<h2 id="_docker_ecosystem_terms">Docker Ecosystem Terms</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I’ve broken Docker terms into two categories for easier mental model creation: Essentials and Scaling. Let’s hit the eight essentials first.</p>
+</div>
+<div class="sect2">
+<h3 id="_docker_essentials">Docker Essentials</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Platform</strong> — the software that makes Docker containers possible</p>
+</li>
+<li>
+<p><strong>Engine</strong> — client-server app (CE or Enterprise)</p>
+</li>
+<li>
+<p><strong>Client</strong> — handles Docker CLI so you can communicate with the Daemon</p>
+</li>
+<li>
+<p><strong>Daemon</strong> — Docker server that manages key things</p>
+</li>
+<li>
+<p><strong>Volumes</strong> — persistent data storage</p>
+</li>
+<li>
+<p><strong>Registry</strong> — remote image storage</p>
+</li>
+<li>
+<p><strong>Docker Hub</strong> — default and largest Docker Registry</p>
+</li>
+<li>
+<p><strong>Repository</strong> — collection of Docker images, e.g. Alpine</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scaling_docker">Scaling Docker</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Networking</strong> — connect containers together</p>
+</li>
+<li>
+<p><strong>Compose</strong> — time saver for multi-container apps</p>
+</li>
+<li>
+<p><strong>Swarm</strong> — orchestrates container deployment</p>
+</li>
+<li>
+<p><strong>Services</strong> — containers in production</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Because we’re keeping with food metaphors, and everyone loves a baker’s dozen, we have one more related term for you: Kubernetes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Kubernetes</strong></p>
+</div>
+<div class="paragraph">
+<p>Kubernetes automates deployment, scaling, and management of containerized applications. It’s the clear winner in the container orchestration market. Instead of Docker Swarm, use Kubernetes to scale up projects with multiple Docker containers. Kubernetes isn’t an official part of Docker; it’s more like Docker’s BFF.</p>
+</div>
+<div class="paragraph">
+<p>I have a whole series on Kubernetes in the works. Kubernetes is pretty awesome.</p>
+</div>
+<div class="paragraph">
+<p>Now that you know the conceptual landscape and common terms I suggest you try out Docker.</p>
+</div>
+</div>
+</div>
+</div>
 </article>
     </div>
 
