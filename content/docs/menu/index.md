@@ -81,6 +81,7 @@ headless: true
         </div>
         <ul class="menu-content">
             <li><a href="/enlighten/docs/misc/git/">Git Commands</a></li>
+            <li><a href="/enlighten/docs/misc/docker/">Docker</a></li>
             <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
             <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
             <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>

@@ -73,6 +73,7 @@ BookShowToC = false
 === :blue_book: &nbsp;Misc
 
 * link:/enlighten/docs/misc/git/[Git Commands]
+* link:/enlighten/docs/misc/docker/[Docker Overview]
 * link:/enlighten/docs/misc/markdown/[Markdown Syntax]
 * link:/enlighten/docs/misc/hugo-tips/[Hugo Tips]
 * link:/enlighten/docs/misc/asciidoc/[AsciiDoc]
