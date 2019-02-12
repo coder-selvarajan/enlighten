@@ -45,7 +45,7 @@ Other api methods:
       <guid>https://coder-selvarajan.github.io/enlighten/docs/javascript/basics/</guid>
       <description>Basics Install Visual Studio Code and add following extentions
  Brackets pair Live server ES6 Code snippets  To find the time it took to execute the scripts:
-console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted  const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
+console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted 	const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
     </item>
     
     <item>
@@ -256,6 +256,20 @@ Python Setup  Install Python 3.7 from https://www.python.org/ VS-Code Setup  Ins
     </item>
     
     <item>
+      <title>Developer Tips</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/misc/dev-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/misc/dev-tips/</guid>
+      <description>Developer Tips Below Developer Roadmap images are copied from: https://github.com/kamranahmedse/developer-roadmap
+ Introduction 
+   Frondend Roadmap 
+   Backend Roadmap 
+   Devops Roadmap 
+   </description>
+    </item>
+    
+    <item>
       <title>Docker Overview</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/misc/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -340,7 +354,7 @@ https://www.xmind.net/zen/
   Software development,
   Machine Learning &amp;amp; Mathematics,
   System scripting.
-   Variables Int one = 1two = 2
+   Variables Int one = 1 two = 2
  Decimal dem = 1.1
  String strval = &amp;#34;Hello&amp;#34;
      Tip  Variables declared in function are called Local Variable.</description>

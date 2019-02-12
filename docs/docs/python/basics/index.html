@@ -327,8 +327,9 @@
             <a title="Learn Linux">Misc</a>
         </div>
         <ul class="menu-content">
+            <li><a href="/enlighten/docs/misc/dev-tips/">Developer Tips</a></li>
             <li><a href="/enlighten/docs/misc/git/">Git Commands</a></li>
-            <li><a href="/enlighten/docs/misc/docker/">Docker</a></li>
+            <li><a href="/enlighten/docs/misc/docker/">Docker Overview</a></li>
             <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
             <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
             <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
@@ -487,7 +488,7 @@ Variables declared in function are called Local Variable. All other variables ar
 one is <code>0,1,2,3,4</code> and another one is <code>-5,-4,-3,-2,-1</code>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">4</span><span style="color:#111">])</span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">])</span> 
-    <span style="color:#75715e"># both these statements print 90 </span>
+    <span style="color:#75715e"># both these statements print 90 </span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#f92672">-</span><span style="color:#ae81ff">5</span><span style="color:#111">])</span> <span style="color:#75715e"># prints: 60</span></code></pre></div></p>
 </div>
 <div class="literalblock">
@@ -501,8 +502,8 @@ one is <code>0,1,2,3,4</code> and another one is <code>-5,-4,-3,-2,-1</code>
 </div>
 <div class="paragraph">
 <p><strong>Some more notation</strong>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">:</span><span style="color:#ae81ff">2</span><span style="color:#111">])</span>  <span style="color:#75715e"># prints: 60, 75</span>
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#ae81ff">3</span><span style="color:#111">])</span>  <span style="color:#75715e"># prints: 75, 70</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">:</span><span style="color:#ae81ff">2</span><span style="color:#111">])</span>  <span style="color:#75715e"># prints: 60, 75</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#ae81ff">3</span><span style="color:#111">])</span>  <span style="color:#75715e"># prints: 75, 70</span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">:])</span>   <span style="color:#75715e"># prints: 70, 80, 90</span></code></pre></div></p>
 </div>
 <div class="paragraph">
@@ -513,13 +514,13 @@ one is <code>0,1,2,3,4</code> and another one is <code>-5,-4,-3,-2,-1</code>
 <div class="paragraph">
 <p><strong>To remove/update items from list</strong>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">:</span><span style="color:#ae81ff">3</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">[]</span>
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">)</span>  <span style="color:#75715e"># prints: 60, 80, 90</span>
-    <span style="color:#75715e"># update: </span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">)</span>  <span style="color:#75715e"># prints: 60, 80, 90</span>
+    <span style="color:#75715e"># update: </span>
     <span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">[]</span>
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">)</span> <span style="color:#75715e"># prints: 60, 75, [], 80, 90</span>
-    <span style="color:#75715e"># list with in list</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">)</span> <span style="color:#75715e"># prints: 60, 75, [], 80, 90</span>
+    <span style="color:#75715e"># list with in list</span>
     <span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;A&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;B&#34;</span><span style="color:#111">]</span>
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">)</span> <span style="color:#75715e"># prints: 60, 75, [&#34;A&#34;, &#34;B&#34;], 80, 90</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">)</span> <span style="color:#75715e"># prints: 60, 75, [&#34;A&#34;, &#34;B&#34;], 80, 90</span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">scores</span><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">][</span><span style="color:#ae81ff">1</span><span style="color:#111">])</span>  <span style="color:#75715e"># prints: &#34;B&#34;</span></code></pre></div></p>
 </div>
 <div class="paragraph">
@@ -550,9 +551,9 @@ one is <code>0,1,2,3,4</code> and another one is <code>-5,-4,-3,-2,-1</code>
 <p><strong>For loop on range:</strong>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">numlist</span> <span style="color:#f92672">=</span> <span style="color:#111">[]</span>
     <span style="color:#00a8c8">for</span> <span style="color:#111">n</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#ae81ff">10</span><span style="color:#111">)</span>    
-        <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">)</span>            <span style="color:#75715e">## prints 0...9 </span>
-        <span style="color:#111">numlist</span><span style="color:#f92672">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">)</span>   <span style="color:#75715e">## adds numbers to a list</span>
-    <span style="color:#75715e"># range(start, stop, step)</span>
+        <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">)</span>            <span style="color:#75715e">## prints 0...9 </span>
+        <span style="color:#111">numlist</span><span style="color:#f92672">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">)</span>   <span style="color:#75715e">## adds numbers to a list</span>
+    <span style="color:#75715e"># range(start, stop, step)</span>
     <span style="color:#00a8c8">for</span> <span style="color:#111">k</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">6</span><span style="color:#111">,</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span><span style="color:#111">)</span>
         <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">k</span><span style="color:#111">)</span>    <span style="color:#75715e"># prints: -1  -3  -5</span></code></pre></div></p>
 </div>
@@ -570,7 +571,7 @@ one is <code>0,1,2,3,4</code> and another one is <code>-5,-4,-3,-2,-1</code>
     <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">c</span><span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">10</span><span style="color:#111">):</span>
         <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">c</span><span style="color:#111">)</span>  
         <span style="color:#111">c</span> <span style="color:#f92672">=</span> <span style="color:#111">c</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#75715e"># Results: 1 ... 10</span>
+    <span style="color:#75715e"># Results: 1 ... 10</span>
 
     <span style="color:#111">letters</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;a&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;b&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;c&#34;</span><span style="color:#111">]</span>
     <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
@@ -729,7 +730,7 @@ Please Enter your Country: "US"
 </div>
 <div class="paragraph">
 <p>List inside Set is not allowed:
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,[</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">]]</span> <span style="color:#75715e">#it is allowed</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,[</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">]]</span> <span style="color:#75715e">#it is allowed</span>
     <span style="color:#111">s</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,[</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">]}</span> <span style="color:#75715e">#this throws an error</span></code></pre></div></p>
 </div>
 <div class="quoteblock">
@@ -750,7 +751,7 @@ Please Enter your Country: "US"
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#111">age</span> <span style="color:#f92672">=</span> <span style="color:#111">int</span><span style="color:#111">(</span><span style="color:#111">input</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Enter age: &#34;</span><span style="color:#111">))</span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">age</span><span style="color:#111">)</span>
 
-    <span style="color:#75715e"># another sample </span>
+    <span style="color:#75715e"># another sample </span>
     <span style="color:#111">Scores</span> <span style="color:#f92672">=</span> <span style="color:#111">[]</span>
     <span style="color:#00a8c8">for</span> <span style="color:#111">i</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#ae81ff">5</span><span style="color:#111">):</span>
         <span style="color:#111">curscore</span> <span style="color:#f92672">=</span> <span style="color:#111">float</span><span style="color:#111">(</span><span style="color:#111">input</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Enter the score&#34;</span> <span style="color:#f92672">+</span> <span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">)</span> <span style="color:#f92672">+</span> <span style="color:#d88200">&#34; : &#34;</span><span style="color:#111">))</span>
@@ -805,8 +806,8 @@ Please Enter your Country: "US"
     <span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">close</span>
 
     <span style="color:#111">vfile</span> <span style="color:#f92672">=</span> <span style="color:#111">open</span><span style="color:#111">(</span><span style="color:#d88200">&#34;VacationPlaces&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;r&#34;</span><span style="color:#111">)</span>
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">read</span><span style="color:#111">())</span> <span style="color:#75715e"># to print whole file content</span>
-    <span style="color:#75715e"># To print file content line by line</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">read</span><span style="color:#111">())</span> <span style="color:#75715e"># to print whole file content</span>
+    <span style="color:#75715e"># To print file content line by line</span>
     <span style="color:#00a8c8">for</span> <span style="color:#111">line</span> <span style="color:#f92672">in</span> <span style="color:#111">vfile</span><span style="color:#111">:</span>
         <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">line</span><span style="color:#111">,</span> <span style="color:#111">end</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;&#34;</span><span style="color:#111">)</span>
 
@@ -823,7 +824,7 @@ For ex: if you execute read() code after this line, then it will print from the 
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">readline</span><span style="color:#111">())</span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">vfile</span><span style="color:#f92672">.</span><span style="color:#111">read</span><span style="color:#111">())</span>
 
-    <span style="color:#75715e"># Output</span>
+    <span style="color:#75715e"># Output</span>
     <span style="color:#111">Singapore</span>
 
     <span style="color:#111">Bali</span>
@@ -896,7 +897,7 @@ For ex: if you execute read() code after this line, then it will print from the 
             <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span> <span style="color:#f92672">=</span> <span style="color:#111">name</span>
 
     <span style="color:#111">TeamA</span> <span style="color:#f92672">=</span> <span style="color:#111">Team</span><span style="color:#111">()</span>
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;NaN&#34;</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;NaN&#34;</span>
     <span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">DefineTeamName</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Tiger&#34;</span><span style="color:#111">)</span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;Tiger&#34;</span></code></pre></div></p>
 </div>
@@ -909,7 +910,7 @@ For ex: if you execute read() code after this line, then it will print from the 
 
 
     <span style="color:#111">TeamA</span> <span style="color:#f92672">=</span> <span style="color:#111">Team</span><span style="color:#111">()</span>
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;Name&#34;</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamA</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;Name&#34;</span>
 
     <span style="color:#111">TeamB</span> <span style="color:#f92672">=</span> <span style="color:#111">Team</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Cheetah&#34;</span><span style="color:#111">)</span>
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">TeamB</span><span style="color:#f92672">.</span><span style="color:#111">TeamName</span><span style="color:#111">)</span>   <span style="color:#75715e"># prints &#34;Cheetah&#34;</span></code></pre></div></p>
@@ -1047,9 +1048,9 @@ For ex: if you execute read() code after this line, then it will print from the 
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#f92672">import</span> <span style="color:#111">random</span>
 
     <span style="color:#111">randInt</span> <span style="color:#f92672">=</span> <span style="color:#111">random</span><span style="color:#f92672">.</span><span style="color:#111">randint</span><span style="color:#111">(</span><span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">10</span><span style="color:#111">)</span> 
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randInt</span><span style="color:#111">)</span>      <span style="color:#75715e"># Integer : 0 &gt;= N &lt;= 10</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randInt</span><span style="color:#111">)</span>      <span style="color:#75715e"># Integer : 0 &gt;= N &lt;= 10</span>
     <span style="color:#111">randFloat</span> <span style="color:#f92672">=</span> <span style="color:#111">random</span><span style="color:#f92672">.</span><span style="color:#111">random</span><span style="color:#111">()</span> 
-    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randFloat</span><span style="color:#111">)</span>    <span style="color:#75715e"># Float : 0.0 &gt;= N &lt; 1.0</span>
+    <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randFloat</span><span style="color:#111">)</span>    <span style="color:#75715e"># Float : 0.0 &gt;= N &lt; 1.0</span>
     <span style="color:#111">randUniform</span> <span style="color:#f92672">=</span> <span style="color:#111">random</span><span style="color:#f92672">.</span><span style="color:#111">uniform</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">50</span><span style="color:#111">)</span> 
     <span style="color:#00a8c8">print</span><span style="color:#111">(</span><span style="color:#111">randUniform</span><span style="color:#111">)</span>  <span style="color:#75715e"># Float : 1.0 &gt;= N &lt; 50.0</span></code></pre></div></p>
 </div>
