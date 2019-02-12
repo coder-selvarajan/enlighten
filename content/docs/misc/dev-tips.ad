@@ -1,0 +1,35 @@
++++
+title = "Developer Tips"
+BookShowToC = true
++++
+= INIT
+
+= Developer Tips
+
+Below Developer Roadmap images are copied from: https://github.com/kamranahmedse/developer-roadmap
+
+[.h2-border]
+== Introduction
+
+image:../../../images/web-dev-roadmap2019.png[AsciiDoc Source] +
+
+
+[.h2-border]
+== Frondend Roadmap
+
+
+image:../../../images/frontend-roadmap.png[AsciiDoc Source] +
+
+
+[.h2-border]
+== Backend Roadmap
+
+image:../../../images/backend-roadmap.png[AsciiDoc Source]
+
+
+[.h2-border]
+== Devops Roadmap
+
+image:../../../images/devops-roadmap.png[AsciiDoc Source]
+
+
