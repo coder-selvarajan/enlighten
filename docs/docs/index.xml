@@ -262,9 +262,10 @@ Python Setup  Install Python 3.7 from https://www.python.org/ VS-Code Setup  Ins
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/misc/docker/</guid>
       <description>Docker Overview Docker is a platform to develop, deploy, and run applications inside containers. Docker is essentially synonymous with containerization. If you’re a current or aspiring software developer or data scientist, Docker is in your future.
- Container Like a physical plastic container, a Docker container:
-   Holds things — Something is either inside the container or outside the container.
-  Is portable — It can be used on your local machine, your coworker’s machine, or a cloud provider’s servers (e.</description>
+  Other Tutorial links here  https://docker-curriculum.com/#introduction
+https://www.tutorialspoint.com/docker/
+   Container Like a physical plastic container, a Docker container:
+   Holds things — Something is either inside the container or outside the container.</description>
     </item>
     
     <item>
