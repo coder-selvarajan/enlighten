@@ -39,6 +39,7 @@ headless: true
         <ul class="menu-content">
             <li><a href="/enlighten/docs/swift/ios-basics/">iOS Basics</a></li>
             <li><a href="/enlighten/docs/swift/basics/">Basics</a></li>
+            <li><a href="/enlighten/docs/swift/basics2/">Basics < Pirple</a></li>
             <li><a href="/enlighten/docs/swift/data-structures/">Data Structures</a></li>
         </ul>
     </li>

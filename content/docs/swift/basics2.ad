@@ -1,0 +1,49 @@
++++
+title = "Swift Basics - from Pirple.com"
++++
+= INIT
+
+= Swift Basics - from Pirple.com
+
+=== Variable declaration
+
+    // 1
+    // var/let name : type = value
+    
+    // 2
+    // var/let name : type
+    // name = value
+
+    // 3
+    // var/let name = value
+
+Primitive types::
+Int, Int8, Int16, Int32, Int64, UInt, UInt8, UInt16, UInt32, UInt64 +
+Float(32), Double(64), CGFloat(Similar to Float) +
+Bool +
+Character +
+
+    // Valid. length=1
+    var char1 : Character = "?" 
+     
+    // Invalid, length=0  
+    var char2 : Character = ""
+
+Emojis can be represented with Character
+
+=== Strings
+
+Not a primitive type
+
+    let name : String = "Mammoth Interative"
+    let startIndex = name.index(name.startIndex, offsetBy: 3)
+    let endIndex = name.index(name.startIndex, offsetBy: 7)
+    let moth : String = name.substring(with: startIndex..<endIndex)  // Result: moth
+
+Multilevel string:
+
+    let multilineString : String = """
+        Hello how are you?
+        I'm doing well, how are you?
+    """
+

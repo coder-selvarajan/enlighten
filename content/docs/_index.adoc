@@ -52,6 +52,7 @@ BookShowToC = false
 
 * link:/enlighten/docs/swift/ios-basics/[iOS Basics]
 * link:/enlighten/docs/swift/basics/[Basics]
+* link:/enlighten/docs/swift/basics2/[Basics < Pirple]
 * link:/enlighten/docs/swift/data-structures/[Data Structures]
 
 
