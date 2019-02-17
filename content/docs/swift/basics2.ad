@@ -47,3 +47,46 @@ Multilevel string:
         I'm doing well, how are you?
     """
 
+Optional:
+
+    let test : String? = "Axe"
+    test = nil
+
+=== Tuples
+
+Tuples are variables/constants with multiple values
+
+    // syntax
+    var/let name : (val_type1, val_type2) = (val1, val2)
+    // 
+    let item : (String,Int) = ("Food", 10)
+    let itemName : String = item.0
+    let itemQuantity : Int = item.1
+    // another way
+    let (name, quantity) = item
+    let (name, _) = item
+    // assigning param name 
+    let item2 = (name: "Matches", qty: 15)
+
+Type Convertion::
+Double(10) +
+Float(15) +
+Int(50.79) // 50 +
+String(50) // "50" +
+
+Conditional Operators::
+==, !=, <, <=, >, >=, ===, !==
+
+Logical::
+&&, ||, |
+
+Ternary::
+a ? result_if_true : result_if_false
+
+Nil-coalescing::
+a ?? b
+int1 = int2 ?? 10 // if int2 is nil, then int1 will be assigned to 10
+
+
+
+
