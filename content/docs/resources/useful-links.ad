@@ -41,6 +41,20 @@ https://github.com/Paul-Browne/lazyestload.js
 Extension to record browser interactions: +
 https://github.com/checkly/puppeteer-recorder 
 
+[.h2-border]
+== Dev Tools
+
+Discover seven amazing tools for app developers that you have not heard of yet, but should probably be using. 
+Recommended by https://fireship.io
+
+- BundlePhobia :  https://bundlephobia.com/
+- CloudCraft : https://cloudcraft.co/
+- Figma : https://www.figma.com
+- Fontflipper : https://fontflipper.com/
+- Visbug : https://github.com/GoogleChromeLabs/ProjectVisBug
+- Insomnia : https://insomnia.rest/
+- Flare : https://www.2dimensions.com/about-flare
+
 
 [.h2-border]
 == Design Related, Themes & Website Inspirations
@@ -53,6 +67,9 @@ https://github.com/darshandsoni/asciidoctor-skins
 
 Hayk (Designer cum Coder): +
 https://hihayk.com/#/
+
+Block Element Modifier approach: +
+http://getbem.com/introduction/
 
 
 [.h2-border]
