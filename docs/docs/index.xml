@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Enlightening KT</title>
+    <title>Enlightening Notes</title>
     <link>https://coder-selvarajan.github.io/enlighten/docs/</link>
-    <description>Recent content on Enlightening KT</description>
+    <description>Recent content on Enlightening Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -420,6 +420,18 @@ Float(32), Double(64), CGFloat(Similar to Float)
 Bool
 Character
 // Valid. length=1 var char1 : Character = &amp;#34;?&amp;#34; // Invalid, length=0  var char2 : Character = &amp;#34;&amp;#34;</description>
+    </item>
+    
+    <item>
+      <title>Technology Trends</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/resources/tech-trends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/resources/tech-trends/</guid>
+      <description>Technology Trends I am very passionate about building web &amp;amp; mobile apps. I have list down some of technologies I have cross-across the path.
+ Building mobile apps Building mobile apps becoming super easier nowadays.. There are native way of developing apps and there are hybrid way of developing the apps. Below list heads-up the area.
+  Build Native Apps    iOS (Swift) - Device specific
+  Android (Java, Kotlin) - Device specific</description>
     </item>
     
     <item>
