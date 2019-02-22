@@ -1,6 +1,6 @@
 +++
 title = "Developer Roadmap"
-BookShowToC = true
+BookShowToC = false
 +++
 = INIT
 
@@ -14,25 +14,25 @@ https://github.com/kamranahmedse/developer-roadmap
 [.h2-border]
 == Introduction
 
-image:../../../images/web-dev-roadmap2019.png[AsciiDoc Source] +
+image:../../../images/web-dev-roadmap2019.png[AsciiDoc Source, width=100%] +
 
 
 [.h2-border]
 == Frondend Roadmap
 
 
-image:../../../images/frontend-roadmap.png[AsciiDoc Source] +
+image:../../../images/frontend-roadmap.png[AsciiDoc Source, width=100%] +
 
 
 [.h2-border]
 == Backend Roadmap
 
-image:../../../images/backend-roadmap.png[AsciiDoc Source]
+image:../../../images/backend-roadmap.png[AsciiDoc Source, width=100%]
 
 
 [.h2-border]
 == Devops Roadmap
 
-image:../../../images/devops-roadmap.png[AsciiDoc Source]
+image:../../../images/devops-roadmap.png[AsciiDoc Source, width=100%]
 
 
