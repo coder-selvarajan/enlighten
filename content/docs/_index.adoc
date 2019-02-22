@@ -1,10 +1,10 @@
 +++
-title = "Enlightening KT"
+title = "Enlightening Notes"
 BookShowToC = false
 +++
 = INIT
 
-= Welcome to Enlightening KT 
+= Welcome to Enlightening Notes
 
 [.home-page]
 [.noborder]
@@ -35,9 +35,11 @@ BookShowToC = false
 
 === :blue_book: &nbsp;Resources
 
-    * link:/enlighten/docs/resources/useful-links/[Useful Links/Tools]
-    * link:/enlighten/docs/resources/my-projects/[Projects, Apps & Sites]
-    * link:/enlighten/docs/resources/setup-enlighten/[Setting up Enlighten Site]
+* link:/enlighten/docs/resources/tech-trends/[Tech Trends]
+* link:/enlighten/docs/resources/useful-links/[Useful Links/Tools]
+* link:/enlighten/docs/resources/my-projects/[Projects, Apps & Sites]
+* link:/enlighten/docs/resources/setup-enlighten/[Setting up Enlighten Site]
+
 
 === :blue_book: &nbsp;Database
 

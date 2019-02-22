@@ -89,7 +89,7 @@ headless: true
             <a title="Learn Linux">Misc</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/misc/dev-tips/">Developer Roadmap</a></li>
+            <li><a href="/enlighten/docs/misc/dev-tips/">Web-developer Roadmap</a></li>
             <li><a href="/enlighten/docs/misc/git/">Git Commands</a></li>
             <li><a href="/enlighten/docs/misc/docker/">Docker Overview</a></li>
             <li><a href="/enlighten/docs/misc/markdown/">Markdown Syntax</a></li>
@@ -98,6 +98,7 @@ headless: true
             <li><a href="/enlighten/docs/misc/learning/">Learning</a></li>
         </ul>
     </li>
+    <li><a href="/enlighten/docs/resources/tech-trends/">Tech Trends</a></li>
     <li><a href="/enlighten/docs/resources/useful-links/">Useful Links/Tools</a></li>
     <li><a href="/enlighten/docs/resources/my-projects/">Projects, Apps & Sites</a></li>
     <li><a href="/enlighten/docs/resources/setup-enlighten/">Setup Enlighten Site</a></li>

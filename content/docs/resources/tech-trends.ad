@@ -1,0 +1,54 @@
++++
+title = "Technology Trends"
++++
+= INIT
+
+= Technology Trends
+
+I am very passionate about building web & mobile apps. I have list down some of technologies I have cross-across the path.  
+
+
+== Building mobile apps
+Building mobile apps becoming super easier nowadays.. There are native way of developing apps and there are hybrid way of developing the apps. Below list heads-up the area. 
+
+Build Native Apps::
+** link:https://developer.apple.com/[iOS, window="_blank"] (link:https://developer.apple.com/swift/[Swift, window="_blank"]) - Device specific
+** link:https://www.android.com/[Android, window="_blank"] (link:https://docs.oracle.com/javase/tutorial/index.html[Java, window="_blank"], link:https://kotlinlang.org/[Kotlin, window="_blank"]) - Device specific
+** link:https://facebook.github.io/react-native/[React Native, window="_blank"] (Javascript) - Cross platform
+** link:https://visualstudio.microsoft.com/xamarin/[Xamarin, window="_blank"] (C#.Net) - Cross platform
+** link:https://www.nativescript.org/[Nativescript, window="_blank"] (Javascript) - Cross platform
+
+Build Hybrid Apps::
+** link:https://ionicframework.com/[Ionic, window="_blank"] (HTML, CSS, Javascript) - Cross platform
+
+
+== Building Web Apps
+There are a lot and lot of frameworks / technologies have come in the field of developing web applications. I will list down few which I have come across.
+
+Frondend:: 
+* link:https://reactjs.org/[React, window="_blank"] - Very popular
+* link:https://angular.io/[Angualar, window="_blank"] - Popular
+* link:https://vuejs.org/[Vue, window="_blank"] - Getting popularity in recent times
+
+Backend::
+* link:https://nodejs.org/en/[NodeJS, window="_blank"] - My favorite
+* link:https://reactjs.org/[React.Js, window="_blank"] (Server)
+
+Other frameowrks to mention:: 
+* link:https://www.djangoproject.com/[Django, window="_blank"], link:http://flask.pocoo.org/[Flask, window="_blank"]
+* link:https://rubyonrails.org/[Ruby on rails, window="_blank"]
+
+Databases to use:: 
+* link:https://www.mysql.com/[MySql, window="_blank"]
+* link:https://www.postgresql.org/[PostgreSQL, window="_blank"]
+* link:http://couchdb.apache.org/[CouchDB, window="_blank"]
+* link:https://firebase.google.com/[Firebase, window="_blank"] (Realtime database)
+
+
+== Building Desktop Apps
+There are traditional way of building desktop apps with .Net, Java and with Objective C.
+However the modern way is building cross-platform desktop apps that runs in Windows, Linux and Mac
+
+Cross platform desktop app::
+* link:https://electronjs.org/[Electron, window="_blank"]
+

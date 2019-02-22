@@ -1,6 +1,6 @@
 baseURL = "https://coder-selvarajan.github.io/enlighten/"
 languageCode = "en-us"
-title = "Enlightening KT"
+title = "Enlightening Notes"
 theme = "book2"
 publishDir = "docs"
 
