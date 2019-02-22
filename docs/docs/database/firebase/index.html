@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nodejs | Enlightening KT</title>
+<title>Firebase Database | Enlightening KT</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/enlighten/normalize.min.css">
@@ -382,74 +382,12 @@
         <label for="menu-control">
   <img src="https://coder-selvarajan.github.io/enlighten//svg/menu.svg" />
 </label>
-<strong>Nodejs</strong>
+<strong>Firebase Database</strong>
       </header>
-      <article class="markdown">
-
-<h1 id="node-js">Node JS</h1>
-
-<p><strong>Install NodeJS in CentOS</strong></p>
-
-<pre><code>curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
-sudo yum -y install nodejs
-</code></pre>
-
-<p>From <a href="https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora">https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora</a></p>
-
-<p><strong>Install pm2 &amp; http-server:</strong></p>
-
-<pre><code>npm install -g -pm2 http-server
-OR
-npm install pm2@latest -g
-</code></pre>
-
-<p><strong>Install Yarn:</strong></p>
-
-<pre><code>curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
-sudo yum install yarn
-</code></pre>
-
-<p>From <a href="https://yarnpkg.com/en/docs/install#centos-stable">https://yarnpkg.com/en/docs/install#centos-stable</a></p>
-
-<p>**NodeJs Setup on Centos - Tut Video: **</p>
-
-<pre><code>- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment
-- [Deploying Node.js App With PM2](https://www.youtube.com/watch?v=RF6Dzwwpduo)
-- https://www.youtube.com/watch?v=1nEJvN778j4
-</code></pre>
-
-<p><strong>NodeJs App deployment:</strong></p>
-
-<pre><code>- Zip and copy the app files except node_modules folder
-- Run  npm install
-- pm2 start --name msd server.js
-    ○ pm2 ls
-- pm2 startup systemd -u edureka --hp /home/edureka   [run as root]
-- pm2 save
-
-Disable startup system: 
-- pm2 unstartup
-</code></pre>
-
-<p><strong>Test:</strong></p>
-
-<pre><code>$ echo &quot;Hello World&quot; &gt; index.html
-$ http-server
-</code></pre>
-
-<p><strong>Pm2 Notes:</strong></p>
-
-<ul>
-<li><a href="http://pm2.keymetrics.io/docs/usage/quick-start/">http://pm2.keymetrics.io/docs/usage/quick-start/</a></li>
-<li><a href="http://pm2.keymetrics.io/docs/usage/startup/">http://pm2.keymetrics.io/docs/usage/startup/</a></li>
-<li><a href="http://pm2.keymetrics.io/">http://pm2.keymetrics.io/</a></li>
-</ul>
-
-<p><strong>Configure NGinX:</strong></p>
-
-<ul>
-<li><a href="https://www.youtube.com/watch?v=SlBe9c54GzA">https://www.youtube.com/watch?v=SlBe9c54GzA</a></li>
-</ul>
+      <article class="markdown"><h1 id="_firebase_database" class="sect0">Firebase Database</h1>
+<div class="paragraph">
+<p>Firebase is a realtime database that syncs the content via server push methodology.</p>
+</div>
 </article>
     </div>
 
