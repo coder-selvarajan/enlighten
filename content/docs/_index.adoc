@@ -28,9 +28,10 @@ BookShowToC = false
 * link:/enlighten/docs/javascript/resources/[Resources/Links]
 
 
-=== :blue_book: &nbsp;Mobile App 
+=== :blue_book: &nbsp;App Development 
 
-* link:/enlighten/docs/mobile/ionic/[Ionic Overview]
+* link:/enlighten/docs/app_dev/ionic/[Ionic Overview]
+* link:/enlighten/docs/app_dev/electron/[Electron Overview]
 
 
 === :blue_book: &nbsp;Linux

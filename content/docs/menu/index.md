@@ -53,10 +53,11 @@ headless: true
     </li>
     <li>
         <div class="collapsible">
-            <a title="Learn Mobile App Development">Mobile App</a>
+            <a title="Learn Mobile App Development">App Development</a>
         </div>
         <ul class="menu-content">
-            <li><a href="/enlighten/docs/mobile/ionic/">Ionic Overview</a></li>
+            <li><a href="/enlighten/docs/app_dev/ionic/">Ionic Overview</a></li>
+            <li><a href="/enlighten/docs/app_dev/electron/">Electron Overview</a></li>
         </ul>
     </li>
     <li>
