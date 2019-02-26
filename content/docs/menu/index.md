@@ -53,6 +53,14 @@ headless: true
     </li>
     <li>
         <div class="collapsible">
+            <a title="Learn Mobile App Development">Mobile App</a>
+        </div>
+        <ul class="menu-content">
+            <li><a href="/enlighten/docs/mobile/ionic/">Ionic Overview</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="collapsible">
             <a title="Learn Bigdata">Bigdata</a>
         </div>
         <ul class="menu-content">

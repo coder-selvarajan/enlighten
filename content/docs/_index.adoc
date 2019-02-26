@@ -27,6 +27,12 @@ BookShowToC = false
 * link:/enlighten/docs/javascript/chrome-extn/[Build Chrome Extn]
 * link:/enlighten/docs/javascript/resources/[Resources/Links]
 
+
+=== :blue_book: &nbsp;Mobile App 
+
+* link:/enlighten/docs/mobile/ionic/[Ionic Overview]
+
+
 === :blue_book: &nbsp;Linux
 
 * link:/enlighten/docs/linux/linux-intro/[Linux Intro]
