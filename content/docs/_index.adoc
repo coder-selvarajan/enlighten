@@ -92,6 +92,7 @@ BookShowToC = false
 * link:/enlighten/docs/misc/hugo-tips/[Hugo Tips]
 * link:/enlighten/docs/misc/asciidoc/[AsciiDoc]
 * link:/enlighten/docs/misc/learning/[Learning]
+* link:/enlighten/docs/misc/rnd/[R&D]
 
 
 |===

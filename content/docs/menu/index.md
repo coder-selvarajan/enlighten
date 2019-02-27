@@ -104,6 +104,7 @@ headless: true
             <li><a href="/enlighten/docs/misc/hugo-tips/">Hugo Tips</a></li>
             <li><a href="/enlighten/docs/misc/asciidoc/">AsciiDoc</a></li>
             <li><a href="/enlighten/docs/misc/learning/">Learning</a></li>
+            <li><a href="/enlighten/docs/misc/rnd/">R&D</a></li>
         </ul>
     </li>
     <li><a href="/enlighten/docs/resources/tech-trends/">Tech Trends</a></li>
