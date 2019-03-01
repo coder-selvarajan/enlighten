@@ -285,6 +285,24 @@ https://www.tutorialspoint.com/docker/
     </item>
     
     <item>
+      <title>Electron Overview</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/app_dev/electron/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/app_dev/electron/</guid>
+      <description>Electron Overview Electron is a framework to build cross platform application by using HTML, CSS, Javascript.
+ It used V8 runtime engine and Node JS technologies.
+  Features    ES2015 - no need for Babel
+  Get user&amp;#8217;s geolocation
+  Webcam/Microphone access
+  P2P applications with WebRTC
+  CSS custom properties
+  HTML imports
+  Desktop &amp;amp; Push notifications
+      </description>
+    </item>
+    
+    <item>
       <title>Firebase Database</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/database/firebase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -292,6 +310,15 @@ https://www.tutorialspoint.com/docker/
       <guid>https://coder-selvarajan.github.io/enlighten/docs/database/firebase/</guid>
       <description>Firebase Database Firebase is a realtime database that syncs the content via server push methodology.
  </description>
+    </item>
+    
+    <item>
+      <title>Ionic</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/app_dev/ionic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/app_dev/ionic/</guid>
+      <description>Ionic - Hybrid Apps </description>
     </item>
     
     <item>
@@ -384,6 +411,17 @@ https://docs.python.org/3/tutorial/
 http://coodict.github.io/python3-in-one-pic/
 https://www.mindmeister.com/752422209/python
  </description>
+    </item>
+    
+    <item>
+      <title>Research and Development</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/misc/rnd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/misc/rnd/</guid>
+      <description>R&amp;amp;D Stuffs   AMP Project:
+https://www.ampproject.org/
+   </description>
     </item>
     
     <item>
