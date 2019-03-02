@@ -6,3 +6,9 @@ BookShowToC = true
 
 = Ionic - Hybrid Apps 
 
+- install nodejs
+- update npm
+
+    ionic cordova plugin add cordova-sqlite-storage
+    npm install @ionic-native/sqlite
+
