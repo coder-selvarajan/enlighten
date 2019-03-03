@@ -330,9 +330,13 @@ https://www.tutorialspoint.com/docker/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/app_dev/ionic/</guid>
-      <description>Ionic - Hybrid Apps   install nodejs
-  update npm
-ionic cordova plugin add cordova-sqlite-storage npm install @ionic-native/sqlite      </description>
+      <description>Ionic - Hybrid Apps Setup   Install nodejs
+  Update npm
+  Install Ionic
+npm install -g cordova ionic     Create app
+ionic start appName tabs --type=angular     View the app
+ionic serve     Install lab
+npm i @ionic/lab   ionic lab      this will open slightly a different view with iOS &amp;amp; Andriod screens</description>
     </item>
     
     <item>
