@@ -150,6 +150,10 @@ main {
   }
 }
 
+.orange {
+  color: orangered;
+}
+
 // Responsive styles
 $menu-hide-point: $nav-menu-width + $body-min-width;
 $toc-hide-point: $menu-hide-point + $nav-menu-width;
