@@ -45,7 +45,7 @@ Other api methods:
       <guid>https://coder-selvarajan.github.io/enlighten/docs/javascript/basics/</guid>
       <description>Basics Install Visual Studio Code and add following extentions
  Brackets pair Live server ES6 Code snippets  To find the time it took to execute the scripts:
-console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted  const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
+console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted 	const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
     </item>
     
     <item>
@@ -313,15 +313,67 @@ https://www.tutorialspoint.com/docker/
     </item>
     
     <item>
-      <title>IELTS Preparation</title>
-      <link>https://coder-selvarajan.github.io/enlighten/docs/misc/ielts/</link>
+      <title>IELTS Listening</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/listening/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coder-selvarajan.github.io/enlighten/docs/misc/ielts/</guid>
-      <description>IELTS Preparation - Notes &amp;amp; Tips Module 1: Speaking Basic Strategies for IELTS Speaking Part 1  Focus on Fluency: Don&amp;#8217;t hesitate or stop while you&amp;#8217;re answering. Speak clearly.
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/listening/</guid>
+      <description>&amp;lt; Home Page
+   IELTS - Listening Listening Strategies  Read the rubric (titles, instructions, question types) carefully.
+  Glance through the questions
+  Underline/circle/star key words in the question
+  Predict what you might hear,
+  Listen carefully if words are spelt for you, as there are different ways of spelling words
+  Recognise paraphrases and synonyms as these may be used in the question.</description>
+    </item>
+    
+    <item>
+      <title>IELTS Preparation Training</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/home/</guid>
+      <description>IELTS Preparation Training Tips &amp;amp; Tricks by Module  Speaking  Basic strategies for Speaking part 1, 2 &amp;amp; 3
+DOs &amp;amp; DON&amp;#8217;Ts
+Improvement Tips
+Etc&amp;#8230;&amp;#8203;
+ Speaking Sample Answer &amp;amp; Analysis  Sample Question &amp;amp; Answer
+Answer Analysis
+Etc&amp;#8230;&amp;#8203;
+ Listening  Listening Strategies
+Etc&amp;#8230;&amp;#8203;
+ Other English Topics  Grammer
+Useful Links
+Etc&amp;#8230;&amp;#8203;
+     </description>
+    </item>
+    
+    <item>
+      <title>IELTS Speaking</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking/</guid>
+      <description>&amp;lt; Home Page
+   IELTS - Speaking Basic Strategies  Focus on Fludddency: Don&amp;#8217;t hesitate or stop while you&amp;#8217;re answering. Speak clearly.
   Be Short and Simple: Don&amp;#8217;t give long, detailed answers. Two or three sentences are enough.
   Complete Your Sentences: One-word answers are not enough. Make complete sentences. (e.g. &#34;1 live in Tokyo.&#34; not &#34;Tokyo.&#34;)
   Finish Strong: Say your answer and then end your sentence with confidence.</description>
+    </item>
+    
+    <item>
+      <title>IELTS Speaking Sample</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-sample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-sample/</guid>
+      <description>&amp;lt; Home Page
+   IELTS - Speaking Part2 Sample Answers and Analysis   Question 1 Descnbe a major decision you have taken in your life.
+ You should say:
+   What the decision was
+  What other choices were available to you
+  Why you made the decision you did
+   And explain if you think the decision was a good one.</description>
     </item>
     
     <item>
@@ -378,6 +430,21 @@ https://www.xmind.net/zen/
     </item>
     
     <item>
+      <title>Other English Topics</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/others/</guid>
+      <description>&amp;lt; Home Page
+   Other English Topics Grammer 
+   Learning Resources   http://learnenglish.britishcouncil.org/
+  http://learnenglish.britishcouncil.org/business-english
+  https://www.britishcouncil.in/exam
+  http://www.bbc.co.uk/learningenglish/
+     </description>
+    </item>
+    
+    <item>
       <title>Programming</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/concepts/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -411,7 +478,7 @@ https://www.xmind.net/zen/
   Software development,
   Machine Learning &amp;amp; Mathematics,
   System scripting.
-   Variables Int one = 1two = 2
+   Variables Int one = 1 two = 2
  Decimal dem = 1.1
  String strval = &amp;#34;Hello&amp;#34;
      Tip  Variables declared in function are called Local Variable.</description>
@@ -471,11 +538,11 @@ https://www.ampproject.org/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/swift/basics2/</guid>
-      <description>Swift Basics - from Pirple.com Variable declaration // 1 var/let name : type = value// 2 var/let name : typename = value// 3 var/let name = value   Primitive types  Int, Int8, Int16, Int32, Int64, UInt, UInt8, UInt16, UInt32, UInt64
+      <description>Swift Basics - from Pirple.com Variable declaration // 1 var/let name : type = value // 2 var/let name : type name = value // 3 var/let name = value   Primitive types  Int, Int8, Int16, Int32, Int64, UInt, UInt8, UInt16, UInt32, UInt64
 Float(32), Double(64), CGFloat(Similar to Float)
 Bool
 Character
-// Valid. length=1 var char1 : Character = &amp;#34;?&amp;#34; // Invalid, length=0  var char2 : Character = &amp;#34;&amp;#34;</description>
+// Valid. length=1 var char1 : Character = &amp;#34;?&amp;#34; // Invalid, length=0  var char2 : Character = &amp;#34;&amp;#34;</description>
     </item>
     
     <item>
