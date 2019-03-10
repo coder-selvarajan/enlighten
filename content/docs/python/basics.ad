@@ -600,3 +600,26 @@ _OUTPUT:_
     print(randInt)
 {{</highlight>}}
 
+
+We could import everything from random package so that all the functions can be used without any prefix. However we will have to be careful about the name conflict with other packages.
+
+{{<highlight python>}}
+    from random import *
+
+    randInt = randint(0, 10) 
+    print(randInt)
+{{</highlight>}}
+
+random package can work well with lists.. check out..
+
+{{<highlight python>}}
+    from random import *
+
+    simplelist = [1,5,3,8,2,11]
+    pickElement = r.choice(simplelist) 
+    print(pickElement) # prints random pick from the list
+
+    r.suffle(simplelist)
+    print(simplelist) # now the element order is changed
+{{</highlight>}}
+
