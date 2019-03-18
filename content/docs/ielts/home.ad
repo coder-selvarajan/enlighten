@@ -8,27 +8,25 @@ bookShowToc = false
 
 == Tips & Tricks by Module
 
-link:../speaking/[Speaking]::
-    Basic strategies for Speaking part 1, 2 & 3 +
-    DOs & DON'Ts +
-    Improvement Tips +
-    Etc...
 
-link:../speaking-sample/[Speaking Sample Answer & Analysis]::
-    Sample Question & Answer +
-    Answer Analysis +
-    Etc...
+Speaking::
+    * link:../speaking/[Speaking strategies, Dos, Donts, Tips] +
+    * link:../speaking-sample/[Speaking Sample Answer & Analysis] +
+    * link:../speaking-mock1/[Speaking Mock1] +
 
-link:../listening/[Listening]:: 
-    Listening Strategies +
-    Etc...
+{sp}+
 
-
-link:../writing/[Writing]:: 
-    Vocabulary 
+Listening:: 
+    * link:../listening/[Listening Strategies]
     
-link:../others/[Other English Topics]:: 
-    Grammer +
-    Useful Links +
-    Etc...
+{sp}+
+
+Writing:: 
+    * link:../writing/[Vocabulary] 
+
+{sp}+
+
+Other English Topics:: 
+    * link:../others/[Grammer, Useful Links]
+    
 
