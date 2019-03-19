@@ -6,27 +6,47 @@ bookShowToc = false
 
 = IELTS Preparation Training 
 
-== Tips & Tricks by Module
+== Strategies, Tips & Tricks by Module
+
+[.home-page]
+[.noborder]
+[cols="<a,<a"]
+|===
+| 
+
+=== :ledger: &nbsp;SPEAKING
+
+* link:../speaking-strategies/[Strategies - Part 1, 2, 3] +
+* link:../speaking-dos-donts/[DOs & DONTs, Tips] +
+* link:../speaking-sample/[Sample Answer & Analysis] +
+* link:../speaking-mock3/[Speaking Mock - Part 1] +
+* link:../speaking-mock2/[Speaking Mock - Part 3] +
+* link:../speaking-mock1/[Speaking Mock - Part 1, 2, 3] +
+* link:../speaking-part2-questions/[Speaking Part 2 - Practice Questions] +
 
 
-Speaking::
-    * link:../speaking/[Speaking strategies, Dos, Donts, Tips] +
-    * link:../speaking-sample/[Speaking Sample Answer & Analysis] +
-    * link:../speaking-mock1/[Speaking Mock1] +
+=== :ledger: &nbsp;LISTENING 
 
-{sp}+
+    * link:../listening/[Strategies]
 
-Listening:: 
-    * link:../listening/[Listening Strategies]
-    
-{sp}+
 
-Writing:: 
+| 
+
+
+=== :ledger: &nbsp;READING
+
+    * link:../reading/[Strategies] 
+
+
+=== :ledger: &nbsp;WRITING
+    * link:../writing-strategy/[Strategies] 
     * link:../writing/[Vocabulary] 
+    * link:../writing-tasks/[Writing Tasks] 
+    * link:../writing-markers/[Writing Markers] 
 
-{sp}+
 
-Other English Topics:: 
+=== :ledger: &nbsp;OTHER TOPICS
+
     * link:../others/[Grammer, Useful Links]
-    
+    * link:../band-desc/[IELTS Band Description]
 
