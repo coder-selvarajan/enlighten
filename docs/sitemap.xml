@@ -87,6 +87,10 @@
   </url>
   
   <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/misc/pr-process/</loc>
+  </url>
+  
+  <url>
     <loc>https://coder-selvarajan.github.io/enlighten/categories/</loc>
     <priority>0</priority>
   </url>
@@ -121,6 +125,10 @@
   </url>
   
   <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/band-desc/</loc>
+  </url>
+  
+  <url>
     <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/listening/</loc>
   </url>
   
@@ -129,11 +137,51 @@
   </url>
   
   <url>
-    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking/</loc>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-part2-questions/</loc>
   </url>
   
   <url>
     <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-sample/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-strategies/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-dos-donts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/reading/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-markers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-strategy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-tasks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing/</loc>
   </url>
   
   <url>

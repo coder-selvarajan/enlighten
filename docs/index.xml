@@ -45,7 +45,7 @@ Other api methods:
       <guid>https://coder-selvarajan.github.io/enlighten/docs/javascript/basics/</guid>
       <description>Basics Install Visual Studio Code and add following extentions
  Brackets pair Live server ES6 Code snippets  To find the time it took to execute the scripts:
-console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted 	const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
+console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted  const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
     </item>
     
     <item>
@@ -245,6 +245,21 @@ Python Setup  Install Python 3.7 from https://www.python.org/ VS-Code Setup  Ins
     </item>
     
     <item>
+      <title>Canada PR Process</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/misc/pr-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/misc/pr-process/</guid>
+      <description>Canada PR Process Notes Page 1 
+   Page 2 
+   Page 3 
+   Page 4 
+   Page 5 
+   Page 6 
+   </description>
+    </item>
+    
+    <item>
       <title>Datastructures - Swift</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/swift/data-structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -313,6 +328,17 @@ https://www.tutorialspoint.com/docker/
     </item>
     
     <item>
+      <title>IELTS Band Description</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/band-desc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/band-desc/</guid>
+      <description>⬅️ Home Page
+   IELTS - Band Description 
+ </description>
+    </item>
+    
+    <item>
       <title>IELTS Listening</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/listening/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -333,32 +359,71 @@ https://www.tutorialspoint.com/docker/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/home/</guid>
-      <description>IELTS Preparation Training Tips &amp;amp; Tricks by Module  Speaking  Basic strategies for Speaking part 1, 2 &amp;amp; 3
-DOs &amp;amp; DON&amp;#8217;Ts
-Improvement Tips
-Etc&amp;#8230;&amp;#8203;
- Speaking Sample Answer &amp;amp; Analysis  Sample Question &amp;amp; Answer
-Answer Analysis
-Etc&amp;#8230;&amp;#8203;
- Listening  Listening Strategies
-Etc&amp;#8230;&amp;#8203;
- Other English Topics  Grammer
-Useful Links
-Etc&amp;#8230;&amp;#8203;
-     </description>
+      <description>IELTS Preparation Training Strategies, Tips &amp;amp; Tricks by Module     📒 &amp;nbsp;SPEAKING   Strategies - Part 1, 2, 3
+  DOs &amp;amp; DONTs, Tips
+  Sample Answer &amp;amp; Analysis
+  Speaking Mock - Part 1
+  Speaking Mock - Part 3
+  Speaking Mock - Part 1, 2, 3
+  Speaking Part 2 - Practice Questions
+    📒 &amp;nbsp;LISTENING   Strategies</description>
     </item>
     
     <item>
-      <title>IELTS Speaking</title>
-      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking/</link>
+      <title>IELTS Speaking Mock</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking/</guid>
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock1/</guid>
       <description>⬅️ Home Page
-   IELTS - Speaking Basic Strategies  Focus on Fludddency: Don&amp;#8217;t hesitate or stop while you&amp;#8217;re answering. Speak clearly.
-  Be Short and Simple: Don&amp;#8217;t give long, detailed answers. Two or three sentences are enough.
-  Complete Your Sentences: One-word answers are not enough. Make complete sentences. (e.g. &#34;1 live in Tokyo.&#34; not &#34;Tokyo.&#34;)
-  Finish Strong: Say your answer and then end your sentence with confidence.</description>
+   IELTS - Speaking Mock Questions- PARTS 1, 2, 3 PART 1 - Foreign languages   Do you learn any foreign language?
+  Do you think learning languages is important?
+  How did you learn the languages that you know?
+  Can you learn more than one language at a time?
+  Do you want to became a foreign language teacher in the future?</description>
+    </item>
+    
+    <item>
+      <title>IELTS Speaking Mock</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock2/</guid>
+      <description>⬅️ Home Page
+   IELTS - Speaking Mock - Park 3 Questions Values Let&amp;#8217;s consider values and the way they change.
+ What kinds of possessions give status to people in your country?
+Has it always been the same or were different possessions thought of as valuable in the past?
+Why do you think people need to show their status in society?
+  Advertising Now we&amp;#8217;ll discuss the role of advertising.</description>
+    </item>
+    
+    <item>
+      <title>IELTS Speaking Mock</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-mock3/</guid>
+      <description>⬅️ Home Page
+   IELTS - Speaking Mock - Park 1 Questions Transportation  What&amp;#8217;s the most popular means of transportation in your hometown?
+  Do you usually commute by public transport?
+  Is it easy to catch a bus in your country?
+  Can you compare the advantages of planes and trains?
+  Is driving to work popular in your country?
+  Do you think people will drive more in the future?</description>
+    </item>
+    
+    <item>
+      <title>IELTS Speaking Part2 - Questions</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-part2-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-part2-questions/</guid>
+      <description>⬅️ Home Page
+   IELTS - Speaking - Park 2 Part 2: Practice Questions For each question, you have one minute to prepare your answer, and you should then speak for one to two minutes.
+ Question 1 Describe a major decision you have taken in your life.
+  You should say  What the decision was
+What other choices were available to you
+Why you made the decision you did and explain if you think the decision was a good one.</description>
     </item>
     
     <item>
@@ -374,6 +439,93 @@ Etc&amp;#8230;&amp;#8203;
   What other choices were available to you
   Why you made the decision you did
    And explain if you think the decision was a good one.</description>
+    </item>
+    
+    <item>
+      <title>IELTS Speaking Strategy</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-strategies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-strategies/</guid>
+      <description>⬅️ Home Page
+   IELTS - Speaking Speaking - Part1 - Strategies  Focus on Fludddency: Don&amp;#8217;t hesitate or stop while you&amp;#8217;re answering. Speak clearly.
+  Be Short and Simple: Don&amp;#8217;t give long, detailed answers. Two or three sentences are enough.
+  Complete Your Sentences: One-word answers are not enough. Make complete sentences. (e.g. &#34;1 live in Tokyo.&#34; not &#34;Tokyo.&#34;)
+  Finish Strong: Say your answer and then end your sentence with confidence.</description>
+    </item>
+    
+    <item>
+      <title>IELTS Speaking Tips</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-dos-donts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/speaking-dos-donts/</guid>
+      <description>⬅️ Home Page
+   IELTS - Speaking Tips DOs   Use good vocabularys. Refer the technique to build vocabulary below.
+  Be little more expressive. Its ok to giggle and laugh
+  If you dont understand the question then ask - I&amp;#8217;m afraid I dint get that, would you mind repeating it?
+  Use would &amp;amp; could a lot
+  Read/listen the instructions fully</description>
+    </item>
+    
+    <item>
+      <title>IELTS Writing</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/reading/</guid>
+      <description>⬅️ Home Page
+   IELTS - Reading Strategies   Read the first &amp;amp; last paragraohs fully
+  Read first &amp;amp; last sentence in each other paragraphs
+     </description>
+    </item>
+    
+    <item>
+      <title>IELTS Writing</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-markers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-markers/</guid>
+      <description>⬅️ Home Page
+   IELTS - Writing Markers Discourse Markers 
+   Discourse Markers with Example 
+   </description>
+    </item>
+    
+    <item>
+      <title>IELTS Writing</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-strategy/</guid>
+      <description>⬅️ Home Page
+   IELTS - Writing Strategies 
+ </description>
+    </item>
+    
+    <item>
+      <title>IELTS Writing</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing-tasks/</guid>
+      <description>⬅️ Home Page
+   IELTS - Writing Tasks Task 1 
+ 
+   Task 2 
+ 
+   </description>
+    </item>
+    
+    <item>
+      <title>IELTS Writing</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/writing/</guid>
+      <description>⬅️ Home Page
+   IELTS - Writing Vocabulary - General Training: Writing  Apologizing  I&amp;#8217;m sorry about&amp;#8230;&amp;#8203; I am sorry that&amp;#8230;&amp;#8203; I&amp;#8217;m very sorry about&amp;#8230;&amp;#8203; I&amp;#8217;m very sorry for&amp;#8230;&amp;#8203; Please forgive me for&amp;#8230;&amp;#8203; I&amp;#8217;d like to apologize for&amp;#8230;&amp;#8203; Please accept my apologies. Please accept my sincere apologies. (very formal)
+ Asking for Help  I&amp;#8217;d be grateful if you could&amp;#8230;&amp;#8203; I would be grateful if you could&amp;#8230;&amp;#8203; I would appreciate it if you could&amp;#8230;&amp;#8203; Could you please&amp;#8230;&amp;#8203; I was wondering •f you could help me.</description>
     </item>
     
     <item>
@@ -478,7 +630,7 @@ https://www.xmind.net/zen/
   Software development,
   Machine Learning &amp;amp; Mathematics,
   System scripting.
-   Variables Int one = 1 two = 2
+   Variables Int one = 1two = 2
  Decimal dem = 1.1
  String strval = &amp;#34;Hello&amp;#34;
      Tip  Variables declared in function are called Local Variable.</description>
@@ -538,11 +690,11 @@ https://www.ampproject.org/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/swift/basics2/</guid>
-      <description>Swift Basics - from Pirple.com Variable declaration // 1 var/let name : type = value // 2 var/let name : type name = value // 3 var/let name = value   Primitive types  Int, Int8, Int16, Int32, Int64, UInt, UInt8, UInt16, UInt32, UInt64
+      <description>Swift Basics - from Pirple.com Variable declaration // 1 var/let name : type = value// 2 var/let name : typename = value// 3 var/let name = value   Primitive types  Int, Int8, Int16, Int32, Int64, UInt, UInt8, UInt16, UInt32, UInt64
 Float(32), Double(64), CGFloat(Similar to Float)
 Bool
 Character
-// Valid. length=1 var char1 : Character = &amp;#34;?&amp;#34; // Invalid, length=0  var char2 : Character = &amp;#34;&amp;#34;</description>
+// Valid. length=1 var char1 : Character = &amp;#34;?&amp;#34; // Invalid, length=0  var char2 : Character = &amp;#34;&amp;#34;</description>
     </item>
     
     <item>
