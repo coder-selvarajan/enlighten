@@ -154,6 +154,22 @@ main {
   color: orangered;
 }
 
+.red {
+  color: red;
+}
+
+.ired{
+  color: indianred;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
 // Responsive styles
 $menu-hide-point: $nav-menu-width + $body-min-width;
 $toc-hide-point: $menu-hide-point + $nav-menu-width;

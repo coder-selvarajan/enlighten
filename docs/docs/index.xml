@@ -45,7 +45,7 @@ Other api methods:
       <guid>https://coder-selvarajan.github.io/enlighten/docs/javascript/basics/</guid>
       <description>Basics Install Visual Studio Code and add following extentions
  Brackets pair Live server ES6 Code snippets  To find the time it took to execute the scripts:
-console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted  const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
+console.time(&amp;#39;Hello&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.log(&amp;#39;hello world&amp;#39;) console.timeEnd(&amp;#39;Hello&amp;#39;) RESULT: ==&amp;gt; Hello: 0.05898324 sec  Declaration: Var, Let, Const  Var : variable declaration Let : Similar to Var Const: cannot reassign, but object&amp;rsquo;s property can be changed.  const msg = &amp;#34;Hello world&amp;#34;; Msg = &amp;#34;Welcome&amp;#34;; // not accepted 	const person = { name: &amp;#34;ABC&amp;#34;, age: 30 }; Person.</description>
     </item>
     
     <item>
@@ -315,6 +315,19 @@ https://www.tutorialspoint.com/docker/
   HTML imports
   Desktop &amp;amp; Push notifications
       </description>
+    </item>
+    
+    <item>
+      <title>English Grammar</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/ielts/grammar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/ielts/grammar/</guid>
+      <description>English Grammar If I do&amp;#8230;&amp;#8203; and If I did If we go by bus, it will be cheaper
+ If we went by bus, it would be cheaper
+ When we imagine something that will not happen, or if we dont expect that it will happen,
+then we use if + past (if we went / if there was / if you found etc.)
+   What would you do if you won a lot of money?</description>
     </item>
     
     <item>
@@ -630,7 +643,7 @@ https://www.xmind.net/zen/
   Software development,
   Machine Learning &amp;amp; Mathematics,
   System scripting.
-   Variables Int one = 1two = 2
+   Variables Int one = 1 two = 2
  Decimal dem = 1.1
  String strval = &amp;#34;Hello&amp;#34;
      Tip  Variables declared in function are called Local Variable.</description>
@@ -690,11 +703,11 @@ https://www.ampproject.org/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-selvarajan.github.io/enlighten/docs/swift/basics2/</guid>
-      <description>Swift Basics - from Pirple.com Variable declaration // 1 var/let name : type = value// 2 var/let name : typename = value// 3 var/let name = value   Primitive types  Int, Int8, Int16, Int32, Int64, UInt, UInt8, UInt16, UInt32, UInt64
+      <description>Swift Basics - from Pirple.com Variable declaration // 1 var/let name : type = value // 2 var/let name : type name = value // 3 var/let name = value   Primitive types  Int, Int8, Int16, Int32, Int64, UInt, UInt8, UInt16, UInt32, UInt64
 Float(32), Double(64), CGFloat(Similar to Float)
 Bool
 Character
-// Valid. length=1 var char1 : Character = &amp;#34;?&amp;#34; // Invalid, length=0  var char2 : Character = &amp;#34;&amp;#34;</description>
+// Valid. length=1 var char1 : Character = &amp;#34;?&amp;#34; // Invalid, length=0  var char2 : Character = &amp;#34;&amp;#34;</description>
     </item>
     
     <item>
