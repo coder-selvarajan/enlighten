@@ -94,8 +94,8 @@ BookShowToC = false
 * link:/enlighten/docs/misc/asciidoc/[AsciiDoc]
 * link:/enlighten/docs/misc/learning/[Learning]
 * link:/enlighten/docs/misc/rnd/[R&D]
-* link:/enlighten/docs/ielts/home/[IELTS]
-* link:/enlighten/docs/misc/pr-process/[Canada PR]
+// * link:/enlighten/docs/ielts/home/[IELTS]
+// * link:/enlighten/docs/misc/pr-process/[Canada PR]
 
 
 |===
