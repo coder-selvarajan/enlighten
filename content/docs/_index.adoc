@@ -84,6 +84,11 @@ BookShowToC = false
 * link:/enlighten/docs/concepts/programming/[Programming]
 
 
+=== :blue_book: &nbsp;Web
+
+* link:/enlighten/docs/web/dns/[DNS]
+
+
 === :blue_book: &nbsp;Misc
 
 * link:/enlighten/docs/misc/dev-tips/[Developer Roadmap]
@@ -94,7 +99,7 @@ BookShowToC = false
 * link:/enlighten/docs/misc/asciidoc/[AsciiDoc]
 * link:/enlighten/docs/misc/learning/[Learning]
 * link:/enlighten/docs/misc/rnd/[R&D]
-// * link:/enlighten/docs/ielts/home/[IELTS]
+* link:/enlighten/docs/ielts/home/[IELTS]
 // * link:/enlighten/docs/misc/pr-process/[Canada PR]
 
 

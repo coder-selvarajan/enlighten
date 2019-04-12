@@ -1,0 +1,14 @@
++++
+title = "Domain Name Server - Overview"
+bookShowToc = false
++++
+= INIT
+
+= DNS - Domain Name Server  
+
+How is a website found on the internet. Below diagram is copied from this  
+link:https://medium.com/@kamranahmedse/dns-in-one-picture-d7f4783db06a[web-page, window="_blank"]
+
+image:../../../images/dns_diagram.png[DNS Screenshot, width=100%] 
+
+

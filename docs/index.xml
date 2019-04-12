@@ -300,6 +300,17 @@ https://www.tutorialspoint.com/docker/
     </item>
     
     <item>
+      <title>Domain Name Server - Overview</title>
+      <link>https://coder-selvarajan.github.io/enlighten/docs/web/dns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-selvarajan.github.io/enlighten/docs/web/dns/</guid>
+      <description>DNS - Domain Name Server How is a website found on the internet. Below diagram is copied from this web-page
+ 
+ </description>
+    </item>
+    
+    <item>
       <title>Electron Overview</title>
       <link>https://coder-selvarajan.github.io/enlighten/docs/app_dev/electron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
